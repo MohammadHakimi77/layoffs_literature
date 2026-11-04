@@ -1,0 +1,35 @@
+{
+ "id": "downsizing-others-hardy-downsizinggarmentworkers-2024-wd",
+ "file": "Downsizing/Others/Hardy-DownsizingGarmentWorkers-2024-WD.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Hardy-DownsizingGarmentWorkers-2024-WD.pdf",
+ "first_author_surname": "Hardy",
+ "year": 2024,
+ "journal_code": "WD",
+ "filename_topic": "DownsizingGarmentWorkers",
+ "journal": "WD",
+ "page_count": 9,
+ "title": "The impact of firm downsizing on workers: Evidence from Ethiopia’s ready-made garment industry",
+ "authors": null,
+ "doi": "10.1016/j.worlddev.2023.106412",
+ "copyright_years_on_first_pages": [
+  2023
+ ],
+ "uncertain_fields": [
+  "authors",
+  "journal",
+  "year"
+ ],
+ "conversion": {
+  "blocks": 208,
+  "furniture": 25,
+  "figures": 7,
+  "tables_html": 3,
+  "tables_image": 0,
+  "equations_img": 4,
+  "image_only_pages": 0
+ },
+ "html_bytes": 196872,
+ "html_sha256": "1387aeedb31d9d876c43d15ada9df8ef62fe19c0d1ecddccc5379790e5e75b3f",
+ "note_flags": []
+}

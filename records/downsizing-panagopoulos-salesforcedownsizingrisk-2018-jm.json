@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-panagopoulos-salesforcedownsizingrisk-2018-jm",
+ "file": "Downsizing/Panagopoulos-SalesForceDownsizingRisk-2018-JM.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Panagopoulos-SalesForceDownsizingRisk-2018-JM.pdf",
+ "first_author_surname": "Panagopoulos",
+ "year": 2018,
+ "journal_code": "JM",
+ "filename_topic": "SalesForceDownsizingRisk",
+ "journal": "Journal of Marketing",
+ "page_count": 19,
+ "title": "Sales Force Downsizing and Firm- Idiosyncratic Risk: The Contingent Role of Investors’ Screening and Firm’s Signaling Processes",
+ "authors": null,
+ "doi": "10.1177/0022242918805059",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 268,
+  "furniture": 17,
+  "figures": 1,
+  "tables_html": 0,
+  "tables_image": 3,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 611627,
+ "html_sha256": "f8f6a5a31007502c276f9b95552ce98d83d391935025dc301e9fff438d995da1",
+ "note_flags": []
+}

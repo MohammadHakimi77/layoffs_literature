@@ -1,0 +1,31 @@
+{
+ "id": "sentiment-word-of-mouth-richins-dissatisfiedconsumernegativewom-1983-jm",
+ "file": "Sentiment/Word of mouth/Richins-DissatisfiedConsumerNegativeWOM-1983-JM.html",
+ "topic_folder": "Sentiment/Word of mouth",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Word of mouth/Richins-DissatisfiedConsumerNegativeWOM-1983-JM.pdf",
+ "first_author_surname": "Richins",
+ "year": 1983,
+ "journal_code": "JM",
+ "filename_topic": "DissatisfiedConsumerNegativeWOM",
+ "journal": "Journal of Marketing",
+ "page_count": 12,
+ "title": "Negative Word-of-Mouth by Dissatisfied Consumers: A Pilot Study",
+ "authors": null,
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 295,
+  "furniture": 28,
+  "figures": 2,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 266176,
+ "html_sha256": "4495dfd79d7a450bd859126c76e74de5faf5c258853338e6f2becacd113b7425",
+ "note_flags": []
+}

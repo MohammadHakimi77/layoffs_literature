@@ -1,0 +1,31 @@
+{
+ "id": "sentiment-word-of-mouth-folkes-consumerattributionreview-1988-jcr",
+ "file": "Sentiment/Word of mouth/Folkes-ConsumerAttributionReview-1988-JCR.html",
+ "topic_folder": "Sentiment/Word of mouth",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Word of mouth/Folkes-ConsumerAttributionReview-1988-JCR.pdf",
+ "first_author_surname": "Folkes",
+ "year": 1988,
+ "journal_code": "JCR",
+ "filename_topic": "ConsumerAttributionReview",
+ "journal": "Journal of Consumer Research",
+ "page_count": 18,
+ "title": "Recent Attribution Research in Consumer Behavior: A Review and New Directions",
+ "authors": "VALERIE S. FOLKES*",
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 375,
+  "furniture": 53,
+  "figures": 0,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 133984,
+ "html_sha256": "eca4c45eb9240fde86e2d993617167972f2338c95fbfb4fd02a33ded72dfc29c",
+ "note_flags": []
+}

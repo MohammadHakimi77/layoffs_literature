@@ -1,0 +1,31 @@
+{
+ "id": "methods-callaway-continuoustreatmentdid-2025-arxiv",
+ "file": "Methods/Callaway-ContinuousTreatmentDiD-2025-arXiv.html",
+ "topic_folder": "Methods",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/Callaway-ContinuousTreatmentDiD-2025-arXiv.pdf",
+ "first_author_surname": "Callaway",
+ "year": 2025,
+ "journal_code": "arXiv",
+ "filename_topic": "ContinuousTreatmentDiD",
+ "journal": "arXiv preprint",
+ "page_count": 43,
+ "title": "Difference-in-Differences with a Continuous Treatment∗",
+ "authors": "Brantly Callaway† Andrew Goodman-Bacon‡ Pedro H. C. Sant’Anna§",
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 1963,
+  "furniture": 44,
+  "figures": 10,
+  "tables_html": 1,
+  "tables_image": 0,
+  "equations_img": 573,
+  "image_only_pages": 0
+ },
+ "html_bytes": 2506659,
+ "html_sha256": "052abbc5703adc0de62e08c1727159d77f0271dc9643d6a9c2c5a3ca1ca344dc",
+ "note_flags": []
+}

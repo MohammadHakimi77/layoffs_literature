@@ -1,0 +1,34 @@
+{
+ "id": "downsizing-others-morrow-costassetretrenchment-2004-jom",
+ "file": "Downsizing/Others/Morrow-CostAssetRetrenchment-2004-JOM.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Morrow-CostAssetRetrenchment-2004-JOM.pdf",
+ "first_author_surname": "Morrow",
+ "year": 2004,
+ "journal_code": "JOM",
+ "filename_topic": "CostAssetRetrenchment",
+ "journal": "Journal of Management",
+ "page_count": 20,
+ "title": "The Effects of Cost and Asset Retrenchment on Firm Performance: The Overlooked Role of a Firm’s Competitive Environment",
+ "authors": "J.L. Morrow Jr.",
+ "doi": "10.1016/j.jm.2003.01.002",
+ "copyright_years_on_first_pages": [
+  2003
+ ],
+ "uncertain_fields": [
+  "authors",
+  "year"
+ ],
+ "conversion": {
+  "blocks": 190,
+  "furniture": 20,
+  "figures": 0,
+  "tables_html": 3,
+  "tables_image": 0,
+  "equations_img": 2,
+  "image_only_pages": 0
+ },
+ "html_bytes": 95715,
+ "html_sha256": "18c4028f19b20e39d528dd150a2dc0836890d799d56d8efc2e138997295f7d72",
+ "note_flags": []
+}

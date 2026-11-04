@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-macaluso-skillremotenesspostlayoff-2023-cesifo",
+ "file": "Downsizing/Others/Macaluso-SkillRemotenessPostLayoff-2023-CESifo.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Macaluso-SkillRemotenessPostLayoff-2023-CESifo.pdf",
+ "first_author_surname": "Macaluso",
+ "year": 2023,
+ "journal_code": "CESifo",
+ "filename_topic": "SkillRemotenessPostLayoff",
+ "journal": "CESifo working paper",
+ "page_count": 73,
+ "title": "Skill Remoteness and Post- Layoff Labor Market Outcomes",
+ "authors": "Claudia Macaluso",
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 1690,
+  "furniture": 73,
+  "figures": 18,
+  "tables_html": 11,
+  "tables_image": 10,
+  "equations_img": 47,
+  "image_only_pages": 0
+ },
+ "html_bytes": 2750881,
+ "html_sha256": "433a25574680583abaa15136a04250745b14f2f28e5c68a9d6f5487f4e4d3a33",
+ "note_flags": []
+}

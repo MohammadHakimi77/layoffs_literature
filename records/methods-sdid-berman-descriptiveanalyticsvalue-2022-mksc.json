@@ -1,0 +1,33 @@
+{
+ "id": "methods-sdid-berman-descriptiveanalyticsvalue-2022-mksc",
+ "file": "Methods/SDID/Berman-DescriptiveAnalyticsValue-2022-MKSC.html",
+ "topic_folder": "Methods/SDID",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/SDID/Berman-DescriptiveAnalyticsValue-2022-MKSC.pdf",
+ "first_author_surname": "Berman",
+ "year": 2022,
+ "journal_code": "MKSC",
+ "filename_topic": "DescriptiveAnalyticsValue",
+ "journal": "Marketing Science",
+ "page_count": 24,
+ "title": "The Value of Descriptive Analytics: Evidence from Online Retailers",
+ "authors": "Ron Berman, Ayelet Israeli",
+ "doi": "10.1287/mksc.2022.1352",
+ "copyright_years_on_first_pages": [
+  2022
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 413,
+  "furniture": 46,
+  "figures": 25,
+  "tables_html": 11,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 1963751,
+ "html_sha256": "fcec7dcef9a8240e6935a43e0bb43640d54428102bce0ada50c3c6a338c9de33",
+ "note_flags": []
+}

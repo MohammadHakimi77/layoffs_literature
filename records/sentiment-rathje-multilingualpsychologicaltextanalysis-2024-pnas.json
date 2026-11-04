@@ -1,0 +1,33 @@
+{
+ "id": "sentiment-rathje-multilingualpsychologicaltextanalysis-2024-pnas",
+ "file": "Sentiment/Rathje-MultilingualPsychologicalTextAnalysis-2024-PNAS.html",
+ "topic_folder": "Sentiment",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Rathje-MultilingualPsychologicalTextAnalysis-2024-PNAS.pdf",
+ "first_author_surname": "Rathje",
+ "year": 2024,
+ "journal_code": "PNAS",
+ "filename_topic": "MultilingualPsychologicalTextAnalysis",
+ "journal": "Proceedings of the National Academy of Sciences",
+ "page_count": 11,
+ "title": "GPT is an effective tool for multilingual psychological text analysis",
+ "authors": null,
+ "doi": "10.1073/pnas.2308950121",
+ "copyright_years_on_first_pages": [
+  2024
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 137,
+  "furniture": 22,
+  "figures": 2,
+  "tables_html": 5,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 432863,
+ "html_sha256": "3db597217caa6ff28209c652f2ea8d2c8b468b12e74e4ac30fe0d24f4dca1522",
+ "note_flags": []
+}

@@ -1,0 +1,31 @@
+{
+ "id": "sentiment-jo-creatorloyaltygameusage-2024-arxiv",
+ "file": "Sentiment/Jo-CreatorLoyaltyGameUsage-2024-arXiv.html",
+ "topic_folder": "Sentiment",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Jo-CreatorLoyaltyGameUsage-2024-arXiv.pdf",
+ "first_author_surname": "Jo",
+ "year": 2024,
+ "journal_code": "arXiv",
+ "filename_topic": "CreatorLoyaltyGameUsage",
+ "journal": "arXiv preprint",
+ "page_count": 51,
+ "title": "Can Loyalty to Creators Dilute Loyalty to Promoted Products? Examining the Heterogeneous Effects of Live-Streamed Content on Video Game Usage",
+ "authors": "Wooyong Jo, Mike Lewis, Yanwen Wang",
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 1004,
+  "furniture": 39,
+  "figures": 11,
+  "tables_html": 13,
+  "tables_image": 0,
+  "equations_img": 6,
+  "image_only_pages": 0
+ },
+ "html_bytes": 1446637,
+ "html_sha256": "97e713263575fb7bc54eac46096c33db48d8e4734085503f63aac6719caa98e8",
+ "note_flags": []
+}

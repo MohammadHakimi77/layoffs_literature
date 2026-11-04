@@ -1,0 +1,35 @@
+{
+ "id": "behavioral-md-has-the-era-of-the-mega-layoff-arrived-wsj",
+ "file": "Behavioral.md/Has the Era of the Mega-Layoff Arrived_ - WSJ.html",
+ "topic_folder": "Behavioral.md",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Behavioral.md/Has the Era of the Mega-Layoff Arrived_ - WSJ.pdf",
+ "first_author_surname": null,
+ "year": null,
+ "journal_code": null,
+ "journal": null,
+ "page_count": 7,
+ "title": "Has the Era of the Mega-Layoff Arrived?",
+ "authors": null,
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "first_author_surname",
+  "journal",
+  "year"
+ ],
+ "conversion": {
+  "blocks": 14,
+  "furniture": 14,
+  "figures": 7,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 2255372,
+ "html_sha256": "c56467907f6188428fe78d77341434b4a67b5cbff19d5b8cc24a87bb108aba55",
+ "note_flags": [
+  "filename does not follow Author-Topic-Year-Journal pattern (news article/other)"
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-lewin-downsizingorganizationalbuying-2001-jams",
+ "file": "Downsizing/Lewin-DownsizingOrganizationalBuying-2001-JAMS.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Lewin-DownsizingOrganizationalBuying-2001-JAMS.pdf",
+ "first_author_surname": "Lewin",
+ "year": 2001,
+ "journal_code": "JAMS",
+ "filename_topic": "DownsizingOrganizationalBuying",
+ "journal": "Journal of the Academy of Marketing Science",
+ "page_count": 14,
+ "title": "The Effects of Downsizing on Organizational Buying Behavior:",
+ "authors": "An Empirical Investigation Jeffrey E. Lewin",
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 278,
+  "furniture": 12,
+  "figures": 0,
+  "tables_html": 4,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 127009,
+ "html_sha256": "40664d785e35cd3148c8fd92376e3a38b16033fb32c58373b641ed4d80ff45ba",
+ "note_flags": []
+}

@@ -1,0 +1,1073 @@
+[
+ {
+  "file": "Behavioral.md/Has the Era of the Mega-Layoff Arrived_ - WSJ.html",
+  "pages": 7,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Behavioral.md/Jo-AnonymousPeerInfluenceAppendix-2025-JCR.html",
+  "pages": 29,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.912
+ },
+ {
+  "file": "Downsizing/Berry-LinkedInEmploymentDifferences-2024-NBER.html",
+  "pages": 62,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9914
+ },
+ {
+  "file": "Downsizing/Blien-RoutineIntensityJobLoss-2019-IZA.html",
+  "pages": 40,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9747
+ },
+ {
+  "file": "Downsizing/Brauer-DownsizingFirmPerformance-2014-JMS.html",
+  "pages": 23,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Brauer-DownsizingImpressionOffsetting-2023-JMS.html",
+  "pages": 33,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Brauer-InvestorResponseDownsizing-2019-JOM.html",
+  "pages": 27,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9973
+ },
+ {
+  "file": "Downsizing/Cederlof-MandatoryLayoffNotice-2024-QJE.html",
+  "pages": 49,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9944
+ },
+ {
+  "file": "Downsizing/Celli-LongTermMassLayoffs-2023-JEG.html",
+  "pages": 24,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9982
+ },
+ {
+  "file": "Downsizing/Datta-EmployeeDownsizingReview-2010-JOM.html",
+  "pages": 68,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.981
+ },
+ {
+  "file": "Downsizing/Eshghi-LayoffInvestorReactionMetaAnalysis-2023-HRMJ.html",
+  "pages": 18,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Gandolfi-DownsizingIntegrativeFramework-2011-JMO.html",
+  "pages": 25,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9225
+ },
+ {
+  "file": "Downsizing/Gathmann-MassLayoffSpillovers-2020-JEEA.html",
+  "pages": 42,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9771
+ },
+ {
+  "file": "Downsizing/Granulo-CollectiveLayoffsOffshoring-2025-JCR.html",
+  "pages": 21,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9907
+ },
+ {
+  "file": "Downsizing/Guthrie-DownsizingIndustryConditions-2008-OS.html",
+  "pages": 17,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9987
+ },
+ {
+  "file": "Downsizing/Habel-DownsizingCustomerReactions-2015-JAMS.html",
+  "pages": 22,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9389
+ },
+ {
+  "file": "Downsizing/Homburg-CustomerUncertaintyDownsizing-2012-JM.html",
+  "pages": 19,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9416
+ },
+ {
+  "file": "Downsizing/House-DownsizingResearchReview-2025-Chapter.html",
+  "pages": 2,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Jung-FinancializationCorporateDownsizing-2022-SER.html",
+  "pages": 29,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Krolikowski-AdvanceLayoffNotices-2024-JAE.html",
+  "pages": 19,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9842
+ },
+ {
+  "file": "Downsizing/Landsman-CollectiveLayoffsBrand-2020-JM.html",
+  "pages": 20,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9453
+ },
+ {
+  "file": "Downsizing/Lewin-DownsizingCustomerSatisfaction-2010-JBR.html",
+  "pages": 10,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9886
+ },
+ {
+  "file": "Downsizing/Lewin-DownsizingOrganizationalBuying-2001-JAMS.html",
+  "pages": 14,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9806
+ },
+ {
+  "file": "Downsizing/Lewin-SupplierDownsizingCustomerSatisfaction-2009-IMM.html",
+  "pages": 17,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9913
+ },
+ {
+  "file": "Downsizing/Love-DownsizingCorporateReputation-2009-AMJ.html",
+  "pages": 23,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Ma-VideoGameLayoffCrisis-2025-ACMGames.html",
+  "pages": 27,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Maertz-DownsizingSurvivorEffects-2010-IR.html",
+  "pages": 11,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9952
+ },
+ {
+  "file": "Downsizing/Others/Agrawal-UnemploymentRiskCorporateFinancing-2013-JFE.html",
+  "pages": 22,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9868
+ },
+ {
+  "file": "Downsizing/Others/Ahmadjian-PermanentEmploymentJapan-2001-ASQ.html",
+  "pages": 33,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.8699
+ },
+ {
+  "file": "Downsizing/Others/Aivazian-PoliticalUncertaintyLayoffTiming-2025-POM.html",
+  "pages": 21,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9518
+ },
+ {
+  "file": "Downsizing/Others/Amato-FamilyFirmsCrisisDownsizing-2023-JBE.html",
+  "pages": 24,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.929
+ },
+ {
+  "file": "Downsizing/Others/Anekwe-DownsizingCausesStrategies-2021-IJSSHR.html",
+  "pages": 6,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Others/Appelbaum-AftermathOfDownsizing-1998-JMD.html",
+  "pages": 30,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9963
+ },
+ {
+  "file": "Downsizing/Others/Bennett-CopingWithLayoff-1995-JOM.html",
+  "pages": 8,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Others/Bosky-LayoffsGenderInequality-2022-SF.html",
+  "pages": 29,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9868
+ },
+ {
+  "file": "Downsizing/Others/Brauer-OrganizationalSupplicationDownsizing-2025-JOM.html",
+  "pages": 37,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9947
+ },
+ {
+  "file": "Downsizing/Others/Brockner-LayoffFairnessSurvivorReactions-1994-SJR.html",
+  "pages": 20,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9936
+ },
+ {
+  "file": "Downsizing/Others/Cederlof-AdvanceLayoffNotice-2021-CEPR.html",
+  "pages": 63,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9934
+ },
+ {
+  "file": "Downsizing/Others/Cederlof-JobLossCosts-2024-IFAU.html",
+  "pages": 78,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.971
+ },
+ {
+  "file": "Downsizing/Others/Chadwick-DownsizingHospitalPerformance-2004-SMJ.html",
+  "pages": 23,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Others/Chen-WomenBoardsDownsizing-2022-IJHRM.html",
+  "pages": 34,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9244
+ },
+ {
+  "file": "Downsizing/Others/Clair-ProsocialImpactNecessaryEvils-2016-JMI.html",
+  "pages": 21,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Others/Clymo-WealthQuitsLayoffs-2023-SSRN.html",
+  "pages": 39,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9841
+ },
+ {
+  "file": "Downsizing/Others/Coucke-LayoffsRestructuringModes-2007-ICC.html",
+  "pages": 22,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9914
+ },
+ {
+  "file": "Downsizing/Others/DeAngelo-UnionNegotiationsCorporatePolicy-1991-JFE.html",
+  "pages": 41,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9492
+ },
+ {
+  "file": "Downsizing/Others/Denis-TopManagementDismissals-1995-JF.html",
+  "pages": 29,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Others/Dial-IncentivesDownsizingValueCreation-1995-JFE.html",
+  "pages": 54,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9529
+ },
+ {
+  "file": "Downsizing/Others/Dias-RacialEmploymentLayoffGap-2021-Socius.html",
+  "pages": 3,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Others/Dlouhy-SurvivorEngagementStrain-2021-HRM.html",
+  "pages": 20,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Others/FawadSharif-SustainingInnovationDownsizing-2022-AJM.html",
+  "pages": 20,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9971
+ },
+ {
+  "file": "Downsizing/Others/Fourne-FamilyFirmMediaReactions-2025-JBR.html",
+  "pages": 12,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9755
+ },
+ {
+  "file": "Downsizing/Others/Fraher-FurloughedPilotIdentity-2014-JMS.html",
+  "pages": 26,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9974
+ },
+ {
+  "file": "Downsizing/Others/Frazier-StateSectorWorkforceReduction-2006-EJPE.html",
+  "pages": 17,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9894
+ },
+ {
+  "file": "Downsizing/Others/GarciaVega-LaborReformInnovation-2021-RP.html",
+  "pages": 17,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9785
+ },
+ {
+  "file": "Downsizing/Others/Greenhalgh-WorkforceReductionStrategies-1988-AMR.html",
+  "pages": 15,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Others/Haldorai-JobInsecurityCOVIDLayoffs-2024-IJCHM.html",
+  "pages": 18,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9658
+ },
+ {
+  "file": "Downsizing/Others/Hardy-DownsizingGarmentWorkers-2024-WD.html",
+  "pages": 9,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Others/Huang-GenerativeAILayoffGeneration-2023-SSRN.html",
+  "pages": 25,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9918
+ },
+ {
+  "file": "Downsizing/Others/Iverson-TurnoverLayoffsAfterMerger-2000-JOM.html",
+  "pages": 27,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9971
+ },
+ {
+  "file": "Downsizing/Others/Jensen-IndustrialRevolutionInternalControl-1993-JF.html",
+  "pages": 50,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Others/Johnstone-RecessionDownsizingAlternatives-2024-HRMJ.html",
+  "pages": 20,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9988
+ },
+ {
+  "file": "Downsizing/Others/Kwon-RestructuringNetworkStability-2007-JMIS.html",
+  "pages": 33,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9893
+ },
+ {
+  "file": "Downsizing/Others/Lam-TeamAffectiveJobInsecurity-2023-JOB.html",
+  "pages": 16,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9861
+ },
+ {
+  "file": "Downsizing/Others/Lee-LayoffStockPriceReactions-1997-SMJ.html",
+  "pages": 16,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9708
+ },
+ {
+  "file": "Downsizing/Others/Lefebvre-SMELayoffsSocialProximity-2024-JBE.html",
+  "pages": 20,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9639
+ },
+ {
+  "file": "Downsizing/Others/Macaluso-SkillRemotenessPostLayoff-2023-CESifo.html",
+  "pages": 73,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.8688
+ },
+ {
+  "file": "Downsizing/Others/Martin-EmployeeInvolvementDownsizing-1995-JOM.html",
+  "pages": 12,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9865
+ },
+ {
+  "file": "Downsizing/Others/MartinsNeto-RoutineBiasMassLayoffs-2024-ICC.html",
+  "pages": 29,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.8965
+ },
+ {
+  "file": "Downsizing/Others/McLachlan-ResponsibleDownsizingFramework-2022-IJHRM.html",
+  "pages": 30,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9342
+ },
+ {
+  "file": "Downsizing/Others/Meyer-PostAcquisitionRestructuring-2003-JMS.html",
+  "pages": 24,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9228
+ },
+ {
+  "file": "Downsizing/Others/Mishra-SurvivorResponsesDownsizing-1998-AMR.html",
+  "pages": 23,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Others/Morrow-CostAssetRetrenchment-2004-JOM.html",
+  "pages": 20,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Others/Nixon-MarketReactionsDownsizing-2004-SMJ.html",
+  "pages": 9,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Others/Norman-ResourcesFollowingDownsizing-2013-JOM.html",
+  "pages": 30,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9598
+ },
+ {
+  "file": "Downsizing/Others/Piza-PoliceLayoffsCrime-2021-JEJ.html",
+  "pages": 22,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.8602
+ },
+ {
+  "file": "Downsizing/Others/Ramdani-DownsizingInnovationOutputs-2021-AJM.html",
+  "pages": 20,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9949
+ },
+ {
+  "file": "Downsizing/Others/Ruggiero-UsesGratificationsTheory-2000-MCS.html",
+  "pages": 36,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Others/Shi-CEOAttributionDownsizing-2023-JMS.html",
+  "pages": 29,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Others/Shin-StakeholderOrientationCEODismissal-2022-SMJ.html",
+  "pages": 25,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Others/Shoss-JobInsecurityReview-2017-JOM.html",
+  "pages": 29,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9412
+ },
+ {
+  "file": "Downsizing/Others/Stavrou-DownsizingFamilyOwnership-2007-JBE.html",
+  "pages": 14,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9856
+ },
+ {
+  "file": "Downsizing/Others/Trahms-OrganizationalDeclineTurnaround-2013-JOM.html",
+  "pages": 31,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.8856
+ },
+ {
+  "file": "Downsizing/Others/Tsai-InstitutionalTheoryDownsizing-2006-TQMBE.html",
+  "pages": 23,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9854
+ },
+ {
+  "file": "Downsizing/Others/Wu-SocialNetworksJobSecurity-2013-ISR.html",
+  "pages": 23,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9804
+ },
+ {
+  "file": "Downsizing/Others/Zatzick-DownsizingInCrisis-2009-SMR.html",
+  "pages": 10,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Others/Zyglidopoulos-DownsizingCorporateReputation-2005-BJM.html",
+  "pages": 7,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Others/Zyglidopoulos-DownsizingSocialReputation-2004-JPA.html",
+  "pages": 15,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.982
+ },
+ {
+  "file": "Downsizing/Panagopoulos-SalesForceDownsizingRisk-2018-JM.html",
+  "pages": 19,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9652
+ },
+ {
+  "file": "Downsizing/Sajjadiani-HumanCapitalOutflows-2023-AMJ.html",
+  "pages": 26,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9679
+ },
+ {
+  "file": "Downsizing/Schulz-EarningsExpectationsDownsizing-2018-SMJ.html",
+  "pages": 12,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/Stabler-LayoffCommunicationBrandStrength-2023-IJRM.html",
+  "pages": 24,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9611
+ },
+ {
+  "file": "Downsizing/Subramony-ServiceEmployeeAttrition-2012-JSR.html",
+  "pages": 16,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9878
+ },
+ {
+  "file": "Downsizing/VanDierendonck-FairnessCommitmentDownsizing-2012-BJM.html",
+  "pages": 14,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Downsizing/VanDoornik-StrategicFormalLayoffs-2023-AEJAE.html",
+  "pages": 28,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.969
+ },
+ {
+  "file": "Methods/Baker-DifferenceInDifferencesGuide-2026-JEL.html",
+  "pages": 60,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9919
+ },
+ {
+  "file": "Methods/Callaway-ContinuousTreatmentDiD-2025-arXiv.html",
+  "pages": 43,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9951
+ },
+ {
+  "file": "Methods/Claude-SDIDLiteratureReview-2026-Note.html",
+  "pages": 8,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9027
+ },
+ {
+  "file": "Methods/Daw-MatchingRegressionMeanDiD-2018-HSR.html",
+  "pages": 19,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9824
+ },
+ {
+  "file": "Methods/Gardner-TwoStageDiD-2021-arXiv.html",
+  "pages": 34,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9655
+ },
+ {
+  "file": "Methods/Rambachan-ParallelTrendsDraft-2023-REStud.html",
+  "pages": 126,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9996
+ },
+ {
+  "file": "Methods/SDID/Berman-DescriptiveAnalyticsValue-2022-MKSC.html",
+  "pages": 24,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9953
+ },
+ {
+  "file": "Methods/SDID/Guyt-BanningUnsolicitedFlyers-2025-MKSC.html",
+  "pages": 22,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9836
+ },
+ {
+  "file": "Methods/SDID/Han-BanningGamblingLivestreams-2024-SSRN.html",
+  "pages": 63,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9885
+ },
+ {
+  "file": "Methods/SDID/Keller-BottleDepositReturnSchemes-2026-JM.html",
+  "pages": 22,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9979
+ },
+ {
+  "file": "Methods/SDID/Lambrecht-TVAdvertisingOnlineSales-2024-JMR.html",
+  "pages": 23,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9509
+ },
+ {
+  "file": "Methods/SDID/Pachali-SpotifyPlaylistDemand-2025-MKSC.html",
+  "pages": 12,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9811
+ },
+ {
+  "file": "Methods/SDID/Pape-OneClickCompetition-2026-MKSC.html",
+  "pages": 19,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9884
+ },
+ {
+  "file": "Methods/SDID/Qian-StarCreatorsLivestreaming-2026-JMR.html",
+  "pages": 18,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9362
+ },
+ {
+  "file": "Methods/SDID/VanLin-RetiringStoreFlyer-2025-TI.html",
+  "pages": 64,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9359
+ },
+ {
+  "file": "Methods/SDID/Wu-AdsLivestreamViewers-2026-JM.html",
+  "pages": 20,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9823
+ },
+ {
+  "file": "Methods/Staggered/Ananthakrishnan-AmericanLibraryBookBans-2025-MKSC.html",
+  "pages": 22,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9869
+ },
+ {
+  "file": "Methods/Staggered/Breugelmans-RadicalStoreTransformation-2024-JAMS.html",
+  "pages": 22,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9794
+ },
+ {
+  "file": "Methods/Staggered/Cheng-DeepDiDHeterogeneousEffects-2026-MKSC.html",
+  "pages": 23,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9837
+ },
+ {
+  "file": "Methods/Staggered/Chiong-MassShootingsRetail-2025-MKSC.html",
+  "pages": 11,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9856
+ },
+ {
+  "file": "Methods/Staggered/Guo-MembershipFreeShipping-2023-JM.html",
+  "pages": 21,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9915
+ },
+ {
+  "file": "Methods/Staggered/Hoffmann-ManagerLiabilityProductRecalls-2024-JM.html",
+  "pages": 22,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9549
+ },
+ {
+  "file": "Methods/Staggered/Keller-BrandDeletionCompetition-2025-SSRN.html",
+  "pages": 78,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.8993
+ },
+ {
+  "file": "Methods/Staggered/Lee-SocialAdvertisingBusinessResilience-2025-JIM.html",
+  "pages": 15,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Methods/Staggered/Li-ForwardDifferenceInDifferences-2024-MKSC.html",
+  "pages": 14,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9918
+ },
+ {
+  "file": "Sentiment/Allen-UserCommunityFeedback-2026-AMJ.html",
+  "pages": 30,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9924
+ },
+ {
+  "file": "Sentiment/Cheng-ReputationBurningSponsorship-2025-MS.html",
+  "pages": 47,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9459
+ },
+ {
+  "file": "Sentiment/Community/CarballaSmichowski-InterPlatformEcosystems-2026-SMJ.html",
+  "pages": 38,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9576
+ },
+ {
+  "file": "Sentiment/Community/Fourne-FamilyFirmMediaReactions-2025-JBR.html",
+  "pages": 12,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9755
+ },
+ {
+  "file": "Sentiment/Community/Huang-TwitchLivestreamPromotion-2025-MKSC.html",
+  "pages": 18,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9928
+ },
+ {
+  "file": "Sentiment/Community/Jo-AnonymousPeerInfluence-2025-JCR.html",
+  "pages": 24,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9525
+ },
+ {
+  "file": "Sentiment/Community/Jo-AnonymousPeerInfluenceAppendix-2025-JCR.html",
+  "pages": 29,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.912
+ },
+ {
+  "file": "Sentiment/Community/Kwon-RestructuringNetworkStability-2007-JMIS.html",
+  "pages": 33,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9893
+ },
+ {
+  "file": "Sentiment/Community/Lefebvre-SMELayoffsSocialProximity-2024-JBE.html",
+  "pages": 20,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9639
+ },
+ {
+  "file": "Sentiment/Community/Li-YouTubePurchaseUsageEffectsDraft-2025-MKSC.html",
+  "pages": 60,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9296
+ },
+ {
+  "file": "Sentiment/Community/Narayan-PeerInfluenceAttributePreferences-2011-MKSC.html",
+  "pages": 18,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9632
+ },
+ {
+  "file": "Sentiment/Community/Ruggiero-UsesGratificationsTheory-2000-MCS.html",
+  "pages": 36,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Sentiment/Community/Wu-SocialNetworksJobSecurity-2013-ISR.html",
+  "pages": 23,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9804
+ },
+ {
+  "file": "Sentiment/Deolankar-DownvotesContentCreation-2026-JMR.html",
+  "pages": 21,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9597
+ },
+ {
+  "file": "Sentiment/Jo-CreatorLoyaltyGameUsage-2024-arXiv.html",
+  "pages": 51,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9569
+ },
+ {
+  "file": "Sentiment/Loh-PlatformCompetitionComplementors-2026-SMJ.html",
+  "pages": 59,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9733
+ },
+ {
+  "file": "Sentiment/Mousavi-PsychometricTextAnalysis-2026-ISR.html",
+  "pages": 21,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9676
+ },
+ {
+  "file": "Sentiment/Puranam-MinimumWagesServicePerceptions-2021-MKSC.html",
+  "pages": 21,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9883
+ },
+ {
+  "file": "Sentiment/Puyang-VerticalPlatformCompetition-2026-MKSC.html",
+  "pages": 47,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9967
+ },
+ {
+  "file": "Sentiment/Rathje-MultilingualPsychologicalTextAnalysis-2024-PNAS.html",
+  "pages": 11,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9945
+ },
+ {
+  "file": "Sentiment/Rietveld-SocialFeaturesFreemium-2022-SMJ.html",
+  "pages": 26,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Sentiment/Word of mouth/Alexandrov-SocialSelfMotivesWOM-2013-JAMS.html",
+  "pages": 16,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.995
+ },
+ {
+  "file": "Sentiment/Word of mouth/East-PositiveNegativeWOMIncidence-2007-IJRM.html",
+  "pages": 10,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9876
+ },
+ {
+  "file": "Sentiment/Word of mouth/Folkes-ConsumerAttributionReview-1988-JCR.html",
+  "pages": 18,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Sentiment/Word of mouth/Krishnamurthy-ElectronicWOMBrandImage-2018-JRCS.html",
+  "pages": 8,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9896
+ },
+ {
+  "file": "Sentiment/Word of mouth/Kuppelwieser-CustomerExperienceValueWOM-2022-JSM.html",
+  "pages": 15,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9224
+ },
+ {
+  "file": "Sentiment/Word of mouth/Laczniak-NegativeWOMAttribution-2001-JCP.html",
+  "pages": 17,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9946
+ },
+ {
+  "file": "Sentiment/Word of mouth/Mittal-CustomerSwitchingSatisfactionLoyalty-1998-JSM.html",
+  "pages": 18,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9862
+ },
+ {
+  "file": "Sentiment/Word of mouth/Nam-ElectronicWOMDeterminants-2020-DSS.html",
+  "pages": 14,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9581
+ },
+ {
+  "file": "Sentiment/Word of mouth/Richins-DissatisfiedConsumerNegativeWOM-1983-JM.html",
+  "pages": 12,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 1.0
+ },
+ {
+  "file": "Sentiment/Word of mouth/Wilson-NegativeWOMBrandConnection-2017-JAMS.html",
+  "pages": 14,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9584
+ },
+ {
+  "file": "Sentiment/Word of mouth/Zhang-EndorserMessageCharacteristics-2025-IMDS.html",
+  "pages": 43,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9459
+ },
+ {
+  "file": "Sentiment/Wu-PlatformInformationPriceTargeting-2025-SSRN.html",
+  "pages": 66,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.8846
+ },
+ {
+  "file": "Sentiment/Zhang-ConsumptionTimeHelpfulVotes-2026-JM.html",
+  "pages": 16,
+  "sections_ok": true,
+  "dup_ids": 0,
+  "coverage": 0.9898
+ }
+]

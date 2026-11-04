@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-huang-generativeailayoffgeneration-2023-ssrn",
+ "file": "Downsizing/Others/Huang-GenerativeAILayoffGeneration-2023-SSRN.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Huang-GenerativeAILayoffGeneration-2023-SSRN.pdf",
+ "first_author_surname": "Huang",
+ "year": 2023,
+ "journal_code": "SSRN",
+ "filename_topic": "GenerativeAILayoffGeneration",
+ "journal": "SSRN working paper",
+ "page_count": 25,
+ "title": "The Layoff Generation: How Generative AI will Reshape Employment and Labor Markets",
+ "authors": "Qiwen Huang, Yifan Shen, Yuanchi Sun, Qingquan Zhang*",
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 193,
+  "furniture": 25,
+  "figures": 10,
+  "tables_html": 7,
+  "tables_image": 0,
+  "equations_img": 1,
+  "image_only_pages": 0
+ },
+ "html_bytes": 1542486,
+ "html_sha256": "71ab467f49f77969400350d985446b9b2ff075c4abca216ca2865570c08d6448",
+ "note_flags": []
+}

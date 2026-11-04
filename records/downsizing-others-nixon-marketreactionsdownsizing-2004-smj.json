@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-nixon-marketreactionsdownsizing-2004-smj",
+ "file": "Downsizing/Others/Nixon-MarketReactionsDownsizing-2004-SMJ.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Nixon-MarketReactionsDownsizing-2004-SMJ.pdf",
+ "first_author_surname": "Nixon",
+ "year": 2004,
+ "journal_code": "SMJ",
+ "filename_topic": "MarketReactionsDownsizing",
+ "journal": "Strategic Management Journal",
+ "page_count": 9,
+ "title": "RESEARCH NOTES AND COMMENTARIES MARKET REACTIONS TO ANNOUNCEMENTS OF CORPORATE DOWNSIZING ACTIONS AND IMPLEMENTATION STRATEGIES",
+ "authors": null,
+ "doi": "10.1002/smj.423",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 120,
+  "furniture": 0,
+  "figures": 1,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 1,
+  "image_only_pages": 0
+ },
+ "html_bytes": 126774,
+ "html_sha256": "2a9370a2f87390d20c51c20a1f7728d5947c54c713c8caba1d554c88e1c9075c",
+ "note_flags": []
+}

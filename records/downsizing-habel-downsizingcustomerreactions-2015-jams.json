@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-habel-downsizingcustomerreactions-2015-jams",
+ "file": "Downsizing/Habel-DownsizingCustomerReactions-2015-JAMS.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Habel-DownsizingCustomerReactions-2015-JAMS.pdf",
+ "first_author_surname": "Habel",
+ "year": 2015,
+ "journal_code": "JAMS",
+ "filename_topic": "DownsizingCustomerReactions",
+ "journal": "Journal of the Academy of Marketing Science",
+ "page_count": 22,
+ "title": "Customer reactions to downsizing: when and how is satisfaction affected?",
+ "authors": "Johannes Habel & Martin Klarmann",
+ "doi": "10.1007/s11747-014-0400-y",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 340,
+  "furniture": 21,
+  "figures": 4,
+  "tables_html": 6,
+  "tables_image": 3,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 877070,
+ "html_sha256": "c6bd6cf77af38fbb663b559f56342f6ec7dcce7b94fcac672211359e3e655599",
+ "note_flags": []
+}

@@ -1,0 +1,31 @@
+{
+ "id": "sentiment-community-lefebvre-smelayoffssocialproximity-2024-jbe",
+ "file": "Sentiment/Community/Lefebvre-SMELayoffsSocialProximity-2024-JBE.html",
+ "topic_folder": "Sentiment/Community",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Community/Lefebvre-SMELayoffsSocialProximity-2024-JBE.pdf",
+ "first_author_surname": "Lefebvre",
+ "year": 2024,
+ "journal_code": "JBE",
+ "filename_topic": "SMELayoffsSocialProximity",
+ "journal": "Journal of Business Ethics",
+ "page_count": 20,
+ "title": "Layoffs in SMEs: The Role of Social Proximity",
+ "authors": "Vivien Lefebvre1",
+ "doi": "10.1007/s10551-023-05414-z",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 259,
+  "furniture": 38,
+  "figures": 0,
+  "tables_html": 12,
+  "tables_image": 2,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 292976,
+ "html_sha256": "796d381403a477c37d410056d3bd08f4c5f8878306d167fd568b4cf347c31d61",
+ "note_flags": []
+}

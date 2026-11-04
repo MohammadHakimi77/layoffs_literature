@@ -1,0 +1,31 @@
+{
+ "id": "methods-sdid-keller-bottledepositreturnschemes-2026-jm",
+ "file": "Methods/SDID/Keller-BottleDepositReturnSchemes-2026-JM.html",
+ "topic_folder": "Methods/SDID",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/SDID/Keller-BottleDepositReturnSchemes-2026-JM.pdf",
+ "first_author_surname": "Keller",
+ "year": 2026,
+ "journal_code": "JM",
+ "filename_topic": "BottleDepositReturnSchemes",
+ "journal": "Journal of Marketing",
+ "page_count": 22,
+ "title": "Consequences of Bottle Bills: How Bottle Deposit Return Schemes Affect Retail Prices and Lead Consumers to Larger Package Sizes",
+ "authors": "Kristopher O. Keller",
+ "doi": "10.1177/00222429251347284",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 363,
+  "furniture": 21,
+  "figures": 9,
+  "tables_html": 2,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 924196,
+ "html_sha256": "ef17056edb7a1a00cbbf465abb7fe03be37fc2df307875d47837df6d1ff4f207",
+ "note_flags": []
+}

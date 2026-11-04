@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-subramony-serviceemployeeattrition-2012-jsr",
+ "file": "Downsizing/Subramony-ServiceEmployeeAttrition-2012-JSR.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Subramony-ServiceEmployeeAttrition-2012-JSR.pdf",
+ "first_author_surname": "Subramony",
+ "year": 2012,
+ "journal_code": "JSR",
+ "filename_topic": "ServiceEmployeeAttrition",
+ "journal": "Journal of Service Research",
+ "page_count": 16,
+ "title": "The Long-Term Inﬂuence of Service Employee Attrition on Customer Outcomes and Proﬁts",
+ "authors": null,
+ "doi": "10.1177/1094670512452792",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 269,
+  "furniture": 28,
+  "figures": 2,
+  "tables_html": 2,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 236806,
+ "html_sha256": "24b03d3920af99d302a5a47aeb67212147ace8b518abe6b039c541ecb8d8437e",
+ "note_flags": []
+}

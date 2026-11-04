@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-clymo-wealthquitslayoffs-2023-ssrn",
+ "file": "Downsizing/Others/Clymo-WealthQuitsLayoffs-2023-SSRN.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Clymo-WealthQuitsLayoffs-2023-SSRN.pdf",
+ "first_author_surname": "Clymo",
+ "year": 2023,
+ "journal_code": "SSRN",
+ "filename_topic": "WealthQuitsLayoffs",
+ "journal": "SSRN working paper",
+ "page_count": 39,
+ "title": "Wealth, Quits and Layoffs*",
+ "authors": "Alex Clymo† Piotr Denderski‡ Laura A. Harvey §",
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 1009,
+  "furniture": 39,
+  "figures": 23,
+  "tables_html": 14,
+  "tables_image": 2,
+  "equations_img": 2,
+  "image_only_pages": 0
+ },
+ "html_bytes": 1189396,
+ "html_sha256": "5291d025ed034d0658f7172f21272281a6e9cb4c144e0c5f124671b4f4e0035c",
+ "note_flags": []
+}

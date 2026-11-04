@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-celli-longtermmasslayoffs-2023-jeg",
+ "file": "Downsizing/Celli-LongTermMassLayoffs-2023-JEG.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Celli-LongTermMassLayoffs-2023-JEG.pdf",
+ "first_author_surname": "Celli",
+ "year": 2023,
+ "journal_code": "JEG",
+ "filename_topic": "LongTermMassLayoffs",
+ "journal": "Journal of Economic Geography",
+ "page_count": 24,
+ "title": "The long-term effects of mass layoffs: do local economies (ever) recover?",
+ "authors": "Viviana Celli",
+ "doi": "10.1093/jeg/lbad012",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 323,
+  "furniture": 48,
+  "figures": 2,
+  "tables_html": 4,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 306832,
+ "html_sha256": "4383c3f346f07920e83c0185606f1d636fa612f912565be386168a59ebf51191",
+ "note_flags": []
+}

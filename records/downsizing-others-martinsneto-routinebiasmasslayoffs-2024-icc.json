@@ -1,0 +1,32 @@
+{
+ "id": "downsizing-others-martinsneto-routinebiasmasslayoffs-2024-icc",
+ "file": "Downsizing/Others/MartinsNeto-RoutineBiasMassLayoffs-2024-ICC.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/MartinsNeto-RoutineBiasMassLayoffs-2024-ICC.pdf",
+ "first_author_surname": "MartinsNeto",
+ "year": 2024,
+ "journal_code": "ICC",
+ "filename_topic": "RoutineBiasMassLayoffs",
+ "journal": "ICC",
+ "page_count": 29,
+ "title": "Routine-biased technological change and employee outcomes after mass layoffs: evidence from Brazil",
+ "authors": null,
+ "doi": "10.1093/icc/dtad063",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 278,
+  "furniture": 57,
+  "figures": 12,
+  "tables_html": 15,
+  "tables_image": 1,
+  "equations_img": 5,
+  "image_only_pages": 0
+ },
+ "html_bytes": 704851,
+ "html_sha256": "3d4d73c4c2c070332d18f719258396beee4444ab4e54a8f8c5b59de6f50d1422",
+ "note_flags": []
+}

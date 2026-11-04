@@ -1,0 +1,32 @@
+{
+ "id": "downsizing-others-frazier-statesectorworkforcereduction-2006-ejpe",
+ "file": "Downsizing/Others/Frazier-StateSectorWorkforceReduction-2006-EJPE.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Frazier-StateSectorWorkforceReduction-2006-EJPE.pdf",
+ "first_author_surname": "Frazier",
+ "year": 2006,
+ "journal_code": "EJPE",
+ "filename_topic": "StateSectorWorkforceReduction",
+ "journal": "EJPE",
+ "page_count": 17,
+ "title": "State-sector shrinkage and workforce reduction in China",
+ "authors": "Mark W. Frazier",
+ "doi": "10.1016/j.ejpoleco.2005.09.012",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 137,
+  "furniture": 17,
+  "figures": 0,
+  "tables_html": 6,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 78466,
+ "html_sha256": "1fc1fd92ad8b79fc324b2288a79b56867cf76a4ee0c6f02118912b93e5c7c292",
+ "note_flags": []
+}

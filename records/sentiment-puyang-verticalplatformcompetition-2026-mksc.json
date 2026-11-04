@@ -1,0 +1,31 @@
+{
+ "id": "sentiment-puyang-verticalplatformcompetition-2026-mksc",
+ "file": "Sentiment/Puyang-VerticalPlatformCompetition-2026-MKSC.html",
+ "topic_folder": "Sentiment",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Puyang-VerticalPlatformCompetition-2026-MKSC.pdf",
+ "first_author_surname": "Puyang",
+ "year": 2026,
+ "journal_code": "MKSC",
+ "filename_topic": "VerticalPlatformCompetition",
+ "journal": "Marketing Science",
+ "page_count": 47,
+ "title": "Vertical Competition on a Common Platform",
+ "authors": "Xiaojuan Puyang",
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 1712,
+  "furniture": 47,
+  "figures": 5,
+  "tables_html": 0,
+  "tables_image": 1,
+  "equations_img": 598,
+  "image_only_pages": 0
+ },
+ "html_bytes": 3124465,
+ "html_sha256": "9a90aec9f34d12ce9006e3f612925b1c0d7922fdb490db73a422642e77832202",
+ "note_flags": []
+}

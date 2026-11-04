@@ -1,0 +1,1607 @@
+{
+ "generated_from_branch": "staging-pdfs",
+ "papers": [
+  {
+   "id": "behavioral-md-has-the-era-of-the-mega-layoff-arrived-wsj",
+   "file": "Behavioral.md/Has the Era of the Mega-Layoff Arrived_ - WSJ.html",
+   "source_pdf": "source-pdfs/Behavioral.md/Has the Era of the Mega-Layoff Arrived_ - WSJ.pdf",
+   "pages": 7,
+   "bytes": 2255372,
+   "sha256": "c56467907f6188428fe78d77341434b4a67b5cbff19d5b8cc24a87bb108aba55"
+  },
+  {
+   "id": "behavioral-md-jo-anonymouspeerinfluenceappendix-2025-jcr",
+   "file": "Behavioral.md/Jo-AnonymousPeerInfluenceAppendix-2025-JCR.html",
+   "source_pdf": "source-pdfs/Behavioral.md/Jo-AnonymousPeerInfluenceAppendix-2025-JCR.pdf",
+   "pages": 29,
+   "bytes": 495658,
+   "sha256": "bdaf5099572499c5a9a0196e3c53bfedf78e6e170776ead2dae549fbf784cb2f"
+  },
+  {
+   "id": "downsizing-berry-linkedinemploymentdifferences-2024-nber",
+   "file": "Downsizing/Berry-LinkedInEmploymentDifferences-2024-NBER.html",
+   "source_pdf": "source-pdfs/Downsizing/Berry-LinkedInEmploymentDifferences-2024-NBER.pdf",
+   "pages": 62,
+   "bytes": 1265515,
+   "sha256": "53f42788bba9404093ce409d93314a83cb368857085228ed0dfd3663683519eb"
+  },
+  {
+   "id": "downsizing-blien-routineintensityjobloss-2019-iza",
+   "file": "Downsizing/Blien-RoutineIntensityJobLoss-2019-IZA.html",
+   "source_pdf": "source-pdfs/Downsizing/Blien-RoutineIntensityJobLoss-2019-IZA.pdf",
+   "pages": 40,
+   "bytes": 1477925,
+   "sha256": "0b84f12fa9b27c116808e6952cc316a130da09456a25786221e273fb6a7d7597"
+  },
+  {
+   "id": "downsizing-brauer-downsizingfirmperformance-2014-jms",
+   "file": "Downsizing/Brauer-DownsizingFirmPerformance-2014-JMS.html",
+   "source_pdf": "source-pdfs/Downsizing/Brauer-DownsizingFirmPerformance-2014-JMS.pdf",
+   "pages": 23,
+   "bytes": 207166,
+   "sha256": "162d368faba8ec708c9efeb528eb940459441057a4c85a913345d174578e75eb"
+  },
+  {
+   "id": "downsizing-brauer-downsizingimpressionoffsetting-2023-jms",
+   "file": "Downsizing/Brauer-DownsizingImpressionOffsetting-2023-JMS.html",
+   "source_pdf": "source-pdfs/Downsizing/Brauer-DownsizingImpressionOffsetting-2023-JMS.pdf",
+   "pages": 33,
+   "bytes": 212232,
+   "sha256": "54dcc27b79373c210771049a2798983b8b36d33642c8f861d3673f94251f70cf"
+  },
+  {
+   "id": "downsizing-brauer-investorresponsedownsizing-2019-jom",
+   "file": "Downsizing/Brauer-InvestorResponseDownsizing-2019-JOM.html",
+   "source_pdf": "source-pdfs/Downsizing/Brauer-InvestorResponseDownsizing-2019-JOM.pdf",
+   "pages": 27,
+   "bytes": 305950,
+   "sha256": "b278f6923e7861413ea575533253f1de71fedcdd0a37e6b4a8a01f2ed80a2988"
+  },
+  {
+   "id": "downsizing-cederlof-mandatorylayoffnotice-2024-qje",
+   "file": "Downsizing/Cederlof-MandatoryLayoffNotice-2024-QJE.html",
+   "source_pdf": "source-pdfs/Downsizing/Cederlof-MandatoryLayoffNotice-2024-QJE.pdf",
+   "pages": 49,
+   "bytes": 464885,
+   "sha256": "e43db899de2dafe926826c5e660577929dd6289f5213acdcd218be1ce0d47aa4"
+  },
+  {
+   "id": "downsizing-celli-longtermmasslayoffs-2023-jeg",
+   "file": "Downsizing/Celli-LongTermMassLayoffs-2023-JEG.html",
+   "source_pdf": "source-pdfs/Downsizing/Celli-LongTermMassLayoffs-2023-JEG.pdf",
+   "pages": 24,
+   "bytes": 306832,
+   "sha256": "4383c3f346f07920e83c0185606f1d636fa612f912565be386168a59ebf51191"
+  },
+  {
+   "id": "downsizing-datta-employeedownsizingreview-2010-jom",
+   "file": "Downsizing/Datta-EmployeeDownsizingReview-2010-JOM.html",
+   "source_pdf": "source-pdfs/Downsizing/Datta-EmployeeDownsizingReview-2010-JOM.pdf",
+   "pages": 68,
+   "bytes": 13869763,
+   "sha256": "a362e1beba3d0d62b8aefab608ba51937ddfa5d0e9365f1f69d23c85aa8f1695"
+  },
+  {
+   "id": "downsizing-eshghi-layoffinvestorreactionmetaanalysis-2023-hrmj",
+   "file": "Downsizing/Eshghi-LayoffInvestorReactionMetaAnalysis-2023-HRMJ.html",
+   "source_pdf": "source-pdfs/Downsizing/Eshghi-LayoffInvestorReactionMetaAnalysis-2023-HRMJ.pdf",
+   "pages": 18,
+   "bytes": 363054,
+   "sha256": "b62510d38a6585a37f503a8a860318285b8dc75e4bf18e47663f9d9ecfa8443e"
+  },
+  {
+   "id": "downsizing-gandolfi-downsizingintegrativeframework-2011-jmo",
+   "file": "Downsizing/Gandolfi-DownsizingIntegrativeFramework-2011-JMO.html",
+   "source_pdf": "source-pdfs/Downsizing/Gandolfi-DownsizingIntegrativeFramework-2011-JMO.pdf",
+   "pages": 25,
+   "bytes": 1082229,
+   "sha256": "9e05f63f76e4c2af37a203af5e8c02106345ee8f84e492bede757e01c771879a"
+  },
+  {
+   "id": "downsizing-gathmann-masslayoffspillovers-2020-jeea",
+   "file": "Downsizing/Gathmann-MassLayoffSpillovers-2020-JEEA.html",
+   "source_pdf": "source-pdfs/Downsizing/Gathmann-MassLayoffSpillovers-2020-JEEA.pdf",
+   "pages": 42,
+   "bytes": 355572,
+   "sha256": "5db49687b093bb92a0fe41a3b90f4ef51baf663b4f990a1f1b40c5379aa2be26"
+  },
+  {
+   "id": "downsizing-granulo-collectivelayoffsoffshoring-2025-jcr",
+   "file": "Downsizing/Granulo-CollectiveLayoffsOffshoring-2025-JCR.html",
+   "source_pdf": "source-pdfs/Downsizing/Granulo-CollectiveLayoffsOffshoring-2025-JCR.pdf",
+   "pages": 21,
+   "bytes": 201436,
+   "sha256": "75964a8108895aaa8e8593c0a762aae2ce6d767d30b2fc04a2fed35897d87a4b"
+  },
+  {
+   "id": "downsizing-guthrie-downsizingindustryconditions-2008-os",
+   "file": "Downsizing/Guthrie-DownsizingIndustryConditions-2008-OS.html",
+   "source_pdf": "source-pdfs/Downsizing/Guthrie-DownsizingIndustryConditions-2008-OS.pdf",
+   "pages": 17,
+   "bytes": 455540,
+   "sha256": "6be9f2adc6e714628274ac7be0c1d3519f7c049e94ce70691dd9cb2c31c7c3f0"
+  },
+  {
+   "id": "downsizing-habel-downsizingcustomerreactions-2015-jams",
+   "file": "Downsizing/Habel-DownsizingCustomerReactions-2015-JAMS.html",
+   "source_pdf": "source-pdfs/Downsizing/Habel-DownsizingCustomerReactions-2015-JAMS.pdf",
+   "pages": 22,
+   "bytes": 877070,
+   "sha256": "c6bd6cf77af38fbb663b559f56342f6ec7dcce7b94fcac672211359e3e655599"
+  },
+  {
+   "id": "downsizing-homburg-customeruncertaintydownsizing-2012-jm",
+   "file": "Downsizing/Homburg-CustomerUncertaintyDownsizing-2012-JM.html",
+   "source_pdf": "source-pdfs/Downsizing/Homburg-CustomerUncertaintyDownsizing-2012-JM.pdf",
+   "pages": 19,
+   "bytes": 638825,
+   "sha256": "fdee4de1cef241912a5885a2a476018b2dbed267edfdfbc5c5f0322ebad4cbfe"
+  },
+  {
+   "id": "downsizing-house-downsizingresearchreview-2025-chapter",
+   "file": "Downsizing/House-DownsizingResearchReview-2025-Chapter.html",
+   "source_pdf": "source-pdfs/Downsizing/House-DownsizingResearchReview-2025-Chapter.pdf",
+   "pages": 2,
+   "bytes": 7896,
+   "sha256": "55d43925c95cdbbe5bf24ac703e3b7f9cbd453be7af357f0f5c48fcf766ec576"
+  },
+  {
+   "id": "downsizing-jung-financializationcorporatedownsizing-2022-ser",
+   "file": "Downsizing/Jung-FinancializationCorporateDownsizing-2022-SER.html",
+   "source_pdf": "source-pdfs/Downsizing/Jung-FinancializationCorporateDownsizing-2022-SER.pdf",
+   "pages": 29,
+   "bytes": 267682,
+   "sha256": "c6986bafb8714751d4a345a488f7e1c67343b18c0331e4f4281f4afb39a76c92"
+  },
+  {
+   "id": "downsizing-krolikowski-advancelayoffnotices-2024-jae",
+   "file": "Downsizing/Krolikowski-AdvanceLayoffNotices-2024-JAE.html",
+   "source_pdf": "source-pdfs/Downsizing/Krolikowski-AdvanceLayoffNotices-2024-JAE.pdf",
+   "pages": 19,
+   "bytes": 845506,
+   "sha256": "6816e59e4c4c66d27833de7e0324808adaf51daf7586509e2b4d1552544abcc3"
+  },
+  {
+   "id": "downsizing-landsman-collectivelayoffsbrand-2020-jm",
+   "file": "Downsizing/Landsman-CollectiveLayoffsBrand-2020-JM.html",
+   "source_pdf": "source-pdfs/Downsizing/Landsman-CollectiveLayoffsBrand-2020-JM.pdf",
+   "pages": 20,
+   "bytes": 994100,
+   "sha256": "23cda3313ca92fcb9724371e7cffd8349fb9d0a5d55bffc3dfb2c8fef595f80c"
+  },
+  {
+   "id": "downsizing-lewin-downsizingcustomersatisfaction-2010-jbr",
+   "file": "Downsizing/Lewin-DownsizingCustomerSatisfaction-2010-JBR.html",
+   "source_pdf": "source-pdfs/Downsizing/Lewin-DownsizingCustomerSatisfaction-2010-JBR.pdf",
+   "pages": 10,
+   "bytes": 420301,
+   "sha256": "3a10617161771e746fa3fb36e334fc79f88d5a9c6ba0f60420bc4a2222af352d"
+  },
+  {
+   "id": "downsizing-lewin-downsizingorganizationalbuying-2001-jams",
+   "file": "Downsizing/Lewin-DownsizingOrganizationalBuying-2001-JAMS.html",
+   "source_pdf": "source-pdfs/Downsizing/Lewin-DownsizingOrganizationalBuying-2001-JAMS.pdf",
+   "pages": 14,
+   "bytes": 127009,
+   "sha256": "40664d785e35cd3148c8fd92376e3a38b16033fb32c58373b641ed4d80ff45ba"
+  },
+  {
+   "id": "downsizing-lewin-supplierdownsizingcustomersatisfaction-2009-imm",
+   "file": "Downsizing/Lewin-SupplierDownsizingCustomerSatisfaction-2009-IMM.html",
+   "source_pdf": "source-pdfs/Downsizing/Lewin-SupplierDownsizingCustomerSatisfaction-2009-IMM.pdf",
+   "pages": 17,
+   "bytes": 522971,
+   "sha256": "62452779cae39be54277305ee416bec4ff7c5e9e5ae995c50859db803d38b7fe"
+  },
+  {
+   "id": "downsizing-love-downsizingcorporatereputation-2009-amj",
+   "file": "Downsizing/Love-DownsizingCorporateReputation-2009-AMJ.html",
+   "source_pdf": "source-pdfs/Downsizing/Love-DownsizingCorporateReputation-2009-AMJ.pdf",
+   "pages": 23,
+   "bytes": 205384,
+   "sha256": "b89d2c27c17e539589f884f1a43e4c029f44b3140b4007301fee006b72afb6ec"
+  },
+  {
+   "id": "downsizing-ma-videogamelayoffcrisis-2025-acmgames",
+   "file": "Downsizing/Ma-VideoGameLayoffCrisis-2025-ACMGames.html",
+   "source_pdf": "source-pdfs/Downsizing/Ma-VideoGameLayoffCrisis-2025-ACMGames.pdf",
+   "pages": 27,
+   "bytes": 625379,
+   "sha256": "a8107240a28b78a7061d8154ccb0ac25fd8025b68a9dabba7d5d6826c7292387"
+  },
+  {
+   "id": "downsizing-maertz-downsizingsurvivoreffects-2010-ir",
+   "file": "Downsizing/Maertz-DownsizingSurvivorEffects-2010-IR.html",
+   "source_pdf": "source-pdfs/Downsizing/Maertz-DownsizingSurvivorEffects-2010-IR.pdf",
+   "pages": 11,
+   "bytes": 45049,
+   "sha256": "d9020756a00ae33fc44bae13c0cce19cb5abe696b81e50ab98d6e81e5de5a47e"
+  },
+  {
+   "id": "downsizing-others-agrawal-unemploymentriskcorporatefinancing-2013-jfe",
+   "file": "Downsizing/Others/Agrawal-UnemploymentRiskCorporateFinancing-2013-JFE.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Agrawal-UnemploymentRiskCorporateFinancing-2013-JFE.pdf",
+   "pages": 22,
+   "bytes": 206117,
+   "sha256": "e4e54423724f4b966fb4d240199827119eff94e3f559988e299d228de906d0e9"
+  },
+  {
+   "id": "downsizing-others-ahmadjian-permanentemploymentjapan-2001-asq",
+   "file": "Downsizing/Others/Ahmadjian-PermanentEmploymentJapan-2001-ASQ.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Ahmadjian-PermanentEmploymentJapan-2001-ASQ.pdf",
+   "pages": 33,
+   "bytes": 1371913,
+   "sha256": "f535e3b26ea095c5c90952dbc5c9bbc4b55a68dc7bf1524d87358ae3111c63f5"
+  },
+  {
+   "id": "downsizing-others-aivazian-politicaluncertaintylayofftiming-2025-pom",
+   "file": "Downsizing/Others/Aivazian-PoliticalUncertaintyLayoffTiming-2025-POM.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Aivazian-PoliticalUncertaintyLayoffTiming-2025-POM.pdf",
+   "pages": 21,
+   "bytes": 135016,
+   "sha256": "4135a19ee2d5ff9d91998757d217944a05290d0b171f6a325883812f0615178d"
+  },
+  {
+   "id": "downsizing-others-amato-familyfirmscrisisdownsizing-2023-jbe",
+   "file": "Downsizing/Others/Amato-FamilyFirmsCrisisDownsizing-2023-JBE.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Amato-FamilyFirmsCrisisDownsizing-2023-JBE.pdf",
+   "pages": 24,
+   "bytes": 805640,
+   "sha256": "020ee1c97a21e646314cb48389f3cf72d8385be910219d1870018ebc8f6c1764"
+  },
+  {
+   "id": "downsizing-others-anekwe-downsizingcausesstrategies-2021-ijsshr",
+   "file": "Downsizing/Others/Anekwe-DownsizingCausesStrategies-2021-IJSSHR.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Anekwe-DownsizingCausesStrategies-2021-IJSSHR.pdf",
+   "pages": 6,
+   "bytes": 39858,
+   "sha256": "a26e80cf3ad6be16b71c45f9a52bdc919b0b0897b47d1ee02f2a5d33e11125dd"
+  },
+  {
+   "id": "downsizing-others-appelbaum-aftermathofdownsizing-1998-jmd",
+   "file": "Downsizing/Others/Appelbaum-AftermathOfDownsizing-1998-JMD.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Appelbaum-AftermathOfDownsizing-1998-JMD.pdf",
+   "pages": 30,
+   "bytes": 518638,
+   "sha256": "e26c620b43cd922481f9104c7ff07e95b94d8870f0f9620b16daeec2ad061acf"
+  },
+  {
+   "id": "downsizing-others-bennett-copingwithlayoff-1995-jom",
+   "file": "Downsizing/Others/Bennett-CopingWithLayoff-1995-JOM.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Bennett-CopingWithLayoff-1995-JOM.pdf",
+   "pages": 8,
+   "bytes": 147418,
+   "sha256": "eab03a393c31a449451bbaa3369f8a04bb4bfc038698a8f085db7e3caa2d6be3"
+  },
+  {
+   "id": "downsizing-others-bosky-layoffsgenderinequality-2022-sf",
+   "file": "Downsizing/Others/Bosky-LayoffsGenderInequality-2022-SF.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Bosky-LayoffsGenderInequality-2022-SF.pdf",
+   "pages": 29,
+   "bytes": 321148,
+   "sha256": "9b61503c3b6f69edcd34ec44c64af8ffc4dd651433a837fe2ef281c3f32effd7"
+  },
+  {
+   "id": "downsizing-others-brauer-organizationalsupplicationdownsizing-2025-jom",
+   "file": "Downsizing/Others/Brauer-OrganizationalSupplicationDownsizing-2025-JOM.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Brauer-OrganizationalSupplicationDownsizing-2025-JOM.pdf",
+   "pages": 37,
+   "bytes": 274182,
+   "sha256": "b6857ec6874500e153befabbec862f45bee16799c2b846cc65e953315fbb7d62"
+  },
+  {
+   "id": "downsizing-others-brockner-layofffairnesssurvivorreactions-1994-sjr",
+   "file": "Downsizing/Others/Brockner-LayoffFairnessSurvivorReactions-1994-SJR.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Brockner-LayoffFairnessSurvivorReactions-1994-SJR.pdf",
+   "pages": 20,
+   "bytes": 214919,
+   "sha256": "6ab4da7573d65945d66bc2080b306d35308bf1f669d8eb42592e903202a1da6e"
+  },
+  {
+   "id": "downsizing-others-cederlof-advancelayoffnotice-2021-cepr",
+   "file": "Downsizing/Others/Cederlof-AdvanceLayoffNotice-2021-CEPR.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Cederlof-AdvanceLayoffNotice-2021-CEPR.pdf",
+   "pages": 63,
+   "bytes": 1211414,
+   "sha256": "1d852f899ea6c0934f67860769b13217f2f3e640e6e5881e88c6cea1cdc2ff05"
+  },
+  {
+   "id": "downsizing-others-cederlof-joblosscosts-2024-ifau",
+   "file": "Downsizing/Others/Cederlof-JobLossCosts-2024-IFAU.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Cederlof-JobLossCosts-2024-IFAU.pdf",
+   "pages": 78,
+   "bytes": 1664178,
+   "sha256": "ac44d9c2524b2e06214fd1924456880ff987979b90ec3967d4174334dd2ad544"
+  },
+  {
+   "id": "downsizing-others-chadwick-downsizinghospitalperformance-2004-smj",
+   "file": "Downsizing/Others/Chadwick-DownsizingHospitalPerformance-2004-SMJ.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Chadwick-DownsizingHospitalPerformance-2004-SMJ.pdf",
+   "pages": 23,
+   "bytes": 189323,
+   "sha256": "469031b9be09494689cc166f5408e295e382939c3a52e70aa3c8b935b00327e0"
+  },
+  {
+   "id": "downsizing-others-chen-womenboardsdownsizing-2022-ijhrm",
+   "file": "Downsizing/Others/Chen-WomenBoardsDownsizing-2022-IJHRM.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Chen-WomenBoardsDownsizing-2022-IJHRM.pdf",
+   "pages": 34,
+   "bytes": 481881,
+   "sha256": "f6b239fe03366152450154727870fadb3860c74c4332ee07da5b29858c09befd"
+  },
+  {
+   "id": "downsizing-others-clair-prosocialimpactnecessaryevils-2016-jmi",
+   "file": "Downsizing/Others/Clair-ProsocialImpactNecessaryEvils-2016-JMI.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Clair-ProsocialImpactNecessaryEvils-2016-JMI.pdf",
+   "pages": 21,
+   "bytes": 455136,
+   "sha256": "9db4a0d5c539c1bbe2a5ed6403230ba31f6cb604befaac190a5503d24f469b06"
+  },
+  {
+   "id": "downsizing-others-clymo-wealthquitslayoffs-2023-ssrn",
+   "file": "Downsizing/Others/Clymo-WealthQuitsLayoffs-2023-SSRN.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Clymo-WealthQuitsLayoffs-2023-SSRN.pdf",
+   "pages": 39,
+   "bytes": 1189396,
+   "sha256": "5291d025ed034d0658f7172f21272281a6e9cb4c144e0c5f124671b4f4e0035c"
+  },
+  {
+   "id": "downsizing-others-coucke-layoffsrestructuringmodes-2007-icc",
+   "file": "Downsizing/Others/Coucke-LayoffsRestructuringModes-2007-ICC.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Coucke-LayoffsRestructuringModes-2007-ICC.pdf",
+   "pages": 22,
+   "bytes": 120821,
+   "sha256": "3277282c13b2ff50e15aaa93855866c0f2b2d32367f5e4c926fbcb8078cff535"
+  },
+  {
+   "id": "downsizing-others-deangelo-unionnegotiationscorporatepolicy-1991-jfe",
+   "file": "Downsizing/Others/DeAngelo-UnionNegotiationsCorporatePolicy-1991-JFE.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/DeAngelo-UnionNegotiationsCorporatePolicy-1991-JFE.pdf",
+   "pages": 41,
+   "bytes": 1125514,
+   "sha256": "55257e7a8ef97cebd97dc758030e786239ad5c76adf9780c590c74df5361d99d"
+  },
+  {
+   "id": "downsizing-others-denis-topmanagementdismissals-1995-jf",
+   "file": "Downsizing/Others/Denis-TopManagementDismissals-1995-JF.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Denis-TopManagementDismissals-1995-JF.pdf",
+   "pages": 29,
+   "bytes": 129343,
+   "sha256": "92d3d69c462d72b391558b0f64ddbf72700336141565f48695a2325ffbc4eb20"
+  },
+  {
+   "id": "downsizing-others-dial-incentivesdownsizingvaluecreation-1995-jfe",
+   "file": "Downsizing/Others/Dial-IncentivesDownsizingValueCreation-1995-JFE.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Dial-IncentivesDownsizingValueCreation-1995-JFE.pdf",
+   "pages": 54,
+   "bytes": 784347,
+   "sha256": "02107b021a651b95f9f52f368ae5908a5cccd52c2ae57bfdb2f8d326baf10465"
+  },
+  {
+   "id": "downsizing-others-dias-racialemploymentlayoffgap-2021-socius",
+   "file": "Downsizing/Others/Dias-RacialEmploymentLayoffGap-2021-Socius.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Dias-RacialEmploymentLayoffGap-2021-Socius.pdf",
+   "pages": 3,
+   "bytes": 255458,
+   "sha256": "57e7386a38b00c8e591fd2d33aa6050aaf0877c697c67c19becade51f76add2d"
+  },
+  {
+   "id": "downsizing-others-dlouhy-survivorengagementstrain-2021-hrm",
+   "file": "Downsizing/Others/Dlouhy-SurvivorEngagementStrain-2021-HRM.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Dlouhy-SurvivorEngagementStrain-2021-HRM.pdf",
+   "pages": 20,
+   "bytes": 415089,
+   "sha256": "b999ed4dc8eeed8699e320c1c99873c32eb7b9c80e3ad57418ee55c9aa631d28"
+  },
+  {
+   "id": "downsizing-others-fawadsharif-sustaininginnovationdownsizing-2022-ajm",
+   "file": "Downsizing/Others/FawadSharif-SustainingInnovationDownsizing-2022-AJM.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/FawadSharif-SustainingInnovationDownsizing-2022-AJM.pdf",
+   "pages": 20,
+   "bytes": 145346,
+   "sha256": "d553bb181ee6073c7415e2168d3a72bb2d204df83392721eec1ecfebc685e1cc"
+  },
+  {
+   "id": "downsizing-others-fourne-familyfirmmediareactions-2025-jbr",
+   "file": "Downsizing/Others/Fourne-FamilyFirmMediaReactions-2025-JBR.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Fourne-FamilyFirmMediaReactions-2025-JBR.pdf",
+   "pages": 12,
+   "bytes": 229141,
+   "sha256": "9b5ab9d41b5cd6b38e67c8f5b61baef285c57d39a864180a82e141d42d0556a6"
+  },
+  {
+   "id": "downsizing-others-fraher-furloughedpilotidentity-2014-jms",
+   "file": "Downsizing/Others/Fraher-FurloughedPilotIdentity-2014-JMS.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Fraher-FurloughedPilotIdentity-2014-JMS.pdf",
+   "pages": 26,
+   "bytes": 259927,
+   "sha256": "5d2cef88c9f889234ebc3f72f661b8cdbe324f4c7bcc7c338595ff28ea0c38af"
+  },
+  {
+   "id": "downsizing-others-frazier-statesectorworkforcereduction-2006-ejpe",
+   "file": "Downsizing/Others/Frazier-StateSectorWorkforceReduction-2006-EJPE.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Frazier-StateSectorWorkforceReduction-2006-EJPE.pdf",
+   "pages": 17,
+   "bytes": 78466,
+   "sha256": "1fc1fd92ad8b79fc324b2288a79b56867cf76a4ee0c6f02118912b93e5c7c292"
+  },
+  {
+   "id": "downsizing-others-garciavega-laborreforminnovation-2021-rp",
+   "file": "Downsizing/Others/GarciaVega-LaborReformInnovation-2021-RP.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/GarciaVega-LaborReformInnovation-2021-RP.pdf",
+   "pages": 17,
+   "bytes": 309103,
+   "sha256": "3e69896bd67bdf684d297daee982440868a430baf87f6dc1cf0ab4443d82cc91"
+  },
+  {
+   "id": "downsizing-others-greenhalgh-workforcereductionstrategies-1988-amr",
+   "file": "Downsizing/Others/Greenhalgh-WorkforceReductionStrategies-1988-AMR.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Greenhalgh-WorkforceReductionStrategies-1988-AMR.pdf",
+   "pages": 15,
+   "bytes": 154587,
+   "sha256": "7e849b7d37e82b7ebc2ee2473105c0c4780e899e59728e167edeaeb3bdb18bb2"
+  },
+  {
+   "id": "downsizing-others-haldorai-jobinsecuritycovidlayoffs-2024-ijchm",
+   "file": "Downsizing/Others/Haldorai-JobInsecurityCOVIDLayoffs-2024-IJCHM.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Haldorai-JobInsecurityCOVIDLayoffs-2024-IJCHM.pdf",
+   "pages": 18,
+   "bytes": 203378,
+   "sha256": "780baf43c034975466f04a8f6442ed0eec7d7933baaab7f893b64ccaf8ef4b64"
+  },
+  {
+   "id": "downsizing-others-hardy-downsizinggarmentworkers-2024-wd",
+   "file": "Downsizing/Others/Hardy-DownsizingGarmentWorkers-2024-WD.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Hardy-DownsizingGarmentWorkers-2024-WD.pdf",
+   "pages": 9,
+   "bytes": 196872,
+   "sha256": "1387aeedb31d9d876c43d15ada9df8ef62fe19c0d1ecddccc5379790e5e75b3f"
+  },
+  {
+   "id": "downsizing-others-huang-generativeailayoffgeneration-2023-ssrn",
+   "file": "Downsizing/Others/Huang-GenerativeAILayoffGeneration-2023-SSRN.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Huang-GenerativeAILayoffGeneration-2023-SSRN.pdf",
+   "pages": 25,
+   "bytes": 1542486,
+   "sha256": "71ab467f49f77969400350d985446b9b2ff075c4abca216ca2865570c08d6448"
+  },
+  {
+   "id": "downsizing-others-iverson-turnoverlayoffsaftermerger-2000-jom",
+   "file": "Downsizing/Others/Iverson-TurnoverLayoffsAfterMerger-2000-JOM.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Iverson-TurnoverLayoffsAfterMerger-2000-JOM.pdf",
+   "pages": 27,
+   "bytes": 329325,
+   "sha256": "1db3c834e90f6529c89d9885fecc0b013dd161c3cfff12178a9c04479c030113"
+  },
+  {
+   "id": "downsizing-others-jensen-industrialrevolutioninternalcontrol-1993-jf",
+   "file": "Downsizing/Others/Jensen-IndustrialRevolutionInternalControl-1993-JF.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Jensen-IndustrialRevolutionInternalControl-1993-JF.pdf",
+   "pages": 50,
+   "bytes": 223763,
+   "sha256": "34ddb92a2d6a62aad0542596c996b3f7ba6126d40605570c28dbd13e239d2178"
+  },
+  {
+   "id": "downsizing-others-johnstone-recessiondownsizingalternatives-2024-hrmj",
+   "file": "Downsizing/Others/Johnstone-RecessionDownsizingAlternatives-2024-HRMJ.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Johnstone-RecessionDownsizingAlternatives-2024-HRMJ.pdf",
+   "pages": 20,
+   "bytes": 318524,
+   "sha256": "395ea2d695112a0bd64daab6b01ffc585171fa59d06340b9a58793ac2b9f4c57"
+  },
+  {
+   "id": "downsizing-others-kwon-restructuringnetworkstability-2007-jmis",
+   "file": "Downsizing/Others/Kwon-RestructuringNetworkStability-2007-JMIS.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Kwon-RestructuringNetworkStability-2007-JMIS.pdf",
+   "pages": 33,
+   "bytes": 701260,
+   "sha256": "efa0ccafad20e5c8dcb34d5cb8b48082b7cbc48c22fe34b04390fddd4d7834b3"
+  },
+  {
+   "id": "downsizing-others-lam-teamaffectivejobinsecurity-2023-job",
+   "file": "Downsizing/Others/Lam-TeamAffectiveJobInsecurity-2023-JOB.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Lam-TeamAffectiveJobInsecurity-2023-JOB.pdf",
+   "pages": 16,
+   "bytes": 774554,
+   "sha256": "f1e60cff1b4f12981de1343bdd745659381be5041cf6038bd6e311a2628bd104"
+  },
+  {
+   "id": "downsizing-others-lee-layoffstockpricereactions-1997-smj",
+   "file": "Downsizing/Others/Lee-LayoffStockPriceReactions-1997-SMJ.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Lee-LayoffStockPriceReactions-1997-SMJ.pdf",
+   "pages": 16,
+   "bytes": 216419,
+   "sha256": "98fa9e57b1311f99964ba08d9c3f0d52abf3ca80197cc41613b1067a7c66bcf5"
+  },
+  {
+   "id": "downsizing-others-lefebvre-smelayoffssocialproximity-2024-jbe",
+   "file": "Downsizing/Others/Lefebvre-SMELayoffsSocialProximity-2024-JBE.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Lefebvre-SMELayoffsSocialProximity-2024-JBE.pdf",
+   "pages": 20,
+   "bytes": 292976,
+   "sha256": "796d381403a477c37d410056d3bd08f4c5f8878306d167fd568b4cf347c31d61"
+  },
+  {
+   "id": "downsizing-others-macaluso-skillremotenesspostlayoff-2023-cesifo",
+   "file": "Downsizing/Others/Macaluso-SkillRemotenessPostLayoff-2023-CESifo.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Macaluso-SkillRemotenessPostLayoff-2023-CESifo.pdf",
+   "pages": 73,
+   "bytes": 2750881,
+   "sha256": "433a25574680583abaa15136a04250745b14f2f28e5c68a9d6f5487f4e4d3a33"
+  },
+  {
+   "id": "downsizing-others-martin-employeeinvolvementdownsizing-1995-jom",
+   "file": "Downsizing/Others/Martin-EmployeeInvolvementDownsizing-1995-JOM.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Martin-EmployeeInvolvementDownsizing-1995-JOM.pdf",
+   "pages": 12,
+   "bytes": 144149,
+   "sha256": "27b5d446f4646c7b9c452163682d7b87ede506ea2dc58689ebf5186c2c2bafc0"
+  },
+  {
+   "id": "downsizing-others-martinsneto-routinebiasmasslayoffs-2024-icc",
+   "file": "Downsizing/Others/MartinsNeto-RoutineBiasMassLayoffs-2024-ICC.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/MartinsNeto-RoutineBiasMassLayoffs-2024-ICC.pdf",
+   "pages": 29,
+   "bytes": 704851,
+   "sha256": "3d4d73c4c2c070332d18f719258396beee4444ab4e54a8f8c5b59de6f50d1422"
+  },
+  {
+   "id": "downsizing-others-mclachlan-responsibledownsizingframework-2022-ijhrm",
+   "file": "Downsizing/Others/McLachlan-ResponsibleDownsizingFramework-2022-IJHRM.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/McLachlan-ResponsibleDownsizingFramework-2022-IJHRM.pdf",
+   "pages": 30,
+   "bytes": 635374,
+   "sha256": "c65a12b2fa59753dafeec0c6a0c940333736eceef972c347a3d1b699b8f95ecd"
+  },
+  {
+   "id": "downsizing-others-meyer-postacquisitionrestructuring-2003-jms",
+   "file": "Downsizing/Others/Meyer-PostAcquisitionRestructuring-2003-JMS.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Meyer-PostAcquisitionRestructuring-2003-JMS.pdf",
+   "pages": 24,
+   "bytes": 430730,
+   "sha256": "d0c4f3cf0ca84c7f0a7a0877a2a7d74eb77dfb94c5d18d0d18dc4edeb921ada0"
+  },
+  {
+   "id": "downsizing-others-mishra-survivorresponsesdownsizing-1998-amr",
+   "file": "Downsizing/Others/Mishra-SurvivorResponsesDownsizing-1998-AMR.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Mishra-SurvivorResponsesDownsizing-1998-AMR.pdf",
+   "pages": 23,
+   "bytes": 212417,
+   "sha256": "d8e7ce238af25ea9a7d3ffda148a5f81f3a6cce71ec4cebbe3a37a6096411ec6"
+  },
+  {
+   "id": "downsizing-others-morrow-costassetretrenchment-2004-jom",
+   "file": "Downsizing/Others/Morrow-CostAssetRetrenchment-2004-JOM.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Morrow-CostAssetRetrenchment-2004-JOM.pdf",
+   "pages": 20,
+   "bytes": 95715,
+   "sha256": "18c4028f19b20e39d528dd150a2dc0836890d799d56d8efc2e138997295f7d72"
+  },
+  {
+   "id": "downsizing-others-nixon-marketreactionsdownsizing-2004-smj",
+   "file": "Downsizing/Others/Nixon-MarketReactionsDownsizing-2004-SMJ.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Nixon-MarketReactionsDownsizing-2004-SMJ.pdf",
+   "pages": 9,
+   "bytes": 126774,
+   "sha256": "2a9370a2f87390d20c51c20a1f7728d5947c54c713c8caba1d554c88e1c9075c"
+  },
+  {
+   "id": "downsizing-others-norman-resourcesfollowingdownsizing-2013-jom",
+   "file": "Downsizing/Others/Norman-ResourcesFollowingDownsizing-2013-JOM.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Norman-ResourcesFollowingDownsizing-2013-JOM.pdf",
+   "pages": 30,
+   "bytes": 348918,
+   "sha256": "7561de97e88e739d84d5221837204db1dcc53ed01cce89ea3472b36cd8c37a79"
+  },
+  {
+   "id": "downsizing-others-piza-policelayoffscrime-2021-jej",
+   "file": "Downsizing/Others/Piza-PoliceLayoffsCrime-2021-JEJ.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Piza-PoliceLayoffsCrime-2021-JEJ.pdf",
+   "pages": 22,
+   "bytes": 588171,
+   "sha256": "8e49b35581d9d5283e934366142002a8177014ad51ba2653b1bf7ee0fcd9a892"
+  },
+  {
+   "id": "downsizing-others-ramdani-downsizinginnovationoutputs-2021-ajm",
+   "file": "Downsizing/Others/Ramdani-DownsizingInnovationOutputs-2021-AJM.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Ramdani-DownsizingInnovationOutputs-2021-AJM.pdf",
+   "pages": 20,
+   "bytes": 201458,
+   "sha256": "73e11152d771e15b2b96e729264866da66b3158a0cefba5e505a3f2ae5440395"
+  },
+  {
+   "id": "downsizing-others-ruggiero-usesgratificationstheory-2000-mcs",
+   "file": "Downsizing/Others/Ruggiero-UsesGratificationsTheory-2000-MCS.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Ruggiero-UsesGratificationsTheory-2000-MCS.pdf",
+   "pages": 36,
+   "bytes": 197539,
+   "sha256": "2ab93e449b2af44714bc80a02bb7362897a21a313c586cdeccaa410ceb1a784b"
+  },
+  {
+   "id": "downsizing-others-shi-ceoattributiondownsizing-2023-jms",
+   "file": "Downsizing/Others/Shi-CEOAttributionDownsizing-2023-JMS.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Shi-CEOAttributionDownsizing-2023-JMS.pdf",
+   "pages": 29,
+   "bytes": 153197,
+   "sha256": "508a89b91720296d5a6c5bf6ea301557c22a7305b5da0a1220360c3a47b9a748"
+  },
+  {
+   "id": "downsizing-others-shin-stakeholderorientationceodismissal-2022-smj",
+   "file": "Downsizing/Others/Shin-StakeholderOrientationCEODismissal-2022-SMJ.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Shin-StakeholderOrientationCEODismissal-2022-SMJ.pdf",
+   "pages": 25,
+   "bytes": 545046,
+   "sha256": "5bde7b693a0e7666d784cd9b21207d4bc5ef9a4e505bf9474282262396841d32"
+  },
+  {
+   "id": "downsizing-others-shoss-jobinsecurityreview-2017-jom",
+   "file": "Downsizing/Others/Shoss-JobInsecurityReview-2017-JOM.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Shoss-JobInsecurityReview-2017-JOM.pdf",
+   "pages": 29,
+   "bytes": 631251,
+   "sha256": "96350b35e38334ff01f5eababad0b1c7deea2ec38e3c5c233cf451afa992d717"
+  },
+  {
+   "id": "downsizing-others-stavrou-downsizingfamilyownership-2007-jbe",
+   "file": "Downsizing/Others/Stavrou-DownsizingFamilyOwnership-2007-JBE.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Stavrou-DownsizingFamilyOwnership-2007-JBE.pdf",
+   "pages": 14,
+   "bytes": 73947,
+   "sha256": "09a4bb0961f1a97c18c37a1897a47a38aa516315a21b2d7da46b6657d958bc4c"
+  },
+  {
+   "id": "downsizing-others-trahms-organizationaldeclineturnaround-2013-jom",
+   "file": "Downsizing/Others/Trahms-OrganizationalDeclineTurnaround-2013-JOM.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Trahms-OrganizationalDeclineTurnaround-2013-JOM.pdf",
+   "pages": 31,
+   "bytes": 1041500,
+   "sha256": "398cae3c6297adbf08d915a1d03059e18690252b7ed122265eaf68fcd72fda2b"
+  },
+  {
+   "id": "downsizing-others-tsai-institutionaltheorydownsizing-2006-tqmbe",
+   "file": "Downsizing/Others/Tsai-InstitutionalTheoryDownsizing-2006-TQMBE.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Tsai-InstitutionalTheoryDownsizing-2006-TQMBE.pdf",
+   "pages": 23,
+   "bytes": 237657,
+   "sha256": "6e33ccad7c9cd7d2c847e202f2fc53d09e10ef3b0253dd4f0ab090fef609ffe8"
+  },
+  {
+   "id": "downsizing-others-wu-socialnetworksjobsecurity-2013-isr",
+   "file": "Downsizing/Others/Wu-SocialNetworksJobSecurity-2013-ISR.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Wu-SocialNetworksJobSecurity-2013-ISR.pdf",
+   "pages": 23,
+   "bytes": 732070,
+   "sha256": "241f5f6318fff74093fcfc2d719d88ac02c4a6765842c4ed152eef10d225910b"
+  },
+  {
+   "id": "downsizing-others-zatzick-downsizingincrisis-2009-smr",
+   "file": "Downsizing/Others/Zatzick-DownsizingInCrisis-2009-SMR.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Zatzick-DownsizingInCrisis-2009-SMR.pdf",
+   "pages": 10,
+   "bytes": 2152767,
+   "sha256": "7975fbc83fb2b729f73cb1f11f6ee290b9cfabb3651db35784fb2613627eaa9c"
+  },
+  {
+   "id": "downsizing-others-zyglidopoulos-downsizingcorporatereputation-2005-bjm",
+   "file": "Downsizing/Others/Zyglidopoulos-DownsizingCorporateReputation-2005-BJM.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Zyglidopoulos-DownsizingCorporateReputation-2005-BJM.pdf",
+   "pages": 7,
+   "bytes": 101353,
+   "sha256": "d856e3a3636d9e418d8dfcf10b343f21d138d30c04c606fbb1de13182d035402"
+  },
+  {
+   "id": "downsizing-others-zyglidopoulos-downsizingsocialreputation-2004-jpa",
+   "file": "Downsizing/Others/Zyglidopoulos-DownsizingSocialReputation-2004-JPA.html",
+   "source_pdf": "source-pdfs/Downsizing/Others/Zyglidopoulos-DownsizingSocialReputation-2004-JPA.pdf",
+   "pages": 15,
+   "bytes": 77382,
+   "sha256": "86cdd7e41a3b8fb9f6aabbe6ae826be84f89f3d20c163c5d49abf3f2f339e063"
+  },
+  {
+   "id": "downsizing-panagopoulos-salesforcedownsizingrisk-2018-jm",
+   "file": "Downsizing/Panagopoulos-SalesForceDownsizingRisk-2018-JM.html",
+   "source_pdf": "source-pdfs/Downsizing/Panagopoulos-SalesForceDownsizingRisk-2018-JM.pdf",
+   "pages": 19,
+   "bytes": 611627,
+   "sha256": "f8f6a5a31007502c276f9b95552ce98d83d391935025dc301e9fff438d995da1"
+  },
+  {
+   "id": "downsizing-sajjadiani-humancapitaloutflows-2023-amj",
+   "file": "Downsizing/Sajjadiani-HumanCapitalOutflows-2023-AMJ.html",
+   "source_pdf": "source-pdfs/Downsizing/Sajjadiani-HumanCapitalOutflows-2023-AMJ.pdf",
+   "pages": 26,
+   "bytes": 755926,
+   "sha256": "508aad55097f2767b564db54c4c8cadbc17174248b43001e6db21f0749a2891f"
+  },
+  {
+   "id": "downsizing-schulz-earningsexpectationsdownsizing-2018-smj",
+   "file": "Downsizing/Schulz-EarningsExpectationsDownsizing-2018-SMJ.html",
+   "source_pdf": "source-pdfs/Downsizing/Schulz-EarningsExpectationsDownsizing-2018-SMJ.pdf",
+   "pages": 12,
+   "bytes": 165654,
+   "sha256": "ebbc771d83dcd5a55475a75f016084c82a665f55f5bd561681b90e55163096e5"
+  },
+  {
+   "id": "downsizing-stabler-layoffcommunicationbrandstrength-2023-ijrm",
+   "file": "Downsizing/Stabler-LayoffCommunicationBrandStrength-2023-IJRM.html",
+   "source_pdf": "source-pdfs/Downsizing/Stabler-LayoffCommunicationBrandStrength-2023-IJRM.pdf",
+   "pages": 24,
+   "bytes": 814520,
+   "sha256": "3ca238b9e3b9342872477c26b8542baa0c332cbbfb79b612e52d8aa6ce5c4d40"
+  },
+  {
+   "id": "downsizing-subramony-serviceemployeeattrition-2012-jsr",
+   "file": "Downsizing/Subramony-ServiceEmployeeAttrition-2012-JSR.html",
+   "source_pdf": "source-pdfs/Downsizing/Subramony-ServiceEmployeeAttrition-2012-JSR.pdf",
+   "pages": 16,
+   "bytes": 236806,
+   "sha256": "24b03d3920af99d302a5a47aeb67212147ace8b518abe6b039c541ecb8d8437e"
+  },
+  {
+   "id": "downsizing-vandierendonck-fairnesscommitmentdownsizing-2012-bjm",
+   "file": "Downsizing/VanDierendonck-FairnessCommitmentDownsizing-2012-BJM.html",
+   "source_pdf": "source-pdfs/Downsizing/VanDierendonck-FairnessCommitmentDownsizing-2012-BJM.pdf",
+   "pages": 14,
+   "bytes": 206036,
+   "sha256": "7af2cf1ffe0c5785e3a71620ae4a038800e893a637a6f78312b7ca7039f4090e"
+  },
+  {
+   "id": "downsizing-vandoornik-strategicformallayoffs-2023-aejae",
+   "file": "Downsizing/VanDoornik-StrategicFormalLayoffs-2023-AEJAE.html",
+   "source_pdf": "source-pdfs/Downsizing/VanDoornik-StrategicFormalLayoffs-2023-AEJAE.pdf",
+   "pages": 28,
+   "bytes": 447549,
+   "sha256": "ff6966f60bdd8078fbd0c56d96c780052c331dd079873f6543eae37e58653a14"
+  },
+  {
+   "id": "methods-baker-differenceindifferencesguide-2026-jel",
+   "file": "Methods/Baker-DifferenceInDifferencesGuide-2026-JEL.html",
+   "source_pdf": "source-pdfs/Methods/Baker-DifferenceInDifferencesGuide-2026-JEL.pdf",
+   "pages": 60,
+   "bytes": 505198,
+   "sha256": "8161d93ce492ed47f8433145d32fa45eac78aced7262b2d5963fd03aba4e23c4"
+  },
+  {
+   "id": "methods-callaway-continuoustreatmentdid-2025-arxiv",
+   "file": "Methods/Callaway-ContinuousTreatmentDiD-2025-arXiv.html",
+   "source_pdf": "source-pdfs/Methods/Callaway-ContinuousTreatmentDiD-2025-arXiv.pdf",
+   "pages": 43,
+   "bytes": 2506659,
+   "sha256": "052abbc5703adc0de62e08c1727159d77f0271dc9643d6a9c2c5a3ca1ca344dc"
+  },
+  {
+   "id": "methods-claude-sdidliteraturereview-2026-note",
+   "file": "Methods/Claude-SDIDLiteratureReview-2026-Note.html",
+   "source_pdf": "source-pdfs/Methods/Claude-SDIDLiteratureReview-2026-Note.pdf",
+   "pages": 8,
+   "bytes": 1602520,
+   "sha256": "ba90cd415543ae245963900004e01694eeefef7a9d5a42361f9b430f3d0d0f11"
+  },
+  {
+   "id": "methods-daw-matchingregressionmeandid-2018-hsr",
+   "file": "Methods/Daw-MatchingRegressionMeanDiD-2018-HSR.html",
+   "source_pdf": "source-pdfs/Methods/Daw-MatchingRegressionMeanDiD-2018-HSR.pdf",
+   "pages": 19,
+   "bytes": 478265,
+   "sha256": "7e695af1625852c499fcd5dbed1aa9dd4f6b8562e8db7c3f50677a7b2ac2d9d5"
+  },
+  {
+   "id": "methods-gardner-twostagedid-2021-arxiv",
+   "file": "Methods/Gardner-TwoStageDiD-2021-arXiv.html",
+   "source_pdf": "source-pdfs/Methods/Gardner-TwoStageDiD-2021-arXiv.pdf",
+   "pages": 34,
+   "bytes": 860910,
+   "sha256": "bd1bc13673d86df139b1ccc685d82a9a5235a636003b10bc458b87d8cdf699b5"
+  },
+  {
+   "id": "methods-rambachan-paralleltrendsdraft-2023-restud",
+   "file": "Methods/Rambachan-ParallelTrendsDraft-2023-REStud.html",
+   "source_pdf": "source-pdfs/Methods/Rambachan-ParallelTrendsDraft-2023-REStud.pdf",
+   "pages": 126,
+   "bytes": 15118387,
+   "sha256": "e5e2fb5608d2556b313428e83fde3627a4cbdc6f9360df2cea7744cab8ec946c"
+  },
+  {
+   "id": "methods-sdid-berman-descriptiveanalyticsvalue-2022-mksc",
+   "file": "Methods/SDID/Berman-DescriptiveAnalyticsValue-2022-MKSC.html",
+   "source_pdf": "source-pdfs/Methods/SDID/Berman-DescriptiveAnalyticsValue-2022-MKSC.pdf",
+   "pages": 24,
+   "bytes": 1963751,
+   "sha256": "fcec7dcef9a8240e6935a43e0bb43640d54428102bce0ada50c3c6a338c9de33"
+  },
+  {
+   "id": "methods-sdid-guyt-banningunsolicitedflyers-2025-mksc",
+   "file": "Methods/SDID/Guyt-BanningUnsolicitedFlyers-2025-MKSC.html",
+   "source_pdf": "source-pdfs/Methods/SDID/Guyt-BanningUnsolicitedFlyers-2025-MKSC.pdf",
+   "pages": 22,
+   "bytes": 836863,
+   "sha256": "4ec6ceddc70318e78eb6849c4a6c0f3e1a37f3222f11182b6038ff6d7b823465"
+  },
+  {
+   "id": "methods-sdid-han-banninggamblinglivestreams-2024-ssrn",
+   "file": "Methods/SDID/Han-BanningGamblingLivestreams-2024-SSRN.html",
+   "source_pdf": "source-pdfs/Methods/SDID/Han-BanningGamblingLivestreams-2024-SSRN.pdf",
+   "pages": 63,
+   "bytes": 4001745,
+   "sha256": "ac2cde296382d33ac2b9ffa7a9bb079cf2280ab28973b03b1a332197c0439fb1"
+  },
+  {
+   "id": "methods-sdid-keller-bottledepositreturnschemes-2026-jm",
+   "file": "Methods/SDID/Keller-BottleDepositReturnSchemes-2026-JM.html",
+   "source_pdf": "source-pdfs/Methods/SDID/Keller-BottleDepositReturnSchemes-2026-JM.pdf",
+   "pages": 22,
+   "bytes": 924196,
+   "sha256": "ef17056edb7a1a00cbbf465abb7fe03be37fc2df307875d47837df6d1ff4f207"
+  },
+  {
+   "id": "methods-sdid-lambrecht-tvadvertisingonlinesales-2024-jmr",
+   "file": "Methods/SDID/Lambrecht-TVAdvertisingOnlineSales-2024-JMR.html",
+   "source_pdf": "source-pdfs/Methods/SDID/Lambrecht-TVAdvertisingOnlineSales-2024-JMR.pdf",
+   "pages": 23,
+   "bytes": 688023,
+   "sha256": "94c7ff4f597d52d39928b8fd0679a75b8c05d2ae348f9bdf63cdeca36485a19f"
+  },
+  {
+   "id": "methods-sdid-pachali-spotifyplaylistdemand-2025-mksc",
+   "file": "Methods/SDID/Pachali-SpotifyPlaylistDemand-2025-MKSC.html",
+   "source_pdf": "source-pdfs/Methods/SDID/Pachali-SpotifyPlaylistDemand-2025-MKSC.pdf",
+   "pages": 12,
+   "bytes": 947914,
+   "sha256": "4add74e281ea5c7fa85931beacc8a4f119fb6badc75aec2cb71983cefe87dba4"
+  },
+  {
+   "id": "methods-sdid-pape-oneclickcompetition-2026-mksc",
+   "file": "Methods/SDID/Pape-OneClickCompetition-2026-MKSC.html",
+   "source_pdf": "source-pdfs/Methods/SDID/Pape-OneClickCompetition-2026-MKSC.pdf",
+   "pages": 19,
+   "bytes": 916775,
+   "sha256": "93267a54f3c543c2e15304763af025850d6420614ad0af09b65f5d392fc3a770"
+  },
+  {
+   "id": "methods-sdid-qian-starcreatorslivestreaming-2026-jmr",
+   "file": "Methods/SDID/Qian-StarCreatorsLivestreaming-2026-JMR.html",
+   "source_pdf": "source-pdfs/Methods/SDID/Qian-StarCreatorsLivestreaming-2026-JMR.pdf",
+   "pages": 18,
+   "bytes": 833829,
+   "sha256": "4c0a94ba2b0864b40dc3fc2ada1b1dfe65deb358b77c24cc6c49bbc8ce186f80"
+  },
+  {
+   "id": "methods-sdid-vanlin-retiringstoreflyer-2025-ti",
+   "file": "Methods/SDID/VanLin-RetiringStoreFlyer-2025-TI.html",
+   "source_pdf": "source-pdfs/Methods/SDID/VanLin-RetiringStoreFlyer-2025-TI.pdf",
+   "pages": 64,
+   "bytes": 2226727,
+   "sha256": "7e68bf474f1810f27e24f5f8d2bde6094e84b012a626627a247a913c7258e13d"
+  },
+  {
+   "id": "methods-sdid-wu-adslivestreamviewers-2026-jm",
+   "file": "Methods/SDID/Wu-AdsLivestreamViewers-2026-JM.html",
+   "source_pdf": "source-pdfs/Methods/SDID/Wu-AdsLivestreamViewers-2026-JM.pdf",
+   "pages": 20,
+   "bytes": 542231,
+   "sha256": "5f09b6057edb8a185c086078dcd13e2a92efd396cb755d8d9fc858871f0c7fe4"
+  },
+  {
+   "id": "methods-staggered-ananthakrishnan-americanlibrarybookbans-2025-mksc",
+   "file": "Methods/Staggered/Ananthakrishnan-AmericanLibraryBookBans-2025-MKSC.html",
+   "source_pdf": "source-pdfs/Methods/Staggered/Ananthakrishnan-AmericanLibraryBookBans-2025-MKSC.pdf",
+   "pages": 22,
+   "bytes": 1674911,
+   "sha256": "df37367a87bf8c9a1b3f771001f2657dc13e8012169ddf6ae740408291bdd8f6"
+  },
+  {
+   "id": "methods-staggered-breugelmans-radicalstoretransformation-2024-jams",
+   "file": "Methods/Staggered/Breugelmans-RadicalStoreTransformation-2024-JAMS.html",
+   "source_pdf": "source-pdfs/Methods/Staggered/Breugelmans-RadicalStoreTransformation-2024-JAMS.pdf",
+   "pages": 22,
+   "bytes": 806765,
+   "sha256": "891457a3acee02fa8f81e2296e6132e83ee99cdfecd4b123f496ccb6ae99f70b"
+  },
+  {
+   "id": "methods-staggered-cheng-deepdidheterogeneouseffects-2026-mksc",
+   "file": "Methods/Staggered/Cheng-DeepDiDHeterogeneousEffects-2026-MKSC.html",
+   "source_pdf": "source-pdfs/Methods/Staggered/Cheng-DeepDiDHeterogeneousEffects-2026-MKSC.pdf",
+   "pages": 23,
+   "bytes": 1606426,
+   "sha256": "eda8c0d11a91224b35a693d79c91621a395b5f331a96732d772cfcdae0c27cf4"
+  },
+  {
+   "id": "methods-staggered-chiong-massshootingsretail-2025-mksc",
+   "file": "Methods/Staggered/Chiong-MassShootingsRetail-2025-MKSC.html",
+   "source_pdf": "source-pdfs/Methods/Staggered/Chiong-MassShootingsRetail-2025-MKSC.pdf",
+   "pages": 11,
+   "bytes": 678743,
+   "sha256": "0d31ab5e8ee7459927440d84ae5c75899b6278d0cdbeda7ef7592b36d8cd726b"
+  },
+  {
+   "id": "methods-staggered-guo-membershipfreeshipping-2023-jm",
+   "file": "Methods/Staggered/Guo-MembershipFreeShipping-2023-JM.html",
+   "source_pdf": "source-pdfs/Methods/Staggered/Guo-MembershipFreeShipping-2023-JM.pdf",
+   "pages": 21,
+   "bytes": 511445,
+   "sha256": "c3c1f5f584e47798836bd24851fcccc8419a4fd989b0a017f3370abfc63b9957"
+  },
+  {
+   "id": "methods-staggered-hoffmann-managerliabilityproductrecalls-2024-jm",
+   "file": "Methods/Staggered/Hoffmann-ManagerLiabilityProductRecalls-2024-JM.html",
+   "source_pdf": "source-pdfs/Methods/Staggered/Hoffmann-ManagerLiabilityProductRecalls-2024-JM.pdf",
+   "pages": 22,
+   "bytes": 806228,
+   "sha256": "9903bb040273eaa1f6fcc8f9b78ff86e20b6a0e4ebc1c6909a2bd959ec884035"
+  },
+  {
+   "id": "methods-staggered-keller-branddeletioncompetition-2025-ssrn",
+   "file": "Methods/Staggered/Keller-BrandDeletionCompetition-2025-SSRN.html",
+   "source_pdf": "source-pdfs/Methods/Staggered/Keller-BrandDeletionCompetition-2025-SSRN.pdf",
+   "pages": 78,
+   "bytes": 4011829,
+   "sha256": "967688835fbb5648a80d4ffcc83839a4465755166c6ee70f0588e60f2c1dfd2f"
+  },
+  {
+   "id": "methods-staggered-lee-socialadvertisingbusinessresilience-2025-jim",
+   "file": "Methods/Staggered/Lee-SocialAdvertisingBusinessResilience-2025-JIM.html",
+   "source_pdf": "source-pdfs/Methods/Staggered/Lee-SocialAdvertisingBusinessResilience-2025-JIM.pdf",
+   "pages": 15,
+   "bytes": 725846,
+   "sha256": "823fa668cb11b1ccb993fb8866fd16a4a993ca9f508e582885b0c8385d9ec79b"
+  },
+  {
+   "id": "methods-staggered-li-forwarddifferenceindifferences-2024-mksc",
+   "file": "Methods/Staggered/Li-ForwardDifferenceInDifferences-2024-MKSC.html",
+   "source_pdf": "source-pdfs/Methods/Staggered/Li-ForwardDifferenceInDifferences-2024-MKSC.pdf",
+   "pages": 14,
+   "bytes": 586304,
+   "sha256": "36fd4d3ad50d8ef76a0aa3a96d58bbab3002f3884b122370f85511f0e6f10fff"
+  },
+  {
+   "id": "sentiment-allen-usercommunityfeedback-2026-amj",
+   "file": "Sentiment/Allen-UserCommunityFeedback-2026-AMJ.html",
+   "source_pdf": "source-pdfs/Sentiment/Allen-UserCommunityFeedback-2026-AMJ.pdf",
+   "pages": 30,
+   "bytes": 693145,
+   "sha256": "497fa5d0120d97b70e740dcbd02aec0ab4b3e739c7edd34c1f3d71ef60090ad4"
+  },
+  {
+   "id": "sentiment-cheng-reputationburningsponsorship-2025-ms",
+   "file": "Sentiment/Cheng-ReputationBurningSponsorship-2025-MS.html",
+   "source_pdf": "source-pdfs/Sentiment/Cheng-ReputationBurningSponsorship-2025-MS.pdf",
+   "pages": 47,
+   "bytes": 1231676,
+   "sha256": "1aa1de52a9ff8b752aac288b700317b56e71adcaf23995c1c60dba50a7cff1df"
+  },
+  {
+   "id": "sentiment-community-carballasmichowski-interplatformecosystems-2026-smj",
+   "file": "Sentiment/Community/CarballaSmichowski-InterPlatformEcosystems-2026-SMJ.html",
+   "source_pdf": "source-pdfs/Sentiment/Community/CarballaSmichowski-InterPlatformEcosystems-2026-SMJ.pdf",
+   "pages": 38,
+   "bytes": 681022,
+   "sha256": "bc21ed4fdb6bd1283a0971c56fe815ee2ca29bf19abf0f7efb1c2655a5827f2f"
+  },
+  {
+   "id": "sentiment-community-fourne-familyfirmmediareactions-2025-jbr",
+   "file": "Sentiment/Community/Fourne-FamilyFirmMediaReactions-2025-JBR.html",
+   "source_pdf": "source-pdfs/Sentiment/Community/Fourne-FamilyFirmMediaReactions-2025-JBR.pdf",
+   "pages": 12,
+   "bytes": 229141,
+   "sha256": "9b5ab9d41b5cd6b38e67c8f5b61baef285c57d39a864180a82e141d42d0556a6"
+  },
+  {
+   "id": "sentiment-community-huang-twitchlivestreampromotion-2025-mksc",
+   "file": "Sentiment/Community/Huang-TwitchLivestreamPromotion-2025-MKSC.html",
+   "source_pdf": "source-pdfs/Sentiment/Community/Huang-TwitchLivestreamPromotion-2025-MKSC.pdf",
+   "pages": 18,
+   "bytes": 1522226,
+   "sha256": "d3843d605b72e23c094f2b2344ab469096b8dcb7030257c9835450494a730b6c"
+  },
+  {
+   "id": "sentiment-community-jo-anonymouspeerinfluence-2025-jcr",
+   "file": "Sentiment/Community/Jo-AnonymousPeerInfluence-2025-JCR.html",
+   "source_pdf": "source-pdfs/Sentiment/Community/Jo-AnonymousPeerInfluence-2025-JCR.pdf",
+   "pages": 24,
+   "bytes": 862213,
+   "sha256": "b8092000ce74b6ad38a4f88d2a4ad8fc706fd58aefae5a58e7d94f80ec76403a"
+  },
+  {
+   "id": "sentiment-community-jo-anonymouspeerinfluenceappendix-2025-jcr",
+   "file": "Sentiment/Community/Jo-AnonymousPeerInfluenceAppendix-2025-JCR.html",
+   "source_pdf": "source-pdfs/Sentiment/Community/Jo-AnonymousPeerInfluenceAppendix-2025-JCR.pdf",
+   "pages": 29,
+   "bytes": 495658,
+   "sha256": "bdaf5099572499c5a9a0196e3c53bfedf78e6e170776ead2dae549fbf784cb2f"
+  },
+  {
+   "id": "sentiment-community-kwon-restructuringnetworkstability-2007-jmis",
+   "file": "Sentiment/Community/Kwon-RestructuringNetworkStability-2007-JMIS.html",
+   "source_pdf": "source-pdfs/Sentiment/Community/Kwon-RestructuringNetworkStability-2007-JMIS.pdf",
+   "pages": 33,
+   "bytes": 701260,
+   "sha256": "efa0ccafad20e5c8dcb34d5cb8b48082b7cbc48c22fe34b04390fddd4d7834b3"
+  },
+  {
+   "id": "sentiment-community-lefebvre-smelayoffssocialproximity-2024-jbe",
+   "file": "Sentiment/Community/Lefebvre-SMELayoffsSocialProximity-2024-JBE.html",
+   "source_pdf": "source-pdfs/Sentiment/Community/Lefebvre-SMELayoffsSocialProximity-2024-JBE.pdf",
+   "pages": 20,
+   "bytes": 292976,
+   "sha256": "796d381403a477c37d410056d3bd08f4c5f8878306d167fd568b4cf347c31d61"
+  },
+  {
+   "id": "sentiment-community-li-youtubepurchaseusageeffectsdraft-2025-mksc",
+   "file": "Sentiment/Community/Li-YouTubePurchaseUsageEffectsDraft-2025-MKSC.html",
+   "source_pdf": "source-pdfs/Sentiment/Community/Li-YouTubePurchaseUsageEffectsDraft-2025-MKSC.pdf",
+   "pages": 60,
+   "bytes": 721478,
+   "sha256": "5ee8a988bc1deb15f5144253b187093bb2e97f3d0aee8ce1a8c676e79d0b95a6"
+  },
+  {
+   "id": "sentiment-community-narayan-peerinfluenceattributepreferences-2011-mksc",
+   "file": "Sentiment/Community/Narayan-PeerInfluenceAttributePreferences-2011-MKSC.html",
+   "source_pdf": "source-pdfs/Sentiment/Community/Narayan-PeerInfluenceAttributePreferences-2011-MKSC.pdf",
+   "pages": 18,
+   "bytes": 523530,
+   "sha256": "f7ccdd72510a96b2e8cdb31abf5e980386348f9e5bc4308abd5a2fcd14fb9227"
+  },
+  {
+   "id": "sentiment-community-ruggiero-usesgratificationstheory-2000-mcs",
+   "file": "Sentiment/Community/Ruggiero-UsesGratificationsTheory-2000-MCS.html",
+   "source_pdf": "source-pdfs/Sentiment/Community/Ruggiero-UsesGratificationsTheory-2000-MCS.pdf",
+   "pages": 36,
+   "bytes": 197539,
+   "sha256": "2ab93e449b2af44714bc80a02bb7362897a21a313c586cdeccaa410ceb1a784b"
+  },
+  {
+   "id": "sentiment-community-wu-socialnetworksjobsecurity-2013-isr",
+   "file": "Sentiment/Community/Wu-SocialNetworksJobSecurity-2013-ISR.html",
+   "source_pdf": "source-pdfs/Sentiment/Community/Wu-SocialNetworksJobSecurity-2013-ISR.pdf",
+   "pages": 23,
+   "bytes": 732070,
+   "sha256": "241f5f6318fff74093fcfc2d719d88ac02c4a6765842c4ed152eef10d225910b"
+  },
+  {
+   "id": "sentiment-deolankar-downvotescontentcreation-2026-jmr",
+   "file": "Sentiment/Deolankar-DownvotesContentCreation-2026-JMR.html",
+   "source_pdf": "source-pdfs/Sentiment/Deolankar-DownvotesContentCreation-2026-JMR.pdf",
+   "pages": 21,
+   "bytes": 418965,
+   "sha256": "ac5b31927fc4f220b25882f6459efef3396b433025427c70e7cdd5bbc6af61b7"
+  },
+  {
+   "id": "sentiment-jo-creatorloyaltygameusage-2024-arxiv",
+   "file": "Sentiment/Jo-CreatorLoyaltyGameUsage-2024-arXiv.html",
+   "source_pdf": "source-pdfs/Sentiment/Jo-CreatorLoyaltyGameUsage-2024-arXiv.pdf",
+   "pages": 51,
+   "bytes": 1446637,
+   "sha256": "97e713263575fb7bc54eac46096c33db48d8e4734085503f63aac6719caa98e8"
+  },
+  {
+   "id": "sentiment-loh-platformcompetitioncomplementors-2026-smj",
+   "file": "Sentiment/Loh-PlatformCompetitionComplementors-2026-SMJ.html",
+   "source_pdf": "source-pdfs/Sentiment/Loh-PlatformCompetitionComplementors-2026-SMJ.pdf",
+   "pages": 59,
+   "bytes": 1544433,
+   "sha256": "b51167b1d215ce2663119bc13bf43f4078c4584364642474c5a93afd2384f5f4"
+  },
+  {
+   "id": "sentiment-mousavi-psychometrictextanalysis-2026-isr",
+   "file": "Sentiment/Mousavi-PsychometricTextAnalysis-2026-ISR.html",
+   "source_pdf": "source-pdfs/Sentiment/Mousavi-PsychometricTextAnalysis-2026-ISR.pdf",
+   "pages": 21,
+   "bytes": 964772,
+   "sha256": "1a23a3f1aed834d71100e302e1d026d77dfdf2c9b5a179a79837060750303d98"
+  },
+  {
+   "id": "sentiment-puranam-minimumwagesserviceperceptions-2021-mksc",
+   "file": "Sentiment/Puranam-MinimumWagesServicePerceptions-2021-MKSC.html",
+   "source_pdf": "source-pdfs/Sentiment/Puranam-MinimumWagesServicePerceptions-2021-MKSC.pdf",
+   "pages": 21,
+   "bytes": 1175353,
+   "sha256": "73e93dccd2940e064caf1ff0c66dc77260c2e3cd9058caf085fb4c56ff9e5271"
+  },
+  {
+   "id": "sentiment-puyang-verticalplatformcompetition-2026-mksc",
+   "file": "Sentiment/Puyang-VerticalPlatformCompetition-2026-MKSC.html",
+   "source_pdf": "source-pdfs/Sentiment/Puyang-VerticalPlatformCompetition-2026-MKSC.pdf",
+   "pages": 47,
+   "bytes": 3124465,
+   "sha256": "9a90aec9f34d12ce9006e3f612925b1c0d7922fdb490db73a422642e77832202"
+  },
+  {
+   "id": "sentiment-rathje-multilingualpsychologicaltextanalysis-2024-pnas",
+   "file": "Sentiment/Rathje-MultilingualPsychologicalTextAnalysis-2024-PNAS.html",
+   "source_pdf": "source-pdfs/Sentiment/Rathje-MultilingualPsychologicalTextAnalysis-2024-PNAS.pdf",
+   "pages": 11,
+   "bytes": 432863,
+   "sha256": "3db597217caa6ff28209c652f2ea8d2c8b468b12e74e4ac30fe0d24f4dca1522"
+  },
+  {
+   "id": "sentiment-rietveld-socialfeaturesfreemium-2022-smj",
+   "file": "Sentiment/Rietveld-SocialFeaturesFreemium-2022-SMJ.html",
+   "source_pdf": "source-pdfs/Sentiment/Rietveld-SocialFeaturesFreemium-2022-SMJ.pdf",
+   "pages": 26,
+   "bytes": 277814,
+   "sha256": "9c0b150ccc22ea263918e9bca27a4e02e20e6e43a03fb267f63f5c1e48832e36"
+  },
+  {
+   "id": "sentiment-word-of-mouth-alexandrov-socialselfmotiveswom-2013-jams",
+   "file": "Sentiment/Word of mouth/Alexandrov-SocialSelfMotivesWOM-2013-JAMS.html",
+   "source_pdf": "source-pdfs/Sentiment/Word of mouth/Alexandrov-SocialSelfMotivesWOM-2013-JAMS.pdf",
+   "pages": 16,
+   "bytes": 330066,
+   "sha256": "fc303c73bb507577804007f941b10286cbe8bfb58b99036f4091b7dc31d7bca5"
+  },
+  {
+   "id": "sentiment-word-of-mouth-east-positivenegativewomincidence-2007-ijrm",
+   "file": "Sentiment/Word of mouth/East-PositiveNegativeWOMIncidence-2007-IJRM.html",
+   "source_pdf": "source-pdfs/Sentiment/Word of mouth/East-PositiveNegativeWOMIncidence-2007-IJRM.pdf",
+   "pages": 10,
+   "bytes": 67015,
+   "sha256": "db3dc15c0a8774452e20bd440df0a9064dcccb26c5e393467d3d5c45354dc5cf"
+  },
+  {
+   "id": "sentiment-word-of-mouth-folkes-consumerattributionreview-1988-jcr",
+   "file": "Sentiment/Word of mouth/Folkes-ConsumerAttributionReview-1988-JCR.html",
+   "source_pdf": "source-pdfs/Sentiment/Word of mouth/Folkes-ConsumerAttributionReview-1988-JCR.pdf",
+   "pages": 18,
+   "bytes": 133984,
+   "sha256": "eca4c45eb9240fde86e2d993617167972f2338c95fbfb4fd02a33ded72dfc29c"
+  },
+  {
+   "id": "sentiment-word-of-mouth-krishnamurthy-electronicwombrandimage-2018-jrcs",
+   "file": "Sentiment/Word of mouth/Krishnamurthy-ElectronicWOMBrandImage-2018-JRCS.html",
+   "source_pdf": "source-pdfs/Sentiment/Word of mouth/Krishnamurthy-ElectronicWOMBrandImage-2018-JRCS.pdf",
+   "pages": 8,
+   "bytes": 255044,
+   "sha256": "d9cad2f41bc142139612a8d91d2b222419b40830bd28fd17808036a075710a5d"
+  },
+  {
+   "id": "sentiment-word-of-mouth-kuppelwieser-customerexperiencevaluewom-2022-jsm",
+   "file": "Sentiment/Word of mouth/Kuppelwieser-CustomerExperienceValueWOM-2022-JSM.html",
+   "source_pdf": "source-pdfs/Sentiment/Word of mouth/Kuppelwieser-CustomerExperienceValueWOM-2022-JSM.pdf",
+   "pages": 15,
+   "bytes": 165076,
+   "sha256": "19b489601ac1b0a17fea2b194e433dc5f83712dec0c53635c5e19f08e4b2c188"
+  },
+  {
+   "id": "sentiment-word-of-mouth-laczniak-negativewomattribution-2001-jcp",
+   "file": "Sentiment/Word of mouth/Laczniak-NegativeWOMAttribution-2001-JCP.html",
+   "source_pdf": "source-pdfs/Sentiment/Word of mouth/Laczniak-NegativeWOMAttribution-2001-JCP.pdf",
+   "pages": 17,
+   "bytes": 144076,
+   "sha256": "f88a2243e3913eadd5a0bc9600a8c670aeb137cb71687dcf6ff9385bde0d4bb8"
+  },
+  {
+   "id": "sentiment-word-of-mouth-mittal-customerswitchingsatisfactionloyalty-1998-jsm",
+   "file": "Sentiment/Word of mouth/Mittal-CustomerSwitchingSatisfactionLoyalty-1998-JSM.html",
+   "source_pdf": "source-pdfs/Sentiment/Word of mouth/Mittal-CustomerSwitchingSatisfactionLoyalty-1998-JSM.pdf",
+   "pages": 18,
+   "bytes": 162420,
+   "sha256": "cda697b2050ea5f3b939d02ee8e220bcafe26e7ce70d4f1aaccb47847bc926a0"
+  },
+  {
+   "id": "sentiment-word-of-mouth-nam-electronicwomdeterminants-2020-dss",
+   "file": "Sentiment/Word of mouth/Nam-ElectronicWOMDeterminants-2020-DSS.html",
+   "source_pdf": "source-pdfs/Sentiment/Word of mouth/Nam-ElectronicWOMDeterminants-2020-DSS.pdf",
+   "pages": 14,
+   "bytes": 749035,
+   "sha256": "984123b1bf7b7a532e9e65a15561cd3fcd6817b38788d45b83503887fd142cef"
+  },
+  {
+   "id": "sentiment-word-of-mouth-richins-dissatisfiedconsumernegativewom-1983-jm",
+   "file": "Sentiment/Word of mouth/Richins-DissatisfiedConsumerNegativeWOM-1983-JM.html",
+   "source_pdf": "source-pdfs/Sentiment/Word of mouth/Richins-DissatisfiedConsumerNegativeWOM-1983-JM.pdf",
+   "pages": 12,
+   "bytes": 266176,
+   "sha256": "4495dfd79d7a450bd859126c76e74de5faf5c258853338e6f2becacd113b7425"
+  },
+  {
+   "id": "sentiment-word-of-mouth-wilson-negativewombrandconnection-2017-jams",
+   "file": "Sentiment/Word of mouth/Wilson-NegativeWOMBrandConnection-2017-JAMS.html",
+   "source_pdf": "source-pdfs/Sentiment/Word of mouth/Wilson-NegativeWOMBrandConnection-2017-JAMS.pdf",
+   "pages": 14,
+   "bytes": 865948,
+   "sha256": "cc5976271021a0c68bde0901a2e0a37511d485ab28c9f8f1d4be5280bdb751f1"
+  },
+  {
+   "id": "sentiment-word-of-mouth-zhang-endorsermessagecharacteristics-2025-imds",
+   "file": "Sentiment/Word of mouth/Zhang-EndorserMessageCharacteristics-2025-IMDS.html",
+   "source_pdf": "source-pdfs/Sentiment/Word of mouth/Zhang-EndorserMessageCharacteristics-2025-IMDS.pdf",
+   "pages": 43,
+   "bytes": 810286,
+   "sha256": "826cee277fff12a933a96f88778d87c884cbf8e298b98305559bb352f7cff2ed"
+  },
+  {
+   "id": "sentiment-wu-platforminformationpricetargeting-2025-ssrn",
+   "file": "Sentiment/Wu-PlatformInformationPriceTargeting-2025-SSRN.html",
+   "source_pdf": "source-pdfs/Sentiment/Wu-PlatformInformationPriceTargeting-2025-SSRN.pdf",
+   "pages": 66,
+   "bytes": 2439386,
+   "sha256": "a7e1fd73f5a620fea1c10a5362b134fc70766378a13f17774f18b5043e49ca0d"
+  },
+  {
+   "id": "sentiment-zhang-consumptiontimehelpfulvotes-2026-jm",
+   "file": "Sentiment/Zhang-ConsumptionTimeHelpfulVotes-2026-JM.html",
+   "source_pdf": "source-pdfs/Sentiment/Zhang-ConsumptionTimeHelpfulVotes-2026-JM.pdf",
+   "pages": 16,
+   "bytes": 456609,
+   "sha256": "049ec4486aa4ca2e4e16d4a977164890b13b75f5b0419a79f2b115705874b6bb"
+  }
+ ],
+ "replication_files": [
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/Pape-OneClickCompetitionAppendix-2026-MKSC.pdf",
+   "bytes": 4649326
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/Pape-OneClickCompetitionCopyright-2026-MKSC.pdf",
+   "bytes": 136750
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/Pape-OneClickCompetitionDraft-2026-MKSC.pdf",
+   "bytes": 1230931
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigure1-2026-MKSC.pdf",
+   "bytes": 444362
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigure2a-2026-MKSC.pdf",
+   "bytes": 70189
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigure2b-2026-MKSC.pdf",
+   "bytes": 71277
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigure3a-2026-MKSC.pdf",
+   "bytes": 69202
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigure3b-2026-MKSC.pdf",
+   "bytes": 67521
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureA1a-2026-MKSC.pdf",
+   "bytes": 179332
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureA1b-2026-MKSC.pdf",
+   "bytes": 138540
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureA1c-2026-MKSC.pdf",
+   "bytes": 150340
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureA1d-2026-MKSC.pdf",
+   "bytes": 156229
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureA2a-2026-MKSC.pdf",
+   "bytes": 83540
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureA2b-2026-MKSC.pdf",
+   "bytes": 81959
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureA3a-2026-MKSC.pdf",
+   "bytes": 81872
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureA3b-2026-MKSC.pdf",
+   "bytes": 83045
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureA4a-2026-MKSC.pdf",
+   "bytes": 77228
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureA4b-2026-MKSC.pdf",
+   "bytes": 79421
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureA5a-2026-MKSC.pdf",
+   "bytes": 78969
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureA5b-2026-MKSC.pdf",
+   "bytes": 78662
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureB1a-2026-MKSC.pdf",
+   "bytes": 69634
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureB1b-2026-MKSC.pdf",
+   "bytes": 70295
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureB2a-2026-MKSC.pdf",
+   "bytes": 69612
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureB2b-2026-MKSC.pdf",
+   "bytes": 71431
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureB3a-2026-MKSC.pdf",
+   "bytes": 75741
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureB3b-2026-MKSC.pdf",
+   "bytes": 76554
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureB4a-2026-MKSC.pdf",
+   "bytes": 74812
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureB4b-2026-MKSC.pdf",
+   "bytes": 85892
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureB5a-2026-MKSC.pdf",
+   "bytes": 77596
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureB5b-2026-MKSC.pdf",
+   "bytes": 85905
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureB6a-2026-MKSC.pdf",
+   "bytes": 75550
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureB6b-2026-MKSC.pdf",
+   "bytes": 74474
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureB7a-2026-MKSC.pdf",
+   "bytes": 75155
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureB7b-2026-MKSC.pdf",
+   "bytes": 80482
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureB8a-2026-MKSC.pdf",
+   "bytes": 82224
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureB8b-2026-MKSC.pdf",
+   "bytes": 86782
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureB9-2026-MKSC.pdf",
+   "bytes": 73896
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC10a-2026-MKSC.pdf",
+   "bytes": 70117
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC10b-2026-MKSC.pdf",
+   "bytes": 69048
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC11-2026-MKSC.pdf",
+   "bytes": 68525
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC12a-2026-MKSC.pdf",
+   "bytes": 70337
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC12b-2026-MKSC.pdf",
+   "bytes": 70184
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC13a-2026-MKSC.pdf",
+   "bytes": 68104
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC13b-2026-MKSC.pdf",
+   "bytes": 69034
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC14a-2026-MKSC.pdf",
+   "bytes": 67594
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC14b-2026-MKSC.pdf",
+   "bytes": 67644
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC15a-2026-MKSC.pdf",
+   "bytes": 67534
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC15b-2026-MKSC.pdf",
+   "bytes": 67349
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC16a-2026-MKSC.pdf",
+   "bytes": 73915
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC16b-2026-MKSC.pdf",
+   "bytes": 75982
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC17-2026-MKSC.pdf",
+   "bytes": 68074
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC18a-2026-MKSC.pdf",
+   "bytes": 68090
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC18b-2026-MKSC.pdf",
+   "bytes": 68158
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC19a-2026-MKSC.pdf",
+   "bytes": 67779
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC19b-2026-MKSC.pdf",
+   "bytes": 70342
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC1a-2026-MKSC.pdf",
+   "bytes": 68859
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC1b-2026-MKSC.pdf",
+   "bytes": 67450
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC20a-2026-MKSC.pdf",
+   "bytes": 74191
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC20b-2026-MKSC.pdf",
+   "bytes": 74183
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC21-2026-MKSC.pdf",
+   "bytes": 93626
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC22a-2026-MKSC.pdf",
+   "bytes": 68254
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC22b-2026-MKSC.pdf",
+   "bytes": 68684
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC23a-2026-MKSC.pdf",
+   "bytes": 75103
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC23b-2026-MKSC.pdf",
+   "bytes": 76364
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC2a-2026-MKSC.pdf",
+   "bytes": 69368
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC2b-2026-MKSC.pdf",
+   "bytes": 70378
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC3a-2026-MKSC.pdf",
+   "bytes": 68214
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC3b-2026-MKSC.pdf",
+   "bytes": 70599
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC4a-2026-MKSC.pdf",
+   "bytes": 73213
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC4b-2026-MKSC.pdf",
+   "bytes": 76155
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC5a-2026-MKSC.pdf",
+   "bytes": 71451
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC5b-2026-MKSC.pdf",
+   "bytes": 85570
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC6a-2026-MKSC.pdf",
+   "bytes": 72809
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC6b-2026-MKSC.pdf",
+   "bytes": 86826
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC7a-2026-MKSC.pdf",
+   "bytes": 73470
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC7b-2026-MKSC.pdf",
+   "bytes": 74177
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC8a-2026-MKSC.pdf",
+   "bytes": 72383
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC8b-2026-MKSC.pdf",
+   "bytes": 86882
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC9a-2026-MKSC.pdf",
+   "bytes": 71176
+  },
+  {
+   "file": "Methods/SDID/Pape-rossi-2026-is-competition-only-one-click-away-MkSc-Replication/figures/Pape-OneClickCompetitionFigureC9b-2026-MKSC.pdf",
+   "bytes": 86795
+  },
+  {
+   "file": "Methods/SDID/pachali-datta-2024-what-drives-demand-for-playlists-on-spotify-MkSc-Replication/analysis/code/Pachali-PlaylistTimeSeriesFigure-2025-MKSC.pdf",
+   "bytes": 5284
+  },
+  {
+   "file": "Methods/SDID/pachali-datta-2024-what-drives-demand-for-playlists-on-spotify-MkSc-Replication/paper/code/final_submission_files/Pachali-BrowseCategoryFigure-2025-MKSC.pdf",
+   "bytes": 50452
+  },
+  {
+   "file": "Methods/SDID/pachali-datta-2024-what-drives-demand-for-playlists-on-spotify-MkSc-Replication/paper/code/final_submission_files/Pachali-SpotifySearchPageFigure-2025-MKSC.pdf",
+   "bytes": 1038980
+  },
+  {
+   "file": "Methods/SDID/pachali-datta-2024-what-drives-demand-for-playlists-on-spotify-MkSc-Replication/reporting/code/Pachali-BrowseCategoryFigures-2025-MKSC.pdf",
+   "bytes": 45806
+  },
+  {
+   "file": "Methods/SDID/pachali-datta-2024-what-drives-demand-for-playlists-on-spotify-MkSc-Replication/reporting/output/figures_and_tables/Pachali-BrowseCategoryFigure-2025-MKSC.pdf",
+   "bytes": 50452
+  },
+  {
+   "file": "Methods/SDID/pachali-datta-2024-what-drives-demand-for-playlists-on-spotify-MkSc-Replication/reporting/output/figures_and_tables/Pachali-FeaturingResidualFigure-2025-MKSC.pdf",
+   "bytes": 4952
+  },
+  {
+   "file": "Methods/SDID/pachali-datta-2024-what-drives-demand-for-playlists-on-spotify-MkSc-Replication/reporting/output/figures_and_tables/Pachali-FollowersLabelShareFigure-2025-MKSC.pdf",
+   "bytes": 4680
+  },
+  {
+   "file": "Methods/SDID/pachali-datta-2024-what-drives-demand-for-playlists-on-spotify-MkSc-Replication/reporting/output/figures_and_tables/Pachali-LabelShareResidualFigure-2025-MKSC.pdf",
+   "bytes": 5051
+  },
+  {
+   "file": "Methods/SDID/pachali-datta-2024-what-drives-demand-for-playlists-on-spotify-MkSc-Replication/reporting/output/figures_and_tables/Pachali-LabelTreatmentFigure-2025-MKSC.pdf",
+   "bytes": 1068226
+  },
+  {
+   "file": "Methods/SDID/pachali-datta-2024-what-drives-demand-for-playlists-on-spotify-MkSc-Replication/reporting/output/figures_and_tables/Pachali-MajorLabelShareFigure-2025-MKSC.pdf",
+   "bytes": 4975
+  },
+  {
+   "file": "Methods/SDID/pachali-datta-2024-what-drives-demand-for-playlists-on-spotify-MkSc-Replication/reporting/output/figures_and_tables/Pachali-PlaylistResidualsFigure-2025-MKSC.pdf",
+   "bytes": 5942
+  },
+  {
+   "file": "Methods/SDID/pachali-datta-2024-what-drives-demand-for-playlists-on-spotify-MkSc-Replication/reporting/output/figures_and_tables/Pachali-PromotionTreatmentFigure-2025-MKSC.pdf",
+   "bytes": 59398
+  },
+  {
+   "file": "Methods/Staggered/ananthakrishnan-et-al-2025-book-bans-in-american-libraries-MkSc/Ananthakrishnan-BookBansAppendixCode-2025-MKSC.pdf",
+   "bytes": 234026
+  },
+  {
+   "file": "Methods/Staggered/ananthakrishnan-et-al-2025-book-bans-in-american-libraries-MkSc/Ananthakrishnan-BookBansFigureCode-2025-MKSC.pdf",
+   "bytes": 217125
+  }
+ ]
+}

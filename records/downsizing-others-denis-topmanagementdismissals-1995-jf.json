@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-denis-topmanagementdismissals-1995-jf",
+ "file": "Downsizing/Others/Denis-TopManagementDismissals-1995-JF.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Denis-TopManagementDismissals-1995-JF.pdf",
+ "first_author_surname": "Denis",
+ "year": 1995,
+ "journal_code": "JF",
+ "filename_topic": "TopManagementDismissals",
+ "journal": "Journal of Finance",
+ "page_count": 29,
+ "title": "Performance Changes Following Top Management Dismissals",
+ "authors": null,
+ "doi": "10.1111/j.1540-6261.1995.tb04049.x",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 354,
+  "furniture": 29,
+  "figures": 0,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 129343,
+ "html_sha256": "92d3d69c462d72b391558b0f64ddbf72700336141565f48695a2325ffbc4eb20",
+ "note_flags": []
+}

@@ -1,0 +1,32 @@
+{
+ "id": "downsizing-others-aivazian-politicaluncertaintylayofftiming-2025-pom",
+ "file": "Downsizing/Others/Aivazian-PoliticalUncertaintyLayoffTiming-2025-POM.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Aivazian-PoliticalUncertaintyLayoffTiming-2025-POM.pdf",
+ "first_author_surname": "Aivazian",
+ "year": 2025,
+ "journal_code": "POM",
+ "filename_topic": "PoliticalUncertaintyLayoffTiming",
+ "journal": "Production and Operations Management",
+ "page_count": 21,
+ "title": "Political Uncertainty and the Timing of Mass Layoffs",
+ "authors": null,
+ "doi": "10.1177/10591478251331149",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 261,
+  "furniture": 20,
+  "figures": 0,
+  "tables_html": 10,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 135016,
+ "html_sha256": "4135a19ee2d5ff9d91998757d217944a05290d0b171f6a325883812f0615178d",
+ "note_flags": []
+}

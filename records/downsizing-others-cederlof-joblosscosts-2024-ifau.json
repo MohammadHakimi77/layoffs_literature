@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-cederlof-joblosscosts-2024-ifau",
+ "file": "Downsizing/Others/Cederlof-JobLossCosts-2024-IFAU.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Cederlof-JobLossCosts-2024-IFAU.pdf",
+ "first_author_surname": "Cederlof",
+ "year": 2024,
+ "journal_code": "IFAU",
+ "filename_topic": "JobLossCosts",
+ "journal": "IFAU working paper",
+ "page_count": 78,
+ "title": "Reconsidering the cost of job loss: Evidence from redundancies and mass layoffs",
+ "authors": null,
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 1555,
+  "furniture": 73,
+  "figures": 32,
+  "tables_html": 13,
+  "tables_image": 0,
+  "equations_img": 25,
+  "image_only_pages": 0
+ },
+ "html_bytes": 1664178,
+ "html_sha256": "ac44d9c2524b2e06214fd1924456880ff987979b90ec3967d4174334dd2ad544",
+ "note_flags": []
+}

@@ -1,0 +1,33 @@
+{
+ "id": "methods-sdid-pape-oneclickcompetition-2026-mksc",
+ "file": "Methods/SDID/Pape-OneClickCompetition-2026-MKSC.html",
+ "topic_folder": "Methods/SDID",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/SDID/Pape-OneClickCompetition-2026-MKSC.pdf",
+ "first_author_surname": "Pape",
+ "year": 2026,
+ "journal_code": "MKSC",
+ "filename_topic": "OneClickCompetition",
+ "journal": "Marketing Science",
+ "page_count": 19,
+ "title": "Is Competition Only One Click Away? The Digital Markets Act’s Impact on Google Maps",
+ "authors": null,
+ "doi": "10.1287/mksc.2025.0159",
+ "copyright_years_on_first_pages": [
+  2026
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 254,
+  "furniture": 18,
+  "figures": 3,
+  "tables_html": 4,
+  "tables_image": 1,
+  "equations_img": 2,
+  "image_only_pages": 0
+ },
+ "html_bytes": 916775,
+ "html_sha256": "93267a54f3c543c2e15304763af025850d6420614ad0af09b65f5d392fc3a770",
+ "note_flags": []
+}

@@ -1,0 +1,33 @@
+{
+ "id": "downsizing-others-fourne-familyfirmmediareactions-2025-jbr",
+ "file": "Downsizing/Others/Fourne-FamilyFirmMediaReactions-2025-JBR.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Fourne-FamilyFirmMediaReactions-2025-JBR.pdf",
+ "first_author_surname": "Fourne",
+ "year": 2025,
+ "journal_code": "JBR",
+ "filename_topic": "FamilyFirmMediaReactions",
+ "journal": "Journal of Business Research",
+ "page_count": 12,
+ "title": "Media reactions to family Firms’ downsizing and upsizing decisions☆",
+ "authors": null,
+ "doi": "10.1016/j.jbusres.2025.115348",
+ "copyright_years_on_first_pages": [
+  2025
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 260,
+  "furniture": 22,
+  "figures": 2,
+  "tables_html": 3,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 229141,
+ "html_sha256": "9b5ab9d41b5cd6b38e67c8f5b61baef285c57d39a864180a82e141d42d0556a6",
+ "note_flags": []
+}

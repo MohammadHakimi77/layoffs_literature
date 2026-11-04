@@ -1,0 +1,33 @@
+{
+ "id": "methods-claude-sdidliteraturereview-2026-note",
+ "file": "Methods/Claude-SDIDLiteratureReview-2026-Note.html",
+ "topic_folder": "Methods",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/Claude-SDIDLiteratureReview-2026-Note.pdf",
+ "first_author_surname": "Claude",
+ "year": 2026,
+ "journal_code": "Note",
+ "filename_topic": "SDIDLiteratureReview",
+ "journal": "Note (non-journal)",
+ "page_count": 8,
+ "title": "What the SDID literature actually does",
+ "authors": null,
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 30,
+  "furniture": 15,
+  "figures": 6,
+  "tables_html": 1,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 1602520,
+ "html_sha256": "ba90cd415543ae245963900004e01694eeefef7a9d5a42361f9b430f3d0d0f11",
+ "note_flags": [
+  "non-journal note"
+ ]
+}

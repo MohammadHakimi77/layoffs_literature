@@ -1,0 +1,32 @@
+{
+ "id": "sentiment-word-of-mouth-zhang-endorsermessagecharacteristics-2025-imds",
+ "file": "Sentiment/Word of mouth/Zhang-EndorserMessageCharacteristics-2025-IMDS.html",
+ "topic_folder": "Sentiment/Word of mouth",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Word of mouth/Zhang-EndorserMessageCharacteristics-2025-IMDS.pdf",
+ "first_author_surname": "Zhang",
+ "year": 2025,
+ "journal_code": "IMDS",
+ "filename_topic": "EndorserMessageCharacteristics",
+ "journal": "IMDS",
+ "page_count": 43,
+ "title": "When does Endorsement Work? The Moderating Role of Endorser and Message Characteristics",
+ "authors": null,
+ "doi": "10.1108/IMDS-01-2025-0094",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 795,
+  "furniture": 0,
+  "figures": 2,
+  "tables_html": 12,
+  "tables_image": 0,
+  "equations_img": 10,
+  "image_only_pages": 0
+ },
+ "html_bytes": 810286,
+ "html_sha256": "826cee277fff12a933a96f88778d87c884cbf8e298b98305559bb352f7cff2ed",
+ "note_flags": []
+}

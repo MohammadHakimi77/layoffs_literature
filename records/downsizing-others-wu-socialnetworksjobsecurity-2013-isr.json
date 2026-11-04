@@ -1,0 +1,33 @@
+{
+ "id": "downsizing-others-wu-socialnetworksjobsecurity-2013-isr",
+ "file": "Downsizing/Others/Wu-SocialNetworksJobSecurity-2013-ISR.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Wu-SocialNetworksJobSecurity-2013-ISR.pdf",
+ "first_author_surname": "Wu",
+ "year": 2013,
+ "journal_code": "ISR",
+ "filename_topic": "SocialNetworksJobSecurity",
+ "journal": "Information Systems Research",
+ "page_count": 23,
+ "title": "Social Network Effects on Productivity and Job Security: Evidence from the Adoption of a Social Networking Tool",
+ "authors": "Lynn Wu,",
+ "doi": "10.1287/isre.1120.0465",
+ "copyright_years_on_first_pages": [
+  2013
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 436,
+  "furniture": 45,
+  "figures": 4,
+  "tables_html": 9,
+  "tables_image": 1,
+  "equations_img": 30,
+  "image_only_pages": 0
+ },
+ "html_bytes": 732070,
+ "html_sha256": "241f5f6318fff74093fcfc2d719d88ac02c4a6765842c4ed152eef10d225910b",
+ "note_flags": []
+}

@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-bennett-copingwithlayoff-1995-jom",
+ "file": "Downsizing/Others/Bennett-CopingWithLayoff-1995-JOM.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Bennett-CopingWithLayoff-1995-JOM.pdf",
+ "first_author_surname": "Bennett",
+ "year": 1995,
+ "journal_code": "JOM",
+ "filename_topic": "CopingWithLayoff",
+ "journal": "Journal of Management",
+ "page_count": 8,
+ "title": "Coping with a layoff: a longitudinal study of victims",
+ "authors": null,
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 119,
+  "furniture": 0,
+  "figures": 1,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 147418,
+ "html_sha256": "eab03a393c31a449451bbaa3369f8a04bb4bfc038698a8f085db7e3caa2d6be3",
+ "note_flags": []
+}

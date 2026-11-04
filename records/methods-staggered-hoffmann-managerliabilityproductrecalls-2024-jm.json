@@ -1,0 +1,31 @@
+{
+ "id": "methods-staggered-hoffmann-managerliabilityproductrecalls-2024-jm",
+ "file": "Methods/Staggered/Hoffmann-ManagerLiabilityProductRecalls-2024-JM.html",
+ "topic_folder": "Methods/Staggered",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/Staggered/Hoffmann-ManagerLiabilityProductRecalls-2024-JM.pdf",
+ "first_author_surname": "Hoffmann",
+ "year": 2024,
+ "journal_code": "JM",
+ "filename_topic": "ManagerLiabilityProductRecalls",
+ "journal": "Journal of Marketing",
+ "page_count": 22,
+ "title": "So, Sue Me…If You Can! How Legal Changes Diminishing Managers’ Risk of Being Held Liable by Shareholders Affect Firms’ Likelihood to Recall Products",
+ "authors": "Arvid O.I. Hoffmann",
+ "doi": "10.1177/00222429241231236",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 319,
+  "furniture": 22,
+  "figures": 2,
+  "tables_html": 4,
+  "tables_image": 3,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 806228,
+ "html_sha256": "9903bb040273eaa1f6fcc8f9b78ff86e20b6a0e4ebc1c6909a2bd959ec884035",
+ "note_flags": []
+}

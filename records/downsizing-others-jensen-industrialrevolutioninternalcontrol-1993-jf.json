@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-jensen-industrialrevolutioninternalcontrol-1993-jf",
+ "file": "Downsizing/Others/Jensen-IndustrialRevolutionInternalControl-1993-JF.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Jensen-IndustrialRevolutionInternalControl-1993-JF.pdf",
+ "first_author_surname": "Jensen",
+ "year": 1993,
+ "journal_code": "JF",
+ "filename_topic": "IndustrialRevolutionInternalControl",
+ "journal": "Journal of Finance",
+ "page_count": 50,
+ "title": "The Modern Industrial Revolution, Exit, and the Failure of Internal Control Systems",
+ "authors": "MICHAEL C. JENSEN*",
+ "doi": "10.1111/j.1540-6261.1993.tb04022.x",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 599,
+  "furniture": 49,
+  "figures": 0,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 223763,
+ "html_sha256": "34ddb92a2d6a62aad0542596c996b3f7ba6126d40605570c28dbd13e239d2178",
+ "note_flags": []
+}

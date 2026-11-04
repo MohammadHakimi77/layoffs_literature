@@ -1,0 +1,33 @@
+{
+ "id": "sentiment-community-narayan-peerinfluenceattributepreferences-2011-mksc",
+ "file": "Sentiment/Community/Narayan-PeerInfluenceAttributePreferences-2011-MKSC.html",
+ "topic_folder": "Sentiment/Community",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Community/Narayan-PeerInfluenceAttributePreferences-2011-MKSC.pdf",
+ "first_author_surname": "Narayan",
+ "year": 2011,
+ "journal_code": "MKSC",
+ "filename_topic": "PeerInfluenceAttributePreferences",
+ "journal": "Marketing Science",
+ "page_count": 18,
+ "title": "How Peer Influence Affects Attribute Preferences: A Bayesian Updating Mechanism",
+ "authors": "Vishal Narayan, Vithala R. Rao, Carolyne Saunders,",
+ "doi": "10.1287/mksc.1100.0618",
+ "copyright_years_on_first_pages": [
+  2011
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 534,
+  "furniture": 34,
+  "figures": 1,
+  "tables_html": 6,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 523530,
+ "html_sha256": "f7ccdd72510a96b2e8cdb31abf5e980386348f9e5bc4308abd5a2fcd14fb9227",
+ "note_flags": []
+}

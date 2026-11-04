@@ -1,0 +1,2506 @@
+{
+ "note": "Metadata parsed from file names (Author-Topic-Year-Journal) and PDF first pages. Fields listed in uncertain_fields are heuristic; verify against the HTML page 1.",
+ "count": 153,
+ "papers": [
+  {
+   "id": "behavioral-md-has-the-era-of-the-mega-layoff-arrived-wsj",
+   "title": "Has the Era of the Mega-Layoff Arrived?",
+   "authors": null,
+   "first_author_surname": null,
+   "year": null,
+   "journal": null,
+   "journal_code": null,
+   "topic_folder": "Behavioral.md",
+   "file": "Behavioral.md/Has the Era of the Mega-Layoff Arrived_ - WSJ.html",
+   "page_count": 7,
+   "doi": null,
+   "uncertain_fields": [
+    "authors",
+    "first_author_surname",
+    "journal",
+    "year"
+   ]
+  },
+  {
+   "id": "behavioral-md-jo-anonymouspeerinfluenceappendix-2025-jcr",
+   "title": "WEB APPENDIX In the Company of Strangers: Social Influence from Anonymous Peers in Online Game Settings",
+   "authors": "Wooyong Jo Sarang Sunder Jeonghye Choi Minakshi Trivedi",
+   "first_author_surname": "Jo",
+   "year": 2025,
+   "journal": "Journal of Consumer Research",
+   "journal_code": "JCR",
+   "topic_folder": "Behavioral.md",
+   "file": "Behavioral.md/Jo-AnonymousPeerInfluenceAppendix-2025-JCR.html",
+   "page_count": 29,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-berry-linkedinemploymentdifferences-2024-nber",
+   "title": "UCI Traditional letterhead",
+   "authors": null,
+   "first_author_surname": "Berry",
+   "year": 2024,
+   "journal": "NBER working paper",
+   "journal_code": "NBER",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Berry-LinkedInEmploymentDifferences-2024-NBER.html",
+   "page_count": 62,
+   "doi": null,
+   "uncertain_fields": [
+    "authors",
+    "title"
+   ]
+  },
+  {
+   "id": "downsizing-blien-routineintensityjobloss-2019-iza",
+   "title": "Occupational Routine-Intensity and the Costs of Job Loss: Evidence from Mass Layoffs",
+   "authors": null,
+   "first_author_surname": "Blien",
+   "year": 2019,
+   "journal": "IZA discussion paper",
+   "journal_code": "IZA",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Blien-RoutineIntensityJobLoss-2019-IZA.html",
+   "page_count": 40,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-brauer-downsizingfirmperformance-2014-jms",
+   "title": "Workforce Downsizing and Firm Performance: An Organizational Routine Perspective",
+   "authors": "Matthias Brauer and Tomi Laamanen",
+   "first_author_surname": "Brauer",
+   "year": 2014,
+   "journal": "Journal of Management Studies",
+   "journal_code": "JMS",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Brauer-DownsizingFirmPerformance-2014-JMS.html",
+   "page_count": 23,
+   "doi": "10.1111/joms.12074",
+   "uncertain_fields": [
+    "authors",
+    "year"
+   ]
+  },
+  {
+   "id": "downsizing-brauer-downsizingimpressionoffsetting-2023-jms",
+   "title": "Managing the “Downside” of Downsizing: Firms’ Impression Offsetting around Downsizing Announcements",
+   "authors": "Matthias Brauer",
+   "first_author_surname": "Brauer",
+   "year": 2023,
+   "journal": "Journal of Management Studies",
+   "journal_code": "JMS",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Brauer-DownsizingImpressionOffsetting-2023-JMS.html",
+   "page_count": 33,
+   "doi": "10.1111/joms.13024",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-brauer-investorresponsedownsizing-2019-jom",
+   "title": "Investor Response to Workforce Downsizing: The Influence of Industry Waves, Macroeconomic Outlook, and Firm Performance",
+   "authors": "Matthias Brauer Martin Zimmermann",
+   "first_author_surname": "Brauer",
+   "year": 2019,
+   "journal": "Journal of Management",
+   "journal_code": "JOM",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Brauer-InvestorResponseDownsizing-2019-JOM.html",
+   "page_count": 27,
+   "doi": "10.1177/0149206317734901",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-cederlof-mandatorylayoffnotice-2024-qje",
+   "title": "MANDAT ORY NO TICE OF LAYOFF, JOB SEARCH, AND EFFICIENCY ∗ JONAS CEDERLÖF PETER FREDRIKSSON ARASH NEKOEI DAVID SEIM",
+   "authors": null,
+   "first_author_surname": "Cederlof",
+   "year": 2024,
+   "journal": "Quarterly Journal of Economics",
+   "journal_code": "QJE",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Cederlof-MandatoryLayoffNotice-2024-QJE.html",
+   "page_count": 49,
+   "doi": "10.1093/qje/qjae029",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-celli-longtermmasslayoffs-2023-jeg",
+   "title": "The long-term effects of mass layoffs: do local economies (ever) recover?",
+   "authors": "Viviana Celli",
+   "first_author_surname": "Celli",
+   "year": 2023,
+   "journal": "Journal of Economic Geography",
+   "journal_code": "JEG",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Celli-LongTermMassLayoffs-2023-JEG.html",
+   "page_count": 24,
+   "doi": "10.1093/jeg/lbad012",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-datta-employeedownsizingreview-2010-jom",
+   "title": "Causes and Effects of Employee Downsizing: A Review and Synthesis",
+   "authors": "Deepak K. Datta",
+   "first_author_surname": "Datta",
+   "year": 2010,
+   "journal": "Journal of Management",
+   "journal_code": "JOM",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Datta-EmployeeDownsizingReview-2010-JOM.html",
+   "page_count": 68,
+   "doi": "10.1177/0149206309346735",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-eshghi-layoffinvestorreactionmetaanalysis-2023-hrmj",
+   "title": "Stock investors' reaction to layoff announcements: A meta-analysis",
+   "authors": null,
+   "first_author_surname": "Eshghi",
+   "year": 2023,
+   "journal": "Human Resource Management Journal",
+   "journal_code": "HRMJ",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Eshghi-LayoffInvestorReactionMetaAnalysis-2023-HRMJ.html",
+   "page_count": 18,
+   "doi": "10.1111/1748-8583.12532",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-gandolfi-downsizingintegrativeframework-2011-jmo",
+   "title": "LITERATURE REVIEW Causes and consequences of downsizing: Towards an integrative framework",
+   "authors": null,
+   "first_author_surname": "Gandolfi",
+   "year": 2011,
+   "journal": "Journal of Management & Organization",
+   "journal_code": "JMO",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Gandolfi-DownsizingIntegrativeFramework-2011-JMO.html",
+   "page_count": 25,
+   "doi": "10.1017/S1833367200001413",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-gathmann-masslayoffspillovers-2020-jeea",
+   "title": "SPILLOVER EFFECTS OF MASS LAYOFFS",
+   "authors": "Christina Gathmann",
+   "first_author_surname": "Gathmann",
+   "year": 2020,
+   "journal": "Journal of the European Economic Association",
+   "journal_code": "JEEA",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Gathmann-MassLayoffSpillovers-2020-JEEA.html",
+   "page_count": 42,
+   "doi": "10.1093/jeea/jvy045",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-granulo-collectivelayoffsoffshoring-2025-jcr",
+   "title": "Collective Layoffs and Offshoring: A Social Contract Account",
+   "authors": "ARMIN GRANULO ANNE-MADELEINE KRANZBÜHLER CHRISTOPH FUCHS STEFANO PUNTONI",
+   "first_author_surname": "Granulo",
+   "year": 2025,
+   "journal": "Journal of Consumer Research",
+   "journal_code": "JCR",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Granulo-CollectiveLayoffsOffshoring-2025-JCR.html",
+   "page_count": 21,
+   "doi": "10.1093/jcr/ucaf001",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-guthrie-downsizingindustryconditions-2008-os",
+   "title": "Dumb and Dumber: The Impact of Downsizing on Firm Performance as Moderated by Industry Conditions",
+   "authors": null,
+   "first_author_surname": "Guthrie",
+   "year": 2008,
+   "journal": "Organization Science",
+   "journal_code": "OS",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Guthrie-DownsizingIndustryConditions-2008-OS.html",
+   "page_count": 17,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-habel-downsizingcustomerreactions-2015-jams",
+   "title": "Customer reactions to downsizing: when and how is satisfaction affected?",
+   "authors": "Johannes Habel & Martin Klarmann",
+   "first_author_surname": "Habel",
+   "year": 2015,
+   "journal": "Journal of the Academy of Marketing Science",
+   "journal_code": "JAMS",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Habel-DownsizingCustomerReactions-2015-JAMS.html",
+   "page_count": 22,
+   "doi": "10.1007/s11747-014-0400-y",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-homburg-customeruncertaintydownsizing-2012-jm",
+   "title": "Customer Uncertainty Following Downsizing: The Effects of Extent of Downsizing and Open Communication",
+   "authors": null,
+   "first_author_surname": "Homburg",
+   "year": 2012,
+   "journal": "Journal of Marketing",
+   "journal_code": "JM",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Homburg-CustomerUncertaintyDownsizing-2012-JM.html",
+   "page_count": 19,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-house-downsizingresearchreview-2025-chapter",
+   "title": "1. A review and synthesis of downsizing research: the dilemma endures",
+   "authors": "Alyson P. House and Rocki-Lee DeWitt OVERVIEW",
+   "first_author_surname": "House",
+   "year": 2025,
+   "journal": "Book chapter",
+   "journal_code": "Chapter",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/House-DownsizingResearchReview-2025-Chapter.html",
+   "page_count": 2,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-jung-financializationcorporatedownsizing-2022-ser",
+   "title": "Financialization and corporate downsizing as a shareholder value strategy",
+   "authors": "Jiwook Jung",
+   "first_author_surname": "Jung",
+   "year": 2022,
+   "journal": "Socio-Economic Review",
+   "journal_code": "SER",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Jung-FinancializationCorporateDownsizing-2022-SER.html",
+   "page_count": 29,
+   "doi": "10.1093/ser/mwab035",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-krolikowski-advancelayoffnotices-2024-jae",
+   "title": "Advance layoff notices and aggregate job loss",
+   "authors": "Pawel M. Krolikowski Kurt G. Lunsford",
+   "first_author_surname": "Krolikowski",
+   "year": 2024,
+   "journal": "Journal of Accounting and Economics",
+   "journal_code": "JAE",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Krolikowski-AdvanceLayoffNotices-2024-JAE.html",
+   "page_count": 19,
+   "doi": "10.1002/jae.3032",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-landsman-collectivelayoffsbrand-2020-jm",
+   "title": "The Commercial Consequences of Collective Layoffs: Close the Plant, Lose the Brand?",
+   "authors": "Vardit Landsman and Stefan Stremersch",
+   "first_author_surname": "Landsman",
+   "year": 2020,
+   "journal": "Journal of Marketing",
+   "journal_code": "JM",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Landsman-CollectiveLayoffsBrand-2020-JM.html",
+   "page_count": 20,
+   "doi": "10.1177/0022242919901277",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-lewin-downsizingcustomersatisfaction-2010-jbr",
+   "title": "Firm downsizing and satisfaction among United States and European customers",
+   "authors": null,
+   "first_author_surname": "Lewin",
+   "year": 2010,
+   "journal": "Journal of Business Research",
+   "journal_code": "JBR",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Lewin-DownsizingCustomerSatisfaction-2010-JBR.html",
+   "page_count": 10,
+   "doi": "10.1016/j.jbusres.2009.05.005",
+   "uncertain_fields": [
+    "authors",
+    "year"
+   ]
+  },
+  {
+   "id": "downsizing-lewin-downsizingorganizationalbuying-2001-jams",
+   "title": "The Effects of Downsizing on Organizational Buying Behavior:",
+   "authors": "An Empirical Investigation Jeffrey E. Lewin",
+   "first_author_surname": "Lewin",
+   "year": 2001,
+   "journal": "Journal of the Academy of Marketing Science",
+   "journal_code": "JAMS",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Lewin-DownsizingOrganizationalBuying-2001-JAMS.html",
+   "page_count": 14,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-lewin-supplierdownsizingcustomersatisfaction-2009-imm",
+   "title": "Business customers' satisfaction: What happens when suppliers downsize?",
+   "authors": "Jeffrey E. Lewin ⁎",
+   "first_author_surname": "Lewin",
+   "year": 2009,
+   "journal": "Industrial Marketing Management",
+   "journal_code": "IMM",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Lewin-SupplierDownsizingCustomerSatisfaction-2009-IMM.html",
+   "page_count": 17,
+   "doi": "10.1016/j.indmarman.2007.11.005",
+   "uncertain_fields": [
+    "authors",
+    "journal",
+    "year"
+   ]
+  },
+  {
+   "id": "downsizing-love-downsizingcorporatereputation-2009-amj",
+   "title": "Character, Conformity, or the Bottom Line? How and Why Downsizing Affected Corporate Reputation",
+   "authors": null,
+   "first_author_surname": "Love",
+   "year": 2009,
+   "journal": "Academy of Management Journal",
+   "journal_code": "AMJ",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Love-DownsizingCorporateReputation-2009-AMJ.html",
+   "page_count": 23,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-ma-videogamelayoffcrisis-2025-acmgames",
+   "title": "From the Atari Shock to a Modern Crisis: Analyzing Mass Layoffs in the Post-Pandemic U.S. Video Game Industry",
+   "authors": null,
+   "first_author_surname": "Ma",
+   "year": 2025,
+   "journal": "ACMGames",
+   "journal_code": "ACMGames",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Ma-VideoGameLayoffCrisis-2025-ACMGames.html",
+   "page_count": 27,
+   "doi": "10.1145/3774758",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-maertz-downsizingsurvivoreffects-2010-ir",
+   "title": "Downsizing Effects on Survivors: Layoffs, Offshoring, and Outsourcing",
+   "authors": null,
+   "first_author_surname": "Maertz",
+   "year": 2010,
+   "journal": "Industrial Relations",
+   "journal_code": "IR",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Maertz-DownsizingSurvivorEffects-2010-IR.html",
+   "page_count": 11,
+   "doi": "10.1111/j.1468-232X.2009.00599.x",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-agrawal-unemploymentriskcorporatefinancing-2013-jfe",
+   "title": "Labor unemployment risk and corporate ﬁnancing decisions$",
+   "authors": null,
+   "first_author_surname": "Agrawal",
+   "year": 2013,
+   "journal": "Journal of Financial Economics",
+   "journal_code": "JFE",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Agrawal-UnemploymentRiskCorporateFinancing-2013-JFE.html",
+   "page_count": 22,
+   "doi": "10.1016/j.jﬁneco.2012.11.006",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-ahmadjian-permanentemploymentjapan-2001-asq",
+   "title": "Safety in Numbers: Downsizing and the Deinstitutionalization of Permanent Employment in Japan Christina L. Ahmadjian",
+   "authors": null,
+   "first_author_surname": "Ahmadjian",
+   "year": 2001,
+   "journal": "Administrative Science Quarterly",
+   "journal_code": "ASQ",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Ahmadjian-PermanentEmploymentJapan-2001-ASQ.html",
+   "page_count": 33,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-aivazian-politicaluncertaintylayofftiming-2025-pom",
+   "title": "Political Uncertainty and the Timing of Mass Layoffs",
+   "authors": null,
+   "first_author_surname": "Aivazian",
+   "year": 2025,
+   "journal": "Production and Operations Management",
+   "journal_code": "POM",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Aivazian-PoliticalUncertaintyLayoffTiming-2025-POM.html",
+   "page_count": 21,
+   "doi": "10.1177/10591478251331149",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-others-amato-familyfirmscrisisdownsizing-2023-jbe",
+   "title": "Family Firms Amidst the Global Financial Crisis: A Territorial Embeddedness Perspective on Downsizing",
+   "authors": null,
+   "first_author_surname": "Amato",
+   "year": 2023,
+   "journal": "Journal of Business Ethics",
+   "journal_code": "JBE",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Amato-FamilyFirmsCrisisDownsizing-2023-JBE.html",
+   "page_count": 24,
+   "doi": "10.1007/s10551-021-04930-0",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-anekwe-downsizingcausesstrategies-2021-ijsshr",
+   "title": "Downsizing: Causes, Effect, and Strategies, A Conceptual Approach",
+   "authors": "Dr Anekwe Rita Ifeoma1, Dr. Nwanah Chizoba Patience2",
+   "first_author_surname": "Anekwe",
+   "year": 2021,
+   "journal": "IJSSHR",
+   "journal_code": "IJSSHR",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Anekwe-DownsizingCausesStrategies-2021-IJSSHR.html",
+   "page_count": 6,
+   "doi": "10.47191/ijsshr/v4-i7-32",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-others-appelbaum-aftermathofdownsizing-1998-jmd",
+   "title": "The aftermath of downsizing",
+   "authors": "Steven H. Appelbaum",
+   "first_author_surname": "Appelbaum",
+   "year": 1998,
+   "journal": "JMD",
+   "journal_code": "JMD",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Appelbaum-AftermathOfDownsizing-1998-JMD.html",
+   "page_count": 30,
+   "doi": null,
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-others-bennett-copingwithlayoff-1995-jom",
+   "title": "Coping with a layoff: a longitudinal study of victims",
+   "authors": null,
+   "first_author_surname": "Bennett",
+   "year": 1995,
+   "journal": "Journal of Management",
+   "journal_code": "JOM",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Bennett-CopingWithLayoff-1995-JOM.html",
+   "page_count": 8,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-bosky-layoffsgenderinequality-2022-sf",
+   "title": "Precarious Professionals: Layoffs and Gender Inequality in the Oil and Gas Industry",
+   "authors": null,
+   "first_author_surname": "Bosky",
+   "year": 2022,
+   "journal": "Social Forces",
+   "journal_code": "SF",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Bosky-LayoffsGenderInequality-2022-SF.html",
+   "page_count": 29,
+   "doi": "10.1093/sf/soab169",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-brauer-organizationalsupplicationdownsizing-2025-jom",
+   "title": "The Strength of Showing Weakness: Organizational Supplication and Investor Reactions to Workforce Downsizing",
+   "authors": "Matthias Brauer",
+   "first_author_surname": "Brauer",
+   "year": 2025,
+   "journal": "Journal of Management",
+   "journal_code": "JOM",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Brauer-OrganizationalSupplicationDownsizing-2025-JOM.html",
+   "page_count": 37,
+   "doi": "10.1177/01492063251339412",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-brockner-layofffairnesssurvivorreactions-1994-sjr",
+   "title": "Perceived Fairness and Survivors' Reactions to Layoffs, or How Downsizing Organizations Can Do Well By Doing Good^",
+   "authors": "Joel Brockner^",
+   "first_author_surname": "Brockner",
+   "year": 1994,
+   "journal": "SJR",
+   "journal_code": "SJR",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Brockner-LayoffFairnessSurvivorReactions-1994-SJR.html",
+   "page_count": 20,
+   "doi": null,
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-others-cederlof-advancelayoffnotice-2021-cepr",
+   "title": "Mandatory Advance Notice of Layoff: Evidence and Efficiency Considerations",
+   "authors": null,
+   "first_author_surname": "Cederlof",
+   "year": 2021,
+   "journal": "CEPR discussion paper",
+   "journal_code": "CEPR",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Cederlof-AdvanceLayoffNotice-2021-CEPR.html",
+   "page_count": 63,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-cederlof-joblosscosts-2024-ifau",
+   "title": "Reconsidering the cost of job loss: Evidence from redundancies and mass layoffs",
+   "authors": null,
+   "first_author_surname": "Cederlof",
+   "year": 2024,
+   "journal": "IFAU working paper",
+   "journal_code": "IFAU",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Cederlof-JobLossCosts-2024-IFAU.html",
+   "page_count": 78,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-chadwick-downsizinghospitalperformance-2004-smj",
+   "title": "EFFECTS OF DOWNSIZING PRACTICES ON THE PERFORMANCE OF HOSPITALS",
+   "authors": null,
+   "first_author_surname": "Chadwick",
+   "year": 2004,
+   "journal": "Strategic Management Journal",
+   "journal_code": "SMJ",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Chadwick-DownsizingHospitalPerformance-2004-SMJ.html",
+   "page_count": 23,
+   "doi": "10.1002/smj.383",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-chen-womenboardsdownsizing-2022-ijhrm",
+   "title": "Women on boards of directors and firm performance: the mediation of employment downsizing",
+   "authors": "Ming-Yuan Chen and Chun-Lin Kao",
+   "first_author_surname": "Chen",
+   "year": 2022,
+   "journal": "International Journal of Human Resource Management",
+   "journal_code": "IJHRM",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Chen-WomenBoardsDownsizing-2022-IJHRM.html",
+   "page_count": 34,
+   "doi": "10.1080/09585192.2020.1867617",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-clair-prosocialimpactnecessaryevils-2016-jmi",
+   "title": "This Is How We Do It: How Perceived Prosocial Impact Offsets Negative Personal Outcomes Associated With Carrying Out Necessary Evils",
+   "authors": null,
+   "first_author_surname": "Clair",
+   "year": 2016,
+   "journal": "JMI",
+   "journal_code": "JMI",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Clair-ProsocialImpactNecessaryEvils-2016-JMI.html",
+   "page_count": 21,
+   "doi": "10.1177/1056492615612577",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-others-clymo-wealthquitslayoffs-2023-ssrn",
+   "title": "Wealth, Quits and Layoffs*",
+   "authors": "Alex Clymo† Piotr Denderski‡ Laura A. Harvey §",
+   "first_author_surname": "Clymo",
+   "year": 2023,
+   "journal": "SSRN working paper",
+   "journal_code": "SSRN",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Clymo-WealthQuitsLayoffs-2023-SSRN.html",
+   "page_count": 39,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-coucke-layoffsrestructuringmodes-2007-icc",
+   "title": "Employee layoff under different modes of restructuring: exit, downsizing or relocation",
+   "authors": "Kristien Coucke, Enrico Pennings and Leo Sleuwaegen",
+   "first_author_surname": "Coucke",
+   "year": 2007,
+   "journal": "ICC",
+   "journal_code": "ICC",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Coucke-LayoffsRestructuringModes-2007-ICC.html",
+   "page_count": 22,
+   "doi": "10.1093/icc/dtm002",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-others-deangelo-unionnegotiationscorporatepolicy-1991-jfe",
+   "title": "Union negotiations and corporate policy",
+   "authors": "Ha.rry DeAngelo and Linda DeAngelo",
+   "first_author_surname": "DeAngelo",
+   "year": 1991,
+   "journal": "Journal of Financial Economics",
+   "journal_code": "JFE",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/DeAngelo-UnionNegotiationsCorporatePolicy-1991-JFE.html",
+   "page_count": 41,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-denis-topmanagementdismissals-1995-jf",
+   "title": "Performance Changes Following Top Management Dismissals",
+   "authors": null,
+   "first_author_surname": "Denis",
+   "year": 1995,
+   "journal": "Journal of Finance",
+   "journal_code": "JF",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Denis-TopManagementDismissals-1995-JF.html",
+   "page_count": 29,
+   "doi": "10.1111/j.1540-6261.1995.tb04049.x",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-dial-incentivesdownsizingvaluecreation-1995-jfe",
+   "title": "Incentives, downsizing, and value creation at General Dynamics",
+   "authors": "Jay Dial, Kevin J. Murphy* Harvard",
+   "first_author_surname": "Dial",
+   "year": 1995,
+   "journal": "Journal of Financial Economics",
+   "journal_code": "JFE",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Dial-IncentivesDownsizingValueCreation-1995-JFE.html",
+   "page_count": 54,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-dias-racialemploymentlayoffgap-2021-socius",
+   "title": "The Racial Gap in Employment and Layoffs during COVID-19 in the United States: A Visualization",
+   "authors": "Felipe A. Dias1",
+   "first_author_surname": "Dias",
+   "year": 2021,
+   "journal": "Socius",
+   "journal_code": "Socius",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Dias-RacialEmploymentLayoffGap-2021-Socius.html",
+   "page_count": 3,
+   "doi": "10.1177/2378023120988397",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-others-dlouhy-survivorengagementstrain-2021-hrm",
+   "title": "Downsizing and surviving employees' engagement and strain: The role of job resources and job demands",
+   "authors": "Katja Dlouhy",
+   "first_author_surname": "Dlouhy",
+   "year": 2021,
+   "journal": "Human Resource Management",
+   "journal_code": "HRM",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Dlouhy-SurvivorEngagementStrain-2021-HRM.html",
+   "page_count": 20,
+   "doi": "10.1002/hrm.22032",
+   "uncertain_fields": [
+    "authors",
+    "year"
+   ]
+  },
+  {
+   "id": "downsizing-others-fawadsharif-sustaininginnovationdownsizing-2022-ajm",
+   "title": "Sustaining innovation during downsizing strategy through knowledge coupling, business process digitization, and market capitalizing agility",
+   "authors": null,
+   "first_author_surname": "FawadSharif",
+   "year": 2022,
+   "journal": "AJM",
+   "journal_code": "AJM",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/FawadSharif-SustainingInnovationDownsizing-2022-AJM.html",
+   "page_count": 20,
+   "doi": "10.1177/03128962221142435",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-others-fourne-familyfirmmediareactions-2025-jbr",
+   "title": "Media reactions to family Firms’ downsizing and upsizing decisions☆",
+   "authors": null,
+   "first_author_surname": "Fourne",
+   "year": 2025,
+   "journal": "Journal of Business Research",
+   "journal_code": "JBR",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Fourne-FamilyFirmMediaReactions-2025-JBR.html",
+   "page_count": 12,
+   "doi": "10.1016/j.jbusres.2025.115348",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-fraher-furloughedpilotidentity-2014-jms",
+   "title": "Dreaming of Flying When Grounded: Occupational Identity and Occupational Fantasies of Furloughed Airline Pilots",
+   "authors": "Amy L. Fraher and Yiannis Gabriel",
+   "first_author_surname": "Fraher",
+   "year": 2014,
+   "journal": "Journal of Management Studies",
+   "journal_code": "JMS",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Fraher-FurloughedPilotIdentity-2014-JMS.html",
+   "page_count": 26,
+   "doi": "10.1111/joms.12081",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-frazier-statesectorworkforcereduction-2006-ejpe",
+   "title": "State-sector shrinkage and workforce reduction in China",
+   "authors": "Mark W. Frazier",
+   "first_author_surname": "Frazier",
+   "year": 2006,
+   "journal": "EJPE",
+   "journal_code": "EJPE",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Frazier-StateSectorWorkforceReduction-2006-EJPE.html",
+   "page_count": 17,
+   "doi": "10.1016/j.ejpoleco.2005.09.012",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-others-garciavega-laborreforminnovation-2021-rp",
+   "title": "Labor market reform and innovation: Evidence from Spain",
+   "authors": null,
+   "first_author_surname": "GarciaVega",
+   "year": 2021,
+   "journal": "RP",
+   "journal_code": "RP",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/GarciaVega-LaborReformInnovation-2021-RP.html",
+   "page_count": 17,
+   "doi": "10.1016/j.respol.2021.104213",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-others-greenhalgh-workforcereductionstrategies-1988-amr",
+   "title": "Determinants of Work Force Reduction Strategies in Declining Organizations",
+   "authors": null,
+   "first_author_surname": "Greenhalgh",
+   "year": 1988,
+   "journal": "Academy of Management Review",
+   "journal_code": "AMR",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Greenhalgh-WorkforceReductionStrategies-1988-AMR.html",
+   "page_count": 15,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-haldorai-jobinsecuritycovidlayoffs-2024-ijchm",
+   "title": "Job insecurity and survivor workplace behavior following COVID-19 layoﬀ",
+   "authors": "Kavitha Haldorai and Woo Gon Kim",
+   "first_author_surname": "Haldorai",
+   "year": 2024,
+   "journal": "IJCHM",
+   "journal_code": "IJCHM",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Haldorai-JobInsecurityCOVIDLayoffs-2024-IJCHM.html",
+   "page_count": 18,
+   "doi": "10.1108/IJCHM-03-2022-0289",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-others-hardy-downsizinggarmentworkers-2024-wd",
+   "title": "The impact of firm downsizing on workers: Evidence from Ethiopia’s ready-made garment industry",
+   "authors": null,
+   "first_author_surname": "Hardy",
+   "year": 2024,
+   "journal": "WD",
+   "journal_code": "WD",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Hardy-DownsizingGarmentWorkers-2024-WD.html",
+   "page_count": 9,
+   "doi": "10.1016/j.worlddev.2023.106412",
+   "uncertain_fields": [
+    "authors",
+    "journal",
+    "year"
+   ]
+  },
+  {
+   "id": "downsizing-others-huang-generativeailayoffgeneration-2023-ssrn",
+   "title": "The Layoff Generation: How Generative AI will Reshape Employment and Labor Markets",
+   "authors": "Qiwen Huang, Yifan Shen, Yuanchi Sun, Qingquan Zhang*",
+   "first_author_surname": "Huang",
+   "year": 2023,
+   "journal": "SSRN working paper",
+   "journal_code": "SSRN",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Huang-GenerativeAILayoffGeneration-2023-SSRN.html",
+   "page_count": 25,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-iverson-turnoverlayoffsaftermerger-2000-jom",
+   "title": "Determinants of Voluntary Turnover and Layoffs in an Environment of Repeated Downsizing Following a Merger: An Event History Analysis1",
+   "authors": "Roderick D. Iverson Jacqueline A. Pullman",
+   "first_author_surname": "Iverson",
+   "year": 2000,
+   "journal": "Journal of Management",
+   "journal_code": "JOM",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Iverson-TurnoverLayoffsAfterMerger-2000-JOM.html",
+   "page_count": 27,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-jensen-industrialrevolutioninternalcontrol-1993-jf",
+   "title": "The Modern Industrial Revolution, Exit, and the Failure of Internal Control Systems",
+   "authors": "MICHAEL C. JENSEN*",
+   "first_author_surname": "Jensen",
+   "year": 1993,
+   "journal": "Journal of Finance",
+   "journal_code": "JF",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Jensen-IndustrialRevolutionInternalControl-1993-JF.html",
+   "page_count": 50,
+   "doi": "10.1111/j.1540-6261.1993.tb04022.x",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-johnstone-recessiondownsizingalternatives-2024-hrmj",
+   "title": "Human resource management in recession: Restructuring and alternatives to downsizing in times of crisis",
+   "authors": "Stewart Johnstone",
+   "first_author_surname": "Johnstone",
+   "year": 2024,
+   "journal": "Human Resource Management Journal",
+   "journal_code": "HRMJ",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Johnstone-RecessionDownsizingAlternatives-2024-HRMJ.html",
+   "page_count": 20,
+   "doi": "10.1111/1748-8583.12512",
+   "uncertain_fields": [
+    "authors",
+    "year"
+   ]
+  },
+  {
+   "id": "downsizing-others-kwon-restructuringnetworkstability-2007-jmis",
+   "title": "Broken Ties: The Impact of Organizational Restructuring on the Stability of Information- Processing Networks",
+   "authors": "Dowan Kwon, Wonseok Oh & Sangyong Jeon",
+   "first_author_surname": "Kwon",
+   "year": 2007,
+   "journal": "Journal of Management Information Systems",
+   "journal_code": "JMIS",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Kwon-RestructuringNetworkStability-2007-JMIS.html",
+   "page_count": 33,
+   "doi": "10.2753/MIS0742-1222240106",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-lam-teamaffectivejobinsecurity-2023-job",
+   "title": "Transmitting affective job insecurity (AJI) within teams: Layoff effects of AJI convergence on intrateam power struggles and team outcomes",
+   "authors": "Wing Lam1",
+   "first_author_surname": "Lam",
+   "year": 2023,
+   "journal": "JOB",
+   "journal_code": "JOB",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Lam-TeamAffectiveJobInsecurity-2023-JOB.html",
+   "page_count": 16,
+   "doi": "10.1002/job.2726",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-others-lee-layoffstockpricereactions-1997-smj",
+   "title": "A COMPARATIVE ANALYSIS OF LAYOFF ANNOUNCEMENTS AND STOCK PRICE REACTIONS IN THE UNITED STATES AND JAPAN",
+   "authors": "PEGGY M. LEE*",
+   "first_author_surname": "Lee",
+   "year": 1997,
+   "journal": "Strategic Management Journal",
+   "journal_code": "SMJ",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Lee-LayoffStockPriceReactions-1997-SMJ.html",
+   "page_count": 16,
+   "doi": "10.1002/(SICI)1097-0266(199712)18:11",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-lefebvre-smelayoffssocialproximity-2024-jbe",
+   "title": "Layoffs in SMEs: The Role of Social Proximity",
+   "authors": "Vivien Lefebvre1",
+   "first_author_surname": "Lefebvre",
+   "year": 2024,
+   "journal": "Journal of Business Ethics",
+   "journal_code": "JBE",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Lefebvre-SMELayoffsSocialProximity-2024-JBE.html",
+   "page_count": 20,
+   "doi": "10.1007/s10551-023-05414-z",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-macaluso-skillremotenesspostlayoff-2023-cesifo",
+   "title": "Skill Remoteness and Post- Layoff Labor Market Outcomes",
+   "authors": "Claudia Macaluso",
+   "first_author_surname": "Macaluso",
+   "year": 2023,
+   "journal": "CESifo working paper",
+   "journal_code": "CESifo",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Macaluso-SkillRemotenessPostLayoff-2023-CESifo.html",
+   "page_count": 73,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-martin-employeeinvolvementdownsizing-1995-jom",
+   "title": "The Influence of Employee Involvement Program Membership During Downsizing: Attitudes Toward the Employer and the Union",
+   "authors": "Christopher L. Martin",
+   "first_author_surname": "Martin",
+   "year": 1995,
+   "journal": "Journal of Management",
+   "journal_code": "JOM",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Martin-EmployeeInvolvementDownsizing-1995-JOM.html",
+   "page_count": 12,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-martinsneto-routinebiasmasslayoffs-2024-icc",
+   "title": "Routine-biased technological change and employee outcomes after mass layoffs: evidence from Brazil",
+   "authors": null,
+   "first_author_surname": "MartinsNeto",
+   "year": 2024,
+   "journal": "ICC",
+   "journal_code": "ICC",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/MartinsNeto-RoutineBiasMassLayoffs-2024-ICC.html",
+   "page_count": 29,
+   "doi": "10.1093/icc/dtad063",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-others-mclachlan-responsibledownsizingframework-2022-ijhrm",
+   "title": "Developing a framework for responsible downsizing through best ﬁt: the importance of regulatory, procedural, communication and employment responsibilities",
+   "authors": "Christopher J. McLachlan",
+   "first_author_surname": "McLachlan",
+   "year": 2022,
+   "journal": "International Journal of Human Resource Management",
+   "journal_code": "IJHRM",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/McLachlan-ResponsibleDownsizingFramework-2022-IJHRM.html",
+   "page_count": 30,
+   "doi": "10.1080/09585192.2021.1958248",
+   "uncertain_fields": [
+    "authors",
+    "year"
+   ]
+  },
+  {
+   "id": "downsizing-others-meyer-postacquisitionrestructuring-2003-jms",
+   "title": "Post-Acquisition Restructuring as Evolutionary Process*",
+   "authors": "Klaus E. Meyer and Enese Lieb-Dóczy",
+   "first_author_surname": "Meyer",
+   "year": 2003,
+   "journal": "Journal of Management Studies",
+   "journal_code": "JMS",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Meyer-PostAcquisitionRestructuring-2003-JMS.html",
+   "page_count": 24,
+   "doi": "10.1111/1467-6486.00347",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-mishra-survivorresponsesdownsizing-1998-amr",
+   "title": "Explaining How Survivors Respond to Downsizing: The Roles of Trust, Empowerment, Justice, and Work Redesign",
+   "authors": null,
+   "first_author_surname": "Mishra",
+   "year": 1998,
+   "journal": "Academy of Management Review",
+   "journal_code": "AMR",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Mishra-SurvivorResponsesDownsizing-1998-AMR.html",
+   "page_count": 23,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-morrow-costassetretrenchment-2004-jom",
+   "title": "The Effects of Cost and Asset Retrenchment on Firm Performance: The Overlooked Role of a Firm’s Competitive Environment",
+   "authors": "J.L. Morrow Jr.",
+   "first_author_surname": "Morrow",
+   "year": 2004,
+   "journal": "Journal of Management",
+   "journal_code": "JOM",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Morrow-CostAssetRetrenchment-2004-JOM.html",
+   "page_count": 20,
+   "doi": "10.1016/j.jm.2003.01.002",
+   "uncertain_fields": [
+    "authors",
+    "year"
+   ]
+  },
+  {
+   "id": "downsizing-others-nixon-marketreactionsdownsizing-2004-smj",
+   "title": "RESEARCH NOTES AND COMMENTARIES MARKET REACTIONS TO ANNOUNCEMENTS OF CORPORATE DOWNSIZING ACTIONS AND IMPLEMENTATION STRATEGIES",
+   "authors": null,
+   "first_author_surname": "Nixon",
+   "year": 2004,
+   "journal": "Strategic Management Journal",
+   "journal_code": "SMJ",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Nixon-MarketReactionsDownsizing-2004-SMJ.html",
+   "page_count": 9,
+   "doi": "10.1002/smj.423",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-norman-resourcesfollowingdownsizing-2013-jom",
+   "title": "Resources Matter: Examining the Effects of Resources on the State of Firms Following Downsizing",
+   "authors": "Patricia M. Norman",
+   "first_author_surname": "Norman",
+   "year": 2013,
+   "journal": "Journal of Management",
+   "journal_code": "JOM",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Norman-ResourcesFollowingDownsizing-2013-JOM.html",
+   "page_count": 30,
+   "doi": "10.1177/0149206312443560",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-piza-policelayoffscrime-2021-jej",
+   "title": "The Eﬀect of Police Layoﬀs on Crime: A Natural Experiment Involving New Jersey’s Two Largest Cities",
+   "authors": "Eric L. Piza & Vijay F. Chillar",
+   "first_author_surname": "Piza",
+   "year": 2021,
+   "journal": "JEJ",
+   "journal_code": "JEJ",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Piza-PoliceLayoffsCrime-2021-JEJ.html",
+   "page_count": 22,
+   "doi": "10.1080/24751979.2020.1858697",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-others-ramdani-downsizinginnovationoutputs-2021-ajm",
+   "title": "The effect of downsizing on innovation outputs: The role of resource slack and constraints",
+   "authors": "Boumediene Ramdani",
+   "first_author_surname": "Ramdani",
+   "year": 2021,
+   "journal": "AJM",
+   "journal_code": "AJM",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Ramdani-DownsizingInnovationOutputs-2021-AJM.html",
+   "page_count": 20,
+   "doi": "10.1177/0312896220970609",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-others-ruggiero-usesgratificationstheory-2000-mcs",
+   "title": "Uses and Gratifications Theory in the 21st Century",
+   "authors": "Thomas E. Ruggiero",
+   "first_author_surname": "Ruggiero",
+   "year": 2000,
+   "journal": "MCS",
+   "journal_code": "MCS",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Ruggiero-UsesGratificationsTheory-2000-MCS.html",
+   "page_count": 36,
+   "doi": "10.1207/S15327825MCS0301_02",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-others-shi-ceoattributiondownsizing-2023-jms",
+   "title": "Problem Solving or Responsibility Avoidance? The Role of CEO Internal Attribution Tendency in Shaping Corporate Downsizing in Response to Performance Shortfalls",
+   "authors": "Wei Shia, Guoli Chenb and Boshuo Lia",
+   "first_author_surname": "Shi",
+   "year": 2023,
+   "journal": "Journal of Management Studies",
+   "journal_code": "JMS",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Shi-CEOAttributionDownsizing-2023-JMS.html",
+   "page_count": 29,
+   "doi": "10.1111/joms.12896",
+   "uncertain_fields": [
+    "authors",
+    "year"
+   ]
+  },
+  {
+   "id": "downsizing-others-shin-stakeholderorientationceodismissal-2022-smj",
+   "title": "From a shareholder to stakeholder orientation: Evidence from the analyses of CEO dismissal in large U.S. firms",
+   "authors": "Shoonchul Shin1",
+   "first_author_surname": "Shin",
+   "year": 2022,
+   "journal": "Strategic Management Journal",
+   "journal_code": "SMJ",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Shin-StakeholderOrientationCEODismissal-2022-SMJ.html",
+   "page_count": 25,
+   "doi": "10.1002/smj.3369",
+   "uncertain_fields": [
+    "authors",
+    "year"
+   ]
+  },
+  {
+   "id": "downsizing-others-shoss-jobinsecurityreview-2017-jom",
+   "title": "Job Insecurity: An Integrative Review and Agenda for Future Research",
+   "authors": "Mindy K. Shoss",
+   "first_author_surname": "Shoss",
+   "year": 2017,
+   "journal": "Journal of Management",
+   "journal_code": "JOM",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Shoss-JobInsecurityReview-2017-JOM.html",
+   "page_count": 29,
+   "doi": "10.1177/0149206317691574",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-stavrou-downsizingfamilyownership-2007-jbe",
+   "title": "Downsizing and Stakeholder Orientation Among the Fortune 500: Does Family Ownership Matter?",
+   "authors": "Eleni Stavrou George Kassinis Alexis Filotheou",
+   "first_author_surname": "Stavrou",
+   "year": 2007,
+   "journal": "Journal of Business Ethics",
+   "journal_code": "JBE",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Stavrou-DownsizingFamilyOwnership-2007-JBE.html",
+   "page_count": 14,
+   "doi": "10.1007/s10551-006-9162-x",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-trahms-organizationaldeclineturnaround-2013-jom",
+   "title": "Organizational Decline and Turnaround: A Review and Agenda for Future Research",
+   "authors": "Cheryl A. Trahms",
+   "first_author_surname": "Trahms",
+   "year": 2013,
+   "journal": "Journal of Management",
+   "journal_code": "JOM",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Trahms-OrganizationalDeclineTurnaround-2013-JOM.html",
+   "page_count": 31,
+   "doi": "10.1177/0149206312471390",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-tsai-institutionaltheorydownsizing-2006-tqmbe",
+   "title": "An empirical research on the institutional theory of downsizing: Evidence from MNC's subsidiary companies in Taiwan",
+   "authors": null,
+   "first_author_surname": "Tsai",
+   "year": 2006,
+   "journal": "TQMBE",
+   "journal_code": "TQMBE",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Tsai-InstitutionalTheoryDownsizing-2006-TQMBE.html",
+   "page_count": 23,
+   "doi": "10.1080/14783360600588216",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-others-wu-socialnetworksjobsecurity-2013-isr",
+   "title": "Social Network Effects on Productivity and Job Security: Evidence from the Adoption of a Social Networking Tool",
+   "authors": "Lynn Wu,",
+   "first_author_surname": "Wu",
+   "year": 2013,
+   "journal": "Information Systems Research",
+   "journal_code": "ISR",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Wu-SocialNetworksJobSecurity-2013-ISR.html",
+   "page_count": 23,
+   "doi": "10.1287/isre.1120.0465",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-zatzick-downsizingincrisis-2009-smr",
+   "title": "Which Way Should You Downsize in a Crisis?",
+   "authors": null,
+   "first_author_surname": "Zatzick",
+   "year": 2009,
+   "journal": "SMR",
+   "journal_code": "SMR",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Zatzick-DownsizingInCrisis-2009-SMR.html",
+   "page_count": 10,
+   "doi": null,
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-others-zyglidopoulos-downsizingcorporatereputation-2005-bjm",
+   "title": "The Impact of Downsizing on Corporate Reputation",
+   "authors": "Stelios C. Zyglidopoulos",
+   "first_author_surname": "Zyglidopoulos",
+   "year": 2005,
+   "journal": "British Journal of Management",
+   "journal_code": "BJM",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Zyglidopoulos-DownsizingCorporateReputation-2005-BJM.html",
+   "page_count": 7,
+   "doi": "10.1111/j.1467-8551.2005.00460.x",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-others-zyglidopoulos-downsizingsocialreputation-2004-jpa",
+   "title": "Academic Papers The impact of downsizing on the corporate reputation for social performance",
+   "authors": "Stelios C. Zyglidopoulos",
+   "first_author_surname": "Zyglidopoulos",
+   "year": 2004,
+   "journal": "JPA",
+   "journal_code": "JPA",
+   "topic_folder": "Downsizing/Others",
+   "file": "Downsizing/Others/Zyglidopoulos-DownsizingSocialReputation-2004-JPA.html",
+   "page_count": 15,
+   "doi": "10.1002/pa.168",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "downsizing-panagopoulos-salesforcedownsizingrisk-2018-jm",
+   "title": "Sales Force Downsizing and Firm- Idiosyncratic Risk: The Contingent Role of Investors’ Screening and Firm’s Signaling Processes",
+   "authors": null,
+   "first_author_surname": "Panagopoulos",
+   "year": 2018,
+   "journal": "Journal of Marketing",
+   "journal_code": "JM",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Panagopoulos-SalesForceDownsizingRisk-2018-JM.html",
+   "page_count": 19,
+   "doi": "10.1177/0022242918805059",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-sajjadiani-humancapitaloutflows-2023-amj",
+   "title": "WHO IS LEAVING AND WHY? THE DYNAMICS OF HIGH-QUALITY HUMAN CAPITAL OUTFLOWS",
+   "authors": "SIMA SAJJADIANI",
+   "first_author_surname": "Sajjadiani",
+   "year": 2023,
+   "journal": "Academy of Management Journal",
+   "journal_code": "AMJ",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Sajjadiani-HumanCapitalOutflows-2023-AMJ.html",
+   "page_count": 26,
+   "doi": "10.5465/amj.2021.1327",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-schulz-earningsexpectationsdownsizing-2018-smj",
+   "title": "The impact of earnings expectations on corporate downsizing",
+   "authors": null,
+   "first_author_surname": "Schulz",
+   "year": 2018,
+   "journal": "Strategic Management Journal",
+   "journal_code": "SMJ",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Schulz-EarningsExpectationsDownsizing-2018-SMJ.html",
+   "page_count": 12,
+   "doi": "10.1002/smj.2925",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-stabler-layoffcommunicationbrandstrength-2023-ijrm",
+   "title": "How ﬁrm communication affects the impact of layoff announcements on brand strength over time",
+   "authors": null,
+   "first_author_surname": "Stabler",
+   "year": 2023,
+   "journal": "International Journal of Research in Marketing",
+   "journal_code": "IJRM",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Stabler-LayoffCommunicationBrandStrength-2023-IJRM.html",
+   "page_count": 24,
+   "doi": "10.1016/j.ijresmar.2023.06.002",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-subramony-serviceemployeeattrition-2012-jsr",
+   "title": "The Long-Term Inﬂuence of Service Employee Attrition on Customer Outcomes and Proﬁts",
+   "authors": null,
+   "first_author_surname": "Subramony",
+   "year": 2012,
+   "journal": "Journal of Service Research",
+   "journal_code": "JSR",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/Subramony-ServiceEmployeeAttrition-2012-JSR.html",
+   "page_count": 16,
+   "doi": "10.1177/1094670512452792",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "downsizing-vandierendonck-fairnesscommitmentdownsizing-2012-bjm",
+   "title": "Survivors and Victims, a Meta-analytical Review of Fairness and Organizational Commitment after Downsizing",
+   "authors": null,
+   "first_author_surname": "VanDierendonck",
+   "year": 2012,
+   "journal": "British Journal of Management",
+   "journal_code": "BJM",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/VanDierendonck-FairnessCommitmentDownsizing-2012-BJM.html",
+   "page_count": 14,
+   "doi": "10.1111/j.1467-8551.2010.00724.x",
+   "uncertain_fields": [
+    "authors",
+    "year"
+   ]
+  },
+  {
+   "id": "downsizing-vandoornik-strategicformallayoffs-2023-aejae",
+   "title": "Strategic Formal Layoffs: Unemployment Insurance and Informal Labor Markets†",
+   "authors": null,
+   "first_author_surname": "VanDoornik",
+   "year": 2023,
+   "journal": "American Economic Journal: Applied Economics",
+   "journal_code": "AEJAE",
+   "topic_folder": "Downsizing",
+   "file": "Downsizing/VanDoornik-StrategicFormalLayoffs-2023-AEJAE.html",
+   "page_count": 28,
+   "doi": "10.1257/app.20200787",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-baker-differenceindifferencesguide-2026-jel",
+   "title": "­Difference-in-Differences Designs: A Practitioner’s Guide†",
+   "authors": "Andrew Baker, Brantly Callaway, Scott Cunningham,",
+   "first_author_surname": "Baker",
+   "year": 2026,
+   "journal": "Journal of Economic Literature",
+   "journal_code": "JEL",
+   "topic_folder": "Methods",
+   "file": "Methods/Baker-DifferenceInDifferencesGuide-2026-JEL.html",
+   "page_count": 60,
+   "doi": "10.1257/jel.20251650",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-callaway-continuoustreatmentdid-2025-arxiv",
+   "title": "Difference-in-Differences with a Continuous Treatment∗",
+   "authors": "Brantly Callaway† Andrew Goodman-Bacon‡ Pedro H. C. Sant’Anna§",
+   "first_author_surname": "Callaway",
+   "year": 2025,
+   "journal": "arXiv preprint",
+   "journal_code": "arXiv",
+   "topic_folder": "Methods",
+   "file": "Methods/Callaway-ContinuousTreatmentDiD-2025-arXiv.html",
+   "page_count": 43,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-claude-sdidliteraturereview-2026-note",
+   "title": "What the SDID literature actually does",
+   "authors": null,
+   "first_author_surname": "Claude",
+   "year": 2026,
+   "journal": "Note (non-journal)",
+   "journal_code": "Note",
+   "topic_folder": "Methods",
+   "file": "Methods/Claude-SDIDLiteratureReview-2026-Note.html",
+   "page_count": 8,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-daw-matchingregressionmeandid-2018-hsr",
+   "title": "Matching and Regression to the Mean in Difference-in-Differences Analysis",
+   "authors": "Jamie R. Daw",
+   "first_author_surname": "Daw",
+   "year": 2018,
+   "journal": "HSR",
+   "journal_code": "HSR",
+   "topic_folder": "Methods",
+   "file": "Methods/Daw-MatchingRegressionMeanDiD-2018-HSR.html",
+   "page_count": 19,
+   "doi": "10.1111/1475-6773.12993",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "methods-gardner-twostagedid-2021-arxiv",
+   "title": "Two-stage diﬀerences in diﬀerences",
+   "authors": "John Gardner∗",
+   "first_author_surname": "Gardner",
+   "year": 2021,
+   "journal": "arXiv preprint",
+   "journal_code": "arXiv",
+   "topic_folder": "Methods",
+   "file": "Methods/Gardner-TwoStageDiD-2021-arXiv.html",
+   "page_count": 34,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-rambachan-paralleltrendsdraft-2023-restud",
+   "title": "An Honest Approach to Parallel Trends∗",
+   "authors": "Ashesh Rambachan† Jonathan Roth‡",
+   "first_author_surname": "Rambachan",
+   "year": 2023,
+   "journal": "Review of Economic Studies",
+   "journal_code": "REStud",
+   "topic_folder": "Methods",
+   "file": "Methods/Rambachan-ParallelTrendsDraft-2023-REStud.html",
+   "page_count": 126,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-sdid-berman-descriptiveanalyticsvalue-2022-mksc",
+   "title": "The Value of Descriptive Analytics: Evidence from Online Retailers",
+   "authors": "Ron Berman, Ayelet Israeli",
+   "first_author_surname": "Berman",
+   "year": 2022,
+   "journal": "Marketing Science",
+   "journal_code": "MKSC",
+   "topic_folder": "Methods/SDID",
+   "file": "Methods/SDID/Berman-DescriptiveAnalyticsValue-2022-MKSC.html",
+   "page_count": 24,
+   "doi": "10.1287/mksc.2022.1352",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-sdid-guyt-banningunsolicitedflyers-2025-mksc",
+   "title": "Banning Unsolicited Store Flyers: Does Helping the Environment Hurt Retailing?",
+   "authors": null,
+   "first_author_surname": "Guyt",
+   "year": 2025,
+   "journal": "Marketing Science",
+   "journal_code": "MKSC",
+   "topic_folder": "Methods/SDID",
+   "file": "Methods/SDID/Guyt-BanningUnsolicitedFlyers-2025-MKSC.html",
+   "page_count": 22,
+   "doi": "10.1287/mksc.2023.0020",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-sdid-han-banninggamblinglivestreams-2024-ssrn",
+   "title": "The Impact of Banning Online Gambling Livestreams: Evidence from Twitch.tv∗",
+   "authors": "Qifan Han† Jasmine Yang‡ Andrey Simonov§",
+   "first_author_surname": "Han",
+   "year": 2024,
+   "journal": "SSRN working paper",
+   "journal_code": "SSRN",
+   "topic_folder": "Methods/SDID",
+   "file": "Methods/SDID/Han-BanningGamblingLivestreams-2024-SSRN.html",
+   "page_count": 63,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-sdid-keller-bottledepositreturnschemes-2026-jm",
+   "title": "Consequences of Bottle Bills: How Bottle Deposit Return Schemes Affect Retail Prices and Lead Consumers to Larger Package Sizes",
+   "authors": "Kristopher O. Keller",
+   "first_author_surname": "Keller",
+   "year": 2026,
+   "journal": "Journal of Marketing",
+   "journal_code": "JM",
+   "topic_folder": "Methods/SDID",
+   "file": "Methods/SDID/Keller-BottleDepositReturnSchemes-2026-JM.html",
+   "page_count": 22,
+   "doi": "10.1177/00222429251347284",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-sdid-lambrecht-tvadvertisingonlinesales-2024-jmr",
+   "title": "TV Advertising and Online Sales: A Case Study of Intertemporal Substitution Effects for an Online Travel Platform",
+   "authors": "Anja Lambrecht, Catherine Tucker",
+   "first_author_surname": "Lambrecht",
+   "year": 2024,
+   "journal": "Journal of Marketing Research",
+   "journal_code": "JMR",
+   "topic_folder": "Methods/SDID",
+   "file": "Methods/SDID/Lambrecht-TVAdvertisingOnlineSales-2024-JMR.html",
+   "page_count": 23,
+   "doi": "10.1177/00222437231180171",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-sdid-pachali-spotifyplaylistdemand-2025-mksc",
+   "title": "What Drives Demand for Playlists on Spotify?",
+   "authors": "Max J. Pachali, Hannes Datta",
+   "first_author_surname": "Pachali",
+   "year": 2025,
+   "journal": "Marketing Science",
+   "journal_code": "MKSC",
+   "topic_folder": "Methods/SDID",
+   "file": "Methods/SDID/Pachali-SpotifyPlaylistDemand-2025-MKSC.html",
+   "page_count": 12,
+   "doi": "10.1287/mksc.2022.0273",
+   "uncertain_fields": [
+    "authors",
+    "year"
+   ]
+  },
+  {
+   "id": "methods-sdid-pape-oneclickcompetition-2026-mksc",
+   "title": "Is Competition Only One Click Away? The Digital Markets Act’s Impact on Google Maps",
+   "authors": null,
+   "first_author_surname": "Pape",
+   "year": 2026,
+   "journal": "Marketing Science",
+   "journal_code": "MKSC",
+   "topic_folder": "Methods/SDID",
+   "file": "Methods/SDID/Pape-OneClickCompetition-2026-MKSC.html",
+   "page_count": 19,
+   "doi": "10.1287/mksc.2025.0159",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-sdid-qian-starcreatorslivestreaming-2026-jmr",
+   "title": "The Power of Star Creators: Evidence from the Live Streaming Industry",
+   "authors": "Kun Qian",
+   "first_author_surname": "Qian",
+   "year": 2026,
+   "journal": "Journal of Marketing Research",
+   "journal_code": "JMR",
+   "topic_folder": "Methods/SDID",
+   "file": "Methods/SDID/Qian-StarCreatorsLivestreaming-2026-JMR.html",
+   "page_count": 18,
+   "doi": "10.1177/00222437251359163",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-sdid-vanlin-retiringstoreflyer-2025-ti",
+   "title": "Retiring the store flyer: Effects of ceasing print store flyers on household grocery shopping behavior",
+   "authors": null,
+   "first_author_surname": "VanLin",
+   "year": 2025,
+   "journal": "(uncertain: 'TI')",
+   "journal_code": "TI",
+   "topic_folder": "Methods/SDID",
+   "file": "Methods/SDID/VanLin-RetiringStoreFlyer-2025-TI.html",
+   "page_count": 64,
+   "doi": null,
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "methods-sdid-wu-adslivestreamviewers-2026-jm",
+   "title": "More Ads, More Viewers? Analyzing Behavioral Shifts from Advertising Permissions to Live Streaming Consumption",
+   "authors": "Michael W. Wu",
+   "first_author_surname": "Wu",
+   "year": 2026,
+   "journal": "Journal of Marketing",
+   "journal_code": "JM",
+   "topic_folder": "Methods/SDID",
+   "file": "Methods/SDID/Wu-AdsLivestreamViewers-2026-JM.html",
+   "page_count": 20,
+   "doi": "10.1177/00222429251363144",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-staggered-ananthakrishnan-americanlibrarybookbans-2025-mksc",
+   "title": "Book Bans in American Libraries: Impact of Politics on Inclusive Content Consumption",
+   "authors": "Uttara M. Ananthakrishnan, Naveen Basavaraj, Sabari Rajan Karmegam, Ananya Sen, Michael D. Smith",
+   "first_author_surname": "Ananthakrishnan",
+   "year": 2025,
+   "journal": "Marketing Science",
+   "journal_code": "MKSC",
+   "topic_folder": "Methods/Staggered",
+   "file": "Methods/Staggered/Ananthakrishnan-AmericanLibraryBookBans-2025-MKSC.html",
+   "page_count": 22,
+   "doi": "10.1287/mksc.2024.0716",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-staggered-breugelmans-radicalstoretransformation-2024-jams",
+   "title": "What is happening to my nearby stores? The own‑ and cross‑effect of a radical store transformation on existing customers",
+   "authors": null,
+   "first_author_surname": "Breugelmans",
+   "year": 2024,
+   "journal": "Journal of the Academy of Marketing Science",
+   "journal_code": "JAMS",
+   "topic_folder": "Methods/Staggered",
+   "file": "Methods/Staggered/Breugelmans-RadicalStoreTransformation-2024-JAMS.html",
+   "page_count": 22,
+   "doi": "10.1007/s11747-023-00946-2",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-staggered-cheng-deepdidheterogeneouseffects-2026-mksc",
+   "title": "A Deep-DiD Method to Estimate Heterogeneous Treatment Effects: Application to Content Creator Selection",
+   "authors": null,
+   "first_author_surname": "Cheng",
+   "year": 2026,
+   "journal": "Marketing Science",
+   "journal_code": "MKSC",
+   "topic_folder": "Methods/Staggered",
+   "file": "Methods/Staggered/Cheng-DeepDiDHeterogeneousEffects-2026-MKSC.html",
+   "page_count": 23,
+   "doi": "10.1287/mksc.2023.0511",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-staggered-chiong-massshootingsretail-2025-mksc",
+   "title": "Mass Shootings and Their Impact on Retail",
+   "authors": null,
+   "first_author_surname": "Chiong",
+   "year": 2025,
+   "journal": "Marketing Science",
+   "journal_code": "MKSC",
+   "topic_folder": "Methods/Staggered",
+   "file": "Methods/Staggered/Chiong-MassShootingsRetail-2025-MKSC.html",
+   "page_count": 11,
+   "doi": "10.1287/mksc.2024.0752",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-staggered-guo-membershipfreeshipping-2023-jm",
+   "title": "The Effectiveness of Membership-Based Free Shipping: An Empirical Investigation of Consumers’ Purchase Behaviors and Revenue Contribution",
+   "authors": "Fangfei Guo and Yan Liu",
+   "first_author_surname": "Guo",
+   "year": 2023,
+   "journal": "Journal of Marketing",
+   "journal_code": "JM",
+   "topic_folder": "Methods/Staggered",
+   "file": "Methods/Staggered/Guo-MembershipFreeShipping-2023-JM.html",
+   "page_count": 21,
+   "doi": "10.1177/00222429231158116",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-staggered-hoffmann-managerliabilityproductrecalls-2024-jm",
+   "title": "So, Sue Me…If You Can! How Legal Changes Diminishing Managers’ Risk of Being Held Liable by Shareholders Affect Firms’ Likelihood to Recall Products",
+   "authors": "Arvid O.I. Hoffmann",
+   "first_author_surname": "Hoffmann",
+   "year": 2024,
+   "journal": "Journal of Marketing",
+   "journal_code": "JM",
+   "topic_folder": "Methods/Staggered",
+   "file": "Methods/Staggered/Hoffmann-ManagerLiabilityProductRecalls-2024-JM.html",
+   "page_count": 22,
+   "doi": "10.1177/00222429241231236",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-staggered-keller-branddeletioncompetition-2025-ssrn",
+   "title": "Filling the Void: How Competing Brands Can Capitalize on a Brand Deletion",
+   "authors": "Kristopher O. Keller1",
+   "first_author_surname": "Keller",
+   "year": 2025,
+   "journal": "SSRN working paper",
+   "journal_code": "SSRN",
+   "topic_folder": "Methods/Staggered",
+   "file": "Methods/Staggered/Keller-BrandDeletionCompetition-2025-SSRN.html",
+   "page_count": 78,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "methods-staggered-lee-socialadvertisingbusinessresilience-2025-jim",
+   "title": "Social Media Advertising’s Role in Small Business Resilience Amid Lockdowns",
+   "authors": "Shun-Yang Lee",
+   "first_author_surname": "Lee",
+   "year": 2025,
+   "journal": "Journal of International Marketing",
+   "journal_code": "JIM",
+   "topic_folder": "Methods/Staggered",
+   "file": "Methods/Staggered/Lee-SocialAdvertisingBusinessResilience-2025-JIM.html",
+   "page_count": 15,
+   "doi": "10.1177/10949968251336683",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "methods-staggered-li-forwarddifferenceindifferences-2024-mksc",
+   "title": "Frontiers: A Simple Forward Difference-in-Differences Method",
+   "authors": "Kathleen T. Lia",
+   "first_author_surname": "Li",
+   "year": 2024,
+   "journal": "Marketing Science",
+   "journal_code": "MKSC",
+   "topic_folder": "Methods/Staggered",
+   "file": "Methods/Staggered/Li-ForwardDifferenceInDifferences-2024-MKSC.html",
+   "page_count": 14,
+   "doi": "10.1287/mksc.2022.0212",
+   "uncertain_fields": [
+    "authors",
+    "year"
+   ]
+  },
+  {
+   "id": "sentiment-allen-usercommunityfeedback-2026-amj",
+   "title": "LISTEN TO YOUR USERS? SELF-SELECTION IN USER COMMUNITY FEEDBACK AND COMMERCIAL IMPACT",
+   "authors": "RYAN T. ALLEN",
+   "first_author_surname": "Allen",
+   "year": 2026,
+   "journal": "Academy of Management Journal",
+   "journal_code": "AMJ",
+   "topic_folder": "Sentiment",
+   "file": "Sentiment/Allen-UserCommunityFeedback-2026-AMJ.html",
+   "page_count": 30,
+   "doi": "10.5465/amj.2024.0178",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-cheng-reputationburningsponsorship-2025-ms",
+   "title": "Reputation Burning: Analyzing the Impact of Brand Sponsorship on Social Influencers",
+   "authors": null,
+   "first_author_surname": "Cheng",
+   "year": 2025,
+   "journal": "Management Science",
+   "journal_code": "MS",
+   "topic_folder": "Sentiment",
+   "file": "Sentiment/Cheng-ReputationBurningSponsorship-2025-MS.html",
+   "page_count": 47,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-community-carballasmichowski-interplatformecosystems-2026-smj",
+   "title": "Inter-platform ecosystems",
+   "authors": null,
+   "first_author_surname": "CarballaSmichowski",
+   "year": 2026,
+   "journal": "Strategic Management Journal",
+   "journal_code": "SMJ",
+   "topic_folder": "Sentiment/Community",
+   "file": "Sentiment/Community/CarballaSmichowski-InterPlatformEcosystems-2026-SMJ.html",
+   "page_count": 38,
+   "doi": "10.1002/smj.70070",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-community-fourne-familyfirmmediareactions-2025-jbr",
+   "title": "Media reactions to family Firms’ downsizing and upsizing decisions☆",
+   "authors": null,
+   "first_author_surname": "Fourne",
+   "year": 2025,
+   "journal": "Journal of Business Research",
+   "journal_code": "JBR",
+   "topic_folder": "Sentiment/Community",
+   "file": "Sentiment/Community/Fourne-FamilyFirmMediaReactions-2025-JBR.html",
+   "page_count": 12,
+   "doi": "10.1016/j.jbusres.2025.115348",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-community-huang-twitchlivestreampromotion-2025-mksc",
+   "title": "The Promotional Effects of Live Streams by Twitch Influencers",
+   "authors": null,
+   "first_author_surname": "Huang",
+   "year": 2025,
+   "journal": "Marketing Science",
+   "journal_code": "MKSC",
+   "topic_folder": "Sentiment/Community",
+   "file": "Sentiment/Community/Huang-TwitchLivestreamPromotion-2025-MKSC.html",
+   "page_count": 18,
+   "doi": "10.1287/mksc.2022.0400",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-community-jo-anonymouspeerinfluence-2025-jcr",
+   "title": "In the Company of Strangers: Social Influence from Anonymous Peers in Online Game Settings",
+   "authors": "WOOYONG JO SARANG SUNDER JEONGHYE CHOI MINAKSHI TRIVEDI",
+   "first_author_surname": "Jo",
+   "year": 2025,
+   "journal": "Journal of Consumer Research",
+   "journal_code": "JCR",
+   "topic_folder": "Sentiment/Community",
+   "file": "Sentiment/Community/Jo-AnonymousPeerInfluence-2025-JCR.html",
+   "page_count": 24,
+   "doi": "10.1093/jcr/ucae075",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-community-jo-anonymouspeerinfluenceappendix-2025-jcr",
+   "title": "WEB APPENDIX In the Company of Strangers: Social Influence from Anonymous Peers in Online Game Settings",
+   "authors": "Wooyong Jo Sarang Sunder Jeonghye Choi Minakshi Trivedi",
+   "first_author_surname": "Jo",
+   "year": 2025,
+   "journal": "Journal of Consumer Research",
+   "journal_code": "JCR",
+   "topic_folder": "Sentiment/Community",
+   "file": "Sentiment/Community/Jo-AnonymousPeerInfluenceAppendix-2025-JCR.html",
+   "page_count": 29,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-community-kwon-restructuringnetworkstability-2007-jmis",
+   "title": "Broken Ties: The Impact of Organizational Restructuring on the Stability of Information- Processing Networks",
+   "authors": "Dowan Kwon, Wonseok Oh & Sangyong Jeon",
+   "first_author_surname": "Kwon",
+   "year": 2007,
+   "journal": "Journal of Management Information Systems",
+   "journal_code": "JMIS",
+   "topic_folder": "Sentiment/Community",
+   "file": "Sentiment/Community/Kwon-RestructuringNetworkStability-2007-JMIS.html",
+   "page_count": 33,
+   "doi": "10.2753/MIS0742-1222240106",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-community-lefebvre-smelayoffssocialproximity-2024-jbe",
+   "title": "Layoffs in SMEs: The Role of Social Proximity",
+   "authors": "Vivien Lefebvre1",
+   "first_author_surname": "Lefebvre",
+   "year": 2024,
+   "journal": "Journal of Business Ethics",
+   "journal_code": "JBE",
+   "topic_folder": "Sentiment/Community",
+   "file": "Sentiment/Community/Lefebvre-SMELayoffsSocialProximity-2024-JBE.html",
+   "page_count": 20,
+   "doi": "10.1007/s10551-023-05414-z",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-community-li-youtubepurchaseusageeffectsdraft-2025-mksc",
+   "title": "Opposing Influences of YouTube Influencers: Purchase and Usage Effects in the Video Game Industry*",
+   "authors": null,
+   "first_author_surname": "Li",
+   "year": 2025,
+   "journal": "Marketing Science",
+   "journal_code": "MKSC",
+   "topic_folder": "Sentiment/Community",
+   "file": "Sentiment/Community/Li-YouTubePurchaseUsageEffectsDraft-2025-MKSC.html",
+   "page_count": 60,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-community-narayan-peerinfluenceattributepreferences-2011-mksc",
+   "title": "How Peer Influence Affects Attribute Preferences: A Bayesian Updating Mechanism",
+   "authors": "Vishal Narayan, Vithala R. Rao, Carolyne Saunders,",
+   "first_author_surname": "Narayan",
+   "year": 2011,
+   "journal": "Marketing Science",
+   "journal_code": "MKSC",
+   "topic_folder": "Sentiment/Community",
+   "file": "Sentiment/Community/Narayan-PeerInfluenceAttributePreferences-2011-MKSC.html",
+   "page_count": 18,
+   "doi": "10.1287/mksc.1100.0618",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-community-ruggiero-usesgratificationstheory-2000-mcs",
+   "title": "Uses and Gratifications Theory in the 21st Century",
+   "authors": "Thomas E. Ruggiero",
+   "first_author_surname": "Ruggiero",
+   "year": 2000,
+   "journal": "MCS",
+   "journal_code": "MCS",
+   "topic_folder": "Sentiment/Community",
+   "file": "Sentiment/Community/Ruggiero-UsesGratificationsTheory-2000-MCS.html",
+   "page_count": 36,
+   "doi": "10.1207/S15327825MCS0301_02",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "sentiment-community-wu-socialnetworksjobsecurity-2013-isr",
+   "title": "Social Network Effects on Productivity and Job Security: Evidence from the Adoption of a Social Networking Tool",
+   "authors": "Lynn Wu,",
+   "first_author_surname": "Wu",
+   "year": 2013,
+   "journal": "Information Systems Research",
+   "journal_code": "ISR",
+   "topic_folder": "Sentiment/Community",
+   "file": "Sentiment/Community/Wu-SocialNetworksJobSecurity-2013-ISR.html",
+   "page_count": 23,
+   "doi": "10.1287/isre.1120.0465",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-deolankar-downvotescontentcreation-2026-jmr",
+   "title": "The Effect of Downvotes on Content Creation: Evidence from Social Media",
+   "authors": "Varad Deolankar, Jessica Fong",
+   "first_author_surname": "Deolankar",
+   "year": 2026,
+   "journal": "Journal of Marketing Research",
+   "journal_code": "JMR",
+   "topic_folder": "Sentiment",
+   "file": "Sentiment/Deolankar-DownvotesContentCreation-2026-JMR.html",
+   "page_count": 21,
+   "doi": "10.1177/00222437261417657",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-jo-creatorloyaltygameusage-2024-arxiv",
+   "title": "Can Loyalty to Creators Dilute Loyalty to Promoted Products? Examining the Heterogeneous Effects of Live-Streamed Content on Video Game Usage",
+   "authors": "Wooyong Jo, Mike Lewis, Yanwen Wang",
+   "first_author_surname": "Jo",
+   "year": 2024,
+   "journal": "arXiv preprint",
+   "journal_code": "arXiv",
+   "topic_folder": "Sentiment",
+   "file": "Sentiment/Jo-CreatorLoyaltyGameUsage-2024-arXiv.html",
+   "page_count": 51,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-loh-platformcompetitioncomplementors-2026-smj",
+   "title": "Platform competition and strategic trade-offs for complementors: Heterogeneous reactions to the entry of a new platform",
+   "authors": "Johannes Loh1",
+   "first_author_surname": "Loh",
+   "year": 2026,
+   "journal": "Strategic Management Journal",
+   "journal_code": "SMJ",
+   "topic_folder": "Sentiment",
+   "file": "Sentiment/Loh-PlatformCompetitionComplementors-2026-SMJ.html",
+   "page_count": 59,
+   "doi": "10.1002/smj.70062",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-mousavi-psychometrictextanalysis-2026-isr",
+   "title": "From Lexicons to Large Language Models: A Holistic Evaluation of Psychometric Text Analysis in Social Science Research",
+   "authors": "Reza Mousavi, Brent Kitchens, Abbie Griffith Oliver, Ahmed Abbasi",
+   "first_author_surname": "Mousavi",
+   "year": 2026,
+   "journal": "Information Systems Research",
+   "journal_code": "ISR",
+   "topic_folder": "Sentiment",
+   "file": "Sentiment/Mousavi-PsychometricTextAnalysis-2026-ISR.html",
+   "page_count": 21,
+   "doi": "10.1287/isre.2024.1143",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-puranam-minimumwagesserviceperceptions-2021-mksc",
+   "title": "The Impact of Increase in Minimum Wages on Consumer Perceptions of Service: A Transformer Model of Online Restaurant Reviews",
+   "authors": null,
+   "first_author_surname": "Puranam",
+   "year": 2021,
+   "journal": "Marketing Science",
+   "journal_code": "MKSC",
+   "topic_folder": "Sentiment",
+   "file": "Sentiment/Puranam-MinimumWagesServicePerceptions-2021-MKSC.html",
+   "page_count": 21,
+   "doi": "10.1287/mksc.2021.1294",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-puyang-verticalplatformcompetition-2026-mksc",
+   "title": "Vertical Competition on a Common Platform",
+   "authors": "Xiaojuan Puyang",
+   "first_author_surname": "Puyang",
+   "year": 2026,
+   "journal": "Marketing Science",
+   "journal_code": "MKSC",
+   "topic_folder": "Sentiment",
+   "file": "Sentiment/Puyang-VerticalPlatformCompetition-2026-MKSC.html",
+   "page_count": 47,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-rathje-multilingualpsychologicaltextanalysis-2024-pnas",
+   "title": "GPT is an effective tool for multilingual psychological text analysis",
+   "authors": null,
+   "first_author_surname": "Rathje",
+   "year": 2024,
+   "journal": "Proceedings of the National Academy of Sciences",
+   "journal_code": "PNAS",
+   "topic_folder": "Sentiment",
+   "file": "Sentiment/Rathje-MultilingualPsychologicalTextAnalysis-2024-PNAS.html",
+   "page_count": 11,
+   "doi": "10.1073/pnas.2308950121",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-rietveld-socialfeaturesfreemium-2022-smj",
+   "title": "On top of the game? The double-edged sword of incorporating social features into freemium products",
+   "authors": "Joost Rietveld",
+   "first_author_surname": "Rietveld",
+   "year": 2022,
+   "journal": "Strategic Management Journal",
+   "journal_code": "SMJ",
+   "topic_folder": "Sentiment",
+   "file": "Sentiment/Rietveld-SocialFeaturesFreemium-2022-SMJ.html",
+   "page_count": 26,
+   "doi": "10.1002/smj.3362",
+   "uncertain_fields": [
+    "authors",
+    "year"
+   ]
+  },
+  {
+   "id": "sentiment-word-of-mouth-alexandrov-socialselfmotiveswom-2013-jams",
+   "title": "The effects of social- and self-motives on the intentions to share positive and negative word of mouth",
+   "authors": "Aliosha Alexandrov & Bryan Lilly & Emin Babakus",
+   "first_author_surname": "Alexandrov",
+   "year": 2013,
+   "journal": "Journal of the Academy of Marketing Science",
+   "journal_code": "JAMS",
+   "topic_folder": "Sentiment/Word of mouth",
+   "file": "Sentiment/Word of mouth/Alexandrov-SocialSelfMotivesWOM-2013-JAMS.html",
+   "page_count": 16,
+   "doi": "10.1007/s11747-012-0323-4",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-word-of-mouth-east-positivenegativewomincidence-2007-ijrm",
+   "title": "The relative incidence of positive and negative word of mouth: A multi-category study",
+   "authors": null,
+   "first_author_surname": "East",
+   "year": 2007,
+   "journal": "International Journal of Research in Marketing",
+   "journal_code": "IJRM",
+   "topic_folder": "Sentiment/Word of mouth",
+   "file": "Sentiment/Word of mouth/East-PositiveNegativeWOMIncidence-2007-IJRM.html",
+   "page_count": 10,
+   "doi": "10.1016/j.ijresmar.2006.12.004",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-word-of-mouth-folkes-consumerattributionreview-1988-jcr",
+   "title": "Recent Attribution Research in Consumer Behavior: A Review and New Directions",
+   "authors": "VALERIE S. FOLKES*",
+   "first_author_surname": "Folkes",
+   "year": 1988,
+   "journal": "Journal of Consumer Research",
+   "journal_code": "JCR",
+   "topic_folder": "Sentiment/Word of mouth",
+   "file": "Sentiment/Word of mouth/Folkes-ConsumerAttributionReview-1988-JCR.html",
+   "page_count": 18,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-word-of-mouth-krishnamurthy-electronicwombrandimage-2018-jrcs",
+   "title": "Electronic word-of-mouth and the brand image: Exploring the moderating role of involvement through a consumer expectations lens",
+   "authors": null,
+   "first_author_surname": "Krishnamurthy",
+   "year": 2018,
+   "journal": "JRCS",
+   "journal_code": "JRCS",
+   "topic_folder": "Sentiment/Word of mouth",
+   "file": "Sentiment/Word of mouth/Krishnamurthy-ElectronicWOMBrandImage-2018-JRCS.html",
+   "page_count": 8,
+   "doi": "10.1016/j.jretconser.2018.03.010",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "sentiment-word-of-mouth-kuppelwieser-customerexperiencevaluewom-2022-jsm",
+   "title": "The role of customer experience in the perceived value–word-of-mouth relationship",
+   "authors": "Volker G. Kuppelwieser",
+   "first_author_surname": "Kuppelwieser",
+   "year": 2022,
+   "journal": "JSM",
+   "journal_code": "JSM",
+   "topic_folder": "Sentiment/Word of mouth",
+   "file": "Sentiment/Word of mouth/Kuppelwieser-CustomerExperienceValueWOM-2022-JSM.html",
+   "page_count": 15,
+   "doi": "10.1108/JSM-11-2020-0447]",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "sentiment-word-of-mouth-laczniak-negativewomattribution-2001-jcp",
+   "title": "Consumers' Responses to Negative Word-of-Mouth Communication: An Attribution Theory Perspective",
+   "authors": null,
+   "first_author_surname": "Laczniak",
+   "year": 2001,
+   "journal": "Journal of Consumer Psychology",
+   "journal_code": "JCP",
+   "topic_folder": "Sentiment/Word of mouth",
+   "file": "Sentiment/Word of mouth/Laczniak-NegativeWOMAttribution-2001-JCP.html",
+   "page_count": 17,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-word-of-mouth-mittal-customerswitchingsatisfactionloyalty-1998-jsm",
+   "title": "Why do customers switch? The dynamics of satisfaction versus loyalty",
+   "authors": "Banwari Mittal",
+   "first_author_surname": "Mittal",
+   "year": 1998,
+   "journal": "JSM",
+   "journal_code": "JSM",
+   "topic_folder": "Sentiment/Word of mouth",
+   "file": "Sentiment/Word of mouth/Mittal-CustomerSwitchingSatisfactionLoyalty-1998-JSM.html",
+   "page_count": 18,
+   "doi": null,
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "sentiment-word-of-mouth-nam-electronicwomdeterminants-2020-dss",
+   "title": "Determinants of writing positive and negative electronic word-of-mouth: Empirical evidence for two types of expectation confirmation",
+   "authors": null,
+   "first_author_surname": "Nam",
+   "year": 2020,
+   "journal": "DSS",
+   "journal_code": "DSS",
+   "topic_folder": "Sentiment/Word of mouth",
+   "file": "Sentiment/Word of mouth/Nam-ElectronicWOMDeterminants-2020-DSS.html",
+   "page_count": 14,
+   "doi": "10.1016/j.dss.2019.113168",
+   "uncertain_fields": [
+    "authors",
+    "journal",
+    "year"
+   ]
+  },
+  {
+   "id": "sentiment-word-of-mouth-richins-dissatisfiedconsumernegativewom-1983-jm",
+   "title": "Negative Word-of-Mouth by Dissatisfied Consumers: A Pilot Study",
+   "authors": null,
+   "first_author_surname": "Richins",
+   "year": 1983,
+   "journal": "Journal of Marketing",
+   "journal_code": "JM",
+   "topic_folder": "Sentiment/Word of mouth",
+   "file": "Sentiment/Word of mouth/Richins-DissatisfiedConsumerNegativeWOM-1983-JM.html",
+   "page_count": 12,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-word-of-mouth-wilson-negativewombrandconnection-2017-jams",
+   "title": "Negative word of mouth can be a positive for consumers connected to the brand",
+   "authors": "Andrew E. Wilson1 & Michael D. Giebelhausen2 & Michael K. Brady3",
+   "first_author_surname": "Wilson",
+   "year": 2017,
+   "journal": "Journal of the Academy of Marketing Science",
+   "journal_code": "JAMS",
+   "topic_folder": "Sentiment/Word of mouth",
+   "file": "Sentiment/Word of mouth/Wilson-NegativeWOMBrandConnection-2017-JAMS.html",
+   "page_count": 14,
+   "doi": "10.1007/s11747-017-0515-z",
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-word-of-mouth-zhang-endorsermessagecharacteristics-2025-imds",
+   "title": "When does Endorsement Work? The Moderating Role of Endorser and Message Characteristics",
+   "authors": null,
+   "first_author_surname": "Zhang",
+   "year": 2025,
+   "journal": "IMDS",
+   "journal_code": "IMDS",
+   "topic_folder": "Sentiment/Word of mouth",
+   "file": "Sentiment/Word of mouth/Zhang-EndorserMessageCharacteristics-2025-IMDS.html",
+   "page_count": 43,
+   "doi": "10.1108/IMDS-01-2025-0094",
+   "uncertain_fields": [
+    "authors",
+    "journal"
+   ]
+  },
+  {
+   "id": "sentiment-wu-platforminformationpricetargeting-2025-ssrn",
+   "title": "Platform Information Design and Competitive Price Targeting",
+   "authors": "Ruiqi Wu, Yufeng Huang and Nan Li ∗",
+   "first_author_surname": "Wu",
+   "year": 2025,
+   "journal": "SSRN working paper",
+   "journal_code": "SSRN",
+   "topic_folder": "Sentiment",
+   "file": "Sentiment/Wu-PlatformInformationPriceTargeting-2025-SSRN.html",
+   "page_count": 66,
+   "doi": null,
+   "uncertain_fields": [
+    "authors"
+   ]
+  },
+  {
+   "id": "sentiment-zhang-consumptiontimehelpfulvotes-2026-jm",
+   "title": "Displaying the Amount of Consumption Time in Online Reviews Can Affect Helpful Votes",
+   "authors": "Zheng Zhang",
+   "first_author_surname": "Zhang",
+   "year": 2026,
+   "journal": "Journal of Marketing",
+   "journal_code": "JM",
+   "topic_folder": "Sentiment",
+   "file": "Sentiment/Zhang-ConsumptionTimeHelpfulVotes-2026-JM.html",
+   "page_count": 16,
+   "doi": "10.1177/00222429251321370",
+   "uncertain_fields": [
+    "authors"
+   ]
+  }
+ ]
+}

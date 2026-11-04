@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-martin-employeeinvolvementdownsizing-1995-jom",
+ "file": "Downsizing/Others/Martin-EmployeeInvolvementDownsizing-1995-JOM.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Martin-EmployeeInvolvementDownsizing-1995-JOM.pdf",
+ "first_author_surname": "Martin",
+ "year": 1995,
+ "journal_code": "JOM",
+ "filename_topic": "EmployeeInvolvementDownsizing",
+ "journal": "Journal of Management",
+ "page_count": 12,
+ "title": "The Influence of Employee Involvement Program Membership During Downsizing: Attitudes Toward the Employer and the Union",
+ "authors": "Christopher L. Martin",
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 93,
+  "furniture": 18,
+  "figures": 0,
+  "tables_html": 1,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 144149,
+ "html_sha256": "27b5d446f4646c7b9c452163682d7b87ede506ea2dc58689ebf5186c2c2bafc0",
+ "note_flags": []
+}

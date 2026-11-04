@@ -1,0 +1,31 @@
+{
+ "id": "methods-sdid-lambrecht-tvadvertisingonlinesales-2024-jmr",
+ "file": "Methods/SDID/Lambrecht-TVAdvertisingOnlineSales-2024-JMR.html",
+ "topic_folder": "Methods/SDID",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/SDID/Lambrecht-TVAdvertisingOnlineSales-2024-JMR.pdf",
+ "first_author_surname": "Lambrecht",
+ "year": 2024,
+ "journal_code": "JMR",
+ "filename_topic": "TVAdvertisingOnlineSales",
+ "journal": "Journal of Marketing Research",
+ "page_count": 23,
+ "title": "TV Advertising and Online Sales: A Case Study of Intertemporal Substitution Effects for an Online Travel Platform",
+ "authors": "Anja Lambrecht, Catherine Tucker",
+ "doi": "10.1177/00222437231180171",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 376,
+  "furniture": 22,
+  "figures": 4,
+  "tables_html": 9,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 688023,
+ "html_sha256": "94c7ff4f597d52d39928b8fd0679a75b8c05d2ae348f9bdf63cdeca36485a19f",
+ "note_flags": []
+}

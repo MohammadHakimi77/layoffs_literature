@@ -1,0 +1,33 @@
+{
+ "id": "sentiment-community-huang-twitchlivestreampromotion-2025-mksc",
+ "file": "Sentiment/Community/Huang-TwitchLivestreamPromotion-2025-MKSC.html",
+ "topic_folder": "Sentiment/Community",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Community/Huang-TwitchLivestreamPromotion-2025-MKSC.pdf",
+ "first_author_surname": "Huang",
+ "year": 2025,
+ "journal_code": "MKSC",
+ "filename_topic": "TwitchLivestreamPromotion",
+ "journal": "Marketing Science",
+ "page_count": 18,
+ "title": "The Promotional Effects of Live Streams by Twitch Influencers",
+ "authors": null,
+ "doi": "10.1287/mksc.2022.0400",
+ "copyright_years_on_first_pages": [
+  2025
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 255,
+  "furniture": 17,
+  "figures": 8,
+  "tables_html": 3,
+  "tables_image": 1,
+  "equations_img": 9,
+  "image_only_pages": 0
+ },
+ "html_bytes": 1522226,
+ "html_sha256": "d3843d605b72e23c094f2b2344ab469096b8dcb7030257c9835450494a730b6c",
+ "note_flags": []
+}

@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-stabler-layoffcommunicationbrandstrength-2023-ijrm",
+ "file": "Downsizing/Stabler-LayoffCommunicationBrandStrength-2023-IJRM.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Stabler-LayoffCommunicationBrandStrength-2023-IJRM.pdf",
+ "first_author_surname": "Stabler",
+ "year": 2023,
+ "journal_code": "IJRM",
+ "filename_topic": "LayoffCommunicationBrandStrength",
+ "journal": "International Journal of Research in Marketing",
+ "page_count": 24,
+ "title": "How ﬁrm communication affects the impact of layoff announcements on brand strength over time",
+ "authors": null,
+ "doi": "10.1016/j.ijresmar.2023.06.002",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 373,
+  "furniture": 47,
+  "figures": 5,
+  "tables_html": 8,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 814520,
+ "html_sha256": "3ca238b9e3b9342872477c26b8542baa0c332cbbfb79b612e52d8aa6ce5c4d40",
+ "note_flags": []
+}

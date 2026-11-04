@@ -1,0 +1,34 @@
+{
+ "id": "downsizing-berry-linkedinemploymentdifferences-2024-nber",
+ "file": "Downsizing/Berry-LinkedInEmploymentDifferences-2024-NBER.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Berry-LinkedInEmploymentDifferences-2024-NBER.pdf",
+ "first_author_surname": "Berry",
+ "year": 2024,
+ "journal_code": "NBER",
+ "filename_topic": "LinkedInEmploymentDifferences",
+ "journal": "NBER working paper",
+ "page_count": 62,
+ "title": "UCI Traditional letterhead",
+ "authors": null,
+ "doi": null,
+ "copyright_years_on_first_pages": [
+  2024
+ ],
+ "uncertain_fields": [
+  "authors",
+  "title"
+ ],
+ "conversion": {
+  "blocks": 883,
+  "furniture": 33,
+  "figures": 9,
+  "tables_html": 17,
+  "tables_image": 2,
+  "equations_img": 1,
+  "image_only_pages": 0
+ },
+ "html_bytes": 1265515,
+ "html_sha256": "53f42788bba9404093ce409d93314a83cb368857085228ed0dfd3663683519eb",
+ "note_flags": []
+}

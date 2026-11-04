@@ -1,0 +1,32 @@
+{
+ "id": "downsizing-others-tsai-institutionaltheorydownsizing-2006-tqmbe",
+ "file": "Downsizing/Others/Tsai-InstitutionalTheoryDownsizing-2006-TQMBE.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Tsai-InstitutionalTheoryDownsizing-2006-TQMBE.pdf",
+ "first_author_surname": "Tsai",
+ "year": 2006,
+ "journal_code": "TQMBE",
+ "filename_topic": "InstitutionalTheoryDownsizing",
+ "journal": "TQMBE",
+ "page_count": 23,
+ "title": "An empirical research on the institutional theory of downsizing: Evidence from MNC's subsidiary companies in Taiwan",
+ "authors": null,
+ "doi": "10.1080/14783360600588216",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 288,
+  "furniture": 13,
+  "figures": 0,
+  "tables_html": 6,
+  "tables_image": 3,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 237657,
+ "html_sha256": "6e33ccad7c9cd7d2c847e202f2fc53d09e10ef3b0253dd4f0ab090fef609ffe8",
+ "note_flags": []
+}

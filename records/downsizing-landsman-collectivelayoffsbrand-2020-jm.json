@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-landsman-collectivelayoffsbrand-2020-jm",
+ "file": "Downsizing/Landsman-CollectiveLayoffsBrand-2020-JM.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Landsman-CollectiveLayoffsBrand-2020-JM.pdf",
+ "first_author_surname": "Landsman",
+ "year": 2020,
+ "journal_code": "JM",
+ "filename_topic": "CollectiveLayoffsBrand",
+ "journal": "Journal of Marketing",
+ "page_count": 20,
+ "title": "The Commercial Consequences of Collective Layoffs: Close the Plant, Lose the Brand?",
+ "authors": "Vardit Landsman and Stefan Stremersch",
+ "doi": "10.1177/0022242919901277",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 499,
+  "furniture": 21,
+  "figures": 13,
+  "tables_html": 5,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 994100,
+ "html_sha256": "23cda3313ca92fcb9724371e7cffd8349fb9d0a5d55bffc3dfb2c8fef595f80c",
+ "note_flags": []
+}

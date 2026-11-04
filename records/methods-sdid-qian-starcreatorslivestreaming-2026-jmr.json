@@ -1,0 +1,31 @@
+{
+ "id": "methods-sdid-qian-starcreatorslivestreaming-2026-jmr",
+ "file": "Methods/SDID/Qian-StarCreatorsLivestreaming-2026-JMR.html",
+ "topic_folder": "Methods/SDID",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/SDID/Qian-StarCreatorsLivestreaming-2026-JMR.pdf",
+ "first_author_surname": "Qian",
+ "year": 2026,
+ "journal_code": "JMR",
+ "filename_topic": "StarCreatorsLivestreaming",
+ "journal": "Journal of Marketing Research",
+ "page_count": 18,
+ "title": "The Power of Star Creators: Evidence from the Live Streaming Industry",
+ "authors": "Kun Qian",
+ "doi": "10.1177/00222437251359163",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 239,
+  "furniture": 17,
+  "figures": 5,
+  "tables_html": 10,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 833829,
+ "html_sha256": "4c0a94ba2b0864b40dc3fc2ada1b1dfe65deb358b77c24cc6c49bbc8ce186f80",
+ "note_flags": []
+}

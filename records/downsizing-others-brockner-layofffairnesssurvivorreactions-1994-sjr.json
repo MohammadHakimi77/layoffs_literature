@@ -1,0 +1,32 @@
+{
+ "id": "downsizing-others-brockner-layofffairnesssurvivorreactions-1994-sjr",
+ "file": "Downsizing/Others/Brockner-LayoffFairnessSurvivorReactions-1994-SJR.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Brockner-LayoffFairnessSurvivorReactions-1994-SJR.pdf",
+ "first_author_surname": "Brockner",
+ "year": 1994,
+ "journal_code": "SJR",
+ "filename_topic": "LayoffFairnessSurvivorReactions",
+ "journal": "SJR",
+ "page_count": 20,
+ "title": "Perceived Fairness and Survivors' Reactions to Layoffs, or How Downsizing Organizations Can Do Well By Doing Good^",
+ "authors": "Joel Brockner^",
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 152,
+  "furniture": 9,
+  "figures": 0,
+  "tables_html": 2,
+  "tables_image": 2,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 214919,
+ "html_sha256": "6ab4da7573d65945d66bc2080b306d35308bf1f669d8eb42592e903202a1da6e",
+ "note_flags": []
+}

@@ -1,0 +1,31 @@
+{
+ "id": "sentiment-word-of-mouth-laczniak-negativewomattribution-2001-jcp",
+ "file": "Sentiment/Word of mouth/Laczniak-NegativeWOMAttribution-2001-JCP.html",
+ "topic_folder": "Sentiment/Word of mouth",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Word of mouth/Laczniak-NegativeWOMAttribution-2001-JCP.pdf",
+ "first_author_surname": "Laczniak",
+ "year": 2001,
+ "journal_code": "JCP",
+ "filename_topic": "NegativeWOMAttribution",
+ "journal": "Journal of Consumer Psychology",
+ "page_count": 17,
+ "title": "Consumers' Responses to Negative Word-of-Mouth Communication: An Attribution Theory Perspective",
+ "authors": null,
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 270,
+  "furniture": 7,
+  "figures": 1,
+  "tables_html": 4,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 144076,
+ "html_sha256": "f88a2243e3913eadd5a0bc9600a8c670aeb137cb71687dcf6ff9385bde0d4bb8",
+ "note_flags": []
+}

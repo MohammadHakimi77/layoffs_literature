@@ -1,0 +1,33 @@
+{
+ "id": "downsizing-brauer-downsizingimpressionoffsetting-2023-jms",
+ "file": "Downsizing/Brauer-DownsizingImpressionOffsetting-2023-JMS.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Brauer-DownsizingImpressionOffsetting-2023-JMS.pdf",
+ "first_author_surname": "Brauer",
+ "year": 2023,
+ "journal_code": "JMS",
+ "filename_topic": "DownsizingImpressionOffsetting",
+ "journal": "Journal of Management Studies",
+ "page_count": 33,
+ "title": "Managing the “Downside” of Downsizing: Firms’ Impression Offsetting around Downsizing Announcements",
+ "authors": "Matthias Brauer",
+ "doi": "10.1111/joms.13024",
+ "copyright_years_on_first_pages": [
+  2023
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 538,
+  "furniture": 65,
+  "figures": 1,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 4,
+  "image_only_pages": 0
+ },
+ "html_bytes": 212232,
+ "html_sha256": "54dcc27b79373c210771049a2798983b8b36d33642c8f861d3673f94251f70cf",
+ "note_flags": []
+}

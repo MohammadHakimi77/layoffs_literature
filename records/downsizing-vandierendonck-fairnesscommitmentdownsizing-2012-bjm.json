@@ -1,0 +1,34 @@
+{
+ "id": "downsizing-vandierendonck-fairnesscommitmentdownsizing-2012-bjm",
+ "file": "Downsizing/VanDierendonck-FairnessCommitmentDownsizing-2012-BJM.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/VanDierendonck-FairnessCommitmentDownsizing-2012-BJM.pdf",
+ "first_author_surname": "VanDierendonck",
+ "year": 2012,
+ "journal_code": "BJM",
+ "filename_topic": "FairnessCommitmentDownsizing",
+ "journal": "British Journal of Management",
+ "page_count": 14,
+ "title": "Survivors and Victims, a Meta-analytical Review of Fairness and Organizational Commitment after Downsizing",
+ "authors": null,
+ "doi": "10.1111/j.1467-8551.2010.00724.x",
+ "copyright_years_on_first_pages": [
+  2010
+ ],
+ "uncertain_fields": [
+  "authors",
+  "year"
+ ],
+ "conversion": {
+  "blocks": 236,
+  "furniture": 52,
+  "figures": 2,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 206036,
+ "html_sha256": "7af2cf1ffe0c5785e3a71620ae4a038800e893a637a6f78312b7ca7039f4090e",
+ "note_flags": []
+}

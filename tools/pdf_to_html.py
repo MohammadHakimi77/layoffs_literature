@@ -16,7 +16,7 @@ import pymupdf as fitz
 
 LIG = {"ﬀ": "ff", "ﬁ": "fi", "ﬂ": "fl", "ﬃ": "ffi", "ﬄ": "ffl",
        "ﬅ": "st", "ﬆ": "st", "­": ""}
-MATH_FONTS = re.compile(r"CMSY|CMMI|CMEX|CMR\d|MSBM|MSAM|Math|Symbol|MTMI|MTSY|MTEX|Euclid|STIXMath|Cambria", re.I)
+MATH_FONTS = re.compile(r"CMSY|CMMI|CMEX|MSBM|MSAM|MathematicalPi|Math(?!ematica)|MTMI|MTSY|MTEX|STIXMath|^Symbol", re.I)
 CAPTION = re.compile(r"^\s*(Figure|Fig\.|Table|Exhibit|Panel|Chart)\s*[A-Z]?\d+", re.I)
 REFHEAD = re.compile(r"^\s*(\d+[\.\s]*)?(references|bibliography|works cited|literature cited)\s*$", re.I)
 OTHERHEAD = re.compile(r"^\s*(\d+[\.\s]*)?(appendix|appendices|online appendix|supplementary|web appendix)", re.I)
@@ -328,7 +328,7 @@ def convert(pdf, out_path):
                     cls.append("footnote")
                 if in_refs and not is_head and "caption" not in cls:
                     cls.append("ref")
-                if b["mathfrac"] >= 0.25 and len(t) < 600 and not is_head:
+                if b["mathfrac"] >= 0.3 and len(t) < 600 and not is_head:
                     cls.append("eq")
             attrs = f'id="{i}" class="{" ".join(cls)}" data-kind="{"furniture" if b.get("furn") else ("heading" if is_head else "text")}"'
             if "eq" in cls and not b.get("furn"):

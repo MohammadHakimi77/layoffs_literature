@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-cederlof-mandatorylayoffnotice-2024-qje",
+ "file": "Downsizing/Cederlof-MandatoryLayoffNotice-2024-QJE.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Cederlof-MandatoryLayoffNotice-2024-QJE.pdf",
+ "first_author_surname": "Cederlof",
+ "year": 2024,
+ "journal_code": "QJE",
+ "filename_topic": "MandatoryLayoffNotice",
+ "journal": "Quarterly Journal of Economics",
+ "page_count": 49,
+ "title": "MANDAT ORY NO TICE OF LAYOFF, JOB SEARCH, AND EFFICIENCY ∗ JONAS CEDERLÖF PETER FREDRIKSSON ARASH NEKOEI DAVID SEIM",
+ "authors": null,
+ "doi": "10.1093/qje/qjae029",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 541,
+  "furniture": 50,
+  "figures": 11,
+  "tables_html": 6,
+  "tables_image": 0,
+  "equations_img": 47,
+  "image_only_pages": 0
+ },
+ "html_bytes": 464885,
+ "html_sha256": "e43db899de2dafe926826c5e660577929dd6289f5213acdcd218be1ce0d47aa4",
+ "note_flags": []
+}

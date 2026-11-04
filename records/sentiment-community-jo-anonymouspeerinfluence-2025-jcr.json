@@ -1,0 +1,31 @@
+{
+ "id": "sentiment-community-jo-anonymouspeerinfluence-2025-jcr",
+ "file": "Sentiment/Community/Jo-AnonymousPeerInfluence-2025-JCR.html",
+ "topic_folder": "Sentiment/Community",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Community/Jo-AnonymousPeerInfluence-2025-JCR.pdf",
+ "first_author_surname": "Jo",
+ "year": 2025,
+ "journal_code": "JCR",
+ "filename_topic": "AnonymousPeerInfluence",
+ "journal": "Journal of Consumer Research",
+ "page_count": 24,
+ "title": "In the Company of Strangers: Social Influence from Anonymous Peers in Online Game Settings",
+ "authors": "WOOYONG JO SARANG SUNDER JEONGHYE CHOI MINAKSHI TRIVEDI",
+ "doi": "10.1093/jcr/ucae075",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 421,
+  "furniture": 50,
+  "figures": 5,
+  "tables_html": 7,
+  "tables_image": 1,
+  "equations_img": 1,
+  "image_only_pages": 0
+ },
+ "html_bytes": 862213,
+ "html_sha256": "b8092000ce74b6ad38a4f88d2a4ad8fc706fd58aefae5a58e7d94f80ec76403a",
+ "note_flags": []
+}

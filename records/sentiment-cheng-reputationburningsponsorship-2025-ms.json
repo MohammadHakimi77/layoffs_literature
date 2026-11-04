@@ -1,0 +1,31 @@
+{
+ "id": "sentiment-cheng-reputationburningsponsorship-2025-ms",
+ "file": "Sentiment/Cheng-ReputationBurningSponsorship-2025-MS.html",
+ "topic_folder": "Sentiment",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Cheng-ReputationBurningSponsorship-2025-MS.pdf",
+ "first_author_surname": "Cheng",
+ "year": 2025,
+ "journal_code": "MS",
+ "filename_topic": "ReputationBurningSponsorship",
+ "journal": "Management Science",
+ "page_count": 47,
+ "title": "Reputation Burning: Analyzing the Impact of Brand Sponsorship on Social Influencers",
+ "authors": null,
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 1039,
+  "furniture": 93,
+  "figures": 6,
+  "tables_html": 10,
+  "tables_image": 0,
+  "equations_img": 34,
+  "image_only_pages": 0
+ },
+ "html_bytes": 1231676,
+ "html_sha256": "1aa1de52a9ff8b752aac288b700317b56e71adcaf23995c1c60dba50a7cff1df",
+ "note_flags": []
+}

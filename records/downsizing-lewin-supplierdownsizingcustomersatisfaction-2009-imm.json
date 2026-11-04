@@ -1,0 +1,35 @@
+{
+ "id": "downsizing-lewin-supplierdownsizingcustomersatisfaction-2009-imm",
+ "file": "Downsizing/Lewin-SupplierDownsizingCustomerSatisfaction-2009-IMM.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Lewin-SupplierDownsizingCustomerSatisfaction-2009-IMM.pdf",
+ "first_author_surname": "Lewin",
+ "year": 2009,
+ "journal_code": "IMM",
+ "filename_topic": "SupplierDownsizingCustomerSatisfaction",
+ "journal": "Industrial Marketing Management",
+ "page_count": 17,
+ "title": "Business customers' satisfaction: What happens when suppliers downsize?",
+ "authors": "Jeffrey E. Lewin ⁎",
+ "doi": "10.1016/j.indmarman.2007.11.005",
+ "copyright_years_on_first_pages": [
+  2008
+ ],
+ "uncertain_fields": [
+  "authors",
+  "journal",
+  "year"
+ ],
+ "conversion": {
+  "blocks": 261,
+  "furniture": 17,
+  "figures": 2,
+  "tables_html": 9,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 522971,
+ "html_sha256": "62452779cae39be54277305ee416bec4ff7c5e9e5ae995c50859db803d38b7fe",
+ "note_flags": []
+}

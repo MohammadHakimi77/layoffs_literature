@@ -1,0 +1,34 @@
+{
+ "id": "sentiment-word-of-mouth-krishnamurthy-electronicwombrandimage-2018-jrcs",
+ "file": "Sentiment/Word of mouth/Krishnamurthy-ElectronicWOMBrandImage-2018-JRCS.html",
+ "topic_folder": "Sentiment/Word of mouth",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Word of mouth/Krishnamurthy-ElectronicWOMBrandImage-2018-JRCS.pdf",
+ "first_author_surname": "Krishnamurthy",
+ "year": 2018,
+ "journal_code": "JRCS",
+ "filename_topic": "ElectronicWOMBrandImage",
+ "journal": "JRCS",
+ "page_count": 8,
+ "title": "Electronic word-of-mouth and the brand image: Exploring the moderating role of involvement through a consumer expectations lens",
+ "authors": null,
+ "doi": "10.1016/j.jretconser.2018.03.010",
+ "copyright_years_on_first_pages": [
+  2018
+ ],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 193,
+  "furniture": 15,
+  "figures": 1,
+  "tables_html": 4,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 255044,
+ "html_sha256": "d9cad2f41bc142139612a8d91d2b222419b40830bd28fd17808036a075710a5d",
+ "note_flags": []
+}

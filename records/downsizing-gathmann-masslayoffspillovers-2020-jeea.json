@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-gathmann-masslayoffspillovers-2020-jeea",
+ "file": "Downsizing/Gathmann-MassLayoffSpillovers-2020-JEEA.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Gathmann-MassLayoffSpillovers-2020-JEEA.pdf",
+ "first_author_surname": "Gathmann",
+ "year": 2020,
+ "journal_code": "JEEA",
+ "filename_topic": "MassLayoffSpillovers",
+ "journal": "Journal of the European Economic Association",
+ "page_count": 42,
+ "title": "SPILLOVER EFFECTS OF MASS LAYOFFS",
+ "authors": "Christina Gathmann",
+ "doi": "10.1093/jeea/jvy045",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 574,
+  "furniture": 84,
+  "figures": 9,
+  "tables_html": 5,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 355572,
+ "html_sha256": "5db49687b093bb92a0fe41a3b90f4ef51baf663b4f990a1f1b40c5379aa2be26",
+ "note_flags": []
+}

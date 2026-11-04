@@ -1,0 +1,33 @@
+{
+ "id": "downsizing-others-dial-incentivesdownsizingvaluecreation-1995-jfe",
+ "file": "Downsizing/Others/Dial-IncentivesDownsizingValueCreation-1995-JFE.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Dial-IncentivesDownsizingValueCreation-1995-JFE.pdf",
+ "first_author_surname": "Dial",
+ "year": 1995,
+ "journal_code": "JFE",
+ "filename_topic": "IncentivesDownsizingValueCreation",
+ "journal": "Journal of Financial Economics",
+ "page_count": 54,
+ "title": "Incentives, downsizing, and value creation at General Dynamics",
+ "authors": "Jay Dial, Kevin J. Murphy* Harvard",
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 755,
+  "furniture": 20,
+  "figures": 0,
+  "tables_html": 14,
+  "tables_image": 3,
+  "equations_img": 0,
+  "image_only_pages": 1
+ },
+ "html_bytes": 784347,
+ "html_sha256": "02107b021a651b95f9f52f368ae5908a5cccd52c2ae57bfdb2f8d326baf10465",
+ "note_flags": [
+  "has pages without text layer (rendered as images)"
+ ]
+}

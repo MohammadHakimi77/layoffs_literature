@@ -1,0 +1,33 @@
+{
+ "id": "behavioral-md-jo-anonymouspeerinfluenceappendix-2025-jcr",
+ "file": "Behavioral.md/Jo-AnonymousPeerInfluenceAppendix-2025-JCR.html",
+ "topic_folder": "Behavioral.md",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Behavioral.md/Jo-AnonymousPeerInfluenceAppendix-2025-JCR.pdf",
+ "first_author_surname": "Jo",
+ "year": 2025,
+ "journal_code": "JCR",
+ "filename_topic": "AnonymousPeerInfluenceAppendix",
+ "journal": "Journal of Consumer Research",
+ "page_count": 29,
+ "title": "WEB APPENDIX In the Company of Strangers: Social Influence from Anonymous Peers in Online Game Settings",
+ "authors": "Wooyong Jo Sarang Sunder Jeonghye Choi Minakshi Trivedi",
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 214,
+  "furniture": 29,
+  "figures": 3,
+  "tables_html": 18,
+  "tables_image": 1,
+  "equations_img": 23,
+  "image_only_pages": 0
+ },
+ "html_bytes": 495658,
+ "html_sha256": "bdaf5099572499c5a9a0196e3c53bfedf78e6e170776ead2dae549fbf784cb2f",
+ "note_flags": [
+  "appendix/supplement document"
+ ]
+}

@@ -35,3 +35,11 @@ Returns file, page, block id and surrounding text; tolerant of hyphenation, line
 - Metadata comes from file names and PDF first pages only; fields in `uncertain_fields` are heuristic.
 - Layout reconstruction is automatic: multi-column order, paragraphs split across columns/pages, and table cell alignment can be imperfect.
 - Two scanned 1990s papers were intentionally excluded.
+
+## Conversion stats (153 papers, 4,086 pages)
+- 68,973 anchored blocks (4,810 marked `furniture`); 781 tables as HTML, 158 complex tables as images; 922 figures/graphics as images; 5,308 math blocks with an attached original image; 94 replication-package PDFs copied unchanged.
+- Text check vs PDF (6-word shingles per page, all 153 papers): median coverage 98.7%, min 86.0%; all papers have one `<section>` per PDF page and unique block ids. Lower coverage (<90%: Piza 2021, Macaluso 2023, Ahmadjian 2001, Wu 2025, Trahms 2013, MartinsNeto 2024, Keller 2025-SSRN) comes from numeric tables, whose cells are reconstructed column-wise rather than row-wise.
+- Quote finder spot-check: 14/14 sentences sampled from 14 papers in all topic folders resolved to the correct page.
+- Pages with no text layer (rendered as page images): 1 page each in Dial-1995-JFE, Kwon-2007-JMIS (two copies, in `Downsizing/Others/` and `Sentiment/Community/`).
+- Known limits: running headers that alternate (e.g. Datta 2010) are not always marked `furniture`; paragraphs split at column/page breaks; the "Replication" rule also covered `Methods/Staggered/ananthakrishnan-et-al-2025-…/` (code/figure output); `Claude-SDIDLiteratureReview-2026-Note` and `Jo-…Appendix` are converted as documents; 1 title flagged uncertain, authors/journal fields are heuristic (see `uncertain_fields`).
+- `tools/verification.json` and `tools/conversion_log.json` hold per-paper numbers.

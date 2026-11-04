@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-chen-womenboardsdownsizing-2022-ijhrm",
+ "file": "Downsizing/Others/Chen-WomenBoardsDownsizing-2022-IJHRM.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Chen-WomenBoardsDownsizing-2022-IJHRM.pdf",
+ "first_author_surname": "Chen",
+ "year": 2022,
+ "journal_code": "IJHRM",
+ "filename_topic": "WomenBoardsDownsizing",
+ "journal": "International Journal of Human Resource Management",
+ "page_count": 34,
+ "title": "Women on boards of directors and firm performance: the mediation of employment downsizing",
+ "authors": "Ming-Yuan Chen and Chun-Lin Kao",
+ "doi": "10.1080/09585192.2020.1867617",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 276,
+  "furniture": 32,
+  "figures": 2,
+  "tables_html": 2,
+  "tables_image": 3,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 481881,
+ "html_sha256": "f6b239fe03366152450154727870fadb3860c74c4332ee07da5b29858c09befd",
+ "note_flags": []
+}

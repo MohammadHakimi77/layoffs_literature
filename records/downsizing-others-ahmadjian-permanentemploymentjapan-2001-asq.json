@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-ahmadjian-permanentemploymentjapan-2001-asq",
+ "file": "Downsizing/Others/Ahmadjian-PermanentEmploymentJapan-2001-ASQ.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Ahmadjian-PermanentEmploymentJapan-2001-ASQ.pdf",
+ "first_author_surname": "Ahmadjian",
+ "year": 2001,
+ "journal_code": "ASQ",
+ "filename_topic": "PermanentEmploymentJapan",
+ "journal": "Administrative Science Quarterly",
+ "page_count": 33,
+ "title": "Safety in Numbers: Downsizing and the Deinstitutionalization of Permanent Employment in Japan Christina L. Ahmadjian",
+ "authors": null,
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 385,
+  "furniture": 40,
+  "figures": 0,
+  "tables_html": 5,
+  "tables_image": 4,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 1371913,
+ "html_sha256": "f535e3b26ea095c5c90952dbc5c9bbc4b55a68dc7bf1524d87358ae3111c63f5",
+ "note_flags": []
+}

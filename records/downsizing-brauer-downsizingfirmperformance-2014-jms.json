@@ -1,0 +1,34 @@
+{
+ "id": "downsizing-brauer-downsizingfirmperformance-2014-jms",
+ "file": "Downsizing/Brauer-DownsizingFirmPerformance-2014-JMS.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Brauer-DownsizingFirmPerformance-2014-JMS.pdf",
+ "first_author_surname": "Brauer",
+ "year": 2014,
+ "journal_code": "JMS",
+ "filename_topic": "DownsizingFirmPerformance",
+ "journal": "Journal of Management Studies",
+ "page_count": 23,
+ "title": "Workforce Downsizing and Firm Performance: An Organizational Routine Perspective",
+ "authors": "Matthias Brauer and Tomi Laamanen",
+ "doi": "10.1111/joms.12074",
+ "copyright_years_on_first_pages": [
+  2013
+ ],
+ "uncertain_fields": [
+  "authors",
+  "year"
+ ],
+ "conversion": {
+  "blocks": 307,
+  "furniture": 45,
+  "figures": 2,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 3,
+  "image_only_pages": 0
+ },
+ "html_bytes": 207166,
+ "html_sha256": "162d368faba8ec708c9efeb528eb940459441057a4c85a913345d174578e75eb",
+ "note_flags": []
+}

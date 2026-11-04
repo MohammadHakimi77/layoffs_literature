@@ -1,0 +1,33 @@
+{
+ "id": "methods-staggered-ananthakrishnan-americanlibrarybookbans-2025-mksc",
+ "file": "Methods/Staggered/Ananthakrishnan-AmericanLibraryBookBans-2025-MKSC.html",
+ "topic_folder": "Methods/Staggered",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/Staggered/Ananthakrishnan-AmericanLibraryBookBans-2025-MKSC.pdf",
+ "first_author_surname": "Ananthakrishnan",
+ "year": 2025,
+ "journal_code": "MKSC",
+ "filename_topic": "AmericanLibraryBookBans",
+ "journal": "Marketing Science",
+ "page_count": 22,
+ "title": "Book Bans in American Libraries: Impact of Politics on Inclusive Content Consumption",
+ "authors": "Uttara M. Ananthakrishnan, Naveen Basavaraj, Sabari Rajan Karmegam, Ananya Sen, Michael D. Smith",
+ "doi": "10.1287/mksc.2024.0716",
+ "copyright_years_on_first_pages": [
+  2025
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 281,
+  "furniture": 47,
+  "figures": 11,
+  "tables_html": 8,
+  "tables_image": 1,
+  "equations_img": 3,
+  "image_only_pages": 0
+ },
+ "html_bytes": 1674911,
+ "html_sha256": "df37367a87bf8c9a1b3f771001f2657dc13e8012169ddf6ae740408291bdd8f6",
+ "note_flags": []
+}

@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-deangelo-unionnegotiationscorporatepolicy-1991-jfe",
+ "file": "Downsizing/Others/DeAngelo-UnionNegotiationsCorporatePolicy-1991-JFE.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/DeAngelo-UnionNegotiationsCorporatePolicy-1991-JFE.pdf",
+ "first_author_surname": "DeAngelo",
+ "year": 1991,
+ "journal_code": "JFE",
+ "filename_topic": "UnionNegotiationsCorporatePolicy",
+ "journal": "Journal of Financial Economics",
+ "page_count": 41,
+ "title": "Union negotiations and corporate policy",
+ "authors": "Ha.rry DeAngelo and Linda DeAngelo",
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 313,
+  "furniture": 18,
+  "figures": 0,
+  "tables_html": 13,
+  "tables_image": 5,
+  "equations_img": 4,
+  "image_only_pages": 0
+ },
+ "html_bytes": 1125514,
+ "html_sha256": "55257e7a8ef97cebd97dc758030e786239ad5c76adf9780c590c74df5361d99d",
+ "note_flags": []
+}

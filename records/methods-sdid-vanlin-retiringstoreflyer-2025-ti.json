@@ -1,0 +1,32 @@
+{
+ "id": "methods-sdid-vanlin-retiringstoreflyer-2025-ti",
+ "file": "Methods/SDID/VanLin-RetiringStoreFlyer-2025-TI.html",
+ "topic_folder": "Methods/SDID",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/SDID/VanLin-RetiringStoreFlyer-2025-TI.pdf",
+ "first_author_surname": "VanLin",
+ "year": 2025,
+ "journal_code": "TI",
+ "filename_topic": "RetiringStoreFlyer",
+ "journal": "(uncertain: 'TI')",
+ "page_count": 64,
+ "title": "Retiring the store flyer: Effects of ceasing print store flyers on household grocery shopping behavior",
+ "authors": null,
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 1060,
+  "furniture": 61,
+  "figures": 24,
+  "tables_html": 16,
+  "tables_image": 0,
+  "equations_img": 12,
+  "image_only_pages": 0
+ },
+ "html_bytes": 2226727,
+ "html_sha256": "7e68bf474f1810f27e24f5f8d2bde6094e84b012a626627a247a913c7258e13d",
+ "note_flags": []
+}

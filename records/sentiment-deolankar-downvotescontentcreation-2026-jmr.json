@@ -1,0 +1,31 @@
+{
+ "id": "sentiment-deolankar-downvotescontentcreation-2026-jmr",
+ "file": "Sentiment/Deolankar-DownvotesContentCreation-2026-JMR.html",
+ "topic_folder": "Sentiment",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Deolankar-DownvotesContentCreation-2026-JMR.pdf",
+ "first_author_surname": "Deolankar",
+ "year": 2026,
+ "journal_code": "JMR",
+ "filename_topic": "DownvotesContentCreation",
+ "journal": "Journal of Marketing Research",
+ "page_count": 21,
+ "title": "The Effect of Downvotes on Content Creation: Evidence from Social Media",
+ "authors": "Varad Deolankar, Jessica Fong",
+ "doi": "10.1177/00222437261417657",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 352,
+  "furniture": 20,
+  "figures": 6,
+  "tables_html": 11,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 418965,
+ "html_sha256": "ac5b31927fc4f220b25882f6459efef3396b433025427c70e7cdd5bbc6af61b7",
+ "note_flags": []
+}

@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-zyglidopoulos-downsizingcorporatereputation-2005-bjm",
+ "file": "Downsizing/Others/Zyglidopoulos-DownsizingCorporateReputation-2005-BJM.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Zyglidopoulos-DownsizingCorporateReputation-2005-BJM.pdf",
+ "first_author_surname": "Zyglidopoulos",
+ "year": 2005,
+ "journal_code": "BJM",
+ "filename_topic": "DownsizingCorporateReputation",
+ "journal": "British Journal of Management",
+ "page_count": 7,
+ "title": "The Impact of Downsizing on Corporate Reputation",
+ "authors": "Stelios C. Zyglidopoulos",
+ "doi": "10.1111/j.1467-8551.2005.00460.x",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 125,
+  "furniture": 6,
+  "figures": 1,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 101353,
+ "html_sha256": "d856e3a3636d9e418d8dfcf10b343f21d138d30c04c606fbb1de13182d035402",
+ "note_flags": []
+}

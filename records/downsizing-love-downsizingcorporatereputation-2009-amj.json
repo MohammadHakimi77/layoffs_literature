@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-love-downsizingcorporatereputation-2009-amj",
+ "file": "Downsizing/Love-DownsizingCorporateReputation-2009-AMJ.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Love-DownsizingCorporateReputation-2009-AMJ.pdf",
+ "first_author_surname": "Love",
+ "year": 2009,
+ "journal_code": "AMJ",
+ "filename_topic": "DownsizingCorporateReputation",
+ "journal": "Academy of Management Journal",
+ "page_count": 23,
+ "title": "Character, Conformity, or the Bottom Line? How and Why Downsizing Affected Corporate Reputation",
+ "authors": null,
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 476,
+  "furniture": 54,
+  "figures": 1,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 205384,
+ "html_sha256": "b89d2c27c17e539589f884f1a43e4c029f44b3140b4007301fee006b72afb6ec",
+ "note_flags": []
+}

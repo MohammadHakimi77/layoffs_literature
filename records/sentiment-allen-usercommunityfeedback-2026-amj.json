@@ -1,0 +1,31 @@
+{
+ "id": "sentiment-allen-usercommunityfeedback-2026-amj",
+ "file": "Sentiment/Allen-UserCommunityFeedback-2026-AMJ.html",
+ "topic_folder": "Sentiment",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Allen-UserCommunityFeedback-2026-AMJ.pdf",
+ "first_author_surname": "Allen",
+ "year": 2026,
+ "journal_code": "AMJ",
+ "filename_topic": "UserCommunityFeedback",
+ "journal": "Academy of Management Journal",
+ "page_count": 30,
+ "title": "LISTEN TO YOUR USERS? SELF-SELECTION IN USER COMMUNITY FEEDBACK AND COMMERCIAL IMPACT",
+ "authors": "RYAN T. ALLEN",
+ "doi": "10.5465/amj.2024.0178",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 567,
+  "furniture": 30,
+  "figures": 6,
+  "tables_html": 5,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 693145,
+ "html_sha256": "497fa5d0120d97b70e740dcbd02aec0ab4b3e739c7edd34c1f3d71ef60090ad4",
+ "note_flags": []
+}

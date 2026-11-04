@@ -1,0 +1,33 @@
+{
+ "id": "methods-staggered-chiong-massshootingsretail-2025-mksc",
+ "file": "Methods/Staggered/Chiong-MassShootingsRetail-2025-MKSC.html",
+ "topic_folder": "Methods/Staggered",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/Staggered/Chiong-MassShootingsRetail-2025-MKSC.pdf",
+ "first_author_surname": "Chiong",
+ "year": 2025,
+ "journal_code": "MKSC",
+ "filename_topic": "MassShootingsRetail",
+ "journal": "Marketing Science",
+ "page_count": 11,
+ "title": "Mass Shootings and Their Impact on Retail",
+ "authors": null,
+ "doi": "10.1287/mksc.2024.0752",
+ "copyright_years_on_first_pages": [
+  2025
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 199,
+  "furniture": 20,
+  "figures": 4,
+  "tables_html": 3,
+  "tables_image": 1,
+  "equations_img": 12,
+  "image_only_pages": 0
+ },
+ "html_bytes": 678743,
+ "html_sha256": "0d31ab5e8ee7459927440d84ae5c75899b6278d0cdbeda7ef7592b36d8cd726b",
+ "note_flags": []
+}

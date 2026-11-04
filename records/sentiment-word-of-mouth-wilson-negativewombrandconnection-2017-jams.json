@@ -1,0 +1,31 @@
+{
+ "id": "sentiment-word-of-mouth-wilson-negativewombrandconnection-2017-jams",
+ "file": "Sentiment/Word of mouth/Wilson-NegativeWOMBrandConnection-2017-JAMS.html",
+ "topic_folder": "Sentiment/Word of mouth",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Word of mouth/Wilson-NegativeWOMBrandConnection-2017-JAMS.pdf",
+ "first_author_surname": "Wilson",
+ "year": 2017,
+ "journal_code": "JAMS",
+ "filename_topic": "NegativeWOMBrandConnection",
+ "journal": "Journal of the Academy of Marketing Science",
+ "page_count": 14,
+ "title": "Negative word of mouth can be a positive for consumers connected to the brand",
+ "authors": "Andrew E. Wilson1 & Michael D. Giebelhausen2 & Michael K. Brady3",
+ "doi": "10.1007/s11747-017-0515-z",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 226,
+  "furniture": 13,
+  "figures": 3,
+  "tables_html": 2,
+  "tables_image": 2,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 865948,
+ "html_sha256": "cc5976271021a0c68bde0901a2e0a37511d485ab28c9f8f1d4be5280bdb751f1",
+ "note_flags": []
+}

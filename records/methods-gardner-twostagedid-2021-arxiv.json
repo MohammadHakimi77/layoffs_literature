@@ -1,0 +1,31 @@
+{
+ "id": "methods-gardner-twostagedid-2021-arxiv",
+ "file": "Methods/Gardner-TwoStageDiD-2021-arXiv.html",
+ "topic_folder": "Methods",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/Gardner-TwoStageDiD-2021-arXiv.pdf",
+ "first_author_surname": "Gardner",
+ "year": 2021,
+ "journal_code": "arXiv",
+ "filename_topic": "TwoStageDiD",
+ "journal": "arXiv preprint",
+ "page_count": 34,
+ "title": "Two-stage diﬀerences in diﬀerences",
+ "authors": "John Gardner∗",
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 746,
+  "furniture": 33,
+  "figures": 4,
+  "tables_html": 4,
+  "tables_image": 0,
+  "equations_img": 131,
+  "image_only_pages": 0
+ },
+ "html_bytes": 860910,
+ "html_sha256": "bd1bc13673d86df139b1ccc685d82a9a5235a636003b10bc458b87d8cdf699b5",
+ "note_flags": []
+}

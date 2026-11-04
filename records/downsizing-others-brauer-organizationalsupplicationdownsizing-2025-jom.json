@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-brauer-organizationalsupplicationdownsizing-2025-jom",
+ "file": "Downsizing/Others/Brauer-OrganizationalSupplicationDownsizing-2025-JOM.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Brauer-OrganizationalSupplicationDownsizing-2025-JOM.pdf",
+ "first_author_surname": "Brauer",
+ "year": 2025,
+ "journal_code": "JOM",
+ "filename_topic": "OrganizationalSupplicationDownsizing",
+ "journal": "Journal of Management",
+ "page_count": 37,
+ "title": "The Strength of Showing Weakness: Organizational Supplication and Investor Reactions to Workforce Downsizing",
+ "authors": "Matthias Brauer",
+ "doi": "10.1177/01492063251339412",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 551,
+  "furniture": 37,
+  "figures": 4,
+  "tables_html": 3,
+  "tables_image": 0,
+  "equations_img": 5,
+  "image_only_pages": 0
+ },
+ "html_bytes": 274182,
+ "html_sha256": "b6857ec6874500e153befabbec862f45bee16799c2b846cc65e953315fbb7d62",
+ "note_flags": []
+}

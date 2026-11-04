@@ -1,0 +1,31 @@
+{
+ "id": "sentiment-word-of-mouth-alexandrov-socialselfmotiveswom-2013-jams",
+ "file": "Sentiment/Word of mouth/Alexandrov-SocialSelfMotivesWOM-2013-JAMS.html",
+ "topic_folder": "Sentiment/Word of mouth",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Word of mouth/Alexandrov-SocialSelfMotivesWOM-2013-JAMS.pdf",
+ "first_author_surname": "Alexandrov",
+ "year": 2013,
+ "journal_code": "JAMS",
+ "filename_topic": "SocialSelfMotivesWOM",
+ "journal": "Journal of the Academy of Marketing Science",
+ "page_count": 16,
+ "title": "The effects of social- and self-motives on the intentions to share positive and negative word of mouth",
+ "authors": "Aliosha Alexandrov & Bryan Lilly & Emin Babakus",
+ "doi": "10.1007/s11747-012-0323-4",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 253,
+  "furniture": 15,
+  "figures": 1,
+  "tables_html": 4,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 330066,
+ "html_sha256": "fc303c73bb507577804007f941b10286cbe8bfb58b99036f4091b7dc31d7bca5",
+ "note_flags": []
+}

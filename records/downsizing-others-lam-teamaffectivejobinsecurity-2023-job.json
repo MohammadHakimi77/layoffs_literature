@@ -1,0 +1,34 @@
+{
+ "id": "downsizing-others-lam-teamaffectivejobinsecurity-2023-job",
+ "file": "Downsizing/Others/Lam-TeamAffectiveJobInsecurity-2023-JOB.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Lam-TeamAffectiveJobInsecurity-2023-JOB.pdf",
+ "first_author_surname": "Lam",
+ "year": 2023,
+ "journal_code": "JOB",
+ "filename_topic": "TeamAffectiveJobInsecurity",
+ "journal": "JOB",
+ "page_count": 16,
+ "title": "Transmitting affective job insecurity (AJI) within teams: Layoff effects of AJI convergence on intrateam power struggles and team outcomes",
+ "authors": "Wing Lam1",
+ "doi": "10.1002/job.2726",
+ "copyright_years_on_first_pages": [
+  2023
+ ],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 1023,
+  "furniture": 15,
+  "figures": 10,
+  "tables_html": 2,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 774554,
+ "html_sha256": "f1e60cff1b4f12981de1343bdd745659381be5041cf6038bd6e311a2628bd104",
+ "note_flags": []
+}

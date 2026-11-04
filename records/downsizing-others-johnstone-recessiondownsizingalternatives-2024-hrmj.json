@@ -1,0 +1,34 @@
+{
+ "id": "downsizing-others-johnstone-recessiondownsizingalternatives-2024-hrmj",
+ "file": "Downsizing/Others/Johnstone-RecessionDownsizingAlternatives-2024-HRMJ.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Johnstone-RecessionDownsizingAlternatives-2024-HRMJ.pdf",
+ "first_author_surname": "Johnstone",
+ "year": 2024,
+ "journal_code": "HRMJ",
+ "filename_topic": "RecessionDownsizingAlternatives",
+ "journal": "Human Resource Management Journal",
+ "page_count": 20,
+ "title": "Human resource management in recession: Restructuring and alternatives to downsizing in times of crisis",
+ "authors": "Stewart Johnstone",
+ "doi": "10.1111/1748-8583.12512",
+ "copyright_years_on_first_pages": [
+  2023
+ ],
+ "uncertain_fields": [
+  "authors",
+  "year"
+ ],
+ "conversion": {
+  "blocks": 671,
+  "furniture": 19,
+  "figures": 2,
+  "tables_html": 5,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 318524,
+ "html_sha256": "395ea2d695112a0bd64daab6b01ffc585171fa59d06340b9a58793ac2b9f4c57",
+ "note_flags": []
+}

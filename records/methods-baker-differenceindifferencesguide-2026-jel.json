@@ -1,0 +1,31 @@
+{
+ "id": "methods-baker-differenceindifferencesguide-2026-jel",
+ "file": "Methods/Baker-DifferenceInDifferencesGuide-2026-JEL.html",
+ "topic_folder": "Methods",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/Baker-DifferenceInDifferencesGuide-2026-JEL.pdf",
+ "first_author_surname": "Baker",
+ "year": 2026,
+ "journal_code": "JEL",
+ "filename_topic": "DifferenceInDifferencesGuide",
+ "journal": "Journal of Economic Literature",
+ "page_count": 60,
+ "title": "­Difference-in-Differences Designs: A Practitioner’s Guide†",
+ "authors": "Andrew Baker, Brantly Callaway, Scott Cunningham,",
+ "doi": "10.1257/jel.20251650",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 791,
+  "furniture": 60,
+  "figures": 15,
+  "tables_html": 8,
+  "tables_image": 0,
+  "equations_img": 12,
+  "image_only_pages": 0
+ },
+ "html_bytes": 505198,
+ "html_sha256": "8161d93ce492ed47f8433145d32fa45eac78aced7262b2d5963fd03aba4e23c4",
+ "note_flags": []
+}

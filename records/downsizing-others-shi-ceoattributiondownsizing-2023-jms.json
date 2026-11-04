@@ -1,0 +1,34 @@
+{
+ "id": "downsizing-others-shi-ceoattributiondownsizing-2023-jms",
+ "file": "Downsizing/Others/Shi-CEOAttributionDownsizing-2023-JMS.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Shi-CEOAttributionDownsizing-2023-JMS.pdf",
+ "first_author_surname": "Shi",
+ "year": 2023,
+ "journal_code": "JMS",
+ "filename_topic": "CEOAttributionDownsizing",
+ "journal": "Journal of Management Studies",
+ "page_count": 29,
+ "title": "Problem Solving or Responsibility Avoidance? The Role of CEO Internal Attribution Tendency in Shaping Corporate Downsizing in Response to Performance Shortfalls",
+ "authors": "Wei Shia, Guoli Chenb and Boshuo Lia",
+ "doi": "10.1111/joms.12896",
+ "copyright_years_on_first_pages": [
+  2022
+ ],
+ "uncertain_fields": [
+  "authors",
+  "year"
+ ],
+ "conversion": {
+  "blocks": 515,
+  "furniture": 57,
+  "figures": 0,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 153197,
+ "html_sha256": "508a89b91720296d5a6c5bf6ea301557c22a7305b5da0a1220360c3a47b9a748",
+ "note_flags": []
+}

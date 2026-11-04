@@ -1,0 +1,31 @@
+{
+ "id": "sentiment-community-li-youtubepurchaseusageeffectsdraft-2025-mksc",
+ "file": "Sentiment/Community/Li-YouTubePurchaseUsageEffectsDraft-2025-MKSC.html",
+ "topic_folder": "Sentiment/Community",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Community/Li-YouTubePurchaseUsageEffectsDraft-2025-MKSC.pdf",
+ "first_author_surname": "Li",
+ "year": 2025,
+ "journal_code": "MKSC",
+ "filename_topic": "YouTubePurchaseUsageEffectsDraft",
+ "journal": "Marketing Science",
+ "page_count": 60,
+ "title": "Opposing Influences of YouTube Influencers: Purchase and Usage Effects in the Video Game Industry*",
+ "authors": null,
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 1378,
+  "furniture": 120,
+  "figures": 8,
+  "tables_html": 15,
+  "tables_image": 0,
+  "equations_img": 118,
+  "image_only_pages": 0
+ },
+ "html_bytes": 721478,
+ "html_sha256": "5ee8a988bc1deb15f5144253b187093bb2e97f3d0aee8ce1a8c676e79d0b95a6",
+ "note_flags": []
+}

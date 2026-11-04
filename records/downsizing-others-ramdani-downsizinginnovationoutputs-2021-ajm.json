@@ -1,0 +1,32 @@
+{
+ "id": "downsizing-others-ramdani-downsizinginnovationoutputs-2021-ajm",
+ "file": "Downsizing/Others/Ramdani-DownsizingInnovationOutputs-2021-AJM.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Ramdani-DownsizingInnovationOutputs-2021-AJM.pdf",
+ "first_author_surname": "Ramdani",
+ "year": 2021,
+ "journal_code": "AJM",
+ "filename_topic": "DownsizingInnovationOutputs",
+ "journal": "AJM",
+ "page_count": 20,
+ "title": "The effect of downsizing on innovation outputs: The role of resource slack and constraints",
+ "authors": "Boumediene Ramdani",
+ "doi": "10.1177/0312896220970609",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 244,
+  "furniture": 19,
+  "figures": 3,
+  "tables_html": 6,
+  "tables_image": 0,
+  "equations_img": 8,
+  "image_only_pages": 0
+ },
+ "html_bytes": 201458,
+ "html_sha256": "73e11152d771e15b2b96e729264866da66b3158a0cefba5e505a3f2ae5440395",
+ "note_flags": []
+}

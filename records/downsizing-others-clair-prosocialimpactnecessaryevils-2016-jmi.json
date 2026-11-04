@@ -1,0 +1,32 @@
+{
+ "id": "downsizing-others-clair-prosocialimpactnecessaryevils-2016-jmi",
+ "file": "Downsizing/Others/Clair-ProsocialImpactNecessaryEvils-2016-JMI.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Clair-ProsocialImpactNecessaryEvils-2016-JMI.pdf",
+ "first_author_surname": "Clair",
+ "year": 2016,
+ "journal_code": "JMI",
+ "filename_topic": "ProsocialImpactNecessaryEvils",
+ "journal": "JMI",
+ "page_count": 21,
+ "title": "This Is How We Do It: How Perceived Prosocial Impact Offsets Negative Personal Outcomes Associated With Carrying Out Necessary Evils",
+ "authors": null,
+ "doi": "10.1177/1056492615612577",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 378,
+  "furniture": 20,
+  "figures": 2,
+  "tables_html": 0,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 455136,
+ "html_sha256": "9db4a0d5c539c1bbe2a5ed6403230ba31f6cb604befaac190a5503d24f469b06",
+ "note_flags": []
+}

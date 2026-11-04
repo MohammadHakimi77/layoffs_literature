@@ -1,0 +1,32 @@
+{
+ "id": "sentiment-word-of-mouth-mittal-customerswitchingsatisfactionloyalty-1998-jsm",
+ "file": "Sentiment/Word of mouth/Mittal-CustomerSwitchingSatisfactionLoyalty-1998-JSM.html",
+ "topic_folder": "Sentiment/Word of mouth",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Word of mouth/Mittal-CustomerSwitchingSatisfactionLoyalty-1998-JSM.pdf",
+ "first_author_surname": "Mittal",
+ "year": 1998,
+ "journal_code": "JSM",
+ "filename_topic": "CustomerSwitchingSatisfactionLoyalty",
+ "journal": "JSM",
+ "page_count": 18,
+ "title": "Why do customers switch? The dynamics of satisfaction versus loyalty",
+ "authors": "Banwari Mittal",
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 213,
+  "furniture": 17,
+  "figures": 3,
+  "tables_html": 7,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 162420,
+ "html_sha256": "cda697b2050ea5f3b939d02ee8e220bcafe26e7ce70d4f1aaccb47847bc926a0",
+ "note_flags": []
+}

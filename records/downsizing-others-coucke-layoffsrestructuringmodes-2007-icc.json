@@ -1,0 +1,32 @@
+{
+ "id": "downsizing-others-coucke-layoffsrestructuringmodes-2007-icc",
+ "file": "Downsizing/Others/Coucke-LayoffsRestructuringModes-2007-ICC.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Coucke-LayoffsRestructuringModes-2007-ICC.pdf",
+ "first_author_surname": "Coucke",
+ "year": 2007,
+ "journal_code": "ICC",
+ "filename_topic": "LayoffsRestructuringModes",
+ "journal": "ICC",
+ "page_count": 22,
+ "title": "Employee layoff under different modes of restructuring: exit, downsizing or relocation",
+ "authors": "Kristien Coucke, Enrico Pennings and Leo Sleuwaegen",
+ "doi": "10.1093/icc/dtm002",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 340,
+  "furniture": 44,
+  "figures": 2,
+  "tables_html": 7,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 120821,
+ "html_sha256": "3277282c13b2ff50e15aaa93855866c0f2b2d32367f5e4c926fbcb8078cff535",
+ "note_flags": []
+}

@@ -1,0 +1,33 @@
+{
+ "id": "downsizing-others-iverson-turnoverlayoffsaftermerger-2000-jom",
+ "file": "Downsizing/Others/Iverson-TurnoverLayoffsAfterMerger-2000-JOM.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Iverson-TurnoverLayoffsAfterMerger-2000-JOM.pdf",
+ "first_author_surname": "Iverson",
+ "year": 2000,
+ "journal_code": "JOM",
+ "filename_topic": "TurnoverLayoffsAfterMerger",
+ "journal": "Journal of Management",
+ "page_count": 27,
+ "title": "Determinants of Voluntary Turnover and Layoffs in an Environment of Repeated Downsizing Following a Merger: An Event History Analysis1",
+ "authors": "Roderick D. Iverson Jacqueline A. Pullman",
+ "doi": null,
+ "copyright_years_on_first_pages": [
+  2000
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 263,
+  "furniture": 27,
+  "figures": 3,
+  "tables_html": 5,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 329325,
+ "html_sha256": "1db3c834e90f6529c89d9885fecc0b013dd161c3cfff12178a9c04479c030113",
+ "note_flags": []
+}

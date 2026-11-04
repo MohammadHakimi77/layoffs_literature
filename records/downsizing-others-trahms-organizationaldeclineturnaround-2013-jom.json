@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-trahms-organizationaldeclineturnaround-2013-jom",
+ "file": "Downsizing/Others/Trahms-OrganizationalDeclineTurnaround-2013-JOM.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Trahms-OrganizationalDeclineTurnaround-2013-JOM.pdf",
+ "first_author_surname": "Trahms",
+ "year": 2013,
+ "journal_code": "JOM",
+ "filename_topic": "OrganizationalDeclineTurnaround",
+ "journal": "Journal of Management",
+ "page_count": 31,
+ "title": "Organizational Decline and Turnaround: A Review and Agenda for Future Research",
+ "authors": "Cheryl A. Trahms",
+ "doi": "10.1177/0149206312471390",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 298,
+  "furniture": 23,
+  "figures": 1,
+  "tables_html": 0,
+  "tables_image": 7,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 1041500,
+ "html_sha256": "398cae3c6297adbf08d915a1d03059e18690252b7ed122265eaf68fcd72fda2b",
+ "note_flags": []
+}

@@ -1,0 +1,32 @@
+{
+ "id": "downsizing-others-ruggiero-usesgratificationstheory-2000-mcs",
+ "file": "Downsizing/Others/Ruggiero-UsesGratificationsTheory-2000-MCS.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Ruggiero-UsesGratificationsTheory-2000-MCS.pdf",
+ "first_author_surname": "Ruggiero",
+ "year": 2000,
+ "journal_code": "MCS",
+ "filename_topic": "UsesGratificationsTheory",
+ "journal": "MCS",
+ "page_count": 36,
+ "title": "Uses and Gratifications Theory in the 21st Century",
+ "authors": "Thomas E. Ruggiero",
+ "doi": "10.1207/S15327825MCS0301_02",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 355,
+  "furniture": 34,
+  "figures": 1,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 197539,
+ "html_sha256": "2ab93e449b2af44714bc80a02bb7362897a21a313c586cdeccaa410ceb1a784b",
+ "note_flags": []
+}

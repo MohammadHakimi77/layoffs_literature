@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-maertz-downsizingsurvivoreffects-2010-ir",
+ "file": "Downsizing/Maertz-DownsizingSurvivorEffects-2010-IR.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Maertz-DownsizingSurvivorEffects-2010-IR.pdf",
+ "first_author_surname": "Maertz",
+ "year": 2010,
+ "journal_code": "IR",
+ "filename_topic": "DownsizingSurvivorEffects",
+ "journal": "Industrial Relations",
+ "page_count": 11,
+ "title": "Downsizing Effects on Survivors: Layoffs, Offshoring, and Outsourcing",
+ "authors": null,
+ "doi": "10.1111/j.1468-232X.2009.00599.x",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 97,
+  "furniture": 10,
+  "figures": 0,
+  "tables_html": 3,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 45049,
+ "html_sha256": "d9020756a00ae33fc44bae13c0cce19cb5abe696b81e50ab98d6e81e5de5a47e",
+ "note_flags": []
+}

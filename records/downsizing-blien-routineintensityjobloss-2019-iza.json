@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-blien-routineintensityjobloss-2019-iza",
+ "file": "Downsizing/Blien-RoutineIntensityJobLoss-2019-IZA.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Blien-RoutineIntensityJobLoss-2019-IZA.pdf",
+ "first_author_surname": "Blien",
+ "year": 2019,
+ "journal_code": "IZA",
+ "filename_topic": "RoutineIntensityJobLoss",
+ "journal": "IZA discussion paper",
+ "page_count": 40,
+ "title": "Occupational Routine-Intensity and the Costs of Job Loss: Evidence from Mass Layoffs",
+ "authors": null,
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 259,
+  "furniture": 37,
+  "figures": 22,
+  "tables_html": 12,
+  "tables_image": 3,
+  "equations_img": 14,
+  "image_only_pages": 0
+ },
+ "html_bytes": 1477925,
+ "html_sha256": "0b84f12fa9b27c116808e6952cc316a130da09456a25786221e273fb6a7d7597",
+ "note_flags": []
+}

@@ -1,0 +1,33 @@
+{
+ "id": "sentiment-mousavi-psychometrictextanalysis-2026-isr",
+ "file": "Sentiment/Mousavi-PsychometricTextAnalysis-2026-ISR.html",
+ "topic_folder": "Sentiment",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Mousavi-PsychometricTextAnalysis-2026-ISR.pdf",
+ "first_author_surname": "Mousavi",
+ "year": 2026,
+ "journal_code": "ISR",
+ "filename_topic": "PsychometricTextAnalysis",
+ "journal": "Information Systems Research",
+ "page_count": 21,
+ "title": "From Lexicons to Large Language Models: A Holistic Evaluation of Psychometric Text Analysis in Social Science Research",
+ "authors": "Reza Mousavi, Brent Kitchens, Abbie Griffith Oliver, Ahmed Abbasi",
+ "doi": "10.1287/isre.2024.1143",
+ "copyright_years_on_first_pages": [
+  2026
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 307,
+  "furniture": 40,
+  "figures": 2,
+  "tables_html": 10,
+  "tables_image": 1,
+  "equations_img": 3,
+  "image_only_pages": 0
+ },
+ "html_bytes": 964772,
+ "html_sha256": "1a23a3f1aed834d71100e302e1d026d77dfdf2c9b5a179a79837060750303d98",
+ "note_flags": []
+}

@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-cederlof-advancelayoffnotice-2021-cepr",
+ "file": "Downsizing/Others/Cederlof-AdvanceLayoffNotice-2021-CEPR.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Cederlof-AdvanceLayoffNotice-2021-CEPR.pdf",
+ "first_author_surname": "Cederlof",
+ "year": 2021,
+ "journal_code": "CEPR",
+ "filename_topic": "AdvanceLayoffNotice",
+ "journal": "CEPR discussion paper",
+ "page_count": 63,
+ "title": "Mandatory Advance Notice of Layoff: Evidence and Efficiency Considerations",
+ "authors": null,
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 1636,
+  "furniture": 123,
+  "figures": 30,
+  "tables_html": 7,
+  "tables_image": 0,
+  "equations_img": 9,
+  "image_only_pages": 0
+ },
+ "html_bytes": 1211414,
+ "html_sha256": "1d852f899ea6c0934f67860769b13217f2f3e640e6e5881e88c6cea1cdc2ff05",
+ "note_flags": []
+}

@@ -1,0 +1,34 @@
+{
+ "id": "downsizing-others-garciavega-laborreforminnovation-2021-rp",
+ "file": "Downsizing/Others/GarciaVega-LaborReformInnovation-2021-RP.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/GarciaVega-LaborReformInnovation-2021-RP.pdf",
+ "first_author_surname": "GarciaVega",
+ "year": 2021,
+ "journal_code": "RP",
+ "filename_topic": "LaborReformInnovation",
+ "journal": "RP",
+ "page_count": 17,
+ "title": "Labor market reform and innovation: Evidence from Spain",
+ "authors": null,
+ "doi": "10.1016/j.respol.2021.104213",
+ "copyright_years_on_first_pages": [
+  2021
+ ],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 354,
+  "furniture": 50,
+  "figures": 1,
+  "tables_html": 15,
+  "tables_image": 1,
+  "equations_img": 10,
+  "image_only_pages": 0
+ },
+ "html_bytes": 309103,
+ "html_sha256": "3e69896bd67bdf684d297daee982440868a430baf87f6dc1cf0ab4443d82cc91",
+ "note_flags": []
+}

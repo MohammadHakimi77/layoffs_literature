@@ -1,0 +1,34 @@
+{
+ "id": "methods-staggered-li-forwarddifferenceindifferences-2024-mksc",
+ "file": "Methods/Staggered/Li-ForwardDifferenceInDifferences-2024-MKSC.html",
+ "topic_folder": "Methods/Staggered",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/Staggered/Li-ForwardDifferenceInDifferences-2024-MKSC.pdf",
+ "first_author_surname": "Li",
+ "year": 2024,
+ "journal_code": "MKSC",
+ "filename_topic": "ForwardDifferenceInDifferences",
+ "journal": "Marketing Science",
+ "page_count": 14,
+ "title": "Frontiers: A Simple Forward Difference-in-Differences Method",
+ "authors": "Kathleen T. Lia",
+ "doi": "10.1287/mksc.2022.0212",
+ "copyright_years_on_first_pages": [
+  2023
+ ],
+ "uncertain_fields": [
+  "authors",
+  "year"
+ ],
+ "conversion": {
+  "blocks": 269,
+  "furniture": 13,
+  "figures": 15,
+  "tables_html": 3,
+  "tables_image": 2,
+  "equations_img": 28,
+  "image_only_pages": 0
+ },
+ "html_bytes": 586304,
+ "html_sha256": "36fd4d3ad50d8ef76a0aa3a96d58bbab3002f3884b122370f85511f0e6f10fff",
+ "note_flags": []
+}

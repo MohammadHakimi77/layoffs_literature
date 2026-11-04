@@ -1,0 +1,33 @@
+{
+ "id": "downsizing-krolikowski-advancelayoffnotices-2024-jae",
+ "file": "Downsizing/Krolikowski-AdvanceLayoffNotices-2024-JAE.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Krolikowski-AdvanceLayoffNotices-2024-JAE.pdf",
+ "first_author_surname": "Krolikowski",
+ "year": 2024,
+ "journal_code": "JAE",
+ "filename_topic": "AdvanceLayoffNotices",
+ "journal": "Journal of Accounting and Economics",
+ "page_count": 19,
+ "title": "Advance layoff notices and aggregate job loss",
+ "authors": "Pawel M. Krolikowski Kurt G. Lunsford",
+ "doi": "10.1002/jae.3032",
+ "copyright_years_on_first_pages": [
+  2024
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 299,
+  "furniture": 18,
+  "figures": 15,
+  "tables_html": 0,
+  "tables_image": 1,
+  "equations_img": 28,
+  "image_only_pages": 0
+ },
+ "html_bytes": 845506,
+ "html_sha256": "6816e59e4c4c66d27833de7e0324808adaf51daf7586509e2b4d1552544abcc3",
+ "note_flags": []
+}

@@ -1,0 +1,33 @@
+{
+ "id": "sentiment-puranam-minimumwagesserviceperceptions-2021-mksc",
+ "file": "Sentiment/Puranam-MinimumWagesServicePerceptions-2021-MKSC.html",
+ "topic_folder": "Sentiment",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Puranam-MinimumWagesServicePerceptions-2021-MKSC.pdf",
+ "first_author_surname": "Puranam",
+ "year": 2021,
+ "journal_code": "MKSC",
+ "filename_topic": "MinimumWagesServicePerceptions",
+ "journal": "Marketing Science",
+ "page_count": 21,
+ "title": "The Impact of Increase in Minimum Wages on Consumer Perceptions of Service: A Transformer Model of Online Restaurant Reviews",
+ "authors": null,
+ "doi": "10.1287/mksc.2021.1294",
+ "copyright_years_on_first_pages": [
+  2021
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 238,
+  "furniture": 20,
+  "figures": 4,
+  "tables_html": 5,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 1175353,
+ "html_sha256": "73e93dccd2940e064caf1ff0c66dc77260c2e3cd9058caf085fb4c56ff9e5271",
+ "note_flags": []
+}

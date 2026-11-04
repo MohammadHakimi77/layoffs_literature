@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-greenhalgh-workforcereductionstrategies-1988-amr",
+ "file": "Downsizing/Others/Greenhalgh-WorkforceReductionStrategies-1988-AMR.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Greenhalgh-WorkforceReductionStrategies-1988-AMR.pdf",
+ "first_author_surname": "Greenhalgh",
+ "year": 1988,
+ "journal_code": "AMR",
+ "filename_topic": "WorkforceReductionStrategies",
+ "journal": "Academy of Management Review",
+ "page_count": 15,
+ "title": "Determinants of Work Force Reduction Strategies in Declining Organizations",
+ "authors": null,
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 374,
+  "furniture": 30,
+  "figures": 1,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 154587,
+ "html_sha256": "7e849b7d37e82b7ebc2ee2473105c0c4780e899e59728e167edeaeb3bdb18bb2",
+ "note_flags": []
+}

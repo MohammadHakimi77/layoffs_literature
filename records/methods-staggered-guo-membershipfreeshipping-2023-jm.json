@@ -1,0 +1,31 @@
+{
+ "id": "methods-staggered-guo-membershipfreeshipping-2023-jm",
+ "file": "Methods/Staggered/Guo-MembershipFreeShipping-2023-JM.html",
+ "topic_folder": "Methods/Staggered",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/Staggered/Guo-MembershipFreeShipping-2023-JM.pdf",
+ "first_author_surname": "Guo",
+ "year": 2023,
+ "journal_code": "JM",
+ "filename_topic": "MembershipFreeShipping",
+ "journal": "Journal of Marketing",
+ "page_count": 21,
+ "title": "The Effectiveness of Membership-Based Free Shipping: An Empirical Investigation of Consumers’ Purchase Behaviors and Revenue Contribution",
+ "authors": "Fangfei Guo and Yan Liu",
+ "doi": "10.1177/00222429231158116",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 343,
+  "furniture": 18,
+  "figures": 3,
+  "tables_html": 4,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 511445,
+ "html_sha256": "c3c1f5f584e47798836bd24851fcccc8419a4fd989b0a017f3370abfc63b9957",
+ "note_flags": []
+}

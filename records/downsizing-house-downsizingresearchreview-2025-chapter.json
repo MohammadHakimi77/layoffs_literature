@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-house-downsizingresearchreview-2025-chapter",
+ "file": "Downsizing/House-DownsizingResearchReview-2025-Chapter.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/House-DownsizingResearchReview-2025-Chapter.pdf",
+ "first_author_surname": "House",
+ "year": 2025,
+ "journal_code": "Chapter",
+ "filename_topic": "DownsizingResearchReview",
+ "journal": "Book chapter",
+ "page_count": 2,
+ "title": "1. A review and synthesis of downsizing research: the dilemma endures",
+ "authors": "Alyson P. House and Rocki-Lee DeWitt OVERVIEW",
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 11,
+  "furniture": 0,
+  "figures": 0,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 7896,
+ "html_sha256": "55d43925c95cdbbe5bf24ac703e3b7f9cbd453be7af357f0f5c48fcf766ec576",
+ "note_flags": []
+}

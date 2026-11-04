@@ -1,0 +1,34 @@
+{
+ "id": "downsizing-lewin-downsizingcustomersatisfaction-2010-jbr",
+ "file": "Downsizing/Lewin-DownsizingCustomerSatisfaction-2010-JBR.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Lewin-DownsizingCustomerSatisfaction-2010-JBR.pdf",
+ "first_author_surname": "Lewin",
+ "year": 2010,
+ "journal_code": "JBR",
+ "filename_topic": "DownsizingCustomerSatisfaction",
+ "journal": "Journal of Business Research",
+ "page_count": 10,
+ "title": "Firm downsizing and satisfaction among United States and European customers",
+ "authors": null,
+ "doi": "10.1016/j.jbusres.2009.05.005",
+ "copyright_years_on_first_pages": [
+  2009
+ ],
+ "uncertain_fields": [
+  "authors",
+  "year"
+ ],
+ "conversion": {
+  "blocks": 216,
+  "furniture": 10,
+  "figures": 4,
+  "tables_html": 4,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 420301,
+ "html_sha256": "3a10617161771e746fa3fb36e334fc79f88d5a9c6ba0f60420bc4a2222af352d",
+ "note_flags": []
+}

@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-bosky-layoffsgenderinequality-2022-sf",
+ "file": "Downsizing/Others/Bosky-LayoffsGenderInequality-2022-SF.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Bosky-LayoffsGenderInequality-2022-SF.pdf",
+ "first_author_surname": "Bosky",
+ "year": 2022,
+ "journal_code": "SF",
+ "filename_topic": "LayoffsGenderInequality",
+ "journal": "Social Forces",
+ "page_count": 29,
+ "title": "Precarious Professionals: Layoffs and Gender Inequality in the Oil and Gas Industry",
+ "authors": null,
+ "doi": "10.1093/sf/soab169",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 283,
+  "furniture": 59,
+  "figures": 2,
+  "tables_html": 3,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 321148,
+ "html_sha256": "9b61503c3b6f69edcd34ec44c64af8ffc4dd651433a837fe2ef281c3f32effd7",
+ "note_flags": []
+}

@@ -1,0 +1,32 @@
+{
+ "id": "downsizing-others-dias-racialemploymentlayoffgap-2021-socius",
+ "file": "Downsizing/Others/Dias-RacialEmploymentLayoffGap-2021-Socius.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Dias-RacialEmploymentLayoffGap-2021-Socius.pdf",
+ "first_author_surname": "Dias",
+ "year": 2021,
+ "journal_code": "Socius",
+ "filename_topic": "RacialEmploymentLayoffGap",
+ "journal": "Socius",
+ "page_count": 3,
+ "title": "The Racial Gap in Employment and Layoffs during COVID-19 in the United States: A Visualization",
+ "authors": "Felipe A. Dias1",
+ "doi": "10.1177/2378023120988397",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 34,
+  "furniture": 0,
+  "figures": 3,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 255458,
+ "html_sha256": "57e7386a38b00c8e591fd2d33aa6050aaf0877c697c67c19becade51f76add2d",
+ "note_flags": []
+}

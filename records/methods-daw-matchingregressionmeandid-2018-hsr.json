@@ -1,0 +1,32 @@
+{
+ "id": "methods-daw-matchingregressionmeandid-2018-hsr",
+ "file": "Methods/Daw-MatchingRegressionMeanDiD-2018-HSR.html",
+ "topic_folder": "Methods",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/Daw-MatchingRegressionMeanDiD-2018-HSR.pdf",
+ "first_author_surname": "Daw",
+ "year": 2018,
+ "journal_code": "HSR",
+ "filename_topic": "MatchingRegressionMeanDiD",
+ "journal": "HSR",
+ "page_count": 19,
+ "title": "Matching and Regression to the Mean in Difference-in-Differences Analysis",
+ "authors": "Jamie R. Daw",
+ "doi": "10.1111/1475-6773.12993",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 151,
+  "furniture": 18,
+  "figures": 4,
+  "tables_html": 0,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 478265,
+ "html_sha256": "7e695af1625852c499fcd5dbed1aa9dd4f6b8562e8db7c3f50677a7b2ac2d9d5",
+ "note_flags": []
+}

@@ -1,0 +1,34 @@
+{
+ "id": "downsizing-ma-videogamelayoffcrisis-2025-acmgames",
+ "file": "Downsizing/Ma-VideoGameLayoffCrisis-2025-ACMGames.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Ma-VideoGameLayoffCrisis-2025-ACMGames.pdf",
+ "first_author_surname": "Ma",
+ "year": 2025,
+ "journal_code": "ACMGames",
+ "filename_topic": "VideoGameLayoffCrisis",
+ "journal": "ACMGames",
+ "page_count": 27,
+ "title": "From the Atari Shock to a Modern Crisis: Analyzing Mass Layoffs in the Post-Pandemic U.S. Video Game Industry",
+ "authors": null,
+ "doi": "10.1145/3774758",
+ "copyright_years_on_first_pages": [
+  2025
+ ],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 373,
+  "furniture": 53,
+  "figures": 11,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 625379,
+ "html_sha256": "a8107240a28b78a7061d8154ccb0ac25fd8025b68a9dabba7d5d6826c7292387",
+ "note_flags": []
+}

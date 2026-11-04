@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-mishra-survivorresponsesdownsizing-1998-amr",
+ "file": "Downsizing/Others/Mishra-SurvivorResponsesDownsizing-1998-AMR.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Mishra-SurvivorResponsesDownsizing-1998-AMR.pdf",
+ "first_author_surname": "Mishra",
+ "year": 1998,
+ "journal_code": "AMR",
+ "filename_topic": "SurvivorResponsesDownsizing",
+ "journal": "Academy of Management Review",
+ "page_count": 23,
+ "title": "Explaining How Survivors Respond to Downsizing: The Roles of Trust, Empowerment, Justice, and Work Redesign",
+ "authors": null,
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 547,
+  "furniture": 67,
+  "figures": 1,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 212417,
+ "html_sha256": "d8e7ce238af25ea9a7d3ffda148a5f81f3a6cce71ec4cebbe3a37a6096411ec6",
+ "note_flags": []
+}

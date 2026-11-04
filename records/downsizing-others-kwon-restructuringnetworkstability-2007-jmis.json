@@ -1,0 +1,35 @@
+{
+ "id": "downsizing-others-kwon-restructuringnetworkstability-2007-jmis",
+ "file": "Downsizing/Others/Kwon-RestructuringNetworkStability-2007-JMIS.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Kwon-RestructuringNetworkStability-2007-JMIS.pdf",
+ "first_author_surname": "Kwon",
+ "year": 2007,
+ "journal_code": "JMIS",
+ "filename_topic": "RestructuringNetworkStability",
+ "journal": "Journal of Management Information Systems",
+ "page_count": 33,
+ "title": "Broken Ties: The Impact of Organizational Restructuring on the Stability of Information- Processing Networks",
+ "authors": "Dowan Kwon, Wonseok Oh & Sangyong Jeon",
+ "doi": "10.2753/MIS0742-1222240106",
+ "copyright_years_on_first_pages": [
+  2007
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 275,
+  "furniture": 0,
+  "figures": 15,
+  "tables_html": 1,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 1
+ },
+ "html_bytes": 701260,
+ "html_sha256": "efa0ccafad20e5c8dcb34d5cb8b48082b7cbc48c22fe34b04390fddd4d7834b3",
+ "note_flags": [
+  "has pages without text layer (rendered as images)"
+ ]
+}

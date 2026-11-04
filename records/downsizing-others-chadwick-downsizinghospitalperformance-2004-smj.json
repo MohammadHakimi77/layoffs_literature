@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-chadwick-downsizinghospitalperformance-2004-smj",
+ "file": "Downsizing/Others/Chadwick-DownsizingHospitalPerformance-2004-SMJ.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Chadwick-DownsizingHospitalPerformance-2004-SMJ.pdf",
+ "first_author_surname": "Chadwick",
+ "year": 2004,
+ "journal_code": "SMJ",
+ "filename_topic": "DownsizingHospitalPerformance",
+ "journal": "Strategic Management Journal",
+ "page_count": 23,
+ "title": "EFFECTS OF DOWNSIZING PRACTICES ON THE PERFORMANCE OF HOSPITALS",
+ "authors": null,
+ "doi": "10.1002/smj.383",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 432,
+  "furniture": 0,
+  "figures": 1,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 2,
+  "image_only_pages": 0
+ },
+ "html_bytes": 189323,
+ "html_sha256": "469031b9be09494689cc166f5408e295e382939c3a52e70aa3c8b935b00327e0",
+ "note_flags": []
+}

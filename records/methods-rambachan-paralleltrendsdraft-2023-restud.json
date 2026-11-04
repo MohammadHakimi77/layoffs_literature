@@ -1,0 +1,31 @@
+{
+ "id": "methods-rambachan-paralleltrendsdraft-2023-restud",
+ "file": "Methods/Rambachan-ParallelTrendsDraft-2023-REStud.html",
+ "topic_folder": "Methods",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/Rambachan-ParallelTrendsDraft-2023-REStud.pdf",
+ "first_author_surname": "Rambachan",
+ "year": 2023,
+ "journal_code": "REStud",
+ "filename_topic": "ParallelTrendsDraft",
+ "journal": "Review of Economic Studies",
+ "page_count": 126,
+ "title": "An Honest Approach to Parallel Trends∗",
+ "authors": "Ashesh Rambachan† Jonathan Roth‡",
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 4428,
+  "furniture": 125,
+  "figures": 26,
+  "tables_html": 3,
+  "tables_image": 0,
+  "equations_img": 2938,
+  "image_only_pages": 0
+ },
+ "html_bytes": 15118387,
+ "html_sha256": "e5e2fb5608d2556b313428e83fde3627a4cbdc6f9360df2cea7744cab8ec946c",
+ "note_flags": []
+}

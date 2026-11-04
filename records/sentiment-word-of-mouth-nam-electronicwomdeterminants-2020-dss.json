@@ -1,0 +1,35 @@
+{
+ "id": "sentiment-word-of-mouth-nam-electronicwomdeterminants-2020-dss",
+ "file": "Sentiment/Word of mouth/Nam-ElectronicWOMDeterminants-2020-DSS.html",
+ "topic_folder": "Sentiment/Word of mouth",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Word of mouth/Nam-ElectronicWOMDeterminants-2020-DSS.pdf",
+ "first_author_surname": "Nam",
+ "year": 2020,
+ "journal_code": "DSS",
+ "filename_topic": "ElectronicWOMDeterminants",
+ "journal": "DSS",
+ "page_count": 14,
+ "title": "Determinants of writing positive and negative electronic word-of-mouth: Empirical evidence for two types of expectation confirmation",
+ "authors": null,
+ "doi": "10.1016/j.dss.2019.113168",
+ "copyright_years_on_first_pages": [
+  2019
+ ],
+ "uncertain_fields": [
+  "authors",
+  "journal",
+  "year"
+ ],
+ "conversion": {
+  "blocks": 261,
+  "furniture": 27,
+  "figures": 3,
+  "tables_html": 5,
+  "tables_image": 3,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 749035,
+ "html_sha256": "984123b1bf7b7a532e9e65a15561cd3fcd6817b38788d45b83503887fd142cef",
+ "note_flags": []
+}

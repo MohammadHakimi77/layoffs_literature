@@ -1,0 +1,33 @@
+{
+ "id": "methods-staggered-cheng-deepdidheterogeneouseffects-2026-mksc",
+ "file": "Methods/Staggered/Cheng-DeepDiDHeterogeneousEffects-2026-MKSC.html",
+ "topic_folder": "Methods/Staggered",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/Staggered/Cheng-DeepDiDHeterogeneousEffects-2026-MKSC.pdf",
+ "first_author_surname": "Cheng",
+ "year": 2026,
+ "journal_code": "MKSC",
+ "filename_topic": "DeepDiDHeterogeneousEffects",
+ "journal": "Marketing Science",
+ "page_count": 23,
+ "title": "A Deep-DiD Method to Estimate Heterogeneous Treatment Effects: Application to Content Creator Selection",
+ "authors": null,
+ "doi": "10.1287/mksc.2023.0511",
+ "copyright_years_on_first_pages": [
+  2026
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 294,
+  "furniture": 22,
+  "figures": 26,
+  "tables_html": 5,
+  "tables_image": 1,
+  "equations_img": 5,
+  "image_only_pages": 0
+ },
+ "html_bytes": 1606426,
+ "html_sha256": "eda8c0d11a91224b35a693d79c91621a395b5f331a96732d772cfcdae0c27cf4",
+ "note_flags": []
+}

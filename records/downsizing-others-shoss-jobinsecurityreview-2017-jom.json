@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-shoss-jobinsecurityreview-2017-jom",
+ "file": "Downsizing/Others/Shoss-JobInsecurityReview-2017-JOM.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Shoss-JobInsecurityReview-2017-JOM.pdf",
+ "first_author_surname": "Shoss",
+ "year": 2017,
+ "journal_code": "JOM",
+ "filename_topic": "JobInsecurityReview",
+ "journal": "Journal of Management",
+ "page_count": 29,
+ "title": "Job Insecurity: An Integrative Review and Agenda for Future Research",
+ "authors": "Mindy K. Shoss",
+ "doi": "10.1177/0149206317691574",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 373,
+  "furniture": 29,
+  "figures": 1,
+  "tables_html": 2,
+  "tables_image": 2,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 631251,
+ "html_sha256": "96350b35e38334ff01f5eababad0b1c7deea2ec38e3c5c233cf451afa992d717",
+ "note_flags": []
+}

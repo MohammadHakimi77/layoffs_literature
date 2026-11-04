@@ -1,0 +1,32 @@
+{
+ "id": "methods-staggered-lee-socialadvertisingbusinessresilience-2025-jim",
+ "file": "Methods/Staggered/Lee-SocialAdvertisingBusinessResilience-2025-JIM.html",
+ "topic_folder": "Methods/Staggered",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/Staggered/Lee-SocialAdvertisingBusinessResilience-2025-JIM.pdf",
+ "first_author_surname": "Lee",
+ "year": 2025,
+ "journal_code": "JIM",
+ "filename_topic": "SocialAdvertisingBusinessResilience",
+ "journal": "Journal of International Marketing",
+ "page_count": 15,
+ "title": "Social Media Advertising’s Role in Small Business Resilience Amid Lockdowns",
+ "authors": "Shun-Yang Lee",
+ "doi": "10.1177/10949968251336683",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 161,
+  "furniture": 14,
+  "figures": 10,
+  "tables_html": 8,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 725846,
+ "html_sha256": "823fa668cb11b1ccb993fb8866fd16a4a993ca9f508e582885b0c8385d9ec79b",
+ "note_flags": []
+}

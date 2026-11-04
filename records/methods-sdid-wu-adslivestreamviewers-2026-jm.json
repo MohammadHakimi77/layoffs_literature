@@ -1,0 +1,31 @@
+{
+ "id": "methods-sdid-wu-adslivestreamviewers-2026-jm",
+ "file": "Methods/SDID/Wu-AdsLivestreamViewers-2026-JM.html",
+ "topic_folder": "Methods/SDID",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/SDID/Wu-AdsLivestreamViewers-2026-JM.pdf",
+ "first_author_surname": "Wu",
+ "year": 2026,
+ "journal_code": "JM",
+ "filename_topic": "AdsLivestreamViewers",
+ "journal": "Journal of Marketing",
+ "page_count": 20,
+ "title": "More Ads, More Viewers? Analyzing Behavioral Shifts from Advertising Permissions to Live Streaming Consumption",
+ "authors": "Michael W. Wu",
+ "doi": "10.1177/00222429251363144",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 265,
+  "furniture": 18,
+  "figures": 2,
+  "tables_html": 5,
+  "tables_image": 2,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 542231,
+ "html_sha256": "5f09b6057edb8a185c086078dcd13e2a92efd396cb755d8d9fc858871f0c7fe4",
+ "note_flags": []
+}

@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-amato-familyfirmscrisisdownsizing-2023-jbe",
+ "file": "Downsizing/Others/Amato-FamilyFirmsCrisisDownsizing-2023-JBE.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Amato-FamilyFirmsCrisisDownsizing-2023-JBE.pdf",
+ "first_author_surname": "Amato",
+ "year": 2023,
+ "journal_code": "JBE",
+ "filename_topic": "FamilyFirmsCrisisDownsizing",
+ "journal": "Journal of Business Ethics",
+ "page_count": 24,
+ "title": "Family Firms Amidst the Global Financial Crisis: A Territorial Embeddedness Perspective on Downsizing",
+ "authors": null,
+ "doi": "10.1007/s10551-021-04930-0",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 334,
+  "furniture": 46,
+  "figures": 2,
+  "tables_html": 3,
+  "tables_image": 4,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 805640,
+ "html_sha256": "020ee1c97a21e646314cb48389f3cf72d8385be910219d1870018ebc8f6c1764",
+ "note_flags": []
+}

@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-norman-resourcesfollowingdownsizing-2013-jom",
+ "file": "Downsizing/Others/Norman-ResourcesFollowingDownsizing-2013-JOM.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Norman-ResourcesFollowingDownsizing-2013-JOM.pdf",
+ "first_author_surname": "Norman",
+ "year": 2013,
+ "journal_code": "JOM",
+ "filename_topic": "ResourcesFollowingDownsizing",
+ "journal": "Journal of Management",
+ "page_count": 30,
+ "title": "Resources Matter: Examining the Effects of Resources on the State of Firms Following Downsizing",
+ "authors": "Patricia M. Norman",
+ "doi": "10.1177/0149206312443560",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 275,
+  "furniture": 28,
+  "figures": 1,
+  "tables_html": 3,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 348918,
+ "html_sha256": "7561de97e88e739d84d5221837204db1dcc53ed01cce89ea3472b36cd8c37a79",
+ "note_flags": []
+}

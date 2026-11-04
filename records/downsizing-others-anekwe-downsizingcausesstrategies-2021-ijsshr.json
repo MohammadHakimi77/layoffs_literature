@@ -1,0 +1,32 @@
+{
+ "id": "downsizing-others-anekwe-downsizingcausesstrategies-2021-ijsshr",
+ "file": "Downsizing/Others/Anekwe-DownsizingCausesStrategies-2021-IJSSHR.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Anekwe-DownsizingCausesStrategies-2021-IJSSHR.pdf",
+ "first_author_surname": "Anekwe",
+ "year": 2021,
+ "journal_code": "IJSSHR",
+ "filename_topic": "DownsizingCausesStrategies",
+ "journal": "IJSSHR",
+ "page_count": 6,
+ "title": "Downsizing: Causes, Effect, and Strategies, A Conceptual Approach",
+ "authors": "Dr Anekwe Rita Ifeoma1, Dr. Nwanah Chizoba Patience2",
+ "doi": "10.47191/ijsshr/v4-i7-32",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 45,
+  "furniture": 11,
+  "figures": 0,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 39858,
+ "html_sha256": "a26e80cf3ad6be16b71c45f9a52bdc919b0b0897b47d1ee02f2a5d33e11125dd",
+ "note_flags": []
+}

@@ -1,0 +1,31 @@
+{
+ "id": "methods-staggered-breugelmans-radicalstoretransformation-2024-jams",
+ "file": "Methods/Staggered/Breugelmans-RadicalStoreTransformation-2024-JAMS.html",
+ "topic_folder": "Methods/Staggered",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/Staggered/Breugelmans-RadicalStoreTransformation-2024-JAMS.pdf",
+ "first_author_surname": "Breugelmans",
+ "year": 2024,
+ "journal_code": "JAMS",
+ "filename_topic": "RadicalStoreTransformation",
+ "journal": "Journal of the Academy of Marketing Science",
+ "page_count": 22,
+ "title": "What is happening to my nearby stores? The own‑ and cross‑effect of a radical store transformation on existing customers",
+ "authors": null,
+ "doi": "10.1007/s11747-023-00946-2",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 424,
+  "furniture": 42,
+  "figures": 1,
+  "tables_html": 2,
+  "tables_image": 3,
+  "equations_img": 14,
+  "image_only_pages": 0
+ },
+ "html_bytes": 806765,
+ "html_sha256": "891457a3acee02fa8f81e2296e6132e83ee99cdfecd4b123f496ccb6ae99f70b",
+ "note_flags": []
+}

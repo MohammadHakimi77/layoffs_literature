@@ -1,0 +1,33 @@
+{
+ "id": "sentiment-loh-platformcompetitioncomplementors-2026-smj",
+ "file": "Sentiment/Loh-PlatformCompetitionComplementors-2026-SMJ.html",
+ "topic_folder": "Sentiment",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Loh-PlatformCompetitionComplementors-2026-SMJ.pdf",
+ "first_author_surname": "Loh",
+ "year": 2026,
+ "journal_code": "SMJ",
+ "filename_topic": "PlatformCompetitionComplementors",
+ "journal": "Strategic Management Journal",
+ "page_count": 59,
+ "title": "Platform competition and strategic trade-offs for complementors: Heterogeneous reactions to the entry of a new platform",
+ "authors": "Johannes Loh1",
+ "doi": "10.1002/smj.70062",
+ "copyright_years_on_first_pages": [
+  2026
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 489,
+  "furniture": 57,
+  "figures": 19,
+  "tables_html": 20,
+  "tables_image": 3,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 1544433,
+ "html_sha256": "b51167b1d215ce2663119bc13bf43f4078c4584364642474c5a93afd2384f5f4",
+ "note_flags": []
+}

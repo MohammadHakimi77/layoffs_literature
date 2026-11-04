@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-vandoornik-strategicformallayoffs-2023-aejae",
+ "file": "Downsizing/VanDoornik-StrategicFormalLayoffs-2023-AEJAE.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/VanDoornik-StrategicFormalLayoffs-2023-AEJAE.pdf",
+ "first_author_surname": "VanDoornik",
+ "year": 2023,
+ "journal_code": "AEJAE",
+ "filename_topic": "StrategicFormalLayoffs",
+ "journal": "American Economic Journal: Applied Economics",
+ "page_count": 28,
+ "title": "Strategic Formal Layoffs: Unemployment Insurance and Informal Labor Markets†",
+ "authors": null,
+ "doi": "10.1257/app.20200787",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 314,
+  "furniture": 27,
+  "figures": 7,
+  "tables_html": 6,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 447549,
+ "html_sha256": "ff6966f60bdd8078fbd0c56d96c780052c331dd079873f6543eae37e58653a14",
+ "note_flags": []
+}

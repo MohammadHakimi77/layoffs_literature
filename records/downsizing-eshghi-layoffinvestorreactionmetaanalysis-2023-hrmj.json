@@ -1,0 +1,33 @@
+{
+ "id": "downsizing-eshghi-layoffinvestorreactionmetaanalysis-2023-hrmj",
+ "file": "Downsizing/Eshghi-LayoffInvestorReactionMetaAnalysis-2023-HRMJ.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Eshghi-LayoffInvestorReactionMetaAnalysis-2023-HRMJ.pdf",
+ "first_author_surname": "Eshghi",
+ "year": 2023,
+ "journal_code": "HRMJ",
+ "filename_topic": "LayoffInvestorReactionMetaAnalysis",
+ "journal": "Human Resource Management Journal",
+ "page_count": 18,
+ "title": "Stock investors' reaction to layoff announcements: A meta-analysis",
+ "authors": null,
+ "doi": "10.1111/1748-8583.12532",
+ "copyright_years_on_first_pages": [
+  2023
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 635,
+  "furniture": 17,
+  "figures": 3,
+  "tables_html": 1,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 363054,
+ "html_sha256": "b62510d38a6585a37f503a8a860318285b8dc75e4bf18e47663f9d9ecfa8443e",
+ "note_flags": []
+}

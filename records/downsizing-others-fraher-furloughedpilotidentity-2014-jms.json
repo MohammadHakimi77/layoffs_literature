@@ -1,0 +1,33 @@
+{
+ "id": "downsizing-others-fraher-furloughedpilotidentity-2014-jms",
+ "file": "Downsizing/Others/Fraher-FurloughedPilotIdentity-2014-JMS.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Fraher-FurloughedPilotIdentity-2014-JMS.pdf",
+ "first_author_surname": "Fraher",
+ "year": 2014,
+ "journal_code": "JMS",
+ "filename_topic": "FurloughedPilotIdentity",
+ "journal": "Journal of Management Studies",
+ "page_count": 26,
+ "title": "Dreaming of Flying When Grounded: Occupational Identity and Occupational Fantasies of Furloughed Airline Pilots",
+ "authors": "Amy L. Fraher and Yiannis Gabriel",
+ "doi": "10.1111/joms.12081",
+ "copyright_years_on_first_pages": [
+  2014
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 312,
+  "furniture": 51,
+  "figures": 3,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 259927,
+ "html_sha256": "5d2cef88c9f889234ebc3f72f661b8cdbe324f4c7bcc7c338595ff28ea0c38af",
+ "note_flags": []
+}

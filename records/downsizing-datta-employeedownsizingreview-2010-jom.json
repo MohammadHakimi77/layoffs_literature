@@ -1,0 +1,33 @@
+{
+ "id": "downsizing-datta-employeedownsizingreview-2010-jom",
+ "file": "Downsizing/Datta-EmployeeDownsizingReview-2010-JOM.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Datta-EmployeeDownsizingReview-2010-JOM.pdf",
+ "first_author_surname": "Datta",
+ "year": 2010,
+ "journal_code": "JOM",
+ "filename_topic": "EmployeeDownsizingReview",
+ "journal": "Journal of Management",
+ "page_count": 68,
+ "title": "Causes and Effects of Employee Downsizing: A Review and Synthesis",
+ "authors": "Deepak K. Datta",
+ "doi": "10.1177/0149206309346735",
+ "copyright_years_on_first_pages": [
+  2010
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 127,
+  "furniture": 1,
+  "figures": 63,
+  "tables_html": 0,
+  "tables_image": 2,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 13869763,
+ "html_sha256": "a362e1beba3d0d62b8aefab608ba51937ddfa5d0e9365f1f69d23c85aa8f1695",
+ "note_flags": []
+}

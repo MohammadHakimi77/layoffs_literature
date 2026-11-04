@@ -1,0 +1,32 @@
+{
+ "id": "downsizing-others-piza-policelayoffscrime-2021-jej",
+ "file": "Downsizing/Others/Piza-PoliceLayoffsCrime-2021-JEJ.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Piza-PoliceLayoffsCrime-2021-JEJ.pdf",
+ "first_author_surname": "Piza",
+ "year": 2021,
+ "journal_code": "JEJ",
+ "filename_topic": "PoliceLayoffsCrime",
+ "journal": "JEJ",
+ "page_count": 22,
+ "title": "The Eﬀect of Police Layoﬀs on Crime: A Natural Experiment Involving New Jersey’s Two Largest Cities",
+ "authors": "Eric L. Piza & Vijay F. Chillar",
+ "doi": "10.1080/24751979.2020.1858697",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 196,
+  "furniture": 20,
+  "figures": 4,
+  "tables_html": 7,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 588171,
+ "html_sha256": "8e49b35581d9d5283e934366142002a8177014ad51ba2653b1bf7ee0fcd9a892",
+ "note_flags": []
+}

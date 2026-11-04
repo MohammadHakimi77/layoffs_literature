@@ -1,0 +1,33 @@
+{
+ "id": "sentiment-word-of-mouth-east-positivenegativewomincidence-2007-ijrm",
+ "file": "Sentiment/Word of mouth/East-PositiveNegativeWOMIncidence-2007-IJRM.html",
+ "topic_folder": "Sentiment/Word of mouth",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Word of mouth/East-PositiveNegativeWOMIncidence-2007-IJRM.pdf",
+ "first_author_surname": "East",
+ "year": 2007,
+ "journal_code": "IJRM",
+ "filename_topic": "PositiveNegativeWOMIncidence",
+ "journal": "International Journal of Research in Marketing",
+ "page_count": 10,
+ "title": "The relative incidence of positive and negative word of mouth: A multi-category study",
+ "authors": null,
+ "doi": "10.1016/j.ijresmar.2006.12.004",
+ "copyright_years_on_first_pages": [
+  2007
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 164,
+  "furniture": 10,
+  "figures": 0,
+  "tables_html": 5,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 67015,
+ "html_sha256": "db3dc15c0a8774452e20bd440df0a9064dcccb26c5e393467d3d5c45354dc5cf",
+ "note_flags": []
+}

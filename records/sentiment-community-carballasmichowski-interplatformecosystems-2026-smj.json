@@ -1,0 +1,33 @@
+{
+ "id": "sentiment-community-carballasmichowski-interplatformecosystems-2026-smj",
+ "file": "Sentiment/Community/CarballaSmichowski-InterPlatformEcosystems-2026-SMJ.html",
+ "topic_folder": "Sentiment/Community",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Community/CarballaSmichowski-InterPlatformEcosystems-2026-SMJ.pdf",
+ "first_author_surname": "CarballaSmichowski",
+ "year": 2026,
+ "journal_code": "SMJ",
+ "filename_topic": "InterPlatformEcosystems",
+ "journal": "Strategic Management Journal",
+ "page_count": 38,
+ "title": "Inter-platform ecosystems",
+ "authors": null,
+ "doi": "10.1002/smj.70070",
+ "copyright_years_on_first_pages": [
+  2026
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 328,
+  "furniture": 37,
+  "figures": 6,
+  "tables_html": 12,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 681022,
+ "html_sha256": "bc21ed4fdb6bd1283a0971c56fe815ee2ca29bf19abf0f7efb1c2655a5827f2f",
+ "note_flags": []
+}

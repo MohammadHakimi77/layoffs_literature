@@ -1,0 +1,32 @@
+{
+ "id": "downsizing-jung-financializationcorporatedownsizing-2022-ser",
+ "file": "Downsizing/Jung-FinancializationCorporateDownsizing-2022-SER.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Jung-FinancializationCorporateDownsizing-2022-SER.pdf",
+ "first_author_surname": "Jung",
+ "year": 2022,
+ "journal_code": "SER",
+ "filename_topic": "FinancializationCorporateDownsizing",
+ "journal": "Socio-Economic Review",
+ "page_count": 29,
+ "title": "Financialization and corporate downsizing as a shareholder value strategy",
+ "authors": "Jiwook Jung",
+ "doi": "10.1093/ser/mwab035",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 335,
+  "furniture": 48,
+  "figures": 3,
+  "tables_html": 3,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 267682,
+ "html_sha256": "c6986bafb8714751d4a345a488f7e1c67343b18c0331e4f4281f4afb39a76c92",
+ "note_flags": []
+}

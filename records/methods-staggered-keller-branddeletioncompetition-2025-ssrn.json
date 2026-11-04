@@ -1,0 +1,31 @@
+{
+ "id": "methods-staggered-keller-branddeletioncompetition-2025-ssrn",
+ "file": "Methods/Staggered/Keller-BrandDeletionCompetition-2025-SSRN.html",
+ "topic_folder": "Methods/Staggered",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/Staggered/Keller-BrandDeletionCompetition-2025-SSRN.pdf",
+ "first_author_surname": "Keller",
+ "year": 2025,
+ "journal_code": "SSRN",
+ "filename_topic": "BrandDeletionCompetition",
+ "journal": "SSRN working paper",
+ "page_count": 78,
+ "title": "Filling the Void: How Competing Brands Can Capitalize on a Brand Deletion",
+ "authors": "Kristopher O. Keller1",
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 1268,
+  "furniture": 0,
+  "figures": 18,
+  "tables_html": 16,
+  "tables_image": 10,
+  "equations_img": 139,
+  "image_only_pages": 0
+ },
+ "html_bytes": 4011829,
+ "html_sha256": "967688835fbb5648a80d4ffcc83839a4465755166c6ee70f0588e60f2c1dfd2f",
+ "note_flags": []
+}

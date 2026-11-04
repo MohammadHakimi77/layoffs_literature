@@ -1,0 +1,34 @@
+{
+ "id": "downsizing-others-shin-stakeholderorientationceodismissal-2022-smj",
+ "file": "Downsizing/Others/Shin-StakeholderOrientationCEODismissal-2022-SMJ.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Shin-StakeholderOrientationCEODismissal-2022-SMJ.pdf",
+ "first_author_surname": "Shin",
+ "year": 2022,
+ "journal_code": "SMJ",
+ "filename_topic": "StakeholderOrientationCEODismissal",
+ "journal": "Strategic Management Journal",
+ "page_count": 25,
+ "title": "From a shareholder to stakeholder orientation: Evidence from the analyses of CEO dismissal in large U.S. firms",
+ "authors": "Shoonchul Shin1",
+ "doi": "10.1002/smj.3369",
+ "copyright_years_on_first_pages": [
+  2021
+ ],
+ "uncertain_fields": [
+  "authors",
+  "year"
+ ],
+ "conversion": {
+  "blocks": 434,
+  "furniture": 24,
+  "figures": 7,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 545046,
+ "html_sha256": "5bde7b693a0e7666d784cd9b21207d4bc5ef9a4e505bf9474282262396841d32",
+ "note_flags": []
+}

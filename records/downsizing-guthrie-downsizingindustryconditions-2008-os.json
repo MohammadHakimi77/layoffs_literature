@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-guthrie-downsizingindustryconditions-2008-os",
+ "file": "Downsizing/Guthrie-DownsizingIndustryConditions-2008-OS.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Guthrie-DownsizingIndustryConditions-2008-OS.pdf",
+ "first_author_surname": "Guthrie",
+ "year": 2008,
+ "journal_code": "OS",
+ "filename_topic": "DownsizingIndustryConditions",
+ "journal": "Organization Science",
+ "page_count": 17,
+ "title": "Dumb and Dumber: The Impact of Downsizing on Firm Performance as Moderated by Industry Conditions",
+ "authors": null,
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 871,
+  "furniture": 59,
+  "figures": 1,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 455540,
+ "html_sha256": "6be9f2adc6e714628274ac7be0c1d3519f7c049e94ce70691dd9cb2c31c7c3f0",
+ "note_flags": []
+}

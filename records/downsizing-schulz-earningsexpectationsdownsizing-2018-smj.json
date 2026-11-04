@@ -1,0 +1,33 @@
+{
+ "id": "downsizing-schulz-earningsexpectationsdownsizing-2018-smj",
+ "file": "Downsizing/Schulz-EarningsExpectationsDownsizing-2018-SMJ.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Schulz-EarningsExpectationsDownsizing-2018-SMJ.pdf",
+ "first_author_surname": "Schulz",
+ "year": 2018,
+ "journal_code": "SMJ",
+ "filename_topic": "EarningsExpectationsDownsizing",
+ "journal": "Strategic Management Journal",
+ "page_count": 12,
+ "title": "The impact of earnings expectations on corporate downsizing",
+ "authors": null,
+ "doi": "10.1002/smj.2925",
+ "copyright_years_on_first_pages": [
+  2018
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 209,
+  "furniture": 11,
+  "figures": 1,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 165654,
+ "html_sha256": "ebbc771d83dcd5a55475a75f016084c82a665f55f5bd561681b90e55163096e5",
+ "note_flags": []
+}

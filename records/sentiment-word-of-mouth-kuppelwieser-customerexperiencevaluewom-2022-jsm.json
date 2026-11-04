@@ -1,0 +1,32 @@
+{
+ "id": "sentiment-word-of-mouth-kuppelwieser-customerexperiencevaluewom-2022-jsm",
+ "file": "Sentiment/Word of mouth/Kuppelwieser-CustomerExperienceValueWOM-2022-JSM.html",
+ "topic_folder": "Sentiment/Word of mouth",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Word of mouth/Kuppelwieser-CustomerExperienceValueWOM-2022-JSM.pdf",
+ "first_author_surname": "Kuppelwieser",
+ "year": 2022,
+ "journal_code": "JSM",
+ "filename_topic": "CustomerExperienceValueWOM",
+ "journal": "JSM",
+ "page_count": 15,
+ "title": "The role of customer experience in the perceived value–word-of-mouth relationship",
+ "authors": "Volker G. Kuppelwieser",
+ "doi": "10.1108/JSM-11-2020-0447]",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 264,
+  "furniture": 71,
+  "figures": 3,
+  "tables_html": 8,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 165076,
+ "html_sha256": "19b489601ac1b0a17fea2b194e433dc5f83712dec0c53635c5e19f08e4b2c188",
+ "note_flags": []
+}

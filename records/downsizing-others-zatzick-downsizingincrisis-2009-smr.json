@@ -1,0 +1,32 @@
+{
+ "id": "downsizing-others-zatzick-downsizingincrisis-2009-smr",
+ "file": "Downsizing/Others/Zatzick-DownsizingInCrisis-2009-SMR.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Zatzick-DownsizingInCrisis-2009-SMR.pdf",
+ "first_author_surname": "Zatzick",
+ "year": 2009,
+ "journal_code": "SMR",
+ "filename_topic": "DownsizingInCrisis",
+ "journal": "SMR",
+ "page_count": 10,
+ "title": "Which Way Should You Downsize in a Crisis?",
+ "authors": null,
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 98,
+  "furniture": 8,
+  "figures": 9,
+  "tables_html": 0,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 2152767,
+ "html_sha256": "7975fbc83fb2b729f73cb1f11f6ee290b9cfabb3651db35784fb2613627eaa9c",
+ "note_flags": []
+}

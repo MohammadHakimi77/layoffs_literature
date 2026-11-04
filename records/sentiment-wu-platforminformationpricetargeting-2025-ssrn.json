@@ -1,0 +1,31 @@
+{
+ "id": "sentiment-wu-platforminformationpricetargeting-2025-ssrn",
+ "file": "Sentiment/Wu-PlatformInformationPriceTargeting-2025-SSRN.html",
+ "topic_folder": "Sentiment",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Sentiment/Wu-PlatformInformationPriceTargeting-2025-SSRN.pdf",
+ "first_author_surname": "Wu",
+ "year": 2025,
+ "journal_code": "SSRN",
+ "filename_topic": "PlatformInformationPriceTargeting",
+ "journal": "SSRN working paper",
+ "page_count": 66,
+ "title": "Platform Information Design and Competitive Price Targeting",
+ "authors": "Ruiqi Wu, Yufeng Huang and Nan Li ∗",
+ "doi": null,
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 1732,
+  "furniture": 65,
+  "figures": 27,
+  "tables_html": 17,
+  "tables_image": 4,
+  "equations_img": 164,
+  "image_only_pages": 0
+ },
+ "html_bytes": 2439386,
+ "html_sha256": "a7e1fd73f5a620fea1c10a5362b134fc70766378a13f17774f18b5043e49ca0d",
+ "note_flags": []
+}

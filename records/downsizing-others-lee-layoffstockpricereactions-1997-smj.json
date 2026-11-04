@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-lee-layoffstockpricereactions-1997-smj",
+ "file": "Downsizing/Others/Lee-LayoffStockPriceReactions-1997-SMJ.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Lee-LayoffStockPriceReactions-1997-SMJ.pdf",
+ "first_author_surname": "Lee",
+ "year": 1997,
+ "journal_code": "SMJ",
+ "filename_topic": "LayoffStockPriceReactions",
+ "journal": "Strategic Management Journal",
+ "page_count": 16,
+ "title": "A COMPARATIVE ANALYSIS OF LAYOFF ANNOUNCEMENTS AND STOCK PRICE REACTIONS IN THE UNITED STATES AND JAPAN",
+ "authors": "PEGGY M. LEE*",
+ "doi": "10.1002/(SICI)1097-0266(199712)18:11",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 146,
+  "furniture": 15,
+  "figures": 2,
+  "tables_html": 5,
+  "tables_image": 1,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 216419,
+ "html_sha256": "98fa9e57b1311f99964ba08d9c3f0d52abf3ca80197cc41613b1067a7c66bcf5",
+ "note_flags": []
+}

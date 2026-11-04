@@ -1,0 +1,32 @@
+{
+ "id": "downsizing-others-zyglidopoulos-downsizingsocialreputation-2004-jpa",
+ "file": "Downsizing/Others/Zyglidopoulos-DownsizingSocialReputation-2004-JPA.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Zyglidopoulos-DownsizingSocialReputation-2004-JPA.pdf",
+ "first_author_surname": "Zyglidopoulos",
+ "year": 2004,
+ "journal_code": "JPA",
+ "filename_topic": "DownsizingSocialReputation",
+ "journal": "JPA",
+ "page_count": 15,
+ "title": "Academic Papers The impact of downsizing on the corporate reputation for social performance",
+ "authors": "Stelios C. Zyglidopoulos",
+ "doi": "10.1002/pa.168",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 241,
+  "furniture": 32,
+  "figures": 0,
+  "tables_html": 3,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 77382,
+ "html_sha256": "86cdd7e41a3b8fb9f6aabbe6ae826be84f89f3d20c163c5d49abf3f2f339e063",
+ "note_flags": []
+}

@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-brauer-investorresponsedownsizing-2019-jom",
+ "file": "Downsizing/Brauer-InvestorResponseDownsizing-2019-JOM.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Brauer-InvestorResponseDownsizing-2019-JOM.pdf",
+ "first_author_surname": "Brauer",
+ "year": 2019,
+ "journal_code": "JOM",
+ "filename_topic": "InvestorResponseDownsizing",
+ "journal": "Journal of Management",
+ "page_count": 27,
+ "title": "Investor Response to Workforce Downsizing: The Influence of Industry Waves, Macroeconomic Outlook, and Firm Performance",
+ "authors": "Matthias Brauer Martin Zimmermann",
+ "doi": "10.1177/0149206317734901",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 259,
+  "furniture": 27,
+  "figures": 7,
+  "tables_html": 2,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 305950,
+ "html_sha256": "b278f6923e7861413ea575533253f1de71fedcdd0a37e6b4a8a01f2ed80a2988",
+ "note_flags": []
+}

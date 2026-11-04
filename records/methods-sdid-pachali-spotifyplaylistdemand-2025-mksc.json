@@ -1,0 +1,34 @@
+{
+ "id": "methods-sdid-pachali-spotifyplaylistdemand-2025-mksc",
+ "file": "Methods/SDID/Pachali-SpotifyPlaylistDemand-2025-MKSC.html",
+ "topic_folder": "Methods/SDID",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/SDID/Pachali-SpotifyPlaylistDemand-2025-MKSC.pdf",
+ "first_author_surname": "Pachali",
+ "year": 2025,
+ "journal_code": "MKSC",
+ "filename_topic": "SpotifyPlaylistDemand",
+ "journal": "Marketing Science",
+ "page_count": 12,
+ "title": "What Drives Demand for Playlists on Spotify?",
+ "authors": "Max J. Pachali, Hannes Datta",
+ "doi": "10.1287/mksc.2022.0273",
+ "copyright_years_on_first_pages": [
+  2024
+ ],
+ "uncertain_fields": [
+  "authors",
+  "year"
+ ],
+ "conversion": {
+  "blocks": 197,
+  "furniture": 22,
+  "figures": 3,
+  "tables_html": 3,
+  "tables_image": 2,
+  "equations_img": 6,
+  "image_only_pages": 0
+ },
+ "html_bytes": 947914,
+ "html_sha256": "4add74e281ea5c7fa85931beacc8a4f119fb6badc75aec2cb71983cefe87dba4",
+ "note_flags": []
+}

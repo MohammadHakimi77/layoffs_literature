@@ -1,0 +1,33 @@
+{
+ "id": "methods-sdid-guyt-banningunsolicitedflyers-2025-mksc",
+ "file": "Methods/SDID/Guyt-BanningUnsolicitedFlyers-2025-MKSC.html",
+ "topic_folder": "Methods/SDID",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Methods/SDID/Guyt-BanningUnsolicitedFlyers-2025-MKSC.pdf",
+ "first_author_surname": "Guyt",
+ "year": 2025,
+ "journal_code": "MKSC",
+ "filename_topic": "BanningUnsolicitedFlyers",
+ "journal": "Marketing Science",
+ "page_count": 22,
+ "title": "Banning Unsolicited Store Flyers: Does Helping the Environment Hurt Retailing?",
+ "authors": null,
+ "doi": "10.1287/mksc.2023.0020",
+ "copyright_years_on_first_pages": [
+  2025
+ ],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 315,
+  "furniture": 42,
+  "figures": 2,
+  "tables_html": 7,
+  "tables_image": 3,
+  "equations_img": 2,
+  "image_only_pages": 0
+ },
+ "html_bytes": 836863,
+ "html_sha256": "4ec6ceddc70318e78eb6849c4a6c0f3e1a37f3222f11182b6038ff6d7b823465",
+ "note_flags": []
+}

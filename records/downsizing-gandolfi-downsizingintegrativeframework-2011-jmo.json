@@ -1,0 +1,32 @@
+{
+ "id": "downsizing-gandolfi-downsizingintegrativeframework-2011-jmo",
+ "file": "Downsizing/Gandolfi-DownsizingIntegrativeFramework-2011-JMO.html",
+ "topic_folder": "Downsizing",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Gandolfi-DownsizingIntegrativeFramework-2011-JMO.pdf",
+ "first_author_surname": "Gandolfi",
+ "year": 2011,
+ "journal_code": "JMO",
+ "filename_topic": "DownsizingIntegrativeFramework",
+ "journal": "Journal of Management & Organization",
+ "page_count": 25,
+ "title": "LITERATURE REVIEW Causes and consequences of downsizing: Towards an integrative framework",
+ "authors": null,
+ "doi": "10.1017/S1833367200001413",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors",
+  "journal"
+ ],
+ "conversion": {
+  "blocks": 385,
+  "furniture": 72,
+  "figures": 3,
+  "tables_html": 0,
+  "tables_image": 3,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 1082229,
+ "html_sha256": "9e05f63f76e4c2af37a203af5e8c02106345ee8f84e492bede757e01c771879a",
+ "note_flags": []
+}

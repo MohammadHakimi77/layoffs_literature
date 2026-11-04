@@ -1,0 +1,31 @@
+{
+ "id": "downsizing-others-stavrou-downsizingfamilyownership-2007-jbe",
+ "file": "Downsizing/Others/Stavrou-DownsizingFamilyOwnership-2007-JBE.html",
+ "topic_folder": "Downsizing/Others",
+ "source_pdf_on_branch_staging_pdfs": "source-pdfs/Downsizing/Others/Stavrou-DownsizingFamilyOwnership-2007-JBE.pdf",
+ "first_author_surname": "Stavrou",
+ "year": 2007,
+ "journal_code": "JBE",
+ "filename_topic": "DownsizingFamilyOwnership",
+ "journal": "Journal of Business Ethics",
+ "page_count": 14,
+ "title": "Downsizing and Stakeholder Orientation Among the Fortune 500: Does Family Ownership Matter?",
+ "authors": "Eleni Stavrou George Kassinis Alexis Filotheou",
+ "doi": "10.1007/s10551-006-9162-x",
+ "copyright_years_on_first_pages": [],
+ "uncertain_fields": [
+  "authors"
+ ],
+ "conversion": {
+  "blocks": 189,
+  "furniture": 12,
+  "figures": 0,
+  "tables_html": 5,
+  "tables_image": 0,
+  "equations_img": 0,
+  "image_only_pages": 0
+ },
+ "html_bytes": 73947,
+ "html_sha256": "09a4bb0961f1a97c18c37a1897a47a38aa516315a21b2d7da46b6657d958bc4c",
+ "note_flags": []
+}
