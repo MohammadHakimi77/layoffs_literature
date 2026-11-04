@@ -1,0 +1,4 @@
+# files to be excluded from versioning (to faciltiate dependency management using make)
+main_models.txt
+required_models.txt
+robustness.txt

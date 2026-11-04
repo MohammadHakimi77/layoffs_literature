@@ -1,0 +1,246 @@
+\section*{Web Appendix}
+
+%\renewcommand{\figurename}{Figure W}
+
+%\renewcommand{\tablename}{Table W}
+
+%\renewcommand{\theequation}{W\arabic{equation}}
+
+\setcounter{figure}{0}
+
+\setcounter{table}{0}
+
+\setcounter{footnote}{0}
+
+%\setcounter{equation}{0}
+
+\renewcommand\thefigure{W\arabic{figure}}
+\renewcommand\thetable{W\arabic{table}}
+%\renewcommand\thetable{A\arabic{equation}}
+
+
+\subsection*{A: Identification and classification of playlist curators}
+\label{curators}
+
+
+The raw data (retrieved from the API of \textit{Chartmetric.com}) contains playlist names, the number of followers at data retrieval, and the curator's name and Spotify ID for 1.2 million playlists. We sequentially apply the following rules to classify these playlists into curator types for our analysis.
+
+\begin{itemize}
+    \item \textbf{Spotify}: All playlists owned and curated by Spotify, which are typically curated by an in-house team of international music experts. Playlists are identified by the playlist curators' user name and ID. Some of Spotify's editorial playlists are semi-personalized to users---i.e., users see only a subset of a predetermined set of master tracks. We identify these semi-personalized editorial playlists by the \textit{personalized} indicator variable in the raw data from \textit{Chartmetric.com}. In addition to editorial playlists, Spotify also curates a series of playlists focusing exclusively on tracks by particular artists (e.g., ``This is Lady Gaga"), which we identify by their name (``This is [...]``).\footnote{Spotify also provides music recommendations via its personalized playlists. These playlists are automatically created for each user based on their past listening and other relevant metadata. Users access these playlists in the ``Made for You" section on Spotify. Personalized playlists are typically updated at weekly intervals (e.g., ``Discover Weekly" and ``Release Radar" on Mondays and Fridays, respectively).}%\footnote{See \\ \url{https://artists.spotify.com/blog/behind-the-playlists-your-questions-answered-by-our-playlist-editors} (assessed September, 2021).}
+
+
+    \item \textbf{Major labels}: We identify playlists curated by a major label based on their playlist curators' user name and ID (i.e., ``Digster" for Universal, ``Filtr" for Sony, and ``Topsify" for Warner).
+    
+    \item \textbf{Independent labels and artists}: We matched playlist curators' user names with lists of label and artist names. We used lists of 1.1 million artist names and 620,000 label names that appeared on any of the $99.6\%$ most-followed playlists on the platform (150,000) as input. Note that many artists on the platform release under their name (mostly independent music artists, e.g., that use platforms such as ``CDbaby" as a release tool). If a playlist's curator name matches the artist and label list, we treat those curators as artists rather than independent labels. 
+    
+     \item \textbf{Professional curators (``tastemakers")}: ``Tastemakers" are professional curators that have a commercial interest in managing playlists, for example, brands that try to associate their brand with certain music or radio stations that assemble lists of their program on Spotify to complement their linear programming on radio. We identify ``tastemakers" as curators who have a combined reach $\geq$ 50,000 followers.
+     
+     \item \textbf{Users}: Users often create playlists to organize their music libraries (e.g., a list to play for their kids and a list to listen to during a workout). We classify these curators as amateur curators who have a combined reach $\leq$ 1,000 followers.
+     
+     \item \textbf{Others}: Remaining playlists that were not classifiable based on the previous criteria.
+    
+\end{itemize}
+
+\subsection*{B: Additional descriptive statistics}
+\label{summary_final_sample}
+
+\setcounter{figure}{0}
+
+\setcounter{table}{0}
+
+%\setcounter{equation}{0}
+
+\renewcommand\thefigure{B\arabic{figure}}
+\renewcommand\thetable{B\arabic{table}}
+
+\input{../output/figures_and_tables/content.tex}
+
+\input{../output/figures_and_tables/distribution.tex}
+
+\input{../output/figures_and_tables/summarystats.tex}
+
+
+%\subsection*{C: Details on data collection of featured playlists}
+%\label{app_featured_lists}
+
+%\begin{figure}[!htb]
+%        \caption{Screenshot of playlist featuring as observed via \textit{everynoise.com}.}
+%        \label{fig:everynoise_screen}
+ %       \center{\includegraphics[width=\textwidth]
+  %      {../img/everynoise_worldbrowser_with_menu.png}}
+%\begin{flushleft}
+%\vspace{-0.1cm}
+%\footnotesize{Notes: \textit{Everynoise.com/worldbrowser.cgi} displays, in real-time, a list of playlists that were featured on the Search Page of the Spotify app (by category and country; screenshot taken in April 2020).}
+%\end{flushleft}
+
+%\end{figure}
+    
+%\newpage
+
+\subsection*{C: Dynamic playlist categorization}
+\label{details_mining}
+
+\setcounter{figure}{0}
+
+\setcounter{table}{0}
+
+\setcounter{equation}{0}
+
+\renewcommand\thefigure{C\arabic{figure}}
+\renewcommand\thetable{C\arabic{table}}
+\renewcommand\theequation{C\arabic{equation}}
+
+\subsubsection*{Overview}
+
+To model playlist demand, we needed to understand which playlists are closer or more distant substitutes to one another. Accordingly, the goal of this section is to explain how we classified playlists (e.g., ``Feel-Good Indie Rock") into major categories (e.g., ``rock"). Intuitively, if two playlists share several tag words (such as ``pop” and ``r\&b”) at a specific time, we consider them to have similar content or be more likely to jointly pop up in searches and, therefore, to be closer substitutes.
+
+Three factors complicate our classification procedure: first, the categorization ideally is consistent with Spotify's own categorization used when featuring playlists on the Search Page.\footnote{We focus on the following major categories available during our observation period: {``afro'', ``alternative'', ``anime'',  ``arab'', ``blues'', ``chill'', ``christian music'',  ``classical'', ``comedy'', ``country'', ``desi'', ``electronic/dance'', ``focus'', ``folk} \&  {acoustic'', ``funk'', ``video game music'', ``hip hop'', ``indie'', ``jazz'', ``latin'', ``metal'', ``party'', ``pop'', ``punk'', ``r}\&{b'', ``regional mexican'', ``rock'', ``romance'', ``sleep'', ``soul'', and ``student''}.} To achieve this goal, we rely on rich track-level tag words that we map into these major categories.
+Second, thousands of different tag words are available, and we require a scalable algorithm to learn the relationship between these tag words and Spotify's major categories. To this extent, we employ association rule mining \citep{hastie_09} on a data set with tag words for tracks. Third, our categorization needs to account for playlists changing categories over time. For example, a playlist initially focused on rock music may gradually add more pop songs. To allow categories to change over time, we utilize the learned association rules from the previous step in a dynamic (weekly) playlist panel. In particular, this playlist panel lists, for every week, which tag words were available on the playlist at that moment in time. We describe these steps in detail next.
+
+\subsubsection*{Step 1: Prepare the training data}
+
+To learn the associations between tag words and Spotify's pre-defined categories, we combined two data sets retrieved from the API of \textit{Chartmetric.com} in April 2020. First, we extracted the tag words of all tracks available at any of the platform's most followed $150,000$ playlists in April 2020. This information was available for $147,474$ playlists. We retained the ten most frequently occurring tag words.\footnote{Tag words are rank-ordered by the number of days for which a particular tag word was observed for a playlist, summed over all tracks with this particular tag word on the playlist.}. We complemented this information with playlist-level tag words during the same time frame, containing up to six additional tag words at the playlist level, observed for $1,029,635$ playlists. Our data contains $3,729$ unique tag words observed for $1,030,508$ playlists. 
+
+\subsubsection*{Step 2: Learn the association rules}
+
+We used an association rule mining algorithm \citep[e.g.,][]{hastie_09} to learn the playlist categorization based on tag word co-occurrence. As our goal was to obtain a categorization consistent with Spotify's categorization on the Search Page, we conditioned the training data on those playlists to contain at least one of these pre-defined categories ($618,181$ playlists).
+
+We next span the $(N \times P)$ matrix denoted as $X$ with elements $x_{n,p} \in \left\{0,1\right\}$, indicating whether a playlist $n$ contains any of the observed tag words $p$. The algorithm aims to find joint values of $X$ that appear most frequently and have a high density in the data (``mode finding"). Mathematically, we seek to find subsets of the integers $\mathcal{K} \subset \left\{1,\dots,P\right\}$ such that 
+
+\begin{align}
+    Pr\left[\bigcap_{k \in \mathcal{K}} (X_k = 1)\right] = Pr\left[\prod_{k \in \mathcal{K}} X_k = 1\right]
+\end{align}
+
+is large, where $\mathcal{K}$ is called an item set representing playlist tag words in our application. 
+
+Each of the higher support item sets is represented as a set of association rules written as 
+$A \rightarrow B, \ \text{with}\ A \ \text{and}\ B\ \text{being disjoint subsets and}\ A  \cup B = \mathcal{K}$. The rules imply that if $A$ are part of the playlist tag words, $B$ were also part of the tag words with a certain probability. We focus on those rules with high confidence among all possible rules identifiable in the data.\footnote{The confidence of a rule is defined as the number of playlists where $A$ and $B$ are jointly tag words divided by the number of playlists where $A$ are part of the tag words.} We specify the confidence as 0.5---implying that when $A$ were part of the tag words, in at least $50\%$ of cases, $B$ were also tag words.\footnote{In addition, we set the minimum lift threshold for considered rules to 1. The lift is defined as the confidence of a rule divided by the support of the ``consequent" of the rule denoted as $T(B)$.} In case the same tag word maps to multiple main genres, we retain the rule with the highest confidence.
+Based on these specifications, we mine $2,599$ rules, with an average confidence of $.7747$ and lift of $204.848$.
+
+\subsubsection*{Step 3: Apply the learned association rules}
+
+Our playlist panel data contains meta data about each track (such as tag words) and when tracks were added to or removed from playlists.
+
+From this data, we compute, for every week, the number of days a particular tag word was present on the playlist (weighted by the number of tracks with that tag word)\footnote{For example, if two tracks with the tag word ``dance" were available on the playlist for the entire week, then the tag word ``dance" would receive a score of 2x7 = 14)}. To account for differences in the number of tracks on a playlist, we express this measure in relative terms, adding up to 1 at the playlist-week level.
+
+We next left-join the mined association rules into this data. Recall that for each rule, we required that the consequent ($B$) is a category from Spotify's Search Page. For example, based on the rule $\{indie\ rock\} \rightarrow  \{alternative\}$, we propose the category $alternative$ as a candidate for any playlist containing the tag word $indie$ $rock$. The resulting data set now allows us to observe, for each keyword on the playlist, the potential category it is associated with. In many circumstances, associations with a category arise from multiple tag words (e.g., the tag words ``love" and ``heart" mapping into ``romance"). We sum the tag word weights to the playlist-week-``candidate category" level to arrive at an overall category association measure. For example, a value of $.5$ on this measure means that a particular candidate category was identified for half of the tracks on the playlist.
+
+Some candidate category associations may be only very short-lived. For example, a playlist may add just one track from a different category for a week. To avoid such associations, we, therefore, require a category to be present in at least 10\% of the tracks on a list for a duration of at least four consecutive weeks.\footnote{To avoid any left- or right-censoring issues (e.g., a category showing up for one week at the beginning of our observation period), we extend the data four weeks to the left and right.}
+
+Finally, a playlist can be associated with multiple categories at any point. For example, some playlist tag words may create an association with $rock$, while other tag words of the same list create an association with $romance$. To account for the fact that $rock$ playlists belong to a reasonably different genre than $rock$ \& $romance$ playlists, we create playlist categories by combining all surviving candidate category names a playlist was allocated to in a given week.
+
+
+\input{../output/figures_and_tables/categories.tex}
+
+\subsection*{D: Data variation plots}
+\label{appendix:appendix_model}
+
+\setcounter{figure}{0}
+
+\setcounter{table}{0}
+
+%\setcounter{equation}{0}
+
+\renewcommand\thefigure{D\arabic{figure}}
+\renewcommand\thetable{D\arabic{table}}
+
+\begin{figure}[H]
+\centering
+\caption{Residual variation.}
+\label{fig:resid_var}
+\begin{minipage}{.5\textwidth}
+  \centering
+\includegraphics[width=1\linewidth]{../output/figures_and_tables/residual_variation_featuring_hist.pdf}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  %\vspace{0.9cm}
+  \includegraphics[width=1\linewidth]{../output/figures_and_tables/residual_variation_mlshare_hist.pdf}
+\end{minipage}
+\vspace{-0.1cm}
+\begin{flushleft}
+\footnotesize{Notes: The residual variation measures are
+based on the residuals from a regression of the treatment effect indicators on playlist-month fixed effects and remaining
+control variables (as specified in Equation \ref{two_way_model}). The residual variation is the ratio of the standard
+deviation of these residuals relative to the sample means.}
+\end{flushleft}
+\end{figure}
+
+% Treatment variation plot for featured playlists
+\begin{figure}[H]
+\centering
+\caption{Treatment variation plot: Featuring on Search Page}
+\includegraphics[scale=.80]{../output/figures_and_tables/treatmentvar_promo.png}
+\label{treatmentvar_promo}
+\begin{flushleft}
+\vspace{-0.5cm}
+\footnotesize{Notes: The plot illustrates the variation in treatment dates (on the x-axis) across treated playlists (on the y-axis). Colors indicate a playlist's treatment status: dark grey refers to the period before featuring, and black denotes the period after. Days on which the outcome variable---playlist followers---was not consecutively observed are indicated in light gray. Playlists are shown in ascending order of playlists' treatment dates.}
+\end{flushleft}
+\end{figure}
+%
+
+
+% Treatment variation plot for featured playlists
+\begin{figure}[H]
+\centering
+\caption{Treatment variation plot: Addition of tracks from Major Label Superstars}
+\includegraphics[scale=.80]{../output/figures_and_tables/treatmentvar_ml.png}
+\label{treatmentvar_ml}
+\begin{flushleft}
+\vspace{-0.5cm}
+\footnotesize{Notes: The plot illustrates the variation in treatment dates (on the x-axis) across treated playlists (on the y-axis). Colors indicate a playlist’s treatment status: dark grey refers to the period before adding tracks from major label superstars, and black denotes the period after. Days on which the outcome variable---playlist followers---was not consecutively observed are indicated in light gray. Playlists can be treated multiple times, and we only use the first-treated observations in our analysis to avoid overlapping post-treatment and pre-treatment windows. Playlists are shown in ascending order of playlists’ first treatment dates.
+
+}
+\end{flushleft}
+\end{figure}
+%
+
+\subsection*{E: Stability of covariates post-treatment}
+\label{appendix:stability_test}
+
+\setcounter{figure}{0}
+
+\setcounter{table}{0}
+
+%\setcounter{equation}{0}
+
+\renewcommand\thefigure{E\arabic{figure}}
+\renewcommand\thetable{E\arabic{table}}
+
+\input{../output/figures_and_tables/covariatebalance.tex}
+
+\newpage
+
+\subsection*{F: Complete estimation results in 2W-FE model}
+\label{appendix:results}
+
+\setcounter{figure}{0}
+
+\setcounter{table}{0}
+
+%\setcounter{equation}{0}
+
+\renewcommand\thefigure{F\arabic{figure}}
+\renewcommand\thetable{F\arabic{table}}
+
+\input{../output/figures_and_tables/main_regression_log_log.tex}
+
+\newpage
+
+\subsection*{G: Robustness Checks}
+\label{rob_checks}
+
+\setcounter{figure}{0}
+
+\setcounter{table}{0}
+
+%\setcounter{equation}{0}
+
+\renewcommand\thefigure{G\arabic{figure}}
+\renewcommand\thetable{G\arabic{table}}
+
+\label{appendix:robustness}
+\input{../output/figures_and_tables/results_robust_seasonal.tex}
+
+\input{../output/figures_and_tables/results_robust_ihs.tex}
+\input{../output/figures_and_tables/model_comparison.tex}

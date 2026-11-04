@@ -1,0 +1,1141 @@
+\documentclass[8pt]{beamer}
+\beamertemplatetransparentcovereddynamic	
+\usepackage{ucs}
+\usepackage{color,soul}
+\usetheme{Singapore}
+\usecolortheme{default}
+\usepackage{amsmath,amsfonts,amssymb,booktabs}
+\usepackage{graphics}
+\usepackage{hyperref}
+\usepackage{sansmathaccent}
+\usepackage[position=top]{subfig}
+\usepackage{graphicx}
+\usepackage{dsfont}
+\usepackage{tikz}
+\usepackage{comment}
+\usepackage{pgfplots}
+\usepackage{algorithm2e,algorithmic,adjustbox,bbm,siunitx}
+\usepackage{arydshln}
+
+\pgfplotsset{compat=newest}
+\usetikzlibrary{pgfplots.groupplots}
+\usetikzlibrary{positioning}
+
+
+
+\usetikzlibrary{arrows,positioning,calc}
+\tikzset{cause/.style = {->,> = stealth', very thick, shorten >= 2, shorten <= 2},
+  error/.style = {->,> = stealth', , shorten >= 2}, var/.style = {rectangle,rounded
+  corners,thick,draw=black!75,fill=black!5,align=center,inner sep=5} }
+
+\pdfmapfile{+sansmathaccent.map}
+\setbeamertemplate{footline}[frame number]
+\beamertemplatenavigationsymbolsempty
+
+%\setbeamercolor{block body}{bg=normal}
+\setbeamercolor{block title}{bg=blue!60,fg=white}
+
+%-------------------Titlepage content--------------------------------
+
+\title{What drives demand for playlists on Spotify?}
+\vspace{5 mm}
+\author[shortname]{Max J. Pachali\inst{1}, Hannes Datta\inst{1}}
+\institute[shortinst]{\inst{1} Tilburg University}
+
+\date{
+ Economics of the Music Industry Conference\\ University of Hamburg \\
+ %\today%
+ December 2, 2022
+}
+%-------------------Document-------------------------------
+
+\begin{document}
+\frame{\titlepage}
+
+%-------------------TOC----------------------------------------
+%\section[Outline]{}
+%\frame{\tableofcontents}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------Introduction------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+\frame{
+\frametitle{Concerns about market power of digital platforms}
+
+\begin{itemize}
+
+	\item Today, online platforms play an important role in society and economy 
+
+	\item Platforms have started to dominate many industries 
+		\begin{itemize}
+		\item online retailing (e.g., Amazon)
+		\item search and search advertising (e.g., Google)
+		\item social media (e.g., Meta)
+
+	\end{itemize}
+	
+	\item Policy-makers around the world call for heightened transparency %and antitrust enforcement
+		\begin{itemize}
+		\item U.S. Justice Department accuses Google of "illegally protecting its monopoly over search and search advertising" (20 Oct. 2020)\footnote{"U.S. Accuses Google of Illegally Portecting Monopoly", 20 Oct. 2020, https://www.nytimes.com/2020/10/20/technology/google-antitrust.html}
+		\item U.S. Congressional Hearing: Amazon, Apple, Facebook and Google wield market power "to crush competitors and amass data, customers and sky-high profits" (30 Jul 2020)\footnote{"Amazon, Apple, Facebook and Google grilled on Capitol Hill over their market power", 30 Jul 2020, https://www.washingtonpost.com/technology/2020/07/29/apple-google-facebook-amazon-congress-hearing/}
+			
+		\item EU Observatory on the Online Platform Economy\footnote{https://ec.europa.eu/digital-single-market/en/policies/online-platforms} 
+		\end{itemize}
+	
+	
+\end{itemize}
+	
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\frame{
+\frametitle{Platforms dominate the music streaming market}
+
+\begin{itemize}
+
+	\item Platforms have overtaken traditional revenue streams of content producers\footnote{In 2019, 80\% of content producers' revenues were generated through online streaming.}
+	\item In the digital age, users mostly consume music by listening to platform-curated playlists
+	\item Concerns about the market power of music streaming services started after the rise of playlists on Spotify --- the leading service\footnote{Market shares: Spotify: $36$\%, Apple Music: $18$\%, Amazon Music $13$\%, Tencent Music: $10$\%, Google/YouTube Music $5$\%, see https://musically.com/2019/12/09/report-spotify-has-36-market-share-of-music-streaming-subs/.} 
+	\item "Playlists are the top tool Spotify is currently employing to expand their platform empire"\footnote{Quote by Liz Pelly (\url{https://tisch.nyu.edu/about/directory/clive-davis-institute/elizabeth-pelly}) taken from \url{https://watt.cashmusic.org/writing/thesecretlivesofplaylists}, accessed October, 19, 2020.}
+	\item Yet, not much is known about the drivers of users' playlist consumption on Spotify 
+	\item Drivers of playlist consumption mirror power (im-)balances in the music streaming market
+		
+%		\item Our paper empirically investigates the relative power balance in the music streaming market using daily data on 1.2m playlists on Spotify (the dominant platform in this market)\footnote{Market shares: Spotify: $36$\%, Apple Music: $18$\%, Amazon Music $13$\%, Tencent Music: $10$\%, Google/YouTube Music $5$\%, see https://musically.com/2019/12/09/report-spotify-has-36-market-share-of-music-streaming-subs/.}
+	
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\frame{
+\frametitle{Goal of our paper and data}
+
+	\begin{itemize}
+	\item If users mainly listen to a playlist because\dots
+	%\vspace{.1cm}
+ 	
+	\begin{itemize}
+	    \item it contains \textbf{songs of popular artists} 
+	\begin{itemize}
+ 	\item[$\rightarrow$] 
+ 	 not Spotify would be powerful, but (major) record labels that have signed popular artists
+ 	 \end{itemize}
+ 	%\vspace{.1cm}
+ 	\item of \textbf{its theme, mood, music topic, or overall acoustic style}
+ 	
+ \begin{itemize}
+ 	\item[$\rightarrow$] 
+ 	 playlist curators could exercise power through the decisions of which artists to include
+ 	\end{itemize}
+ 	%\vspace{.1cm}
+ 	
+ 	\item it gets \textbf{featured in the app}
+ 	\begin{itemize}
+ 	\item[$\rightarrow$] Spotify would gain additional power, compared to other curators
+	\end{itemize} 
+\end{itemize}
+	\vspace{.3cm}
+\item We empirically quantify the \textbf{main drivers of playlist choice} on Spotify in a structural demand model
+\begin{itemize}
+\item unique daily data set of initially 1.2 million playlists (Oct. 2019 - March 2020, collected from \textit{Chartmetric.com})
+\item complemented with daily information about which playlists get featured in the Spotify app (scraped from \textit{everynoise.com/worldbrowser.cgi}) 	
+\end{itemize}
+
+	\end{itemize}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\frame{
+\frametitle{Preview of Results}
+
+\begin{enumerate}
+\item Persistent (time-invariant) preferences for Spotify playlists %Users mainly value Spotify playlists because of their attractive brand images created by professional editors who design a hypothesis and theme for every playlist
+\begin{itemize}
+\item[$\rightarrow$] How much "better" does Spotify curate their playlists? If we set playlist preferences to the equivalent taste of non-Spotify
+playlists, we find that Spotify's market share in playlist consumption would drop by \textbf{15\%}
+\item[$\rightarrow$] Strong brands of Spotify playlists formed by professional editors who design a theme for every playlist
+\item[$\rightarrow$] Data advantage over remaining curators (e.g., major labels, artists, etc.)
+\end{itemize}
+\item Responsiveness to featured playlists on Spotify's Search page
+\begin{itemize}
+\item[$\rightarrow$] Market share of Spotify playlists would drop by \textbf{6\%} if the platform wouldn't highlight a very selective set of its playlists to users in the app
+\end{itemize}
+\item Valuation of the popularity of added songs and "This Is"-playlists of popular artists
+\begin{itemize}
+\item[$\rightarrow$]
+Due to the strong persistence of user preferences, Spotify playlists would only lose between \textbf{1\%-2\%} of market share if Universal (Sony, Warner) content was removed, and "This Is"-playlists were dropped from the platform
+\end{itemize}
+\end{enumerate}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\frame{
+%\frametitle{Simulated magnitudes of main demand factors}
+%
+%\begin{enumerate}
+%\item Market share of platform-curated playlists would drop by 50\% after replacing estimated preferences for Spotify playlists by users' average tastes of non-Spotify playlists 
+%\item Spotify playlists would lose about 18\% of their market share if the platform wouldn't highlight a selective set of their playlists to users in the app 
+%\item Due to the strong persistence of user preferences, Spotify playlists would only lose 10\% (9\%, 8\%) of market share if Universal (Sony, Warner) content would be removed from their playlists
+%\end{enumerate}
+
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\frame{
+\frametitle{Related literature}
+
+\begin{enumerate}
+
+\item Effects of \textbf{digitization} on production, consumption, and consumer welfare (e.g., Datta et al. 2018, Aguiar and Waldfogel 2018)
+
+\begin{itemize}
+\item[$\rightarrow$] We study playlist consumption, rather than (self-directed) \textbf{song consumption}
+
+\end{itemize}
+\vspace{.3cm}
+\item Spotify's \textbf{playlist power}: Focusing on 6 exceptionally popular playlists, Aguiar and Waldfogel (2018) document Spotify's power  to  influence  song  and  artist  success%.   According  to  their  estimates,  appearing  on "Today’s Top Hits"  raises a song’s streams by almost 20 million
+\begin{itemize}
+\item[$\rightarrow$]  We decompose the main drivers of user demand for playlists using a representative sample of \textbf{thousands} of popular playlists
+\item[$\rightarrow$] Our data contains daily information about which \textbf{playlists get featured} on Spotify's Search page, and we find that users are quite responsive to these "promotions" of playlists
+\item[$\rightarrow$] Our findings shed light on the \textbf{power imbalances} between major music producers and Spotify 
+\end{itemize}
+
+
+\end{enumerate}
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Data sources}
+
+\frame{
+\frametitle{Focus on the playlist ecosystem at Spotify}
+%\framesubtitle{Observing Attention Power of Platform and Content Producers}
+\vspace{0.1cm}
+\begin{center}
+\centering
+\includegraphics[height=3.8cm]{../img/playlists_wide.png}
+\end{center}
+\begin{itemize}
+	%\item "\textit{Playlists are the top tool Spotify are currently employing to expand their platform empire}"%\footnote{Quote by Liz Pelly from \url{https://watt.cashmusic.org/writing/thesecretlivesofplaylists}.}
+	\item Playlists are curated lists of songs that are typically centered around a particular theme e.g., by genre ("Deep House"), mood ("Relax"), or activity 
+	\item Mean (median) play duration of playlists equal 8h (4.6h)
+	\item Millions of lists available, curated by Spotify, major and indie labels and users
+	%\item Most Spotify playlists are managed by professional editors that change compositions (i.e., add or remove tracks) at fixed intervals --- mostly at the weekly level
+	 %\item The professionally managed playlists create their own brand --- each has its own hypothesis, theme or audience that editors were thinking about
+	 \item Playlist curators change compositions (i.e., add or remove tracks) based on perceived fit with a playlist's brand image
+	\item Content producers generate revenues per stream of their tracks on any playlist ("streamshare") %\footnote{Consumption on playlists account for a $30$\% share of listening time, and therefore royalties. Another $30$\% comes from users' personal music libraries - likely \textit{resulting} from discovery via playlists.}  
+	%\footnote{"[...] awesome way to reach huge audiences instantly [...]" (Avicii, 2018, https://tinyurl.com/yb7q2svn)} %https://open.spotify.com/track/7tJshy0IW7NZeBqrKSFJra
+%	\item Spotify owns most of the highly popular playlists, followed by the three major music labels
+%	\item Any preferential treatment of major labels compared to independent music labels (controlling for popularity/quality of content) is potentially signal for major-label power over Spotify
+\end{itemize}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------Data---------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Data}
+\framesubtitle{Playlist data}
+
+%\begin{center}
+%\centering
+%\includegraphics[height=1cm]{input/chartmetric_logo.png}
+%\end{center}
+
+\begin{itemize}
+	
+	\item 1.2m playlists and daily data obtained from \textit{Chartmetric.com} (October 2019-March 2020) 
+	\item Follower distribution across playlists is very skewed: the top 1\% (12,153) of playlists add up to a follower share of 84\% of the 1.2 million lists
+	\item About 50\% of all playlists tracked have 1 follower (i.e., they are not shared with other users)
+	%\item We classify the various unique playlist owners into the following groups:
+	
+\end{itemize}
+		
+\input{../output/figures_and_tables/slides-curators.tex}
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Data}
+\framesubtitle{Playlist data over time}
+
+	\begin{itemize}
+	\item Daily variation of playlist characteristics
+	\begin{itemize}
+		\item[$\rightarrow$] share of content owned by the three major labels (Universal, Sony, Warner)%\footnote{We classify labels into their (major-label) parent brands using a regular-expression based classifier validated on a secondary dataset from industry. The algorithm is available as an R package at https://github.com/hannesdatta/musicMetadata.}
+		\item[$\rightarrow$] metric for the popularity of content on playlists: the number of tracks of a playlist added to other playlists at a given day%\footnote{This measure intuitively implies that the content of a playlist is more popular if many of its tracks get added to other playlists on the platform at a given day.}  
+		\item[$\rightarrow$] number of tracks on playlists
+		\item[$\rightarrow$] average time since release of tracks ("track age")
+		\item[$\rightarrow$] average length of tracks (in minutes), 
+		\item[$\rightarrow$] nine numeric measures characterizing the acoustic attributes on playlists (danceability, energy, speechiness, acousticness, instrumentalness, liveness, valence, tempo, loudness)
+	\end{itemize}
+
+	\item Daily variation of recommendation intensity at the platform level
+	\begin{itemize}
+		\item[$\rightarrow$] proxied by the daily refreshment\footnote{Defined as the number of songs added to algorithmic playlists, divided by the number of algorithmic playlists in our sample.} of Spotify's algorithmic playlists in our sample
+	\end{itemize}
+	
+	\item \textit{Chartmetric.com}'s estimate of aggregate daily playlist listeners\footnote{The company collects the number of listeners of artists added to the playlists. Daily listeners are then computed as the mean number of listeners of (observable) artists added to the playlist.}	
+	\end{itemize}
+	
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Data}
+\framesubtitle{Merge feature data to playlist data}
+
+
+\vspace{0.1cm}
+\begin{center}
+\centering
+\includegraphics[height=4cm]{../img/search_page.png}
+\end{center}
+\vspace{0.0cm}
+
+\begin{itemize}
+ \item Spotify features a selected number of playlists on the Search page in their app
+ \begin{itemize}
+ 			\item[$\rightarrow$] by country and categories (e.g., "mood", "dinner", "pop", ''EDM'')
+			%\item[$\rightarrow$] most categories pertain to established genres (e.g., ''pop'', ''rock'', ''jazz'', ''EDM''). Other categories are rather new, like "sleep" or "workout" music
+			 %\item[$\rightarrow$] featured lists are not personalized within countries
+
+ \end{itemize}
+
+ \item Collect daily data on featured playlists on Spotify from \textit{Everynoise.com/worldbrowser.cgi} (October 2019 until March 2020)
+ \begin{itemize}
+ 	\item data records a timestamp, category (e.g., ''latin'', ''focus'', ''chill'', ''rock'', etc.), the country name, and a list of playlist IDs featured in the category/country at the time of data retrieval
+ 	\item 6,739 playlists were featured during our period of observations in any of the sections and hence a very small fraction (0.56\%) of all playlists
+ \end{itemize}
+ \item Merge data on featured playlists with playlist data by IDs and dates 
+\end{itemize}
+
+
+%\footnotetext[1]{https://github.com/hannesdatta/data-spotify-promotions-releases}
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ \frame{
+ \frametitle{Data}
+ \framesubtitle{Categorization of playlist ecosystem}
+  
+ \begin{itemize}
+ 	
+	\item We use up to eight tag words (keywords) associated with playlists in the data to classify playlists into music genres using an association rule mining machine learning algorithm (e.g., Hastie et al., 2009)
+	\item Our categorization builds on the notion that playlists with similar keywords belong to the same music genre and are hence considered as closer substitutes by users
+
+    %\item Start classification based on Spotify's pre-defined genres of featured playlists on the Search page (31 main genres)
+
+%\item A playlist may be associated with multiple main genres, i.e. some keywords may create an association with rock, while other keywords create an association with romance
+\item Our final genre categorization takes associations to multiple main genres as separate clusters, i.e. rock \& romance is a different category than rock
+\item Top 10 categories derived from the association rule learning classification: 
+\end{itemize}
+
+\input{../output/figures_and_tables/categories_small.tex}
+
+}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ \frame{
+ \frametitle{Data}
+ \framesubtitle{Construction of estimation sample}
+  
+ \begin{itemize}
+
+\item Our final estimation sample relies on 12,055 major playlists in 50 music categories covering 65\% of the total followers of the 779,117 playlists we were able to allocate into genre categories\footnote{We had to drop 436,183 playlists from our sample that did not contain any keyword.}
+\begin{itemize}
+ 	\item[$\rightarrow$] About 50\% playlist were dropped that only had a single follower (no listener data available)
+	\item[$\rightarrow$] Select the genre categories belonging the top 95\% of cumulative follower market share of categories with at least 50 playlists included per category
+	\item[$\rightarrow$] Select the 95\% mostly followed playlists within considered categories 
+	\item[$\rightarrow$] These steps reduce the number of considered playlists to 30,746 in 81 genre categories covering 88\% of followers of the 779,117 playlists
+	\item[$\rightarrow$]  Among the 30,746 playlists, \textit{Chartmetric.com} only observes listener data for 12,055 playlists that define the estimation sample
+ \end{itemize}
+\end{itemize}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\frame{
+%\frametitle{Data}
+%\framesubtitle{Observing Personalized Recommendations}
+%\vspace{0.1cm}
+%\begin{center}
+%\centering
+%\includegraphics[height=4cm]{input/made-for-you.png}
+%\end{center}
+%\vspace{0.0cm}
+%\begin{itemize}
+%	\item Spotify uses playlists to serve machine-generated, personalized recommendations
+%	\item Users access these recommendations in the "Made for You" section in the Spotify App\footnote{Spotify also personalized content outside of the "Made for You" section, e.g., via semi-personalized/adaptive mass playlists. Unlike playlists in the "Made for You" section, users are unaware of these personalizations.}
+%	\begin{itemize}
+%	\item e.g., Discover Weekly, Release Radar, On Repeat, Repeat Rewind, Your Daily Mixes, Family Mix
+%	\end{itemize}
+	
+	
+%	\begin{itemize}
+%		\item Uniquely Yours: On repeat ("The songs you can't get enough of right now"), Repeat Rewind ("Past songs that you couldn't get enough of"), Your Top Songs 20xx ("the songs you loved most this year"), Family Mix ("Listen together with the people on your family plan"), Your Summer Rewind ("featuring your old summer favorites")
+%		\item Discover New Music: Release Radar ("Catch the latest music from artists you follow, plus new singles picked for you"), Discover Weekly ("Your weekly mixtape of fresh music. Enjoy new music and deep cuts picked for you")
+%		\item Your Daily Mixes: up to six; new songs by known artists
+%		\item Others: Tastebreakers\footnote{"Start 2019 by broadening your horizons - list of songs from genres and artists that you don't normally explore and we think you'll like"}, The Ones That Got Away\footnote{"[...] collection of songs you'll wish you'd have discovered earlier in the year"}
+%		\end{itemize}
+%\end{itemize}
+%}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------MODEL FREE EVIDENCE--------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Descriptives}
+
+\frame{
+\frametitle{Average share of major label (ML) content per curator type}
+
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{../output/figures_and_tables/figure_mlshares.pdf}
+%\caption{Summary of the average share of major label content per curator type across the 12,055 playlists included in the estimation sample.}
+\label{ml_by_curators}
+\end{figure}
+	
+\begin{itemize}
+	\item Labels push their own content (high ML share on major label lists, low ML share on independent label lists)
+	\item Spotify lists have similar ML share as lists by professional curators, artists and "others" 
+	\item Even indie labels need major label coverage
+\end{itemize}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Major label share, popularity, and listeners}
+
+\begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{../output/figures_and_tables/figure_popularity_mlshare.pdf}
+  \captionof{figure}{Content popularity and major label share}
+  %\label{fig:test1}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{../output/figures_and_tables/figure_listeners_mlshare.pdf}
+  \captionof{figure}{Listeners and major label share}
+  %\label{fig:test2}
+\end{minipage}
+\end{figure}
+
+
+\begin{itemize}
+	\item Adding major label content to playlists is associated with higher overall content popularity
+	%\item Satiation once ML share approaches $80$\%, robust across curator types
+	\item Playlists with a larger major label share seem to have more listeners
+\end{itemize}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Over time variation at the playlist level}
+	
+	
+\begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{../output/figures_and_tables/ml_share_pop_listeners_list1.pdf}
+  \captionof{figure}{Housework (by Spotify)}
+  %\label{fig:test1}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{../output/figures_and_tables/ml_share_pop_listeners_list2.pdf}
+  \captionof{figure}{Majestic Casual (by an Indie Label)}
+  %\label{fig:test2}
+\end{minipage}
+\end{figure}
+
+\begin{itemize}
+	\item The previous plots do not account for playlist-specific demand factors
+	\item We rely on over time variation at the playlist level to identify demand effects
+	\item Variations in major label share affect content popularity over time
+	\item But also the outbreak of the Covid 19 pandemic reduced the popularity of house music tracks (e.g., Sim et al. 2022)
+\end{itemize}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Variation in featured playlists across curator types}
+
+\begin{figure}[t!]
+\centering
+\includegraphics[scale=0.5]{../output/figures_and_tables/feature_share_curators.pdf}
+%\caption{Share of featured playlists in at least one of the "Genres \& Moods" sections in at least one country by different curator types. Note: the share of featured playlists curated by Spotify is implied as the residual share.}
+\label{feature_share_curators}
+\end{figure}
+
+\begin{itemize}
+	\item The majority of playlists in our sample are never featured on Spotify's Search page (in at least one section in at least one country)
+	\item By November 2019, Spotify decided to stop featuring major label playlist and substantially increased the support of its own playlists
+\end{itemize}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Major label share and listeners for featured vs. non-featured playlists}
+
+\begin{figure}[t!]
+\centering
+\includegraphics[scale=0.4]{../output/figures_and_tables/ml_share_content_pop_featured_non_featured.pdf}
+%\caption{Evolution of average major label share between featured and non-featured playlists over time. Note: the separating condition is being featured in at least one of the "Genres \& Moods" sections in at least one country at a given day.}
+\label{ML_share_per_group}
+\end{figure}
+
+\begin{itemize}
+	\item Regime shift induced a substantial reduction of featured tracks released by any of the three major labels
+	\begin{itemize}
+	\item Spotify aims to increase the market share of independent labels and pursues the "goal to incorporate new or smaller artists into a variety of playlists" (Spotify 2020)
+	\end{itemize}
+	
+	\item Featured playlists have a substantially higher number of daily listeners
+\end{itemize}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------Empirical Framework--------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Demand Framework}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Modeling playlist demand}
+
+\begin{itemize}
+%\item Moment of consumption is discrete-choice decision: Users can't listen to multiple playlists simultaneously
+\item Playlists as "products" differentiated by acoustic attributes, content popularity, play duration, curator type, \dots
+\item Every playlist has its own theme or hypothesis and users have different preferences for these "brands"     
+\item Users can choose among thousands of differentiated playlists and we model this decision as a discrete-choice 
+\begin{itemize}
+\item Daily choice to listen to a playlist on Spotify, or consume music at other music streaming platforms
+\item "The market": Number of premium subscribers of seven leading music streaming platforms (Spotify, Deezer, Apple, Amazon, Tencent, Pandora, YouTube)\footnote{We neglect the impact of fees on platform choice (monthly fees are almost homogeneously set across platforms to \$10; in 2020:  Spotify \$9.99, Apply Music \$9.99, Deezer \$9.99, Amazon Music \$9.99 (None-Prime, without accounting for annual plan discounts), Pandora \$9.99, YouTube Music \$11.99.}  
+\end{itemize}
+
+\end{itemize}
+
+\begin{columns}
+\begin{column}{0.23\textwidth}  %%<--- here
+\begin{center}
+\centering
+\includegraphics[height=1.8cm]{../img/listA}
+\end{center}
+\end{column}
+
+\begin{column}{0.2\textwidth}  %%<--- here
+\begin{center}
+\centering
+\includegraphics[height=1.8cm]{../img/listB}
+\end{center}
+\end{column}
+
+\begin{column}{0.3\textwidth}  %%<--- here
+\begin{center}
+\centering
+\includegraphics[height=1.8cm]{../img/listC}
+\end{center}
+\end{column}
+
+\end{columns}
+   
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Empirical specification of consumer utility}
+
+\begin{align} 
+\begin{split} 
+u_{ipt}  =%& x_{pt}^{T} \Delta + \xi_{pt} + \zeta_{igt} + (1- \sigma) \cdot \varepsilon_{ipt} \\
+& \gamma_p + \eta^{\text{feat}} n_{pt} + \beta pop_{pt} - \alpha c_{pt} + \omega r_{t} \\ &   + \gamma_{M(t),C(p)} + \gamma_{D(t)} + \rho t + \kappa \mathbbm{1}\{t \geq \text{Covid}\} + \phi^{T} x_{pt} + \zeta_{igt} + (1- \sigma) \cdot \varepsilon_{ipt}, %\\ %+ \beta_{l}\ s_{pt}^{l} + \eta^{C} N_{pt}^{C} + \eta^{S} N_{pt}^{S}
+%=& \delta_{pt} + \zeta_{igt} + (1- \sigma) \cdot \varepsilon_{ipt}  
+\end{split}
+\end{align} 
+
+\begin{itemize}
+\item $\gamma_p$ denotes users' time-invariant preferences for playlist $p$ ("playlist brand equity")
+\item $\eta^{feat}$ measures the effect of featuring playlists on Spotify's Search page; $n_{pt}$ is the number of sections playlist $p$ is featured in, aggregated over countries 
+\item $pop_{pt}$ proxies for "content popularity" using the number of tracks from the focal playlists $p$ added to other playlists $\text{-}p$ 
+\item $c_{pt}$ is the playlist duration (in hours) and $\alpha$ is the marginal utility of time
+\item $\omega$ measures the effect of personalized recommendations\footnote{Defined as the number of songs added to algorithmic playlists, divided by the number of algorithmic playlists in our sample.}
+\item $\gamma_{M(t),C(p)}$ represent month-category dummies, $\gamma_{D(t)}$ is a day-of-the-week dummy, $\rho$ controls for a general trend ("platform growth") and $\kappa$ accounts for the outbreak of the Covid 19 pandemic
+\item $\boldsymbol{\phi}^{T} \boldsymbol{x}_{pt}$ controls for track age as well as acoustic attributes of $p$ 
+\item We partition playlists into $G=50$ nests (obtained from the categorization using association rule mining) and $\sigma$ is the nesting parameter %measuring the degree of intragroup correlation in consumer preferences 
+
+\end{itemize}
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Estimation}
+
+\begin{itemize}
+\item Omitting the $t$ index and setting $\delta_p := x_{pt}^{T} \Delta + \xi_{pt}$, the market share of playlist $p \in H_g$ is given as: 
+
+\begin{align} 
+s_p  = \frac{\text{exp}\left[\delta_p/(1-\sigma)\right]}{\left(\sum_{h \in H_g} \text{exp}\left[\delta_h/(1-\sigma)\right] \right)^{\sigma} \cdot \sum_g \left\{ \left(\sum_{h \in H_g} \text{exp}\left[\delta_h/(1-\sigma)\right] \right)^{1-\sigma} \right\}},
+\end{align} 
+
+\item where $H_g$ is the set of playlists within the nest $g$
+\item We invert market shares as proposed in Berry (1994) and estimate the model via OLS:
+
+\begin{align} 
+\begin{split} 
+\text{ln} s_{pt} - \text{ln} s_{0t}  =& \gamma_p + \eta^{\text{feat}} n_{pt} + \beta pop_{pt} + \sigma \text{ln} s_{pt|gt} - \alpha c_{pt} + \omega r_{t}  \\ &   + \gamma_{M(t),C(p)} + \gamma_{D(t)} + \rho t + \kappa \mathbbm{1}\{t \geq \text{Covid}\} + \phi^{T} x_{pt} + \epsilon_{pt},
+\label{esti_eq}
+\end{split}
+\end{align} 
+
+\item $s_{pt|gt}$ represents market share of playlist $p$ in nest $g$ and $\epsilon_{pt}$ corresponds to residual factors affecting demand for playlist $p$ at day $t$
+
+\end{itemize}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Endogeneity}
+
+\begin{itemize}
+
+\item We use instruments to correct for the potential endogeneity in the timing of featuring playlists and within nest market share
+\vspace{.3cm}
+\item \textbf{Playlist featuring}: Daily number of sections on Spotify's Search page that very small playlists are featured in (belonging to the 10\% of observations with the lowest followers in the same category) 
+\item Intuition: Simultaneous coordination of the decision which playlists to feature within categories increases cost efficiency (relevance)\footnote{First-stage F-statistic: 63.76.}, but very small lists unlikely affect demand of major lists (different markets: "mainstream" vs. "niche") 
+\vspace{.3cm}
+\item \textbf{Within nest market share}: Sum of play duration (number of tracks $\times$ length in hours) of \textit{competing} playlists at every day (BLP-type) 
+\item Intuition: This instrument is exogeneous (i.e., unrelated to $\epsilon_{pt}$) because the expansion of tracks on the platform rather reflects supply and not demand shocks, but negatively correlates\footnote{First-stage F-statistic: 211.24.} with $s_{pt|gt}$
+%\item We view the variation in remaining variables as quasi-exogenous because of the \textit{rich set of fixed effects} included in our demand model and the \textit{high frequency of our sampled data set} (e.g., Rossi 2018)\footnote{Industry insiders (Heuvelings, 2020) describe that playlist compositions get updated on fixed intervals (mostly on a weekly level). It is therefore unlikely that curators adjust playlist compositions based on daily unobservables.} %See: https://www.bol.com/nl/f/auxiety/9200000131139132/
+
+\end{itemize}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Endogeneity}
+
+\begin{itemize}
+
+\item Curators may change playlist compositions % (such as number of tracks, acoustic attributes, major label share and hence implied content popularity) 
+ in response to daily shocks
+\item However, industry insiders (e.g., Heuvelings, 2020) describe that playlist compositions get updated at fixed intervals on Spotify  --- mostly at a weekly level
+\item The mean (median) average update frequency of playlists in our sample equals 11.8 (7.8) days
+
+\item The majority of curators thus do not adjust playlist compositions based on daily unobservables and the lion's share of variation in our data holds strategic decisions of curators constant
+
+\item We follow (Rossi 2018) who proposes to deal with potential endogenous variables by using data sampled at a much higher frequency than strategic decisions are made
+
+%\item We view the variation in remaining variables as quasi-exogenous because of the \textit{rich set of fixed effects} included in our demand model and the \textit{high frequency of our sampled data set} (e.g., Rossi 2018)\footnote{Industry insiders (Heuvelings, 2020) describe that playlist compositions get updated on fixed intervals (mostly on a weekly level). It is therefore unlikely that curators adjust playlist compositions based on daily unobservables.} %See: https://www.bol.com/nl/f/auxiety/9200000131139132/
+
+\end{itemize}
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------Results--------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Results}
+
+
+\frame{
+\frametitle{Nested logit regressions}
+
+\begin{center}
+\begin{minipage}{.8\textwidth}
+\input{../output/figures_and_tables/slides-model_main_Nlogit_results.tex}
+\end{minipage}
+\end{center}
+
+%\begin{itemize}
+%	\item Promotions of playlists increase user demand (IV corrects attenuation bias)
+%	\item Content popularity of playlists positively affects user demand 
+%	\item More recommendations increase user demand for major playlists on Spotify (complementarity effect) 
+%\end{itemize}
+	
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Estimates of playlist preferences}
+
+\begin{figure}
+\centering 
+\includegraphics[scale=0.15]{../output/figures_and_tables/fes_by_type_boxplot.pdf}
+%\caption{Relation between estimates of time-invariant playlist preferences (y-axis) and the logarithm of playlist followers (in April 2020).}
+\label{fes_per_group}
+\end{figure}
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------Counterfactuals---------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Counterfactuals}
+
+
+\frame{
+\frametitle{Counterfactuals}
+
+\begin{enumerate}
+\item[] Compare the magnitudes of main factors of playlist demand: By how much would market share of Spotify-curated playlists drop \dots
+	\vspace{0.1cm}
+	\begin{itemize}
+		\item[(a)]  \dots if they wouldn't be associated as such strong brands by users? 
+			\vspace{0.15cm}
+		\item[(b)] \dots if they wouldn't be featured on Spotify's Search page?
+			\vspace{0.15cm}
+		\item[(c)]  \dots if they wouldn't contain any (popular) Universal, Sony or Warner tracks and "This Is"-playlists of popular label artists would be removed from the platform (e.g., "This Is: Ed Sheeran")
+	\end{itemize}
+	\vspace{0.25cm}
+\ 
+
+\end{enumerate}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Impact of time-invariant playlist preferences}
+
+\begin{itemize}
+\item Changes in playlist market share if users have substantially lower time-invariant preferences for Spotify playlists 
+\item Reduce inferred preferences for Spotify playlists to the equivalent intercept of non-Spotify
+playlists
+\end{itemize}
+
+\input{../output/figures_and_tables/slides-ms_counter_fe.tex}
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Impact of removing Spotify playlists from the Search Page}
+
+\begin{itemize}
+\item Changes in playlist market share if Spotify playlists don't get featured on the Search page 
+\end{itemize}
+
+\input{../output/figures_and_tables/slides-ms_counter_nofeature.tex}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\frame{
+\frametitle{Impact of removing major label content}
+\framesubtitle{Empirical relation between major label share and content popularity}
+
+\begin{itemize}
+\item Do Spotify playlists need popular major label tracks? 
+\item Predict counterfactual content popularity of a playlist absent major label tracks, using splines:
+\end{itemize}
+
+\begin{figure}[t!]
+\centering
+\includegraphics[scale=0.4]{../output/figures_and_tables/splines_5knots.pdf}
+\caption{Fitted splines.}
+\label{splines_5knots}
+\end{figure}
+
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Impact of removing major label content}
+
+\begin{itemize}
+\item Changes in playlist market share if Spotify playlists removed all tracks released by a major label, and if "This Is"-playlists of popular label artists were removed altogether (e.g., "This Is: Ed Sheeran")
+\end{itemize}
+
+
+\input{../output/figures_and_tables/slides-ms_counter_no_labels.tex}
+
+
+		
+}
+
+\section{Conclusion}
+
+\frame{
+\frametitle{Summary of Results}
+\begin{itemize}
+	\item  We study the main drivers of playlist demand on Spotify using a unique data set on daily listeners and characterizing attributes of about 12,000 playlists
+	\item We find that users mainly chose Spotify playlists for time-invariant reasons, most likely because of their attractive themes, data advantages over other curators
+	%\item Spotify employs a large body of professional editors who help creating the own hypothesis and theme ("brand equity") of a playlist 
+	\item Users are also quite responsive to featuring playlists on the platform's Search page $\rightarrow$ another part of Spotify's power that has not received much attention in the literature
+	\item In relative terms, user demand is less responsive to fluctuations in the popularity of added tracks on playlists 
+	
+	\item \textbf{Power imbalances}:
+	\begin{itemize}
+		\item[(1)] In relative terms, Spotify is much less dependent on the availability of popular major label tracks on its playlists (playlist brand is key to Spotify's market success)
+		\item[(2)] (Major) Labels are very dependent on being featured in Spotify's Search Page  
+	\end{itemize}
+
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{What's next}
+\begin{itemize}
+		
+\item[(1)] Step back from counterfactuals and structural demand model 
+\begin{itemize}
+    \item Verify differences in demand-elasticities of playlists' content popularity and featuring playlists in Spotify's Search Page using a reduced-form log-log model
+\end{itemize}
+\item[(2)] Use playlist followers as dependent variable, instead of playlist listeners 
+\begin{itemize}
+    \item Increase coverage of the initial sample of 1.2m playlists
+    \item Playlist followers are directly observed, whereas daily listeners are estimated by Chartmetric (potentially subject to some error)
+    \item Playlist followers and listeners correlate strongly ($\rho = 0.71$)
+\end{itemize}
+\item[(3)] Improve instruments for Spotify's decision to feature playlists on the Search Page
+\begin{itemize}
+    \item Supply shocks: If there are more tracks available and thus playlists curated on Spotify, the focal playlist is less likely to be featured, all else equal (space is limited)
+    \item Exploit regime shift: Spotify stopped featuring ML-curated playlists in our sample
+    \item Use average ML-share of competing playlists as instrument for the number sections on the Search Page the focal playlist is featured in  
+\end{itemize}
+
+\end{itemize}
+
+}
+	
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------Next steps---------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%
+%\section{Next steps}
+%
+%\frame{
+%\frametitle{Next steps}
+%\begin{itemize}
+%	
+%	\item{Robustness check: Conditional estimation sample on playlists curated by others (no profit interest, no strategic choice of label content)} 
+%	\item{Potential IV-candidates: Number of followers of label artists in different social media channels; lagged label shares of playlists} 
+%	\item Control for major label artists' social media scores
+%%	\item Make listener-to-follower ratio dynamic
+%%	\item Allow for category-level heterogeneity
+%%	\item Independent labels
+%	
+%\end{itemize}
+%}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------Conclusions---------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Conclusion}
+
+%\frame{
+%\frametitle{Conclusion}
+%\begin{itemize}
+%	\item 
+%\end{itemize}
+%}
+
+
+
+\frame{
+\vspace{5 mm}
+\huge
+\begin{center}
+\textbf{Thank you for your attention!}
+
+\vspace{1cm}
+
+%\includegraphics[width=0.3\textwidth]{../img/qrcode_paper.png}
+\end{center}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------Appendix------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Appendix}
+
+
+\frame{
+\frametitle{Business Model of Digital Music Platforms}
+\framesubtitle{Spotify as a two-sided market}
+%\begin{center}
+%\centering
+%\includegraphics[width=1.0\textwidth]{input/newsmedia.png}
+%\end{center}
+\begin{itemize}
+	\item Spotify
+	\begin{itemize}
+		\item Market demand depends not only on consumer preferences, but also on search costs
+		\item Platform lowers search costs and affects discovery (Aguiar and Waldfogel 2018), by means of playlists, recommendations, and curated artist profiles.
+	\end{itemize}
+	\item Record labels
+	\begin{itemize}
+	\vspace{0.1cm}
+		\item Major record labels account for 70\% of global industry revenue (Universal 29.8\%, Warner 22.6\%, Sony 18.1\%), and provide most of the highly popular content to Spotify %; own ~$xx$\% of Spotify shares
+		\item Independent record labels: highly fragmented (10,000+)
+	\end{itemize}
+	\item Revenue model\footnote{https://heroic.academy/artist-guide-spotify-playlist-royalties-verified-profiles/} 
+	\begin{itemize}
+		\item Consumers pay monthly subscription fee, and consume music via playlists ($30$\% of consumption) or personal music libraries ($70$\% of consumption)
+		\item Spotify collects revenue from ad-based and premium tiers; deducts operational expenses and pays out about $52$\% to labels, \emph{relative to a label's number of streams} $\rightarrow$ labels compete for plays
+	\end{itemize}
+	
+\end{itemize}
+}
+
+
+\frame{
+\frametitle{Industry debates relationship between Spotify and the major labels}
+\begin{itemize}
+	\item Payout relative to plays on platform seems democratic and fair, but...
+	\item Major labels own(ed) about $6$-$10$\% of Spotify shares, and major-label content is critical to the business model of Spotify ("can't do without Justin Bieber")\footnote{https://www.musicbusinessworldwide.com/one-reason-why-spotifys-deals-with-the-major-labels-rest-on-a-knife-edge/}
+	\vspace{0.4cm}
+	\item Consequently, major labels negotiated better deals with Spotify, compared to independent labels\footnote{Sony contract leak in 2015, see https://www.theverge.com/2015/5/19/8621581/sony-music-spotify-contract.}
+	\begin{itemize}
+		\item Higher-than-standard royalty rates (minimum per-stream payouts)
+		\item Control over share of advertising space, playlist addition, and playlist promotion
+	\end{itemize}
+	
+	\vspace{0.4cm}
+	\item Public debate on (fairness of) Spotify's business model
+	\begin{itemize}
+		\item Shouldn't independent music artists earn the same, compared to major-label artists?
+		\item Shouldn't Spotify try to become label itself to reduce major-label power?
+		\item How powerful is Spotify in diverting attention (e.g., by introducing a new mood music category)?
+	\end{itemize}	
+\end{itemize}
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ \frame{
+ \frametitle{Data}
+ \framesubtitle{Categorization of playlist ecosystem}
+  
+ \begin{itemize}
+ 	
+	\item We use up to eight tag words (keywords) associated with playlists in the data to classify playlists into music genres using an association rule mining machine learning algorithm (e.g., Hastie et al.,2009)
+	\item Our categorization builds on the notion that playlists with similar keywords belong to the same music genre and are hence considered as closer substitutes by users
+	\item Span the $(N \times P)$ matrix denoted as $X$ with elements $x_{n,p} \in \left\{0,1\right\}$, indicating whether a playlist $n$ contains keyword $p$
+	\item The goal of the algorithm is to find joint values of $X$ that appear most frequently ("mode finding")
+	\item We seek to find subsets of the integers $\mathcal{K} \subset \left\{1,\dots,P\right\}$ such that 
+
+\begin{align}
+    Pr\left[\bigcap_{k \in \mathcal{K}} (X_k = 1)\right] = Pr\left[\prod_{k \in \mathcal{K}} X_k = 1\right]
+\end{align}
+
+is large, where $\mathcal{K}$ is called an item set representing playlist keywords in our application
+
+ \end{itemize}
+
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ \frame{
+ \frametitle{Data}
+ \framesubtitle{Categorization of  playlist ecosystem}
+  
+ \begin{itemize}
+ 		
+\item We seek all item sets $\mathcal{K}_l$ whose support exceeds the threshold $t = 0.1$: 
+
+\begin{align}
+\begin{split}
+    \{\mathcal{K}_l | T(\mathcal{K}_l) & > t\},\ \text{where} \\ 
+    T(\mathcal{K}_l) & = \hat{Pr}\left[\bigcap_{k \in \mathcal{K}_l} (X_k = 1)\right] = 
+    \frac{1}{N} \sum_{i=1}^{N} \prod_{k \in \mathcal{K}_l} x_{ik}
+\end{split}
+\label{eq:rule_mining}
+\end{align}
+
+\item Start classification based on Spotify's pre-defined genres of featured playlists on the Search page (31 main genres)
+
+\item Repeatedly apply the Apriori algorithm (Agrawal et al., 1995) to identify the higher support item sets (Equation \ref{eq:rule_mining}) from the subset of playlists that contain the main genre as keyword, i.e. $\mathcal{K}_l^g(\tilde{X})$ with $\tilde{X} = \{X| main\ genre\in keywords\}$ \footnote{By conditioning on a main genre at each iteration, we ensure that our classification is complete and consistent with Spotify's specification on the Search page.}
+\item We then cast set of association rules surviving minimum confidence and lift:\footnote{We set the confidence to 0.9 and the minimum lift of rules to 1.}
+			$$\mathcal{R}_g =\{A\rightarrow B | \mathcal{K}_l^g\}$$
+			
+\item Stack total rules  $\mathcal{R} =\{ \mathcal{R}_g\}$
+			%\State Allocate 779,117 playlists into genres by matching individual keywords with mined rules
+
+\end{itemize}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ \frame{
+ \frametitle{Data}
+ \framesubtitle{Categorization of  playlist ecosystem}
+  
+ \begin{itemize}
+ 		
+\item We mine in total 145 rules for $A \rightarrow B, \  A  \cup B = \mathcal{K}$, requiring that the consequent (B) is a main genre 
+\item A playlist may be associated with multiple main genres, i.e. some keywords may create an association with rock, while other keywords create an association with romance
+\item Our final genre categorization takes associations to multiple main genres as separate clusters, i.e. rock \& romance is a different category than rock
+\item Top 10 categories derived from the association rule learning classification: 
+\end{itemize}
+
+\input{../output/figures_and_tables/categories_small.tex}
+
+}
+
+
+%References
+%\printbibliography
+%\bibliography{../Literatur/bibliography}
+%\bibliographystyle{chicago}
+
+
+
+\end{document}
+
+
+

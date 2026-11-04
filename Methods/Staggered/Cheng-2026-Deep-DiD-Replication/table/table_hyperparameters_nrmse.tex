@@ -1,0 +1,26 @@
+\begin{table}[h!tbp]
+\caption{Estimation Performance of Deep-DiD Across Different Implementation Choices (with NRMSE)}\label{tab:sim_hyperparam_nrmse}
+\scriptsize
+{\def\arraystretch{1.2}  
+\begin{tabular}{ccccccccc}
+\hline\hline
+\multirow{2}{*}{\centering \#} & \multirow{2}{*}{\centering Optimizer} & \# Nodes in Each & \multirow{2}{*}{\centering Batch Size} & Learning & \multirow{2}{*}{\centering Epochs} &  \multirow{2}{*}{\centering KS Statistic} & \multirow{2}{*}{\centering JS Divergence} & \multirow{2}{*}{\centering NRMSE}          \\
+&   & Hidden Layer     &                             & Rate     &                               &                               &  &  \\
+\hline
+1  & Adam      & 32         & 512        & 0.001         & 10     & 0.015        & 0.071         & 0.061         \\
+2  & Adam      & 64         & 512        & 0.001         & 10     & 0.015        & 0.077         & 0.085         \\
+3  & Adam      & 32         & 1024        & 0.001         & 10     & 0.014        & 0.066         & 0.045         \\
+4  & Adam      & 32         & 512        & 0.005         & 10     & 0.021        & 0.083         & 0.101         \\
+5  & Adam      & 32         & 512        & 0.001         & 5     & 0.016        & 0.070         & 0.057         \\
+6  & Sgd      & 32         & 512        & 0.001         & 10     & 0.523        & 0.793         & 1.008         \\
+7  & Sgd      & 64         & 512        & 0.001         & 10     & 0.507        & 0.792         & 1.000         \\
+8  & Sgd      & 32         & 1024        & 0.001         & 10     & 0.529        & 0.792         & 1.021         \\
+9  & Sgd      & 32         & 512        & 0.005         & 10     & 0.903        & 0.958         & 1263449.794         \\
+10  & Sgd      & 32         & 512        & 0.001         & 5     & 0.535        & 0.793         & 1.023         \\
+\hline\hline
+\end{tabular}
+}
+\parbox{\linewidth}{
+\vspace{1eX} 
+\scriptsize Note. The true functional form of $\beta(\mathbf{W}_{i})$ is ($15W_{i1} - 2W_{i2} + W_{i3}$). The true functional form of $f(\mu_i, \tau_t)$ is $\mu_i + \tau_t$. We set $N=3000, T=90, J=100$. SGD stands for stochastic gradient descent.}
+\end{table}

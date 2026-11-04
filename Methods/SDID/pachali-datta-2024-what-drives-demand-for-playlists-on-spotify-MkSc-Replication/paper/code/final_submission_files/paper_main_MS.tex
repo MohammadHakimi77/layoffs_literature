@@ -1,0 +1,322 @@
+\documentclass[12pt, a4paper, leqno]{article}
+
+\usepackage{amssymb,booktabs,amsmath,amsfonts,eurosym,geometry,ulem,graphicx,caption,color,setspace,sectsty,comment,footmisc,caption,natbib,pdflscape,subfigure,array,adjustbox,algorithm,algpseudocode,tikz,bbm,siunitx,threeparttable}
+
+\usepackage{float}
+
+\setlength{\parindent}{30pt}
+
+\normalem
+
+\onehalfspacing
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}{Proposition}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\newtheorem{hyp}{Hypothesis}
+\newtheorem{subhyp}{Hypothesis}[hyp]
+\renewcommand{\thesubhyp}{\thehyp\alph{subhyp}}
+
+\newcommand{\red}[1]{{\color{red} #1}}
+\newcommand{\blue}[1]{{\color{blue} #1}}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+
+\geometry{left=1.0in,right=1.0in,top=1.0in,bottom=1.0in}
+
+\usepackage[unicode=true]{hyperref}
+
+\hypersetup{colorlinks=true, linkcolor=blue, anchorcolor=black, citecolor=blue, filecolor=black, menucolor=black, runcolor=black, urlcolor=blue}
+
+\begin{document}
+
+\begin{titlepage}
+\title{
+%
+\vspace{-1.5cm}
+%
+What drives demand for playlists on Spotify? 
+\thanks{Both authors contributed equally to the paper. The authors are grateful for comments from seminar and conference participants at the University of Chicago Booth School of Business, University of Tuebingen, University of Cologne, Goethe University Frankfurt, Amsterdam Business School, Bocconi University, KU Leuven, London School of Economics, Stockholm School of Economics, University of Rochester, University of Zurich, Virtual Quant. Marketing Seminar, EMAC 2021, Marketing Science 2021, Music Economics 2022, and the 12th Triennial Invitational Choice Symposium at INSEAD. The paper benefited from comments and discussions with Luis Aguiar, Khaled Boughanmi, Lachlan Deer, Jean-Pierre Dub\'e, Dean Eckles, Avery Haviv, Guenter Hitsch, Yufeng Huang, David Holtz, Sanjog Misra, Thomas Otter, Bradley Shapiro and Andrey Simonov. 
+The authors thank Andrea Antonacci and Roy Klaasse Bos for their excellent research assistance. Finally, the authors acknowledge financial support from the Dutch Research Council (NWO 451-17-028) and research support from Tilburg Science Hub.}
+}
+
+\author{
+Max J. Pachali
+\thanks{Tilburg University; \texttt{m.j.pachali@tilburguniversity.edu}}
+\and 
+Hannes Datta
+\thanks{Tilburg University; \texttt{h.datta@tilburguniversity.edu}}}
+\date{\today}
+\maketitle
+\begin{abstract}
+
+We provide estimates of the drivers of playlist followers on Spotify. We base our analysis on a unique panel data set for 30,000+ popular playlists and combine it with data on how prominently these playlists are featured in the Spotify app. Using two-way fixed effects and staggered synthetic difference in difference models, we compare the short-term effect of two important demand factors in our data---featuring playlists on Spotify's Search Page and adding songs by exceptionally popular major label artists to playlists. We find that users prefer to follow playlists featured in the app. According to our estimates, being featured on the Search Page raises daily playlist followers by 0.95\%---which is about two times larger than the effect on followers of including a song by an exceptionally popular major label artist (0.45\%). Our examination of playlist demand has two important implications. First, Spotify can effectively guide user attention to certain playlists, supporting industry executives' and artists' concerns that the platform has the potential to favor some producers by selectively promoting their content. Second, popular artists signed with major labels play an important role in attracting followers to playlists on Spotify.
+
+\vspace{0.5cm}
+\noindent
+\textbf{Keywords:} playlist followers, music streaming platforms, playlist featuring, major record labels, causal inference\\
+\vspace{0in}\\
+
+
+\bigskip
+\end{abstract}
+\setcounter{page}{1}
+
+\end{titlepage}
+\newpage
+
+\setstretch{2}
+
+\setcounter{page}{2}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%%% MAIN DOCUMENT %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%
+%%%INTRO%%%
+%%%%%%%%%%
+
+
+\section{Introduction}
+\label{sec:introduction}
+
+Digital platforms have increasingly replaced traditional revenue streams across various industries, including music, where streaming platforms now account for $84\%$ of total revenues in the US \citep{riaa}. Users seeking to consume music can either search for particular songs or albums or browse thousands of playlists---i.e., curated lists of songs centered around a specific genre, mood, activity, event, or artist. Playlists have contributed to a significant expansion in music consumption on streaming services \citep{Datta_etal_MktScie}, accounting for about $30$\% share of listening time on Spotify. Another $30$\% of music consumption is from tracks saved in users' music libraries \citep[][]{spotifyf1filing}, which often get discovered by consumers via playlists. 
+Many of the most popular playlists are designed and professionally managed by Spotify.  
+With 15,000 playlists, Spotify attracts $63$\% of platform-wide playlist followers \citep[e.g.,][]{Aguiar_Waldfogel_power}.   
+Other playlists on the platform are either curated by users or professional editors---including major and independent music labels. Finally, Spotify features some playlists across various categories on the Spotify app’s Search Page. This changing directory of lists features mostly playlists designed internally by Spotify. 
+
+Despite the growing importance of playlists to music consumption, not much is known about why users prefer some playlists over others. For example, users may follow playlists because they are prominently featured on the platform, giving them a shortcut to finding music they want to listen to from Spotify's vast assortment. Alternatively, users may follow playlists because they contain tracks by famous artists such as Taylor Swift (Universal), Adele (Sony), or Ed Sheeran (Warner). In our empirical analysis, we compare how adding tracks from popular major label artists to a playlist causally affects daily playlist followers in the short term (i.e., using variation within a month) versus the impact of the playlist being featured on the Search Page of the Spotify app. Before our work, little was known about how strongly users respond to these drivers of playlist demand.\footnote{Prior related work has explored consumption patterns on digital media, including live streaming \citep[e.g.,][]{Live_streaming_MKTSCIE_21,jmr_livestreaming} and on-demand streaming services \citep[e.g.,][]{wlomert2023frontiers,Datta_etal_MktScie}. In addition, researchers have measured the market power of digital platforms \citep[e.g.,][]{ review_platform_power_23,economics_two_sided_markets,platform_power_Song_2021}. In the context of music streaming, for example, \cite{playlistbias} show that Spotify likely exercises its power to make curation decisions for the ``New Music Friday" playlist favor independent record labels and, to a lesser extent, female artists.}
+
+We use two complementary methods to estimate these effects: a two-way fixed effects model \citep[e.g.,][]{shapiro_hitsch_tuchman_2021}, and a synthetic difference in difference model  
+\citep[e.g.,][]{SDiD_AER_Arkhangelsky_21}. Our analysis builds on a unique data set collected from \textit{Chartmetric.com} that tracked over 30,000 playlists across 66 music categories between October 2019 and March 2020. The data includes the number of daily aggregate playlist followers as well as various characteristics such as whether playlists add tracks from famous artists of the three major record labels (Universal, Sony, and Warner), the share of content on the playlist owned by these labels, the duration of the playlist, and the acoustic attributes of tracks \citep{boughanmiacoustics}. Our data set also records which playlists were featured prominently on the platform's Search Page on a given day, obtained through live scraping from \textit{everynoise.com/worldbrowser.cgi} \citep{scraping}.
+
+Our identification strategy relies on the synthetic difference in difference (SDID) method to estimate treatment effects (e.g., the effect of featuring playlists on the Search Page) relative to control playlists that closely mimic treated playlists but that have not received the treatment \citep[e.g.,][]{berman2022value}. For this purpose, the SDID method reweighs the large pool of control playlists to match pre-exposure trends between treated and control observations, reducing the reliance on parallel trend assumptions as in conventional difference in difference approaches \citep{SDiD_AER_Arkhangelsky_21}. We also infer treatment effects in a flexible two-way fixed effects (2W-FE) model accounting for date and playlist-month fixed effects \citep[e.g.,][]{shapiro_hitsch_tuchman_2021}. We find that the treatment effects are consistent between the SDID and 2W-FE models, demonstrating robustness with regard to different model specifications and assumptions. 
+
+Our SDID estimates reveal that users strongly value playlists featured in the Spotify app, implying that daily followers go up by 0.95\% if a playlist is included on the Search Page. For large playlists like ``Reggaeton Classic" (which has 1.9 million followers), being prominently featured on the Spotify app can yield 18,050 additional daily followers. This finding indicates that Spotify is effective in guiding consumer searches of its vast playlist assortment through what it features on its Search Page. In comparison, we find that users are about half as sensitive to the inclusion in a playlist of tracks by popular major label artists---adding at least one track by a major label superstar artist increases daily followers by 0.45\%. 
+
+Our analysis of playlist demand has two main implications. First, our estimates show that playlist curators attract followers twice as easily when their list is featured on the Search Page as when they add a track by a major label superstar. 
+Historically, the major music labels controlled content distribution in the music industry and exerted influence over how music was advertised and sold offline \citep[][]{prey_2020,du_gay_and_negus_1994}. Today, however, our findings corroborate researchers’ observations that music streaming platforms have higher influence over users’ listening behavior compared to labels---such as by promoting songs via playlists to the advantage of some producers over others \citep[][]{Aguiar_Waldfogel_power}. 
+
+Second, our results imply that superstar artists remain a relevant asset for major music labels. This insight is of interest to record labels and music streaming platforms, who are disputing royalty rates in the US.\footnote{See case docket \textit{19-CRB-0005-WR} at the Copyright Royalty Board, available at \href{https://app.crb.gov/case/detail/19-CRB-0005-WR\%20\%282021-2025\%29}{https://app.crb.gov/}, accessed March 5, 2024.} Our findings could aid judges in assessing the consumer value of major label content on music streaming platforms: the inclusion of major label superstar tracks in playlists draws significant attention, as reflected by its positive (short-term) effect on followers. 
+
+The rest of the paper is organized as follows. Section \ref{sec:data} presents the data. Section \ref{identification_strategy} discusses causal identification challenges and presents two model specifications that address these challenges: the two-way fixed effects model and the synthetic difference in difference model. Section \ref{results} presents the treatment effect estimates and discusses robustness checks. % 
+We offer concluding thoughts and discuss the implications of our results in Section \ref{conclusion}.
+
+%%%%%%%%%
+%%%DATA%%%
+%%%%%%%%%
+
+\section{Data} 
+\label{sec:data}
+
+\subsection{Data set construction}
+
+Our data set covers 34,483 playlists on Spotify from various professional curators, including the platform, and major and independent music labels. We created this data set using the API of \textit{Chartmetric.com}, a platform that tracks the composition (i.e., which songs are available on a list at any point in time) and performance (e.g., daily followers) of playlists available on Spotify. 
+
+We initially obtained a list of all 1.2 million playlists tracked by \textit{Chartmetric} in April 2020. This cross-sectional dataset includes playlist IDs and names (e.g., ``Happy Tunes"), curator names (e.g., ``Spotify"), tag words describing a playlist's content, and followers at the time of data retrieval. We group playlist curators as per the classification in Web Appendix A.
+In addition to the cross-sectional characteristics, we obtained daily data on a playlist's number of followers from October 2019 to March 2020, along with information on which song was available on a list and when.\footnote{We rely on \textit{followers} as our metric for measuring playlist demand, in line with the notion that playlist editors aim to increase follower reach. Playlist \textit{listeners} are unavailable for many unpopular and some popular playlists. Playlist followers and listeners correlate strongly ($\rho$ = .70).} 
+
+To understand which type of songs are included on playlists, we parse comprehensive track-level meta-information of about $2$ million tracks.
+For each track, we observe its duration (in minutes), release date, and record label.
+We further classify whether each track is (1) distributed by one of the major record labels (Universal, Sony, or Warner)\footnote{To identify these major labels from thousands of unique labels and their subsidiaries, we use a regular-expression-based matching algorithm derived from a list of major label names and associated subsidiaries \citep[as in, e.g.,][]{boughanmiacoustics}.
+} 
+and (2) released by popular ``superstar" artists, based on historical top 10 placements in the Billboard Charts (Top 100; 1999-2019) and Spotify Charts (Top 200; 2016-2019).\footnote{We extract this data from \url{https://www.kaggle.com/datasets/danield2255/data-on-songs-from-billboard-19992019}.} We report summary statistics on these measures in Table B1 in Web Appendix B. Collectively, the major music labels account for most of
+the superstar content on the platform (6,000+ tracks). Tracks by these popular artists
+are also added to more playlists compared to the remaining artists on the platform. Our data contains numeric measures characterizing the tracks' acoustic attributes \citep[as in][i.e., danceability, energy, speechiness, acousticness, instrumentalness, liveness, valence, tempo, loudness]{boughanmiacoustics}. We aggregate this information to the playlist level by computing a weighted average of the attributes at every date.\footnote{We use as weights the track's overall popularity in our sample, proxied as the logarithm of each track's median number of weekly playlist listings in our sample. 
+} 
+
+\begin{figure}[t!]
+\begin{center}
+\caption{Screenshot of the Search Page in the Spotify app.}\label{fig:categories_app}
+\includegraphics[scale=0.25]{search_page_focus_2023.pdf}
+\end{center}
+\begin{flushleft}
+\vspace{-0.1cm}
+\footnotesize{Note: Spotify features selected playlists prominently in the Search Page of the app.}
+\end{flushleft}
+\end{figure}
+
+
+We next augment the data with daily information about which playlists are featured on the Search Page of the Spotify app. Figure \ref{fig:categories_app} illustrates featured playlists in the ``Focus" category. 
+\textit{Everynoise.com} makes the playlists featured on Spotify's Search Page available in real-time across up to 50 categories and 49 countries. To capture daily fluctuations in featured playlists, especially considering our data's global coverage, we 
+scraped this website at three-hour intervals between October 2019 and March 2020 \citep[]{scraping}.  
+Our raw data records a timestamp, the name of the category, the country name, and a list of playlist IDs featured in a category and country at the time of data retrieval. 
+Most categories on the Search Page pertain to established genres (e.g., ``pop", ``rock", ``jazz", ``EDM"). Other categories are relatively new, such as activity categories (e.g., ``sleep", ``workout") or mood categories (e.g., ``inspirational"). 
+Categories are largely the same across countries, but featured playlists may differ based on users' location. Playlists can therefore be featured in multiple categories and countries simultaneously. 
+
+As Spotify does not provide a categorization for all of its playlists, we developed our own categorization based on association rule mining \citep{hastie_09}, which aligns with the categories observed on Spotify’s Search Page. Tracks are added to or removed from playlists, and the character of a playlist---and consequently, its competitors---can change. To account for the dynamic nature of a playlist's content, we allow for weekly category changes. The largest category is ``pop" ($3,979$ playlists with combined followers of $336$ million), followed by ``hiphop+pop", a hybrid category consisting of both ``hiphop" and ``pop" tracks ($281$ million followers). We provide an overview of the top 20 categories and details on the categorization algorithm in Web Appendix C.
+
+The follower distribution of playlists is highly skewed: $1,105$ playlists account for $50\%$ of total followers across the $1.2$ million playlists (see Table B2 in Web Appendix B). To avoid including extremely unpopular playlists, we select the $95\%$ most-followed playlists for subsequent analyses. Some playlists are less frequently tracked than others, and we require playlist followers to be consecutively observed for at least four weeks. In addition, we impose that at most two intermediate (daily) follower observations can be linearly interpolated, and require playlist characteristics to be consecutively available for at least 100 days. Our final selection encompasses $34,483$ playlists that fulfill the aforementioned conditions, accounting for $90\%$ of platform followers at the time of data retrieval. We summarize the final data set in Table B3 in Web Appendix B.
+
+\subsection{Descriptive statistics}
+
+Table \ref{tab:curatorswide} shows how playlist followers differ across curators, shown for the estimation sample of $34,483$ playlists (left panel), as well as the entire sample of $1.2$ million playlists (right panel). 
+Spotify’s editorial playlists are the most popular playlists, attracting $70\%$ of the audience. The platform's non-personalized editorial playlists ($3,042$) account for $33\%$ of followers. Semi-personalized editorial playlists ($1,525$), on which different users see a different subset of a predetermined set of master tracks, account for $26\%$ of followers. Spotify's ``This is"-playlists ($1,639$) focus on a single artist's content and account for $11\%$ of followers. On the other hand, the three major labels account for $2,522$ playlists and a combined follower share of only 5\%. The differences in the aggregate follower share across playlist curator groups are negligible between selected playlists in the estimation sample and all of the $1.2$ million playlists.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{curatorswide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In Table \ref{tab:superstarplaylist}, we compare playlists that add at least one major label superstar track during our observation period to those that do not. On average, major label superstars appear on playlists that have more followers and are updated more frequently. These playlists, typically not curated by Spotify, feature a higher proportion of major label content and shorter tracks. This evidence is in line with the idea that the pool of exceptionally popular artists is a valuable asset of the major labels. Going forward, we thus focus on the event of adding a superstar artist's track to playlists in order to measure the impact of major label content on playlist demand on Spotify.
+
+\input{superstarplaylist.tex}
+
+Figure \ref{fig:section_updates} illustrates the featuring activity across categories on the Search Page between October 2019 and March 2020. We observed most categories for the entire duration of our study (e.g., ``latin," ``roots," ``soul," and ``workout"). Some categories are observed for a shorter period of time (e.g., the category ``2019``, featuring playlists celebrating the past year, such as ``Your Best 2019 Hits``).\footnote{As demand might be naturally high for such playlists, independent of inclusion on the Search Page, we removed playlists from the ``2019`` category from the estimation sample. In a robustness check, we also removed other potentially seasonal categories such as ``Holidays`` or ``Exercise``.} The figure underscores that there is substantial featuring activity on Spotify, but categories are rarely updated all at the same time. 
+
+\begin{figure}[t!]
+\begin{center}
+\caption{Availability and updates of different categories on the Search Page.}\label{fig:section_updates}
+\includegraphics[width=\textwidth]{browsesection_changes.pdf}
+\end{center}
+\begin{flushleft}
+\vspace{-0.1cm}
+\footnotesize{Notes: We illustrate the availability of different categories on the Search Page during our observation period in gray. Updates (i.e., additions or removals of playlists) within categories on the Search Page are reported in black. The figure underscores that there is substantial featuring activity on Spotify.}
+\end{flushleft}
+\end{figure}
+
+Table \ref{tab:promoplaylist} shows that playlists featured in at least one category on Spotify's Search Page have substantially more followers than the corresponding group of non-featured playlists. Featured playlists also contain slightly less major label content, fewer tracks, and are updated more frequently. Finally, the vast majority of featured playlists are owned and operated by Spotify, which raises concerns that Spotify tends to feature its own content on the platform \citep[e.g.,][]{self_preferencing_skiera}. We estimate the effect of featuring playlists on playlist followers to quantify Spotify's ability to guide consumer attention through the Search Page.
+
+\input{promoplaylist.tex}
+
+%%%%%%%%
+%%%DID%%%
+%%%%%%%%
+
+\section{Empirical strategy and modeling approaches} \label{identification_strategy}
+
+The main goal of our study is to estimate the causal effect of featuring playlists on Spotify's Search Page and compare it to the effect of adding songs by exceptionally popular major label artists to playlists. We first describe the identification challenges associated with these two primary goals and then present two modeling approaches that address these challenges---the two-way fixed effects model and the staggered synthetic difference in difference model. All of our estimates reflect short-term treatment effects as we are relying on the variation in featuring on the Search Page or adding tracks by major label superstars across weeks within a month. Estimates of the long-term effects on playlist followers of these demand factors goes beyond our data coverage.  
+
+\subsection{Identification challenges}
+\label{challenges_identification}
+
+The observational nature of the data poses several challenges to identifying treatment effects \citep[e.g.,][]{berman2022value}: (i) every playlist in our data set is either treated in each period (i.e., featured on the Search Page or tracks by popular major label artists being added) or untreated in each period, and we do not observe the counterfactual outcome in the unobserved condition; (ii) the decision of whether to feature a playlist or add popular tracks may be endogenous in the sense that it may be correlated with Spotify's or the focal curators' expectations about changes in demand for the playlist. For example, Spotify may add more of its own playlists to the Search Page to
+counteract (amplify) periods of naturally low (high) demand. Relatedly, playlist curators may add tracks by extremely popular major label artists to correct a downward move in followers; (iii) playlists are added to the Search Page or tracks by popular major label artists are added at different times, requiring careful computation and aggregation of treatment effects \citep[e.g., ][]{baker2022much}; 
+(iv) Spotify or other curators could have implemented other strategies concurrently when featured on the Search Page or having added ``superstar" tracks, and we might not be able to separate the effect of concurrent changes from featuring or major label track addition; and (v) there may be spillovers between treated and non-treated playlists within the same category, potentially violating the stable unit treatment value assumption \citep[e.g.,][]{goldfarb2022conducting}.  
+
+\subsection{Two-way fixed effects model} 
+
+\label{two_way_fe}
+
+The first approach models the main drivers of playlist followers in a reduced-form log-linear demand model, similar to in \cite{shapiro_hitsch_tuchman_2021}. The proposed research design requires fewer assumptions compared to a structural demand model using aggregate data \citep[e.g.,][]{Berry1994} and is suitable for our main goal of comparing the effect of featuring playlists on Spotify's Search Page with the effect of adding tracks by popular major label artists to playlists.\footnote{For example, nested logit models may impose restrictive substitution patterns \citep[e.g.,][]{Berry1995,bresnahan_1996_RAND} and the discrete-choice assumption inherent to structural models of unobserved heterogeneity \citep[][]{Berry1995} is likely violated modeling playlist choice based on followers.} 
+Moreover, as the proposed model is parsimonious, it allows us to flexibly include characteristics of the main competitor playlists in the same category (leveraging the dynamic categorization derived in Web Appendix C). We specify the two-way fixed effects model as follows:
+
+\begin{align} 
+\begin{split} 
+\text{log}(f_{pt}+k) =
+& \gamma_{p,m(t)} + \gamma_t + \eta^{\text{feat}} \text{Treated}_{pt}^{\text{feat}} + \eta^{\text{star}} \text{Treated}_{pt}^{\text{star}} + \\ & + \beta \text{log}(ml_{pt}+k) + \omega \text{log}(r_{C(p),t}+k) + \phi^{\prime} x_{pt} + \psi^{\prime} x_{-pt} + \varepsilon_{pt}, 
+\end{split}
+\label{two_way_model}
+\end{align} 
+
+where $f_{pt}$ measures the followers of playlist $p$ on day $t$.\footnote{We set the constant to a small number, $k=1$. In a robustness check, we also consider the Inverse Hyperbolic Sine (IHS) transformation to deal with zero-valued observations \citep{ihs}.} The coefficients $\eta^{feat}$ and $\eta^{star}$ measure the effect of including playlists on Spotify's Search Page as well as the effect of adding at least one track by a highly popular major label artist (``superstar") to playlists on day $t$, where $\text{Treated}_{pt}^{\text{feat}}, \text{Treated}_{pt}^{\text{star}} \in \{0,1\}$. 
+Moreover, we include a rich set of (time-varying) fixed effects and $\gamma_{p,m(t)}$ denote playlist-month fixed effects, i.e., $m(t) \in \{M_1, M_2, \dots \}$. In addition, $\gamma_t$ are date-fixed effects, accounting for common demand factors across playlists within a date. 
+
+The second line in Equation \ref{two_way_model} accounts for various control terms. $\beta$ controls for the effect of including major label tracks on the playlist, beyond those from exceptionally popular superstars, where $ml_{pt}$ measures the share of major label tracks on playlist $p$. $\omega$ measures the effect of personalized recommendations in category $C(p)$ at date $t$ on the followers of playlist $p$.\footnote{$r_{C(p),t}$ reflects the ``recommendation intensity", defined as the number of songs added to personalized playlists in category $C(p)$ at date $t$, divided by the number of personalized playlists in category $C(p)$.
+Among the user-curated playlists in the raw data, we observe a sample of $1,634$ of Spotify's personalized playlists, such as ``Discover Weekly" (60\% of all personalized playlists), users' compilations of the most listened-to songs from previous years ($31\%$) and ``Release Radar" ($6\%$). Personalized playlists are typically private to individual users, but can become public when shared on social media.}
+ $\phi^{\prime} x_{pt}$ controls for the average track age, playlist duration (in hours) as well as acoustic
+attributes of playlist $p$, while $\psi^{\prime} x_{-pt}$ controls for featuring on the Search Page and availability of superstar tracks of the fifteen largest competing playlists in the same category. 
+Including the rich control variables in Equation \ref{two_way_model} is important to address identification concern (iv) and ensure that the estimated treatment effects are not confounded with simultaneously occurring changes in other playlist covariates.
+
+Figure D1 in Web Appendix D shows the residual identification variation in featuring (left panel) and additions of tracks by major label superstars (right panel) after accounting for playlist-month fixed effects and remaining control variables as in Equation \ref{two_way_model}. There is sufficient variation in both variables left that is caused by Spotify updating its Search Page (see Figure \ref{fig:section_updates}) and playlist curators adding tracks by major label superstar artists within weeks of a month.\footnote{The median update frequency for an average playlist in our sample equals 14 days.}
+
+The two-way fixed effects model assumes that conditional on the rich fixed effects and control variables, the residual variation in Figure D1 is quasi-random---i.e., not correlated with unobserved demand factors. To justify this assumption, one might argue that user demand for a playlist does not drastically change within a month. Hence, variations in the composition of the playlist's songs and the Search Page are quasi-random within weeks of a month. However, we cannot observe the stability of users' preferences for playlists, and Spotify may update its playlists/Search Page in response to demand shocks within a month. 
+In other words, the main limitation of this model pertains to the identification challenge (ii) as there might be endogenous selection of remaining playlists into the treatment and control groups, even conditional on including playlist-month fixed effects. To address this concern, we would ideally want to create a control group of playlists that closely resemble treated playlists in the days before the event but do not get treated in our data.\footnote{An alternative strategy would be to use instrumental variables to resolve endogeneity concerns. However, it is very difficult to identify valid instruments for featuring playlists and including popular superstar tracks in playlists that fulfill the exclusion restriction assumption.} Another potential issue with the two-way fixed effects model is that it does not adequately account for the different timing of treatment effects (challenge iii), potentially biasing estimation results if treatment effects can change over time (``dynamic treatment effects") due to a ``bad comparisons" problem \citep{baker2022much}. To mitigate these limitations, we propose an alternative model. 
+
+
+\subsection{Staggered synthetic difference in difference (SDID)} 
+\label{SDID}
+
+To investigate whether---and if so, by how much---the two-way fixed effects specification (Equation \ref{two_way_model}) biases treatment effect estimates, we use the synthetic difference in difference model \citep{SDiD_AER_Arkhangelsky_21}. By weighting the observations of never-treated playlists to generate ``clones" of the treated observations, this method improves upon our identification strategy about the endogenous selection into treatment and control groups (challenge ii). Moreover, we account for identification challenge (iii)---the differential treatment timing---by repeatedly applying the SDID estimator on the subset of data implied by unique adoption dates, as recommended in \cite{SDiD_AER_Arkhangelsky_21}.
+
+The SDID's crucial ``exclusion restriction" assumption is that the synthetic control playlists precisely match the follower evolution of the treated playlists in the times before the event.\footnote{The SDID method compensates for the lack of parallel trends between treated and control playlists by reweighting units to match their pre-exposure trends. This procedure weakens the reliance on parallel trend assumptions as in conventional difference in difference methods \citep{SDiD_AER_Arkhangelsky_21}.} Treating a playlist can then be regarded as quasi-random compared to its synthetic control unit. To justify this assumption, we present the Mean Squared Percentage Error (MSPE) between the treated playlist's followers and the synthetic control playlists over the 15 days prior to the event, detailed in Table \ref{tab:model_results}. The small MSPE highlights a strong fit, facilitated by leveraging thousands of never-treated donor units to generate synthetic ``clones" for treated playlists. There are two potential challenges (iv and v) to this exclusion restriction assumption that we address as follows. First, Spotify or other curators may have concurrently implemented other changes after treatment (identification challenge iv). We checked the stability in playlists' characteristics after treatment in Table E1 in Web Appendix E. We found that curators changed almost none of the covariates after their playlists got featured on the Search Page or tracks by exceptionally popular major label artists were added. Second, we use only donor playlists from categories other than the treated units to ensure that the stable unit treatment value assumption is not violated \citep[][]{goldfarb2022conducting}.   
+
+\subsubsection{Playlist featuring} 
+We use data on all playlists we observed being featured for the first time. To have sufficient pre-treatment data, we require playlists to have been observed not featured for at least two weeks. We retain observations 15 days before and 15 days after treatment and require that playlists remain treated in the after-period for at least seven days. Choosing such a narrow analysis window mitigates the impact of confounding variables \citep[e.g.,][]{orhun_16}. These steps led to a sample of 113 treated playlists on 23 unique dates. 
+
+Featured observations include more popular playlists such as ``Reggaeton Classics" ($1.9$ million followers) as well as less popular playlists such as  ``Tech House Chargers" ($4.5$k followers). Most of the featured playlists were curated by Spotify, indicating that Spotify tends to prefer selecting its own playlists for inclusion on the Search Page.\footnote{Initially, about 15\% of playlists that Spotify featured were from other curators. At the end of November 2019, this share dropped to virtually zero, where it remained for the rest of our sample.} Figure D2 in Web Appendix D illustrates the variation in treatment dates across treated playlists. In line with Figure \ref{fig:section_updates}, we see that playlists were included on many different dates during our observation period.
+
+\subsubsection{Addition of tracks from popular major label artists}
+We define the treatment as adding at least one track to a playlist by a major label ``superstar" artist included in the Spotify Top 10 between December 2016 and July 2019, or the US Billboard Top 10 between 1999 and
+2019. Artists include established superstars such as Alicia Keys, Jennifer Lopez, and Ed Sheeran, as well as more recent superstars such as Shawn Mendes, Billie Eilish, and Lizzo. Again, we keep treated playlists that are observed at least 15 days before and 15 days after treatment, with the requirement that newly added tracks be listed for at least seven days after the event. It is possible that playlists can be ``treated" multiple times; in these few cases, we select only the first treated event of a playlist (under the restriction that the second treatment did not happen in the fifteen days after the first treatment). These steps lead to a sample of 2,248 treated playlists on 107 days. Figure D3 in Web Appendix D shows the treatment variation plot for the selected events.
+
+\subsubsection{Econometric specification}
+Conditional on every treatment date $a \in A$, we have a balanced panel with $P_{co,a}$ never-treated control playlists and $P_{tr,a}$ treated playlists that get exposed after $T_{pre} = 15$ and are observed for $T_{post} = 15$ consecutive time periods, with $P_a=P_{co,a}+P_{tr,a}$ and $T=T_{pre}+T_{post}$. We follow \cite{SDiD_AER_Arkhangelsky_21} and estimate the average causal effect of exposure for batch $a$ in a two-way fixed effects model:
+
+\begin{align} 
+\begin{split} 
+\left(\hat{\eta}_a^{\text{con}}, \hat{\mu}_a, \hat{\gamma}_{p,a}, \hat{\gamma}_{t,a}\right) = \underset{\eta^{\text{con}},\mu, \gamma_{p}, \gamma_{t}}{\text{arg min}} \left\{\sum_{p=1}^{P_a} \sum_{t=1}^T \left( \tilde{f}_{pt} - \mu - \gamma_{p} - \gamma_{t} - \eta^{\text{con}} \text{Treated}_{pt}^{\text{con}} \right)^2 \hat{\omega}_{p,a} \hat{\lambda}_{t,a} \right\}, \end{split} 
+\label{SDID_speci}
+\end{align} 
+
+where $\tilde{f}_{pt} = \text{log}(f_{pt}+k)$, con $\in \{\text{feat},\text{star}\}$, $\hat{\omega}_{p,a}$ are weights aligning pre-exposure trends in log-followers of never-treated units with those of treated units, $\hat{\lambda}_{t,a}$ are time weights balancing pre-exposure time periods with postexposure ones.\footnote{\cite{SDiD_AER_Arkhangelsky_21} show that the inclusion of unit and time weights makes the estimator more robust and improves precision.} Because of our staggered adoption setting, we apply Algorithm 1 in \cite{SDiD_AER_Arkhangelsky_21} on every of the $|A|$ balanced panel data sets. We compute the aggregate treatment effect as the average effect across all event dates weighted by the event date-specific number of treated playlists \citep{SDiD_AER_Arkhangelsky_21}.\footnote{For each adoption date $a \in A$, the variance of the average treatment effect estimator is computed using the placebo method \citep[Algorithm 4 in][]{SDiD_AER_Arkhangelsky_21} using 200 replications. Global standard errors are given as the square root of the variance of the aggregate treatment effect estimator \citep[e.g.,][]{Imbens_JoEconmetrics_22}.}
+
+%%%%%%%%%%%
+%%%RESULTS%%%
+%%%%%%%%%%%
+
+\section{Estimation results}
+\label{results}
+
+\input{results.tex}
+
+\subsection{Short-term elasticity estimates}
+
+Table \ref{tab:model_results} summarizes the estimation results. Columns (1) and (2) compare the short-term effects of including playlists on Spotify's Search Page using the two-way fixed effects model (Equation \ref{two_way_model}) and the synthetic difference in difference model (Equation \ref{SDID_speci}).  
+The small MSPE shows that pre-exposure observations in the control groups align closely with the pre-exposure observations of log-followers of treated playlists, confirming the accuracy of the synthetic control method's pre-treatment matching performance. 
+According to the synthetic difference in difference estimator in column (2), being included on Spotify's Search Page increases daily followers by 0.95\% on average.\footnote{The two-way fixed effects model and the synthetic difference in difference model rely on different assumptions. We find that the estimates of these models, reported in Table \ref{tab:model_results}, are very close to each other. We thus conclude that the potential bias in the two-way fixed effects model due to the staggered setting is small.} This number seems substantial given that the average number of followers on featured playlists equals $295,762$, implying 2,810 additional followers for the average playlists being featured on the Search Page on any day. 
+For larger playlists like ``Reggaeton Classic" (which has 1.9 million followers), our estimates imply that being featured on the Search Page typically yields 18,050 additional daily followers. 
+
+Columns (3) and (4) in Table \ref{tab:model_results} compare the estimated treatment effects of adding tracks by exceptionally famous major label superstars. As with  being featured 
+on the Search Page, we find that the estimated treatment effects are very close to each other in the two-way fixed effects and the synthetic difference in difference models. We find that adding at least one track by a major label superstar increases the daily playlist followers by 0.45\% on average. These additional followers can either be generated through a higher chance of discovering the treated playlist if users search for famous artists on Spotify or by users directly observing the change in the content of the treated playlist. While adding exceptionally popular major label content positively affects the numbers of followers, the results in Table \ref{tab:model_results} imply that the treatment effect of featuring playlists on the Search Page is about twice as big.
+
+We also investigated how the increase in the overall share of major label tracks (beyond just including exceptionally popular content) affects playlist followers, as illustrated in Table F1 in Web Appendix F. We find that marginally increasing the coverage of tracks by major label artists does not significantly affect playlist followers ($0.0007$, $p=.81$). This finding suggests that, in the short term, the three major record labels (Sony, Universal, and Warner) attract most consumers on Spotify with tracks by a small number of superstars rather than with tracks from across their broad catalog of artists. 
+
+\subsection{Robustness checks}
+We performed additional analyses to provide robustness of our empirical estimates.  
+First, we have dropped the ``2019" category celebrating hits of the past year for estimating the effect of being featured on the Search Page. However, variations in other categories might also be implemented by Spotify in response to seasonality in demand (such as playlists being featured in the  ``Exercise" or ``Yoga" categories at the beginning of the year when users make New Year's resolutions). We removed these seasonal categories from the data and re-estimated all models. As shown in Table G1 in Web Appendix G, the elasticities for the SDID specification are almost identical. The 2W-FE estimate drops after removing potentially seasonal categories but is not statistically different from the overall 2W-FE estimate in Table \ref{tab:model_results}. 
+
+Second, we show the robustness of our results with regard to the choice of the stabilization constant ($k=1$). We re-estimated the models using the Inverse Hyperbolic Sine (IHS) transformation to deal with the problem of zeros in the logarithmic specifications. As can be seen in Table G2 in Web Appendix G, the results are very close to the main results in Table \ref{tab:model_results}.
+
+Third, another concern relates to the comparability of the SDID and 2W-FE models for the featuring effect: while the SDID model focuses on first-time treated playlists to avoid overlapping treatment windows, the 2W-FE model relies on the complete data, also including playlists that were featured multiple times on Spotify's Search Page. To compare these models on more ``equal footing," we re-estimated the 2W-FE model, removing playlists before their second treatment date. As can be seen in Table G3 in Web Appendix G, the estimated effect of featuring on the Search Page is virtually the same ($.01045$ for the entire data, and $.01057$ for the first-time-only data).
+
+%%%%%%%%%%%%%%
+%%%CONCLUSION%%%
+%%%%%%%%%%%%%%
+
+
+\section{Summary and Discussion} 
+\label{conclusion}
+
+We have collected a diverse panel data set covering 30,000+ popular playlists on Spotify to estimate the causal treatment effect of featuring playlists on Spotify's Search Page, and compare the impact of being featured on this high-traffic page with the effect of adding tracks by popular major label superstar artists to playlists. We find that users are responsive to the featuring of playlists, and our estimates suggest that inclusion on Spotify's Search Page raises daily followers by 0.95\%. For large playlists like ``Reggaeton Classic" (with 1.9 million followers), this implies an increase of 18,050 additional daily followers after being featured in Spotify's app. By comparison, we find the effect of including tracks by popular major label superstars in a playlist to be $0.45\%$. Our analysis reveals that the average treatment effect of a playlist being featured is about two times greater than the effect of adding a track by a ``superstar” major label artist to the list. 
+
+Our work has important implications for policymakers and music industry professionals.
+First, as major music labels have watched their market share on music streaming services erode in recent years, some music executives have started to wonder about the value of their ``superstar" artists.\footnote{See \href{https://www.musicbusinessworldwide.com/as-major-label-market-share-falls-on-spotify-can-we-expect-even-more-indie-investment-from-the-big-three/}{https://www.musicbusinessworldwide.com/as-major-label-market-share-falls-on-spotify-can-we-expect-even-more-indie-investment-from-the-big-three/}, accessed October 31, 2023.} 
+However, our research suggests that ``superstars" continue to create value on music streaming services: consumers respond to adding major label superstars with an estimated increase in daily followers of $0.45\%$ in the fifteen days after the event. This finding is of interest to record labels who are disputing royalty rates with streaming platforms in the US.\footnote{See case docket \textit{19-CRB-0005-WR} at the Copyright Royalty Board, available at \href{https://app.crb.gov/case/detail/19-CRB-0005-WR\%20\%282021-2025\%29}{https://app.crb.gov/}, accessed March 5, 2024.} Our findings can also aid court judges in assessing the consumer value of major label content on music streaming platforms like Spotify.
+
+Second, we measure the short-term treatment effect of including playlists on the Search Page, a gateway to the app’s content where a select number of playlists --- typically Spotify-curated playlists --- are brought to the user's attention. Our finding that followers increase by $0.95\%$ implies that Spotify is effective in guiding user attention by selectively highlighting playlists on the platform \citep[e.g., ][]{goldfarb_tucker_2019}. Importantly, the fact that the featuring effect is about twice the size of the superstar effect suggests the success of Spotify playlists is much less dependent on the availability of artist-specific (superstar) tracks than it is to being prominently featured on the platform. We believe this difference in effect may in the future drive record labels to pay Spotify to be prominently featured.\footnote{Pay-for-play arrangements are already being used by Spotify in other contexts, such as the recently introduced (``Pay For Influence") Discovery Mode that allows artists and record labels to influence the algorithm that selects what music is played when users use the streaming platform's auto-play or personalized radio function. By opting in, record labels agree to be paid a lower royalty rate for streams. This recent development aligns with our results and showcases the dependency of artists (and record labels more broadly) on Spotify's programming decisions. See \href{https://www.isrc.com/3-Things-To-Know-About-Spotifys-Discovery-Mode.php}{https://www.isrc.com/3-Things-To-Know-About-Spotifys-Discovery-Mode.php}, accessed May 1, 2023.}  
+
+To foster competition among playlist curators, policymakers could legally impose a minimum fraction of non-Spotify playlists that need to be featured on the platform's Search Page on a given day. 
+Spotify already features its own curated playlists in almost 90\% of cases (Table \ref{tab:promoplaylist}). A policy requiring Spotify to feature a minimum percentage of non-Spotify-curated playlists would be analogous to recently implemented EU legislation requiring streaming services like Apple TV+ and Netflix to feature at least $30\%$ European content or face a European Union customer block.\footnote{See \href{https://www.gov.ie/en/publication/d8e4c-online-safety-and-media-regulation-bill/}{Online Safety and Media Regulation Bill}, accessed July 5, 2022.}
+
+Our work opens several avenues for inquiry about the economics of streaming. First, our data does not incorporate information on all potential factors influencing users' demand for playlists, such as ``announcements" to advertise playlists or concerts on Spotify. Second, we study playlist followers but lack sufficient data on a playlist's number of listeners. Third, the results extend to the set of 30,000+ most popular playlists on the platform. However, a larger sample of playlists would allow for a better understanding of how Spotify can exert power over music labels through algorithmic design. Fourth, our data primarily allows us to identify short-term treatment effects. Yet, for music labels, understanding the long-term dynamics of a playlist's follower evolution is important to develop successful playlist brands. For policymakers, in turn, long-term estimates would enable a more nuanced understanding of the power dynamics between digital platforms and their suppliers to devise effective regulatory policies.
+
+
+\section*{Funding and Competing Interests} 
+All authors certify that they have no affiliations with or involvement in any organizational entity with any financial interest or non-financial interest in the subject matter discussed in this manuscript. Partial financial support was received from the Dutch Research Council (Grant number: NWO 451-17-028).
+
+
+%References
+\clearpage
+\bibliography{bibliography.bib}
+\bibliographystyle{chicago}
+\newpage
+\appendix
+
+%\input{paper_sections/appendix}
+
+\end{document}

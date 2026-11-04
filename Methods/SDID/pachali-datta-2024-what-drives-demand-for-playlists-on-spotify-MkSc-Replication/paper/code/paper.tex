@@ -1,0 +1,107 @@
+\documentclass[12pt, a4paper, leqno]{article}
+
+\usepackage{amssymb,booktabs,amsmath,amsfonts,eurosym,geometry,ulem,graphicx,caption,color,setspace,sectsty,comment,footmisc,caption,natbib,pdflscape,subfigure,array,adjustbox,algorithm,algpseudocode,tikz,bbm,siunitx,threeparttable}
+
+\usepackage{float}
+
+\setlength{\parindent}{30pt}
+
+\normalem
+
+\onehalfspacing
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}{Proposition}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\newtheorem{hyp}{Hypothesis}
+\newtheorem{subhyp}{Hypothesis}[hyp]
+\renewcommand{\thesubhyp}{\thehyp\alph{subhyp}}
+
+\newcommand{\red}[1]{{\color{red} #1}}
+\newcommand{\blue}[1]{{\color{blue} #1}}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+
+\geometry{left=1.0in,right=1.0in,top=1.0in,bottom=1.0in}
+
+\usepackage[unicode=true]{hyperref}
+
+\hypersetup{colorlinks=true, linkcolor=blue, anchorcolor=black, citecolor=blue, filecolor=black, menucolor=black, runcolor=black, urlcolor=blue}
+
+\begin{document}
+
+\begin{titlepage}
+\title{
+%
+\vspace{-1.5cm}
+%
+What drives demand for playlists on Spotify? 
+\thanks{Both authors contributed equally to the paper. The authors are grateful for comments from seminar and conference participants at the University of Chicago Booth School of Business, University of Tuebingen, University of Cologne, Goethe University Frankfurt, Amsterdam Business School, Bocconi University, KU Leuven, London School of Economics, Stockholm School of Economics, University of Rochester, University of Zurich, Virtual Quant. Marketing Seminar, EMAC 2021, Marketing Science 2021, Music Economics 2022, and the 12th Triennial Invitational Choice Symposium at INSEAD. The paper benefited from comments and discussions with Luis Aguiar, Khaled Boughanmi, Lachlan Deer, Jean-Pierre Dub\'e, Dean Eckles, Avery Haviv, Guenter Hitsch, Yufeng Huang, David Holtz, Sanjog Misra, Thomas Otter, Bradley Shapiro and Andrey Simonov. 
+The authors thank Andrea Antonacci and Roy Klaasse Bos for their excellent research assistance. Finally, the authors acknowledge financial support from the Dutch Research Council (NWO 451-17-028) and research support from Tilburg Science Hub.}
+}
+
+\author{
+Max J. Pachali
+\thanks{Tilburg University; \texttt{m.j.pachali@tilburguniversity.edu}}
+\and 
+Hannes Datta
+\thanks{Tilburg University; \texttt{h.datta@tilburguniversity.edu}}}
+\date{\today}
+\maketitle
+\begin{abstract}
+
+We provide estimates of the drivers of playlist followers on Spotify. We base our analysis on a unique panel data set for 30,000+ popular playlists and combine it with data on how prominently these playlists are featured in the Spotify app. Using two-way fixed effects and staggered synthetic difference in difference models, we compare the short-term effect of two important demand factors in our data---featuring playlists on Spotify's Search Page and adding songs by exceptionally popular major label artists to playlists. We find that users prefer to follow playlists featured in the app. According to our estimates, being featured on the Search Page raises daily playlist followers by 0.95\%---which is about two times larger than the effect on followers of including a song by an exceptionally popular major label artist (0.45\%). Our examination of playlist demand has two important implications. First, Spotify can effectively guide user attention to certain playlists, supporting industry executives' and artists' concerns that the platform may favor some producers by selectively promoting their content. Second, popular artists signed with major labels play an important role in attracting followers to playlists on Spotify.
+
+\vspace{0.5cm}
+\noindent
+\textbf{Keywords:} playlist followers, music streaming platforms, playlist featuring, major record labels, causal inference\\
+\vspace{0in}\\
+%\noindent\textbf{JEL Codes:} key1, key2, key3\\
+
+%\center{\textcolor{red}{Preliminary draft - do not share}}
+
+
+\bigskip
+\end{abstract}
+\setcounter{page}{1}
+%\thispagestyle{empty}
+\end{titlepage}
+\newpage
+
+%\onehalfspacing
+%\doublespacing
+\setstretch{2}
+
+\setcounter{page}{2}
+
+
+%\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%
+%%% MAIN DOCUMENT %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+
+\input{paper_sections/introduction}
+%\input{paper_sections/context}
+\input{paper_sections/data}
+\input{paper_sections/did}
+\input{paper_sections/results} 
+\input{paper_sections/conclusion}
+
+\section*{Funding and Competing Interests} 
+All authors certify that they have no affiliations with or involvement in any organizational entity with any financial interest or non-financial interest in the subject matter discussed in this manuscript. Partial financial support was received from the Dutch Research Council (Grant number: NWO 451-17-028).
+
+
+%References
+\clearpage
+\bibliography{bibliography.bib}
+\bibliographystyle{chicago}
+\newpage
+\appendix
+
+\input{paper_sections/appendix}
+
+\end{document}

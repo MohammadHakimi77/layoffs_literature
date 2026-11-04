@@ -1,0 +1,21 @@
+<tab:categories>
+pop	3979	336.214009	Songs to Sing in the Car, Chill Hits, Esquenta Sertanejo
+hiphop+pop	4301	281.377369	Today's Top Hits, RapCaviar, Get Turnt
+edm+pop	3756	226.826787	mint, Happy Hits!, Mood Booster
+pop+rock	3515	212.239019	Songs to Sing in the Shower, Rock This, Soft Pop Hits
+latin	1525	141.164221	¡Viva Latino!, Baila Reggaeton, Rock en Español
+rock	1789	139.277105	Rock Classics, All Out 80s, 90s Rock Anthems
+latin+pop	 977	 74.207615	Verano Forever, Éxitos México, Éxitos Argentina
+edm+hiphop+pop	1200	 70.200381	Beast Mode, Teen Party, Throwback Party
+hiphop+pop+rb	 934	 66.339647	All Out 00s, Are & Be, I Love My '00s R&B
+focus	 166	 38.170368	Peaceful Piano, Sleep, Deep Focus
+metal+rock	 491	 30.816893	Old School Metal, This Is Linkin Park, ’80s Hard Rock
+hiphop+latin+pop	 234	 30.725274	Global Top 50, Pop Up, Global Viral 50
+edm	 652	 23.720533	Trap Nation, Housewerk, Dubstep Don
+hiphop	 473	 22.672054	I Love My '90s Hip-Hop, Modus Mio, Deutschrap Brandneu
+latin+regionalmexican	 320	 22.574421	Los Que Mandan: Top 40, Canciones del Recuerdo, La Cantina
+country	 413	 20.773364	Chillin' on a Dirt Road, Country Gold, Country Kind of Love
+hiphop+pop+rock	 851	 19.801502	Film & TV Favorites, Just Get Going! 155 BPM, This Is Daft Punk
+christianmusic	 417	 18.213352	Top Christian, Sucessos Gospel, WorshipNow
+classical	 357	 15.042457	Classical Essentials, Classical New Releases, This Is Mozart
+folk+pop+rock	 113	 14.290516	Afternoon Acoustic, Infinite Acoustic, Acoustic Spring

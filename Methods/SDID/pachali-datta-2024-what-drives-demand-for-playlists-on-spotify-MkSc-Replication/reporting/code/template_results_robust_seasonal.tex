@@ -1,0 +1,36 @@
+\begin{table}[H]
+\caption{Featuring on Search Page without including seasonal categories.\label{tab:model_robust_seasonal}}
+\centering
+  \begin{adjustbox}{width = 0.8\textwidth, center}
+      \begin{threeparttable}[b]
+%\smallskip{}
+%\raggedright{}%
+\begin{tabular}{l c c c c c c}
+\hline 
+ & \multicolumn{2}{c}{Main: remove 2019 category } & \multicolumn{2}{c}{Remove all potentially seasonal categories}
+ %\tabularnewline
+% & \multicolumn{2}{c}{} & \multicolumn{2}{c}{Seasonal Categories}
+  \tabularnewline
+ & \multicolumn{1}{c}{2W-FE} & \multicolumn{1}{c}{Synth. DiD} & \multicolumn{1}{c}{2W-FE} & \multicolumn{1}{c}{Synth. DiD} \tabularnewline
+ & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)}\tabularnewline
+\hline 
+Treatment effect & $\#4\# \#*\#$ & $\#4\# \#*\#$ & $\#4\# \#*\#$ & $\#4\# \#*\#$ \tabularnewline
+ & (\#4\#) & (\#4\#) & (\#4\#) & (\#4\#) \tabularnewline
+\hline 
+R2 & \multicolumn{1}{c}{\#4\#} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{\#4\#} & \multicolumn{1}{c}{} \tabularnewline
+Adj. R2 & \multicolumn{1}{c}{\#4\#} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{\#4\#} & \multicolumn{1}{c}{} \tabularnewline
+MSPE & \multicolumn{1}{c}{} & \multicolumn{1}{c}{\#4\#} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{\#4\#}\tabularnewline
+Observations & \multicolumn{1}{c}{\#0,\#} & \multicolumn{1}{c}{\#0,\#} & \multicolumn{1}{c}{\#0,\#} & \multicolumn{1}{c}{\#0,\#}\tabularnewline
+\hline 
+\end{tabular}
+\begin{tablenotes}\footnotesize
+   \vspace{-0.2cm}
+   \footnotesize
+    \item Notes: The left two columns reflect our main estimates as in Table \ref{tab:model_results}. The right columns removed all potentially seasonal categories (i.e., ``2019," ``Exercise," ``Holidays," ``Meditation," ``Nature Sounds," ``Spotify Awards," ``Yoga") for estimating the effect of featuring playlists on the Search Page. 
+  \textsuperscript{***}$p<0.001$, 
+  \textsuperscript{**}$p<0.01$, 
+  \textsuperscript{*}$p<0.05$. Robust standard errors in parentheses.
+         \end{tablenotes}
+      \end{threeparttable}
+   \end{adjustbox}
+\end{table}

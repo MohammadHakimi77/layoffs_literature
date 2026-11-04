@@ -1,0 +1,1307 @@
+\documentclass[8pt]{beamer}
+\beamertemplatetransparentcovereddynamic	
+\usepackage{ucs}
+\usepackage{color,soul}
+\usetheme{Singapore}
+\usecolortheme{default}
+\usepackage{amsmath,amsfonts,amssymb,booktabs}
+\usepackage{graphics}
+\usepackage{sansmathaccent}
+\usepackage[position=top]{subfig}
+\usepackage{graphicx}
+\usepackage{dsfont}
+\usepackage{tikz}
+\usepackage{comment}
+\usepackage{pgfplots}
+\usepackage{algorithm2e,algorithmic,adjustbox,bbm,siunitx}
+\usepackage{arydshln}
+\usepackage{threeparttable}
+\usepackage{natbib,har2nat}
+
+\pgfplotsset{compat=newest}
+\usetikzlibrary{pgfplots.groupplots}
+\usetikzlibrary{positioning}
+
+\usepackage{hyperref}
+%\hypersetup{colorlinks=black, linkcolor=black, anchorcolor=black, citecolor=blue, filecolor=black, menucolor=black, runcolor=black, urlcolor=black}
+
+\usetikzlibrary{arrows,positioning,calc}
+\tikzset{cause/.style = {->,> = stealth', very thick, shorten >= 2, shorten <= 2},
+  error/.style = {->,> = stealth', , shorten >= 2}, var/.style = {rectangle,rounded
+  corners,thick,draw=black!75,fill=black!5,align=center,inner sep=5} }
+
+\pdfmapfile{+sansmathaccent.map}
+\setbeamertemplate{footline}[frame number]
+\beamertemplatenavigationsymbolsempty
+
+%\setbeamercolor{block body}{bg=normal}
+\setbeamercolor{block title}{bg=blue!60,fg=white}
+
+%-------------------Titlepage content--------------------------------
+
+\title{What drives demand for playlists on Spotify?}
+\vspace{5 mm}
+\author[shortname]{Max J. Pachali\inst{1}, Hannes Datta\inst{1}}
+\institute[shortinst]{\inst{1} Tilburg University, The Netherlands}
+
+\date{
+ Bocconi University \\
+ %\today
+ April 12, 2024
+}
+
+%-------------------Document-------------------------------
+
+\begin{document}
+
+% comment the following line out to generate a short version of the deck (e.g., for a shorter, 15-20-minute presentation)
+
+%\includeonlyframes{shortversion}
+
+\begin{frame}[label=shortversion]
+
+\titlepage
+
+\end{frame}
+
+%-------------------TOC----------------------------------------
+%\section[Outline]{}
+%\frame{\tableofcontents}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------Introduction------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+\begin{frame}[label=shortversion]
+
+\frametitle{Concerns about market power of digital platforms}
+
+\begin{itemize}
+
+	\item Digital platforms play an important role in society and economy 
+
+	\item Platforms have started to dominate many industries 
+		\begin{itemize}
+		\item online retailing (e.g., Amazon)
+		\item search and search advertising (e.g., Alphabet/Google)
+		\item social media (e.g., Meta/Facebook)
+
+	\end{itemize}
+	
+	\item Policy-makers around the world call for heightened transparency %and antitrust enforcement
+		\begin{itemize}
+		\item EU Digital Markets Act: Non-compliance investigation opened against Alphabet \citep[self-preferencing in search; ][]{self_preferencing_skiera}, Meta ("pay or consent") and Apple (uninstall iOS apps) in March 2024\footnote{\url{https://ec.europa.eu/commission/presscorner/detail/en/ip_24_1689}} 
+		
+  %\item U.S. Justice Department accuses Google of "illegally protecting its monopoly over search and search advertising" (20 Oct. 2020)\footnote{"U.S. Accuses Google of Illegally Protecting Monopoly", 20 Oct. 2020, \url{https://www.nytimes.com/2020/10/20/technology/google-antitrust.html}}
+		\item U.S. Congressional Hearing: Amazon, Apple, Facebook and Google wield market power "to crush competitors and amass data, customers and sky-high profits" (30 Jul 2020)\footnote{"Amazon, Apple, Facebook and Google grilled on Capitol Hill over their market power", 30 Jul 2020, \url{https://www.washingtonpost.com/technology/2020/07/29/apple-google-facebook-amazon-congress-hearing/}}
+	\end{itemize}	
+	
+	
+\end{itemize}
+	
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[label=shortversion]
+
+\frametitle{Evolution of power dynamics in the music industry}
+
+    \begin{center}
+    \begin{figure}
+    \includegraphics[width=.4\textwidth]{../img/taylor_swift.png}
+    \caption{Taylor Swift (Universal Music Group), with almost 100m monthly listeners}
+    \end{figure}
+    \end{center}
+    \vspace{-.2cm}
+\begin{itemize}
+
+    \item Major music labels (Warner, Sony and Universal) used to control content distribution  \citep[][]{prey_2020} and exerted great influence over how music was advertised and sold at offline retailers \citep[][]{du_gay_and_negus_1994}
+
+    \item Today, platforms have overtaken traditional revenue streams of content producers (84\% in 2022)
+    \begin{itemize}
+            \item Streaming services unbundle songs produced by major label artists and creates new products (i.e., playlists)
+            \item Users mostly consume music by listening to playlists on music streaming platforms like Spotify, the leading service\footnote{\href{Market shares}{https://musically.com/2019/12/09/report-spotify-has-36-market-share-of-music-streaming-subs/}: Spotify: $36$\%, Apple Music: $18$\%, Amazon Music $13$\%, Tencent Music: $10$\%, Google/YouTube Music $5$\%.}
+            \item Spotify may exert market power through its access to user data and the ability to curate popular playlists \citep{AGUIAR2021102765}
+
+        \end{itemize}
+	%\item "Playlists are the top tool Spotify is currently employing to expand their platform empire"\footnote{Quote by Liz Pelly (\url{https://tisch.nyu.edu/about/directory/clive-davis-institute/elizabeth-pelly}) taken from \url{https://watt.cashmusic.org/writing/thesecretlivesofplaylists}, accessed October, 19, 2020.}
+	%\item Yet, not much is known about the drivers of users' playlist demand on Spotify 
+	%\item Drivers of playlist demand mirror power (im-)balances in the music streaming market
+			
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[label=shortversion]
+
+\frametitle{Demand structure and platform power}
+
+	\begin{itemize}
+    %\item We study the drivers of demand for playlists on Spotify
+	\item The demand structure mirrors the power imbalances between music producers and Spotify. For example, if users mainly follow playlists because\dots
+	
+	\begin{enumerate}
+	\item \textbf{playlists contained songs of popular artists:} major record labels who signed popular artists would be powerful
+	\item \textbf{playlists were featured in the app:} Spotify would be powerful by deciding which playlists to highlight (and thereby steer revenue distribution)
+    \end{enumerate}
+	\vspace{.2cm}
+\item Our goal is to contrast two \textit{drivers of playlist followers} in a 2W-FE \citep[e.g.,][]{shapiro_hitsch_tuchman_2021} and synthetic DiD model \citep{SDiD_AER_Arkhangelsky_21}.
+
+\item We compare the \textbf{short-term} demand elasticity of \textbf{featuring playlists} on Spotify's Search Page and the elasticity of \textbf{adding major-label superstar artists} (e.g. Ed Sheeran) to playlists. 
+
+\item Our estimates are robust under various model specifications and generalizable to popular playlists in many music categories
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% long version only
+\begin{comment}
+\frame{
+\frametitle{Preview of data and results}
+
+\underline{Data:}
+
+\begin{itemize}
+\item Daily data set of about $30$k+ playlists in the period of October 2019 until March 2020 collected from \textit{Chartmetric.com}
+\item The data is complemented with daily information about which playlists get featured in the Spotify app scraped from \textit{everynoise.com/worldbrowser.cgi}
+
+\end{itemize}
+
+\vspace{0.25cm}
+
+\underline{Findings:}
+
+\begin{enumerate}
+%\item Playlists curated by Spotify attract (by far) the largest number of followers 
+%\begin{itemize}
+%\item[$\rightarrow$] Strong brands of Spotify playlists (e.g., "Deep House Relax") %formed by professional editors who design a theme and hypothesis for every playlist
+%\item[$\rightarrow$] Data advantage over remaining curators %(e.g., major labels, artists, etc.)
+%\end{itemize}
+\item Users are fairly sensitive to following playlists that are featured on Spotify's Search Page ($.95\%$)
+\item In comparison, the elasticity of adding content from major-label superstars is much smaller ($.45\%$)
+\begin{itemize}
+\item[$\rightarrow$] Demand elasticity of featuring is about twice as high than the elasticity of adding superstar content 
+\item[$\rightarrow$] Superstar artists remain a relevant asset for major music labels
+\end{itemize}
+%\item Our results are \textit{robust} as they hold under various model specifications and \textit{generalizable} as the data includes 30+k playlists from various music categories (60+)
+\end{enumerate}
+
+}
+\end{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% long version only
+
+\begin{comment}
+\frame{
+\frametitle{Related literature}
+
+\begin{enumerate}
+
+\item Effects of \textit{digitization} on production, consumption, and consumer welfare
+\citep[e.g.,][]{Datta_etal_MktScie,Aguiar_Waldfogel_2018_JoPE}
+
+\begin{itemize}
+\item[$\rightarrow$] We study \textit{playlist demand}, rather than (self-directed) \textit{song consumption}
+
+\end{itemize}
+\vspace{.3cm}
+\item Spotify's \textit{playlist power}: Focusing on 6 exceptionally popular playlists, \citealp{Aguiar_Waldfogel_power} document Spotify's power to  influence  song  and artist success%.   According  to  their  estimates,  appearing  on "Today’s Top Hits"  raises a song’s streams by almost 20 million
+\begin{itemize}
+\item[$\rightarrow$]  We use a representative sample of \textit{thousands} of popular playlists
+\item[$\rightarrow$] Our data contains daily information about which playlists get \textit{featured} in category sections on Spotify's Search Page%, and we find that users are quite responsive to these "promotions" of playlists
+%\item[$\rightarrow$] Our findings shed light on the \textbf{power imbalances} between major music producers and Spotify 
+\end{itemize}
+
+
+\end{enumerate}
+
+}
+\end{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Data sources}
+
+\frame{
+\frametitle{Focus on the playlist ecosystem on Spotify}
+\vspace{0.1cm}
+\begin{figure}
+\begin{center}
+\includegraphics[height=3.8cm]{../img/deephouse_2024.png}
+\caption{Playlists are a curated lists of songs centered around a theme,
+e.g., genre ("Deep House"), mood ("Relax"), or activity.}
+\end{center}
+\end{figure}
+\begin{itemize}
+	%\item "\textit{Playlists are the top tool Spotify are currently employing to expand their platform empire}"%\footnote{Quote by Liz Pelly from \url{https://watt.cashmusic.org/writing/thesecretlivesofplaylists}.}
+	\item Thousands of lists available, curated by Spotify, major and indie labels and users.
+	 \item Playlist curators add or remove tracks based on perceived fit with a playlist's brand image.
+	\item Mean (median) play duration of playlists equal 11.4h (5h).
+	%\item Most Spotify playlists are managed by professional editors that change compositions (i.e., add or remove tracks) at fixed intervals --- mostly at the weekly level
+	 %\item The professionally managed playlists create their own brand --- each has its own hypothesis, theme or audience that editors were thinking about
+	\item Content producers generate revenues per stream of their tracks on any playlist. %\footnote{Consumption on playlists account for a $30$\% share of listening time, and therefore royalties. Another $30$\% comes from users' personal music libraries - likely \textit{resulting} from discovery via playlists.}  
+	%\footnote{"[...] awesome way to reach huge audiences instantly [...]" (Avicii, 2018, https://tinyurl.com/yb7q2svn)} %https://open.spotify.com/track/7tJshy0IW7NZeBqrKSFJra
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{comment}
+\begin{frame}
+
+\frametitle{The Spotify playlist landscape}
+
+\begin{enumerate}
+\item \textbf{Spotify editorial playlists}
+	\begin{itemize}
+	\item{Like "Latin Pop Hits" (non-personalized), or "Deep House Relax" (semi-personalized)}
+	\item{Curated by a team of music experts and genre specialists from around the world hired by Spotify}
+	\item{Spotify curates about 14,961 editorial playlists and attracts $63$\% of all playlist followers}
+	\end{itemize} 
+\item \textbf{Spotify algorithmic playlists}
+	\begin{itemize}
+	\item Automatically created for each user by Spotify's algorithms
+	\item Users access these playlists in the "Made for You" section in the Spotify app (e.g., "Discover Weekly", "Release Radar", "On Repeat", "Your Daily Mixes", "Family Mix")
+	\item "Discover Weekly" and "Release Radar" are updated weekly on every Monday and every Friday, respectively
+	\end{itemize}
+\item \textbf{Professionally curated playlists}
+	\begin{itemize}
+	\item{The three major music labels and many independent labels also operate own playlist brands}\footnote{Sony (with Filtr), Universal (with Digstr), and Warner Music (with Topsify).}
+	\item{"Tastemakers" --- artists, radio stations, brands, or influencers that curate music}
+	\end{itemize} 
+\item \textbf{User playlists}
+	\begin{itemize}
+	\item Users can also share their playlists with one another and, in doing so, generate "followers" for their own libraries
+	\end{itemize}
+
+\end{enumerate}
+
+\end{frame}
+\end{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------Data---------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[label=shortversion]
+
+\frametitle{Data}
+\framesubtitle{Cross-sectional playlist data (April 2020)}
+
+\begin{itemize}
+	
+	\item 1.2m playlists obtained from \textit{Chartmetric.com}
+	\item Follower distribution across playlists is very skewed: the top 1\% (12,153) have a follower share of 84\% of the 1.2 million lists; $50\%$ are never followed
+	\item This sample: focus on \textbf{$30k+$ popular playlists}, covering \textbf{$90\%$} of platform followers
+\end{itemize}
+	\vspace{-.2cm}
+\input{../output/figures_and_tables/curatorswide.tex}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[label=shortversion]
+
+\frametitle{Data}
+\framesubtitle{Longitudinal playlist data (November 2019 - March 2020)}
+
+	\begin{itemize}
+    
+    \item Daily aggregate \textbf{playlist followers} provided by \textit{Chartmetric.com}\footnote{We rely on playlist \textit{followers} as our measure for demand because the objective of playlist editors is to maximize follower outreach. In addition, playlist \textit{listeners} are unavailable for many playlists (including relatively popular ones). Playlist \textit{followers} and \textit{listeners} correlate strongly ($\rho = .71$).}
+	\vspace{.2cm}
+	\item Daily information on which track was available on a playlist
+	\begin{itemize}
+		\item[$\rightarrow$] releasing (major) label (e.g., Universal, Sony, Warner),\footnote{Regular expression-based algorithm, available at \url{http://github.com/hannesdatta/musicMetadata}}
+		\item[$\rightarrow$] popularity of content: e.g., artist cross-listed on the Billboard or Spotify Charts ("superstars"),
+		\item[$\rightarrow$] time since release ("track age"),
+		\item[$\rightarrow$] track length (in minutes), 
+		\item[$\rightarrow$] numeric measures characterizing the track's acoustic attributes (danceability, energy, speechiness, acousticness, instrumentalness, liveness, valence, tempo, loudness)
+	\end{itemize}
+
+	%\item Daily variation of recommendation intensity at the category level
+	%\begin{itemize}
+	%	\item[$\rightarrow$] proxied by the daily refreshment\footnote{Defined as the number of songs added to algorithmic playlists of a particular category, divided by the number of algorithmic playlists in that category.} of Spotify's algorithmic playlists in our sample
+	%\end{itemize}
+	
+	\end{itemize}
+	
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Data}
+\framesubtitle{Feature data from Spotify's Search Page}
+
+
+\vspace{0.1cm}
+\begin{center}
+\centering
+\begin{figure}
+\includegraphics[height=4cm]{../img/search_page_2024.png}
+\caption{Spotify features a selected number of playlists on the Search Page in their app (e.g., "mood", "dinner", "pop", ``EDM").}
+\end{figure}
+\end{center}
+\vspace{-.2cm}
+
+\begin{itemize}
+ \item[$\rightarrow$] Collect daily data on featured playlists on Spotify from \textit{everynoise.com/worldbrowser.cgi} \citep[October 2019 - March 2020; ][]{scraping}\footnote{Data records a timestamp, category (e.g., ''latin'', ''focus'', ''chill'', ''rock'', etc.), the country name, and a list of playlist IDs featured in the category/country at the time of data retrieval.}
+ 	%\item $4,000+$ playlists were featured during our period of observations in any of the sections and hence a very small fraction (0.56\%) of all playlists
+ \item[$\rightarrow$] Merge data with playlist panel by ID and date
+ \end{itemize}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+    \frametitle{Data}
+    \framesubtitle{Dynamic categorization of playlist ecosystem}
+   
+   \begin{itemize}
+   
+       \item To account for competition in modeling playlist demand, we need to observe \textbf{playlist categories} in our data.
+       \vspace{.2cm}
+       \item We \textbf{create our own classification}, using track-level tag words, so that playlist with tracks of similar tags belong to the same category.
+       % variation in weekly keywords arises from the fact that tracks are added and removed over time.
+       %\item Among the 1.2 playlists, we drop 436,183 playlists that do not contain any tag word in our sample
+       %\item For the remaining 779,117 playlists, the average number of tag words is 2.66
+       \begin{itemize}
+          \item[$\rightarrow$] Step 1) Train association rule algorithm \citep{hastie_09}
+               \begin{itemize}
+                   \item 700k+ playlists and 2k+ keywords
+                   \item Based on 10 most frequently occurring (track-level) keywords on a playlist in April 2020, as well as up to eight (playlist-level) keywords.
+               \end{itemize}
+
+          \item[$\rightarrow$] Step 2) Apply association rules
+          \begin{itemize}
+            \item Apply $2,400$ association rules in a \textit{weekly playlist panel} containing tag words.
+            \item A playlist may be associated with multiple categories in a given week.
+            \item Require categories to be present for at least four consecutive weeks to avoid spurious classifications.\footnote{Further, we assume a category to be absent if it has not been observed in the data for at least four weeks.}
+            
+          \end{itemize}
+          \item[$\rightarrow$] Step 3) Evaluate categorization
+          \begin{itemize}
+            \item Most playlists (90.4\%) never change categories
+            \item 6.1\% ($2.0\%$) playlists change categories once (twice)
+          \end{itemize}
+
+       \end{itemize}
+   
+   \end{itemize}
+     
+\end{frame}
+   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{comment}
+ \frame{
+ \frametitle{Association rule mining algorithm}
+ \framesubtitle{Dynamic categorization of playlist ecosystem}
+  
+ \begin{itemize}
+ 		
+\item We initially seek all item sets $\mathcal{K}_l$ whose confidence exceeds the threshold of $.5$.
+\item We thus focus on pairs of keywords where the occurrence of one has a chance higher than $50\%$ to predict the other.
+
+\begin{align}
+\begin{split}
+    \{\mathcal{K}_l | T(\mathcal{K}_l) & > t\},\ \text{where} \\ 
+    T(\mathcal{K}_l) & = \hat{Pr}\left[\bigcap_{k \in \mathcal{K}_l} (X_k = 1)\right] = 
+    \frac{1}{N} \sum_{i=1}^{N} \prod_{k \in \mathcal{K}_l} x_{ik}
+\end{split}
+\label{eq:rule_mining}
+\end{align}
+
+
+%\item This threshold is not small considering the total number of keywords (1,712) and the average number of keywords per playlist (2.66) %$\rightarrow$ 5,008,986,720 ways to pick three keywords
+
+
+\end{itemize}
+}
+
+\end{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{comment}
+ \frame{
+ \frametitle{Steps of algorithm}
+ \framesubtitle{Categorization of playlist ecosystem}
+  
+ \begin{itemize}
+
+\item We base our classification on Spotify's pre-defined genres in the "Genres \& Moods" browse sections on the Search Page (31 main genres):
+\vspace{0.1cm}
+
+\textit{afro, alternative, anime,  arab, blues, chill, christian music,  classical, comedy, country, desi, electronic/dance, focus, folk, acoustic, funk, video game music, hip hop, indie, jazz, latin, metal, party, pop, punk, r\&b, regional mexican, rock, romance, sleep, soul, student}
+
+\begin{enumerate}
+\item For every $genre$ $g$ in $main\  genres$, select the subset of playlists that contain $g$ as keyword
+\item Apply the Apriori algorithm \citep{discovery_rules} to identify the higher support item sets (Equation \ref{eq:rule_mining}) from the subset of playlists that contain the main genre $g$ as a keyword, i.e., $\mathcal{K}_l^g(\tilde{X})$ with $\tilde{X} = \{X| main\ genre\ g\in keywords\}$ \footnote{By conditioning on a main genre at each iteration, we ensure that our classification is consistent with Spotify's browse sections.} 
+%\item[$\rightarrow$] Apriori algorithm: \textbf{first pass} over the data computes the support of all single item sets; discard low support item sets; \textbf{the second pass} computes the support of all item sets of size two that can be formed from pairs of the single item sets surviving the first pass, on so forth 
+\item Cast set of association rules surviving minimum confidence (90\%) and lift (1):
+			$$\mathcal{R}_g =\{A\rightarrow B | \mathcal{K}_l^g\}$$
+\item Stack total rules  $\mathcal{R} =\{ \mathcal{R}_g\}$
+\end{enumerate}
+
+\end{itemize}
+
+}
+
+\end{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{comment}
+ \frame{
+ \frametitle{Classification output}
+ \framesubtitle{Dynamic categorization of playlist ecosystem}
+  
+ \begin{itemize}
+ 		
+\item We mine in total 2599 rules for $A \rightarrow B, \  A  \cup B = \mathcal{K}$, where the consequent (B) is a main genre --- i.e., a pre-defined category from the "Genres \& Moods" browse sections on the Search Page 
+
+    \item \textbf{31 main genres}: Spotify's pre-defined categories in the "Genres \& Moods" browse sections on the Search Page\footnote{By conditioning on a main genre, we ensure that our classification is consistent with Spotify's browse sections.}
+    \vspace{0.1cm}
+    
+    \color{blue}{\textit{afro, alternative, anime,  arab, blues, chill, christian music,  classical, comedy, country, desi, electronic/dance, focus, folk, acoustic, funk, video game music, hip hop, indie, jazz, latin, metal, party, pop, punk, r\&b, regional mexican, rock, romance, sleep, soul, student}}
+    
+    \color{black}
+
+    \item Output structure: $keyword\ \rightarrow$ \color{blue} \textit{main genre} \color{black}, 
+    e.g.: \\ $pop\ rap \ \rightarrow$ \color{blue} \textit{hip hop}, \color{black} \\  $neo\ soul \ \rightarrow$ \color{blue} \textit{r\&b} \color{black} \\ $vocal\ jazz\ \rightarrow$ \color{blue} \textit{romance} 
+\end{itemize}
+}
+\end{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[label=shortversion]
+
+\frametitle{Data}
+\framesubtitle{Dynamic categorization of playlist ecosystem\footnote{We retain categories with at least 16 playlists.}}
+
+%\begin{itemize}
+%\item Top categories derived from dynamically applying association rules \citep{hastie_09} to track-level keywords at the playlist-week level\footnote{Our categorization takes associations to multiple main genres as separate clusters, i.e. rock \& romance is a different category than rock. We retain categories with at least 16 playlists.}:
+%\end{itemize}
+
+\input{../output/figures_and_tables/categories.tex}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------MODEL FREE EVIDENCE--------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Descriptives}
+
+
+\begin{frame}
+
+\frametitle{Playlists without and with major label superstars}
+
+\vspace{.2cm}
+\textbf{Major Label Superstars}: Appearance in the Top 10 of the US Spotify Charts (2016-2019) or US Billboard Charts (1999-2019) \& track released by a major music label (Universal, Warner, Sony)
+
+\input{../output/figures_and_tables/superstarplaylist.tex}
+
+\begin{itemize}
+	\item Playlists with major label superstars have more followers (not a causal claim!)
+	\item Spotify is less likely to add major label superstar content.
+    \item Playlists with major label superstars also contain many more tracks, have a higher content share of (other) major label music, and are updated more frequently.
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%
+
+
+\begin{frame}[label=shortversion]
+
+% Commands to insert colored shapes
+\newcommand{\blackrectangle}{\tikz\fill[black] (0,0) rectangle (1ex,1.5ex);}  % Black rectangle
+\newcommand{\greysquare}{\tikz\fill[gray] (0,0) rectangle (1.5ex,1.5ex);}         % Grey square
+
+    \frametitle{Featuring Activity on Spotify}
+    
+    \begin{figure}
+    \centering
+    \includegraphics[scale=0.4]{../output/figures_and_tables/browsesection_changes.pdf}
+    \label{browsesections}
+    \caption{Featuring activity by category across time on Spotify's Search Page. Category updates indicated with \blackrectangle. Category availability indicated with \greysquare.}  % Black dot}
+    \end{figure}
+       \vspace{-.2cm} 
+    \begin{itemize}
+        \item Categories are typically not updated together.
+        \item Some seasonal categories exist; exclude "2019" (others in a robustness check)
+        %\item By end November 2019, Spotify decided to stop featuring major label playlists and substantially increased the support of its own playlists on the Search Page\footnote{This policy shift is unlikely driven by unobserved user taste shocks, but reflects Spotify's strategic "goal to incorporate new or smaller artists into a variety of playlists", see \href{https://artists.spotify.com/blog/behind-the-playlists-your-questions-answered-by-our-playlist-editors}{"Behind the Playlists: R\&B"}, accessed April 18, 2023.} 
+    \end{itemize}
+    
+\end{frame}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+\begin{frame}
+
+\frametitle{Playlists featured (vs. non-featured) on Spotify's Search Page}
+
+    \vspace{.2cm}
+    \begin{center}
+\textbf{Featuring}: Playlist availability on Spotify's Search Page (in at least one country and category)
+\end{center}
+\input{../output/figures_and_tables/promoplaylist.tex}
+    
+
+\begin{itemize}
+	\item Only few playlists get featured.
+    \item Featured playlists are more popular than non-featured playlists.
+    \item Spotify mostly promotes its own playlists, containing fewer number of tracks and more updates.
+\end{itemize}
+
+
+\end{frame}
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------Empirical Framework--------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Empirical Framework}
+
+
+\begin{frame}%[label=shortversion]
+
+    \frametitle{Identification Challenges}
+    
+    \textbf{Goal:} Estimate effect of \textbf{featuring} on the Search Page or \textbf{adding tracks} by major label superstars
+    \vspace{.5cm}
+
+    \textbf{Challenges:}
+    \begin{enumerate}
+    \item counterfactual unobserved (i.e., we only see playlists being treated or not-treated on any date)
+    \item treatment may be endogenous (e.g., correlated with Spotify's or the focal curators' expectations about changes in demand for the playlist)
+    \begin{itemize}
+        \item[$\rightarrow$] For example, Spotify may add more of its own playlists to the Search Page to counteract
+        (amplify) periods of naturally low (high) demand. 
+        \item[$\rightarrow$] Relatedly, playlist curators may add tracks by extremely popular major label artists to correct a downward move in followers.
+    \end{itemize}
+    \item staggered treatment, requiring careful aggregation of treatment effects \citep{baker2022much} 
+    \item concurrent changes to a playlist (e.g., characteristics unrelated to treatment)
+    \item spillovers from treated to non-treated playlists (and vice versa), violating the stable unit treatment value assumption (SUTVA) \citep{goldfarb2022conducting}
+    \end{enumerate}
+    
+    \end{frame}
+
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}%[label=shortversion]
+
+\frametitle{Dual Modeling Approach}
+
+
+Address empirical challenges with \textbf{two models}, relying on different assumptions.
+
+%Playlists are bundles of songs  differentiated by acoustic attributes, content of major label artists, play duration, curator type, \dots
+%\item Every playlist has its own theme or hypothesis and users have different preferences for these "brands"     
+%\item Users can choose to follow, and ultimately also listen to, thousands of differentiated playlists 
+%\item We model the main drivers of playlist followers in a reduced-form log-linear demand model \citep{shapiro_hitsch_tuchman_2021}
+%\item Our goal is to provide estimates of the demand elasticity of featuring playlists in browse sections on Spotify's Search Page and the elasticity of adding popular major label tracks to playlists
+
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}  
+\begin{center}
+\textbf{2W-FE}
+\end{center}
+\begin{itemize}
+    \item reduced-form log-linear demand model \citep{shapiro_hitsch_tuchman_2021}
+    %\item fewer assumptions compared to structural demand model \citep[e.g.][]{Berry1994}
+    \item flexibly include characteristics of main competitors based on dynamic categorization
+    \item identification assumption: conditional unconfoundedness
+    \item easy to run at scale
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\textwidth}  
+\begin{center}
+\textbf{Synthetic DiD (SDID)}
+\end{center}
+\begin{itemize}
+    \item models playlists' log-follower evolution with a control group \citep{SDiD_AER_Arkhangelsky_21}
+    \item directly addresses endogenous selection (re-weighing never-treated observations; near-to excellent fit in pre-treatment period)
+    \item accounts for staggered treatment timing
+    \item identification assumption: parallel trends
+    \item relatively costly to run at scale
+
+\end{itemize}
+\end{column}
+
+\end{columns}
+\vspace{1cm}
+\begin{itemize}
+    \item[$\rightarrow$] Proceed with presenting these two models.
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[label=shortversion]
+
+\frametitle{2W-FE model}
+\framesubtitle{Specification}
+
+\begin{align} 
+    \begin{split} 
+    \text{log}(f_{pt}+k) =
+    & \gamma_{p,m(t)} + \gamma_t + \eta^{\text{feat}} \text{Treated}_{pt}^{\text{feat}} + \eta^{\text{star}} \text{Treated}_{pt}^{\text{star}} + \\ & + \beta \text{log}(ml_{pt}+k) + \omega \text{log}(r_{C(p),t}+k) + \phi^{\prime} x_{pt} + \psi^{\prime} x_{-pt} + \varepsilon_{pt}, 
+    \end{split}
+    \label{two_way_model}
+\end{align} 
+
+
+\underline{Coefficients of interest:}
+\begin{itemize}
+\item $\eta^{feat}$ measures the elasticity of featuring playlists on Spotify's Search Page
+\item $\eta^{star}$ measures the elasticity of adding tracks from major label superstar artists
+\end{itemize}
+\underline{Fixed effects:}
+\begin{itemize}
+%\item $\gamma_p$ denote time-invariant followers for playlist $p$ 
+\item $\gamma_{p,m(t)}$ denote playlist-month fixed effects. I.e., $\m(t) \in \{M_1, M_2, \dots \}$ 
+\item $\gamma_t$ are day fixed effects
+\end{itemize}
+\underline{Control terms:}
+\begin{itemize}
+\item $ml_{pt}$ is the share of tracks (in \%) on playlist $p$ that are released by a major label
+\item $\omega$ measures the effect of personalized recommendations on followers of playlist $p$\footnote{$r_{C(p),t}$ measures the number of songs added to algorithmic playlists in category $C(p)$, divided by the number of algorithmic playlists in category $C(p)$ ("recommendation intensity")}
+\item $\boldsymbol{\phi}^{T} \boldsymbol{x}_{pt}$ includes track age, playlist duration (in hours) and acoustic attributes of $p$
+\item $\psi^{T} x_{-pt}$ measures featuring and superstar addition of competing playlists\footnote{15 largest playlists in the same category, as obtained from the dynamic categorization using association rule mining.}
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{2W-FE model}
+\framesubtitle{Identification} 
+
+\begin{itemize}
+
+    \item Our identification strategy relies on including a rich set of playlist-month fixed effects and control variables ($\rightarrow$ identification challenge (4))
+    \vspace{.5cm}
+    \item What residual variation is left after including playlist-month fixed effects?
+    \begin{itemize}
+        \item Regress featuring indicator (left panel)%\footnote{Distribution among 3680 playlists that at least got featured in one section on the Search Page during our observation period.} 
+        and major label superstar indicator (right panel) on playlist-month fixed effects and remaining control variables 
+        \item Residual variation is normalized by the ratio of the standard deviation of these residuals relative to the sample mean.
+    \end{itemize}
+\end{itemize}
+
+\begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+\includegraphics[width=.9\linewidth]{../output/figures_and_tables/residual_variation_featuring_hist.pdf}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+ \includegraphics[width=.9\linewidth]{../output/figures_and_tables/residual_variation_mlshare_hist.pdf}
+\end{minipage}
+\end{figure}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\frame{
+%\frametitle{What variation is left after accounting for playlist-week fixed effects?}
+%
+%\begin{itemize}
+%\item The average residuals for, e.g., content popularity are implied as $\epsilon_{t}^{pop}=1/P \ \sum_{p=1}^P \text{log}(1+pop_{pt}) - (\gamma_p^{pop} + \gamma_{p,\tau(t)}^{pop})$
+%\end{itemize}
+%
+%\begin{figure}[t!]
+%\centering
+%\includegraphics[scale=0.5]{../output/figures_and_tables/residuals_pop_content_pop.pdf}
+%\label{recs}
+%\end{figure}
+%
+%\vspace{0.3cm}
+%
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{2W-FE model}
+\framesubtitle{Identification}
+
+\begin{itemize}
+
+    \item Substantial (quasi-random) variation left within weeks of a month (i.e., unrelated to unobserved demand factors), particularly for featuring activity
+    \item \textbf{But:} 
+        \begin{itemize}
+            \item cannot observe stability of user preferences or Spotify may update playlists based on shocks within a month ($\rightarrow$ identification challenge (2))\footnote{E.g., curators may change playlist compositions, such as the share of major label tracks, in response to time-varying demand shocks. A significant fraction of playlists (33\%) updates tracks at a higher frequency than the weekly level.}
+            \item does not account for different timing of treatment effects ($\rightarrow$ identification challenge (3))
+            %\item For the "average playlist", it equals 4\% of the sample average of featuring playlists on the Search Page  
+        \end{itemize}
+
+    \vspace{.5cm}
+\item[$\rightarrow$] propose additional identification strategy (that relies on different assumptions); ideally delivers comparable results to the 2W-FE model
+
+\end{itemize}
+    
+%\begin{figure}[t!]
+%\centering
+%\caption{Distribution of average update frequency (in days) across playlists.
+%}
+%\includegraphics[scale=0.25]{../output/figures_and_tables/update_frequency.eps}
+%\label{dist_update_freq}
+%\begin{flushleft}
+%\vspace{-0.3cm}
+%\footnotesize{Note: Update frequency is defined as the number of days until a new song has been added or an existing song was removed on playlists.}
+%\end{flushleft}
+%\end{figure}
+
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[label=shortversion]
+
+    \frametitle{SDID}
+    \framesubtitle{Overview}
+    
+    \begin{itemize}
+
+    \item Synthetic difference in difference (SDID) model~\cite{SDiD_AER_Arkhangelsky_21} 
+        \begin{itemize}
+        \item addresses endogenous selection into treatment and control groups (identification challenge (2)) by weighing observations of never-treated playlists to generate ``clones" of treated observations
+        \item accounts for staggered treatment (identification challenge (3)) by repeatedly applying the SDID estimator on the subset of data implied by unique treatment dates
+        \end{itemize}
+        \vspace{.2cm}
+    \item Exclusion restriction
+        \begin{itemize}
+            \item Synthetic control playlists precisely match follower evolution of treated playlists prior to treatment (MSPE is virtually zero)
+            \item \textbf{But}: stability of playlist characteristics (e.g., other curators implementing changes after treatment), and SUTVA (use only control lists from other categories) ($\rightarrow$ identification challenge (4))
+        \end{itemize}
+    \end{itemize}
+    
+    
+    \end{frame}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+\begin{frame}
+    \frametitle{SDID}
+    \framesubtitle{Treatment events: Featured playlists}
+    
+    \begin{itemize}
+    \item Drop end-of-the-year category (``2019") 
+    \item Leverage \textbf{first-time featuring} of 113 playlists on 23 unique dates\footnote{To have sufficient pre-treatment data, we require playlists to have been observed not featured for at least two weeks. We retain observations 15 days before and 15 days after treatment and require that playlists remain treated in the after-period for at least seven days.}
+    \item Narrow analysis window (15 days) mitigates impact of confounding variables \citep[e.g.][]{orhun_16}.
+    \item Examples of featured playlists: “Reggaeton Classics” (1.9 million followers), “Tech House Chargers”
+    (4.5k followers); mostly curated by Spotify 
+    \end{itemize}
+    
+    \center{
+    \includegraphics[width=.8\textwidth]{../output/figures_and_tables/treatmentvar_promo.pdf}
+    }
+    
+\end{frame} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \frametitle{SDID}
+    \framesubtitle{Treatment events: Major label superstar content}
+    
+    \begin{itemize}
+    \item Leverage \textbf{addition of major label superstar tracks} to 2,248 playlists on 107 unique days.\footnote{Superstar artists are artists appearing in the Spotify Top 10 (Dec '16--July '19) or the US Billboard Top 10 (1999--2019), and include both established (e.g., Alicia Keys, Jennifer Lopez, Ed Sheeran) as well as new (e.g., Shawn Mendes, Billie Eilish, Lizzo) artists.}
+    \item Keep playlists at least 15 days before and 15 days after treatment, with the requirement that newly added tracks be listed for at least seven days after the event.
+    \item Playlists can be “treated” multiple times; select only the first treated event.\footnote{Under the restriction that the second treatment did not happen in the fifteen days after the first treatment.}
+    \end{itemize}
+
+    \center{
+    \includegraphics[width=.8\textwidth]{../output/figures_and_tables/treatmentvar_ml.pdf}
+    }
+    
+\end{frame} 
+    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[label=shortversion]
+
+    \frametitle{SDID}
+    \framesubtitle{Specification and Estimation}
+    
+    \begin{itemize}
+        \item Conditional on every treatment date $a \in A$, $P_{co,a}$ is a balanced panel of never-treated control playlists\footnote{Control playlists selected from unrelated categories (SUTVA).} and $P_{tr,a}$ a panel of treated playlists that get exposed after $T_{pre} = 15$ and are observed for $T_{post} = 15$ consecutive days.%, with $P_a=P_{co,a}+P_{tr,a}$ and $T=T_{pre}+T_{post}$. 
+        \item Apply Algorithm 1 in \cite{SDiD_AER_Arkhangelsky_21} on every of the $|A|$ balanced panels, and aggregate treatment effects across event dates using date-specific number of treated playlists as weights.\footnote{For each adoption date $a \in A$, the variance of the average treatment effect estimator is computed using the placebo method \citep[Algorithm 4 in][]{SDiD_AER_Arkhangelsky_21} using 200 replications. Global standard errors are given as the square root of the variance of the aggregate treatment effect estimator \citep[e.g.,][]{Imbens_JoEconmetrics_22}.}
+    \end{itemize}
+    
+    \begin{align} 
+        \begin{split}
+        \left(\hat{\eta}_a^{\text{con}}, \hat{\mu}_a, \hat{\gamma}_{p,a}, \hat{\gamma}_{t,a}\right) = \underset{\eta^{\text{con}},\mu, \gamma_{p}, \gamma_{t}}{\text{arg min}} \left\{\sum_{p=1}^{P_a} \sum_{t=1}^T \left( \tilde{f}_{pt} - \mu - \gamma_{p} - \gamma_{t} - \eta^{\text{con}} \text{Treated}_{pt}^{\text{con}} \right)^2 \hat{\omega}_{p,a} \hat{\lambda}_{t,a} \right\}
+    \end{split}
+    \end{align} 
+
+    \vspace{-.3cm}
+    \underline{Parameters:}
+    \begin{itemize}
+        \item $\eta^{\text{con}}$ measures the elasticity of featuring or superstar addition, where con $\in \{\text{feat},\text{star}\}$
+        \item $\tilde{f}_{pt} = \text{log}(f_{pt}+k)$ is the dependent variable (log followers)
+        \item $\hat{\omega}_{p,a}$ are weights aligning pre-exposure trends in log followers of never-treated playlists with those of treated units
+        \item $\hat{\lambda}_{t,a}$ are time weights balancing pre-exposure time periods with postexposure ones
+        \item $\gamma_{p}$ and $\gamma_{t}$ are unit and time fixed effects
+    \end{itemize}
+
+   
+\end{frame}
+
+
+%-------------------Results--------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Results}
+
+
+\begin{frame}[label=shortversion]
+
+    \frametitle{Treatment effect estimates}
+    
+    \input{../output/figures_and_tables/results_slides.tex}
+    
+    \vspace{0.1cm}
+    
+    \begin{itemize}
+    \item MSPE is is virtually zero: exclusion restriction met
+    \item The (semi-) elasticity of featuring playlists on the Search Page ($.95\%$) is twice as high as the elasticity of adding major label superstar content ($.45\%$)
+    \item Results robust across 2W-FE and SDID models
+    %\item Effect of a major label's remaining content on a playlist is n.s. (not reported here)
+    \end{itemize}
+    
+\end{frame}
+    
+
+\begin{frame}[label=shortversion]
+\label{rob:overview}
+    \frametitle{Additional analyses and robustness checks}
+    
+    \begin{itemize}
+        \item Does a major label's \textit{remaining} content share on a playlist affect demand? 
+            \begin{itemize}
+                \item Include a label's share in the 2W-FE model \hyperlink{rob:firsttime}{(Details →)}.
+                \item Coefficient reveals it does not affect demand beyond artists' superstar status ($\beta=.0007$, $p=.81$).
+            \end{itemize}
+        \item Are treatment effects sensitive to potentially seasonal categories (e.g., New Year resolutions, Spotify Awards)
+        \begin{itemize}
+            \item Remove categories and re-estimate 2W-FE and SDID models.
+            \item Coefficients are virtually the same \hyperlink{rob:seasonal}{(Details →)}.
+        \end{itemize}
+        \item Stabilization constant $k=1$ (e.g., $log(x+k)$)
+            \begin{itemize}
+                \item Use IHS transformation instead \citep{ihs}.
+                \item No notable changes in elasticity estimates \hyperlink{rob:ihs}{(Details →)}.
+            \end{itemize}
+        \item Align sample of 2W-FE and SDID models
+            \begin{itemize}
+                \item 2W-FE uses any treatment effect, while SDID focuses on first-time treatment only.
+                \item Re-estimate 2W-FE on first-time treatment only.
+                \item Elasticity estimates very comparable \hyperlink{rob:firsttime}{(Details →)}.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------Conclusions---------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conclusion}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[label=shortversion]
+
+\frametitle{Implications}
+
+	\begin{itemize}
+		\item[(1)] Spotify can effectively guide user attention to certain playlists through promotions on the Search Page
+        \begin{itemize}
+            \item[$\rightarrow$] creates concerns that Spotify could exert unfair market power (e.g., by promoting songs via playlists in its app to the advantage of some producers over others)
+        \end{itemize}
+        \item[(3)] In the future, record labels may have to pay Spotify to be prominently featured on the platform (similar as proposed in Spotify's recently introduced Discovery Mode)
+		\begin{itemize}
+		    \item[$\rightarrow$] Discovery Mode allows  record labels to influence the algorithm that selects what music is played when using the auto-play  function
+		    \item[$\rightarrow$] By opting in, record labels agree to being paid a lower royalty rate for streams\footnote{\url{https://www.isrc.com/3-Things-To-Know-About-Spotifys-Discovery-Mode.php}}
+		\end{itemize}
+        \item[(4)] Regulators and policy-makers may consider that a certain fraction of non-Spotify curated playlists must be featured on the Spotify's Search Page to ensure fair competition (and avoid "self-preferencing")
+	\end{itemize}
+
+\end{frame}
+
+%\frame{
+%\frametitle{Discussion}
+%\begin{itemize}
+%		
+%\item[(1)] Revenues of major labels (and music producers more broadly) largely depend on Spotify's decisions about playlist compositions and featuring playlists on the Search page
+%\begin{itemize}
+%    \item everything equal, pitching tracks continues to be a good strategy
+%    \item lack of featuring is worrisome $\rightarrow$ ads? regulator?
+%\end{itemize}
+%\item[(2)] In relative terms, Spotify is much less dependent on the availability of popular major label tracks on its playlists
+%\begin{itemize}
+%    \item playlist brand is key to Spotify's market success
+%    \item labels can invest in broad catalogue of non-superstar content, but also need to "believe" such content matters
+
+%\end{itemize}
+%\item[(3)] Strategies to reduce Spotify's "playlist monopoly" and increase competition
+%\begin{itemize}
+%    \item curators should further invest in growing both the quantity and brand equity of their own playlist channels on Spotify; "playlist SEO"
+%    \item at the same time, they need to find ways to affect streams outside of Spotify's editorial playlist ecosystem $\rightarrow$ influence algorithmic plays via ads?
+
+%\end{itemize}
+
+%\end{itemize}
+
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\begin{frame}
+
+\frametitle{Limitations}
+
+\begin{itemize} 
+
+    \item Focus on short-term effects --- future research may consider long-term effects (e.g., dynamics in playlist preferences, long-run elasticities)
+    \item Listeners not available for a wide set of playlists (rely on followers)
+    \item Aggregate follower data --- individual-level and multi-platform data, as well as a more direct consumption measure (e.g., listeners) may capture playlist demand more accurately
+    \item Not all drivers of playlist demand available (e.g., announcements/ads, concerts)
+    \item Only some algorithmic playlists included --- it would also be important to quantify (Spotify's) power through personalized recommendations
+\end{itemize}	
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Future Research on Digital Media}
+
+\begin{itemize}
+    \item Quantification of power imbalances for digital media platforms --- one industry, one platform (potential to expand, e.g., when users multi-home)    
+     
+    \item Impact of AI-generated content on music supply and consumption
+
+    \item Impact of short video content on consumption and discovery
+    
+\end{itemize}
+
+
+\end{frame}
+
+
+
+
+\begin{frame}
+
+\frametitle{Recent Research and Resources}
+
+\begin{itemize}
+
+    \item Teaching web scraping and APIs
+        \begin{itemize}
+            \item \url{https://music-to-scrape.org} (learning platform)
+            \item \url{https://odcm.hannesdatta.com} (open education course)    
+        \end{itemize}
+    \item Open science
+        \begin{itemize}
+            \item How to do open science: A learning platform for students and researchers (\url{https://tilburgsciencehub.com})
+            \item \textit{``Toward Open Science in Marketing Research"}, coauthored with Lachlan Deer, Susanne Adler, Natalie Mizik and Marko Sarstedt; available at \href{https://osf.io/preprints/osf/f7a8c}{OSF}
+        \end{itemize}
+    \item \href{https://tilburg.ai}{tilburg.ai}
+        \begin{itemize}
+            \item lab to develop AI-driven apps for education
+            \item blog with inspiring teaching use cases
+            \item tutorials how to get the most out of ChatGPT and other tools (for students and researchers)
+        \end{itemize}
+\end{itemize}
+    
+\end{frame}
+
+\frame{
+\vspace{5 mm}
+\huge
+\begin{center}
+\textbf{Thank you for your attention!}
+
+\vspace{1cm}
+
+%\includegraphics[width=0.3\textwidth]{../img/qrcode_paper.png}
+\end{center}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------Appendix------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\frame{
+%\frametitle{Data}
+%\framesubtitle{Observing Personalized Recommendations}
+%\vspace{0.1cm}
+%\begin{center}
+%\centering
+%\includegraphics[height=4cm]{input/made-for-you.png}
+%\end{center}
+%\vspace{0.0cm}
+%\begin{itemize}
+%	\item Spotify uses playlists to serve machine-generated, personalized recommendations
+%	\item Users access these recommendations in the "Made for You" section in the Spotify App\footnote{Spotify also personalized content outside of the "Made for You" section, e.g., via semi-personalized/adaptive mass playlists. Unlike playlists in the "Made for You" section, users are unaware of these personalizations.}
+%	\begin{itemize}
+%	\item e.g., Discover Weekly, Release Radar, On Repeat, Repeat Rewind, Your Daily Mixes, Family Mix
+%	\end{itemize}
+	
+	
+%	\begin{itemize}
+%		\item Uniquely Yours: On repeat ("The songs you can't get enough of right now"), Repeat Rewind ("Past songs that you couldn't get enough of"), Your Top Songs 20xx ("the songs you loved most this year"), Family Mix ("Listen together with the people on your family plan"), Your Summer Rewind ("featuring your old summer favorites")
+%		\item Discover New Music: Release Radar ("Catch the latest music from artists you follow, plus new singles picked for you"), Discover Weekly ("Your weekly mixtape of fresh music. Enjoy new music and deep cuts picked for you")
+%		\item Your Daily Mixes: up to six; new songs by known artists
+%		\item Others: Tastebreakers\footnote{"Start 2019 by broadening your horizons - list of songs from genres and artists that you don't normally explore and we think you'll like"}, The Ones That Got Away\footnote{"[...] collection of songs you'll wish you'd have discovered earlier in the year"}
+%		\end{itemize}
+%\end{itemize}
+%}
+
+
+
+%References
+%\clearpage
+%\bibliography{bibliography.bib}
+%\bibliographystyle{chicago}
+%\newpage
+
+\begin{frame}[allowframebreaks]
+        \frametitle{References}
+        \bibliography{bibliography.bib}
+        \bibliographystyle{chicago}
+        
+\end{frame}
+
+
+\section*{Appendix}
+
+
+\frame{
+    \frametitle{Association rule mining algorithm \citep[e.g.,][]{hastie_09}}
+    \framesubtitle{Categorization of playlist ecosystem}
+     
+    \begin{itemize}
+   
+   \item Span the $(N \times P)$ matrix denoted as $X$ with elements $x_{n,p} \in \left\{0,1\right\}$, indicating whether a playlist $n$ contains keyword $p$
+   %\item The goal of the algorithm is to find joint values of $X$ that appear most frequently ("mode finding")
+   \item We seek to find subsets of the integers $\mathcal{K} \subset \left\{1,\dots,P\right\}$ such that 
+   
+   \begin{align}
+       Pr\left[\bigcap_{k \in \mathcal{K}} (X_k = 1)\right] = Pr\left[\prod_{k \in \mathcal{K}} X_k = 1\right]
+   \end{align}
+   
+   is large, where $\mathcal{K}$ is called an item set representing playlist keywords in our application and $X_k$ refers to the $k$-th column of $X$
+   
+   
+   \item Each item set is represented as a set of association rules: $$A \rightarrow B, \ \text{with}\ A \ \text{and}\ B\ \text{being disjoint subsets and}\ A  \cup B = \mathcal{K}$$ and $B$ is the "consequent" of the rule\footnote{Rule confidence: C = $P(A \bigcap B) / P(A)$. We set the minimum confidence to 50\%. Lift threshold: C/T(B). We set the minimum lift threshold to 1.}
+   \item Apply the Apriori algorithm \citep{discovery_rules} to identify the item sets
+   
+    \end{itemize}
+   
+   }
+   
+
+
+
+
+\begin{frame}[label=shortversion]
+
+    \frametitle{Average share of major label (ML) content per curator type}
+    
+    
+    \begin{figure}
+    \centering
+    \includegraphics[scale=0.4]{../output/figures_and_tables/figure_mlshares.pdf}
+    \label{ml_by_curators}
+    \end{figure}
+        
+    \begin{itemize}
+        \item Labels push their own content (high ML share on major label lists, low ML share on independent label lists)
+        \item Spotify lists have similar ML share as lists by professional curators, artists and "others" 
+        \item Even playlists curated by indie labels need major label coverage
+    \end{itemize}
+    
+    \end{frame}
+    
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    
+    \frame{
+    \frametitle{Recommendation intensity}
+    
+    \begin{itemize}
+    \item Spotify uses playlists to serve machine-generated, personalized recommendations
+    \item Users access these recommendations in the "Made for You" section in the Spotify app%\footnote{Spotify also personalizes content outside of the "Made for You" section, e.g., via semi-personalized/adaptive mass playlists. Unlike playlists in the "Made for You" section, users are unaware of these personalizations.}
+    \item E.g., "Discover Weekly", "Release Radar", "On Repeat", "Repeat Rewind", "Your Daily Mixes", "Family Mix"
+    \item Our sample contains fully personalized playlists (about 4,184) that are specific to users tracked by \textit{Chartmetric.com} 
+    %\item We use these Control for the daily variation of recommendation intensity at the platform level
+    \item We define the daily recommendation intensity in a category as the number of songs added to algorithmic playlists, divided by the number of algorithmic playlists in our sample in a particular category
+    \end{itemize}
+    
+    \begin{figure}[t!]
+    \centering
+    %\includegraphics[scale=0.38]{../output/figures_and_tables/recommendation_intensity.pdf}
+    \label{recs}
+    \end{figure}
+    
+    }
+
+
+
+    \begin{frame}
+
+        \frametitle{Full 2W-FE results}
+        
+        
+\input{../output/figures_and_tables/main_regression_log_log.tex}
+        
+        \vspace{0.1cm}
+        
+        \begin{itemize}
+        \item The (semi-) elasticity of featuring playlists on the Search Page is by orders of magnitude higher (7.71 times) than the elasticity of adding popular (major label) content %38 (column 4) times higher than the elasticity of increasing the content popularity of playlists  
+        %\item Reject the null of weak instruments as the critical value (7.03) is exceeded\footnote{See the corresponding row in \citealp{stock_yogo_2005}, Table 2, for $K_2=2$ instruments, $n=2$ endogenous regressors and the desired maximum size $r=0.1$ of a 5\% Wald test.}  
+        \end{itemize}
+        
+        \end{frame}
+    
+    \begin{frame}
+\label{rob:seasonal}
+        \frametitle{Robustness: Exclusion of Seasonal Categories}
+        
+        \input{../output/figures_and_tables/results_robust_seasonal.tex}
+
+        \vfill
+\begin{center}
+\hyperlink{rob:overview}{\beamerbutton{Back}}
+\end{center}
+
+        
+        \end{frame}
+    
+%%%%
+\begin{frame}
+\label{rob:ihs}
+\frametitle{Robustness: IHS transformation}        
+
+\input{../output/figures_and_tables/results_robust_ihs.tex}
+        
+\vfill
+\begin{center}
+\hyperlink{rob:overview}{\beamerbutton{Back}}
+\end{center}
+     
+\end{frame}
+
+%%%%%
+\begin{frame}
+\label{rob:firsttime}
+         \frametitle{Robustness: Use only first-time treated playlists in 2W-FE model}
+
+\begin{center}
+\hyperlink{rob:overview}{\beamerbutton{Back}}
+\end{center}
+
+\input{../output/figures_and_tables/model_comparison.tex}
+ 
+    
+\end{frame}
+    
+\end{document}

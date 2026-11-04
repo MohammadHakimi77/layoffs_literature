@@ -1,0 +1,28 @@
+\section{Estimation results}
+\label{results}
+
+\input{../output/figures_and_tables/results.tex}
+
+\subsection{Short-term elasticity estimates}
+
+Table \ref{tab:model_results} summarizes the estimation results. Columns (1) and (2) compare the short-term effects of including playlists on Spotify's Search Page using the two-way fixed effects model (Equation \ref{two_way_model}) and the synthetic difference in difference model (Equation \ref{SDID_speci}). %\footnote{To ensure feasible run times, the SDID model uses a random set of 1,000 donor playlists from the total pool of potential donors. In longer run times, we established that increasing the donor pool to a subset of 5,000 or even all donor playlists did not affect the results.} 
+The small MSPE %reported in Table \ref{tab:model_results} 
+shows that pre-exposure observations in the control groups align closely with the pre-exposure observations of log-followers of treated playlists, confirming the accuracy of the synthetic control method's pre-treatment matching performance. 
+According to the synthetic difference in difference estimator in column (2), being included on Spotify's Search Page increases daily followers by 0.95\% on average.\footnote{The two-way fixed effects model and the synthetic difference in difference model rely on different assumptions. We find that the estimates of these models, reported in Table \ref{tab:model_results}, are very close to each other. We thus conclude that the potential bias in the two-way fixed effects model due to the staggered setting is small.} This number seems substantial given that the average number of followers on featured playlists equals $295,762$, implying 2,810 additional followers for the average playlists being featured on the Search Page on any day. 
+For larger playlists like ``Reggaeton Classic" (which has 1.9 million followers), our estimates imply that being featured on the Search Page typically yields 18,050 additional daily followers. 
+
+Columns (3) and (4) in Table \ref{tab:model_results} compare the estimated treatment effects of adding tracks by exceptionally famous major label superstars. As with  being featured 
+on the Search Page, we find that the estimated treatment effects are very close to each other in the two-way fixed effects and the synthetic difference in difference models. We find that adding at least one track by a major label superstar increases the daily playlist followers by 0.45\% on average. These additional followers can either be generated through a higher chance of discovering the treated playlist if users search for famous artists on Spotify or by users directly observing the change in the content of the treated playlist. While adding exceptionally popular major label content positively affects the numbers of followers, the results in Table \ref{tab:model_results} imply that the treatment effect of featuring playlists on the Search Page is about twice as big.
+
+We also investigated how the increase in the overall share of major label tracks (beyond just including exceptionally popular content) affects playlist followers, as illustrated in Table \ref{tab:2wfe} in Web Appendix \hyperref[appendix:results]{F}. We find that marginally increasing the coverage of tracks by major label artists does not significantly affect playlist followers ($0.0007$, $p=.81$). This finding suggests that, in the short term, the three major record labels (Sony, Universal, and Warner) attract most consumers on Spotify with tracks by a small number of superstars rather than with tracks from across their broad catalog of artists. 
+
+\subsection{Robustness checks}
+We performed additional analyses to provide robustness of our empirical estimates.  
+First, we have dropped the ``2019" category celebrating hits of the past year for estimating the effect of being featured on the Search Page. However, variations in other categories might also be implemented by Spotify in response to seasonality in demand (such as playlists being featured in the  ``Exercise" or ``Yoga" categories at the beginning of the year when users make New Year's resolutions). We removed these seasonal categories from the data and re-estimated all models. As shown in Table \ref{tab:model_robust_seasonal} in Web Appendix \hyperref[rob_checks]{G}, the elasticities for the SDID specification are almost identical. The 2W-FE estimate drops after removing potentially seasonal categories but is not statistically different from the overall 2W-FE estimate in Table \ref{tab:model_results}. 
+
+Second, we show the robustness of our results with regard to the choice of the stabilization constant ($k=1$). We re-estimated the models using the Inverse Hyperbolic Sine (IHS) transformation to deal with the problem of zeros in the logarithmic specifications. As can be seen in Table \ref{tab:model_robust_ihs} in Web Appendix \hyperref[rob_checks]{G}, the results are very close to the main results in Table \ref{tab:model_results}.
+
+Third, another concern relates to the comparability of the SDID and 2W-FE models for the featuring effect: while the SDID model focuses on first-time treated playlists to avoid overlapping treatment windows, the 2W-FE model relies on the complete data, also including playlists that were featured multiple times on Spotify's Search Page. To compare these models on more ``equal footing," we re-estimated the 2W-FE model, removing playlists before their second treatment date. As can be seen in Table \ref{tab:2wfecompare} in Web Appendix \hyperref[rob_checks]{G}, the estimated effect of featuring on the Search Page is virtually the same ($.01045$ for the entire data, and $.01057$ for the first-time-only data).
+
+
+

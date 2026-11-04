@@ -1,0 +1,595 @@
+\documentclass[11pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[labelfont=bf]{caption}
+\usepackage{array, xcolor, lipsum, bibentry, graphicx, subcaption, multirow, tabularx, setspace, amsmath,amsthm, mathtools, amsfonts, rotating,lscape, pdflscape, adjustbox, titling,pdfpages, enumitem, import,soul,comment, subcaption}
+\usepackage[round,longnamesfirst]{natbib}
+\usepackage[multiple]{footmisc}
+\bibliographystyle{cje}
+\usepackage{ragged2e, chronology, booktabs, dsfont, framed}
+%\usepackage[capposition=top]{floatrow}
+\usepackage[section]{placeins}
+\renewcommand{\thesection}{\arabic{section}.} %\hspace{-0.5cm}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}.}
+%\hspace{-0.5cm}
+
+
+\usepackage{textcomp}
+\usepackage{booktabs, threeparttable}
+%\numberwithin{equation}{section}
+\usepackage{tikz, pgfplots, pgfplotstable}
+\usepackage{xr, xr-hyper}
+\usepackage{bm}
+\usepackage{mathptmx}
+\usepackage[hyperfootnotes=false]{hyperref}
+\makeatletter
+\newcommand*{\addFileDependency}[1]{% argument=file name and extension
+	\typeout{(#1)}
+	\@addtofilelist{#1}
+	\IfFileExists{#1}{}{\typeout{No file #1.}}
+}
+\makeatother
+
+\newcommand*{\myexternaldocument}[1]{%
+	\externaldocument{#1}%
+	\addFileDependency{#1.tex}%
+	\addFileDependency{#1.aux}%
+}
+
+\myexternaldocument{appendix}
+
+\definecolor{myblue}{rgb}{0.0, 0.0, 0.5}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,citecolor=myblue,linkcolor=myblue,filecolor=myblue,urlcolor=myblue,
+}
+\DeclareMathOperator*{\E}{\mathbb{E}}
+\DeclareMathOperator*{\V}{\mathrm{Var}}
+\DeclareMathOperator*{\cov}{\mathrm{Cov}}
+\DeclareMathOperator*{\I}{\mathbb{I}}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\R}{\mathbb{R}}
+\DeclareMathOperator*{\N}{\mathbb{N}}
+
+\usepackage{helvet}
+\let\harvardurl\url
+\linespread{1.5}
+%\onehalfspacing
+\newcommand{\vect}[1]{\mathbfsymbol{#1}}
+
+\captionsetup[figure]{labelfont={bf},name={Figure},labelsep=period}
+\captionsetup[table]{labelfont={bf},name={Table},labelsep=period}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{assumption}{Assumption}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+%\newtheorem{proof}{Proof}
+\usepackage[T1]{fontenc}
+\usepackage[top=1.in, bottom=1.in, inner=1.in, right=1.in]{geometry}
+\pagestyle{plain}
+\hypersetup{linktoc=all}
+
+\usepackage{fancyhdr}
+\usepackage{Alegreya} %% Option 'black' gives heavier bold face 
+\renewcommand*\oldstylenums[1]{{\AlegreyaOsF #1}}
+\usepackage{bm}
+\usepackage{bbm}
+\usepackage{amsfonts,amsmath,amssymb,amsthm,mathtools,commath}
+
+\usepackage[italic]{mathastext}
+\usepackage{isomath}
+\renewcommand{\footnoterule}{\vfill\kern -3pt \hrule width 0.4\columnwidth \kern 2.6pt} 
+
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+
+\title{Is Competition Only One Click Away? \\ The Digital Markets Act Impact on Google Maps\thanks{We would like to thank Mimansa Bairathi, Marc Bourreau, Joan Calzada, Chiara Farronato, Renaud Foucart, Daniel Garcia, Christos Genakos, Maarten Janssen, Garrett Johnson, Anastasia Leontiou, Leonardo Madio, Richard May, Gosia Majewska, Simon Martin, Klaus Miller, Jos\'{e} Luis Moraga-Gonzalez, Martin Peitz, Liza Pronkina, Imke Reimers, Fiona Scott-Morton, Tommaso Valletti, and Christine Zulehner for insightful comments and discussions. Helpful feedback was received at the internal seminars of T\'{e}l\'{e}com Paris, University of Vienna, University of Padua, University of Cambridge - Judge Business School, \'{E}cole des Mines - PSL, Competition and Markets Authority (CMA), OECD, and at the Workshop on the Economics of the DMA, the CEPR Virtual IO Seminar, the CESifo Area Conference on Economics of Digitization 2024, the Paris IO Day 2024, Article 19's DMA Enforcement Symposium, and the 17th Digital Economics Conference in Toulouse. We thank Sofia Hanna and Leonardo Hannas for their help in collecting data. We are grateful for the financial support provided by Agence Nationale de la Recherche (ANR) under grant number ANR-21-CE26-0018-01 / HYBRID. All errors are ours.}}
+\author{Louis-Daniel Pape and Michelangelo Rossi\thanks{L-D. Pape: T\'{e}l\'{e}com Paris, Center for Research in Economics (CREST) - Institut Polytechnique de Paris. E-mail: \href{mailto:louis.pape@telecom-paris.fr}{louis.pape@telecom-paris.fr}. M.Rossi: HEC Paris, and CESifo. E-mail: \href{mailto:rossim@hec.fr}{rossim@hec.fr}.}}
+
+
+
+
+%\date{\today} 
+\begin{document}\pgfplotsset{compat=1.17}
+	\maketitle \vspace{-20pt}
+	\begin{abstract} 
+		
+		This paper studies the impact of the European Union’s Digital Markets Act (DMA) on user search behavior and traffic to online mapping services, focusing on recent changes to Google’s search results page. In January 2024, Google altered the display of location-based queries for EU users by removing clickable maps and direct links to Google Maps. We exploit this policy-induced change and implement a difference-in-differences (DiD) design comparing EU and non-EU countries to assess how the removal of Google’s self-preferencing shaped search volumes and traffic patterns. Search queries for \texttt{maps} and \texttt{google maps} increased by more than 21\%. While the former may reflect broader interest in mapping services, the latter directly signals intent to use Google Maps. Yet this surge in searches primarily redirected users back to Google Maps. Traffic data reveal no significant change in overall visits to \texttt{www.google.com/maps}, on desktop or mobile. Instead, we observe shifts in the channels through which users access the service and in session duration. No corresponding increase in search activity or traffic is observed for \texttt{bing maps}, nor for other competing mapping services. These findings indicate that the DMA had weak competitive effects, highlighting Google Maps’ dominance in a market where alternatives remain limited.
+		
+		%\noindent \textit{Keywords: Self-preferencing, Digital Platforms, Online Search, Digital Markets Act}
+		%\\ \textit{JEL codes: L41, L86, K21}
+	\end{abstract}
+	
+	\newpage
+	
+	\section{Introduction}\label{sec:intro}
+	
+	
+	In the past years, there has been increasing scrutiny and criticism of the significant market power wielded by major online companies.\footnote{For a general discussion on the antitrust concerns about digital platforms, see \cite{tucker2019digital}; \cite{stigler2019}; \cite{fletcher2023consumer}.} Tech giants have been accused of using their dominant positions to design and operate online sites and marketplaces in ways that favor their own products (\citealp{cremer2019competition}). One notable example is the European Union’s fine against Google for abusing its market dominance by promoting its own comparison shopping service, Google Shopping, in search results (\citealp{cardoso2017antitrust}). 
+	
+	Online companies often counter these concerns by claiming that ``competition is one click away'' (\citealp{helft2009google}): platform design choices do not significantly prevent users from seeking the best service or product. According to this argument, if users access their online service, it is due to superior quality, not because alternatives are hidden. However, this claim overlooks important frictions such as switching costs (\citealp{farrell2007coordination}), behavioral biases, and consumer inattention (\citealp{einav2023selling, miller2023sophisticated}): all factors that significantly influence the adoption and continued use of online services (\citealp{allcott2025sources}).
+	
+	This paper examines the impact of a change in search result presentation on search volumes and online traffic in response to recent changes mandated by the Digital Markets Act (DMA) in the European Union (EU). The DMA aims to increase contestability in digital markets by ensuring fairer competition and providing consumers with more choice and better services. To comply with the DMA, Google changed the design of its search page for users located in the EU beginning in January 2024. Specifically, when a user searches for a location-based query (e.g., for a place, a shop, or a restaurant), the prominently displayed map is no longer clickable, and the signet linking to Google Maps has been removed (see Figure \ref{fig:snapshot_LVmaps} for an example). Users can still click on ``directions'', which provides transport advice but does not zoom in on the map or recommend nearby businesses. This design change addresses concerns that Google was leveraging its search engine to direct users to its own mapping service, thereby stifling competition and limiting consumer choice. Yet, it has drawn criticism from European users accustomed to clicking directly on the map to locate their destination on Google Maps.\footnote{See, for example, a user discussion on Reddit regarding the inability to click on maps in search results: \href{https://www.reddit.com/r/GoogleMaps/comments/1bc7jy7/going_to_google_maps_directly_from_google_search/}{https://www.reddit.com/r/GoogleMaps/comments/1bc7jy7/going.to.google.maps.directly.from.google.search/}.} This change effectively removes Google’s one-click advantage over competitors in the online mapping services market. Now, users must first access Google Maps, often by typing \texttt{maps} and \texttt{google maps} into Google Search. While \texttt{google maps} directly signals intent to use Google’s service, the more generic \texttt{maps} query could, in principle, open the door to alternative mapping services.\footnote{Appendix Figure A1 presents snapshots of Google Search results for the term \texttt{maps} in France, Germany, Italy, and Spain. In all cases, Google Maps consistently appears among the top two search results. Thus, although \texttt{maps} is a neutral query, in practice it may still be difficult for users to discover and adopt alternative services through Google Search.}
+	
+	
+	\begin{figure} \centering \includegraphics[width=0.85\linewidth]{figures/Figure_1.pdf} \caption{Snapshot of Google results for the query \texttt{Shakespeare and co} (July 3, 2024) from the EU: the map is not clickable and the Google Maps signet is absent.}\label{fig:snapshot_LVmaps} \end{figure}
+	
+	
+	We take advantage of the changes to Google’s search results pages induced by the DMA to assess whether the policy achieved its intended goal of increasing the contestability of mapping services. Specifically, we address the following questions: Has the DMA increased the likelihood that users discover and begin to adopt alternative mapping services? Is competition really just one click away? Leveraging the timing of the policy and its exclusive applicability to users in the EU, we employ a difference-in-differences (DiD) approach. We compare Google search volume and online traffic from EU countries to a set of non-EU countries, focusing on one year after January 2024 relative to the previous year.
+	
+	First, we document that Google search volumes for the queries \texttt{maps} and \texttt{google maps} increased by more than 21\% in EU countries after the DMA. While the neutral query \texttt{maps} could capture some potential user discovery of competing services, \texttt{google maps} reflects explicit demand for Google’s own service. These results are highly robust to the choice of control groups and model specifications.
+	
+	
+	We repeat the same analysis on search volumes for queries related to alternative mapping services. Search volumes for \texttt{apple maps}, a service predominantly used by Apple device users, also increase, but the results are not robust across model specifications. Moreover, \texttt{apple maps} search volumes are orders of magnitude smaller than those for \texttt{maps} and \texttt{google maps}. No significant changes are observed for \texttt{bing maps} or other alternative services. 
+	
+	
+	To complement our findings based on search volume, we further explore the DMA’s consequences by examining changes in actual traffic volumes to \texttt{www.google.com/maps}. For this analysis, we apply the same DiD approach used in the search volume analysis. The rise in search-driven access does not translate into a significant net increase in overall desktop visits: total traffic to \texttt{www.google.com/maps} remains unchanged.
+	To further rule out the possibility that external factors unrelated to the DMA might be driving traffic to Google Maps during the same period, we conduct a placebo test using mobile traffic data to \texttt{www.google.com/maps}, which were not directly affected by the DMA in 2024. We find no statistically significant change in mobile traffic, reinforcing the interpretation that our results are due to the DMA rather than to external shocks.
+	
+	
+	We also document a statistically significant increase of approximately 40\% in organic search traffic to \texttt{www.google.com/maps} from desktop users. There is no corresponding increase in direct desktop traffic, indicating that users did not significantly adopt direct URL entry or bookmarks as alternative access methods. The increase in organic search traffic indicates that the rise in queries for \texttt{maps} and \texttt{google maps} more than offset the loss of traffic previously generated by clickable maps (both of which are classified as organic search traffic). This pattern is consistent with a behavioral shift: users may have stopped entering queries on Google Search that previously triggered geo-localized results (e.g., \texttt{Shakespeare and Co} or searches for specific shops and attractions). Instead, they now search explicitly for \texttt{maps} or \texttt{google maps} and access Google Maps directly to obtain the information they need. However, since organic search traffic only accounts for less than a quarter of all EU desktop traffic to Google Maps, the overall impact on total traffic volumes remains limited. Moreover, examining user engagement metrics reveals subtle yet significant changes. Specifically, there is a 5\% reduction in the average duration of visits and a 16\% increase in bounce rates. These metrics indicate that, although overall traffic volumes were not impacted, user interactions on Google’s mapping platform may have changed.
+	
+	Finally, we analyze overall traffic volumes to \texttt{www.bing.com/maps} and \texttt{www.google.com} using the same DiD approach. We do not find robust evidence of a DMA-induced change in traffic to \texttt{www.bing.com/maps}: while the baseline specification suggests a modest decrease, this effect is only weakly significant and does not hold across alternative specifications. Accordingly, the DMA does not seem to have led to a meaningful increase in traffic to one of Google Maps’ major competitors. Similarly, we find minimal evidence of changes in traffic for Google’s primary domain, \texttt{www.google.com}.
+	
+	Our study offers new empirical insights into how large online firms bias search results or use bundling strategies to integrate additional products (\citealp{prasad2010optimal}; \citealp{derdenger2013dynamic}). Early research in this area has been primarily theoretical. Authors have explored platforms' strategies to bias search results (\citealp{hagiu2011intermediaries}; \citealp{inderst2012competition}; \citealp{de2019model}), recommendations (\citealp{bourreau2022streaming}), and to favor integrated products (\citealp{carlton2010tie}; \citealp{anderson2021hybrid}; \citealp{hagiu2022should}; \citealp{zennyo2022platform}). The empirical literature on self-preferencing has largely focused on Amazon's marketplace (\citealp{gutierrez2021welfare}; \citealp{lam2021platform}; \citealp{lee2021entry}; \citealp{raval2022steering}; \citealp{farronato2023self}; \citealp{reimers2023framework}), whereas our research examines Google's search engine and its impact on search behavior and online traffic. Previous studies have highlighted how Google's algorithm and Google News affect organic search visits to news outlets (\citealp{athey2021impact}; \citealp{calzada2023search}). For instance, \cite{chiou2017vertical} demonstrated that integrating Google Flights into search results reduced clicks to competing travel agencies. Similarly, through an experimental design, \cite{kim2019product} document that users prefer when Google’s organic search results display reviews from multiple platforms rather than exclusively Google reviews. Relatedly, \cite{allcott2025sources} empirically investigate the sources of Google's search market power, finding that while switching costs play a limited role, both quality beliefs and persistent inattention significantly contribute to its dominance.
+	
+	
+	We contribute by analyzing the effects of Google's search results changes under the Digital Market Act, which, while aiming to increase user choice (for instance, by altering default options for services like Google Maps), did not significantly alter traffic to Google Maps.\footnote{See \cite{decarolis2023regulating} for a broader analysis of the DMA's impact on online search and Google's market power.} In line with \cite{allcott2025sources}, our findings indicate that the DMA's changes regarding default options alone are insufficient to significantly impact user behavior in the context of Google Maps. This suggests that a truly contestable market may require interventions that not only address choice architecture but also actively promote user awareness and engagement with alternative options.
+	
+	We also contribute to the literature on online consumer search (\citealp{bronnenberg2016zooming}; \citealp{amano2022flexible}; \citealp{ursu2023search}; \citealp{honka2024consumer}). Previous studies have highlighted the significant impact of content aggregation, rankings, and links on search behavior and purchase decisions (\citealp{chiou2017content}; \citealp{ursu2018power}; \citealp{roos2020effect}; \citealp{harris2022being}; \citealp{zhang2023product}). The prominence of search results also affects organic traffic from search engines (\citealp{baye2016s}). Our research extends these insights by examining how Google's compliance with the DMA, specifically removing its one-click advantage, impacts user behavior.
+	
+	Finally, we contribute to the analysis of policies regulating digital marketplaces and their effects. Previous research has examined the General Data Protection Regulation (GDPR) and its impact on privacy and advertising (\citealp{goldfarb2018regulation}; \citealp{johnson2022economic}; \citealp{johnson2023privacy}; \citealp{goldberg2024regulating}; \citealp{miller2024economic}). Related to our study, \cite{decarolis2023competition} found that regulatory actions in the EU, Russia, and Turkey, specifically aimed at removing contractual restrictions imposed by Google on the pre-installation of competing search engines on Android devices, effectively reduced Google's market share. Our study is among the first to examine the DMA's impact. Closest to our work, \cite{waldfogel2024amazon} showed that after the EU designated Amazon as a ``gatekeeper'' platform in September 2023, Amazon's product rank advantage decreased. In contrast, we focus on Google, observing how users responded to Google's design change to comply with the DMA. Our results support the case for additional regulatory measures aimed at removing self-preferential features from Google Search, such as the ``directions'' button that steers users toward Google's own navigation services. Our findings suggest that while the removal of clickable map elements reduces default-based bias, many users may still overlook alternatives and return to Google Maps through organic search. To foster meaningful adoption of competing services, further regulatory steps may be needed to enhance visibility and salience of alternative options.
+	
+	The remainder of this paper is structured as follows. Section \ref{sec:ident_strat} details our empirical context, encompassing the regulatory background of the DMA in Subsection \ref{subsec:DMA}, the data sources utilized in our analysis in Subsection \ref{subsec:data}, and our identification strategy designed to isolate the effects induced by the DMA in Subsection \ref{subsec:ident}. Section \ref{sec:results} then presents our core findings regarding search volumes. This section focuses on changes in the volume of queries for \texttt{maps} and \texttt{google maps} (Subsection \ref{subsec: volumes}), as well as queries related to competing mapping services (Subsection \ref{subsec:competition}). Following this, Section \ref{sec:traffic} examines traffic data to provide further insights. We begin by exploring overall changes in both desktop and mobile traffic (Subsection \ref{subsec:google_maps_desktop_mobile}). Then, we analyze shifts in the sources of desktop traffic to \texttt{www.google.com/maps} (Subsection \ref{subsec:google_maps_direct_organic}). Finally, we delve into the intensive margin of Google Maps usage by analyzing session durations and bounce rates (Subsection \ref{subsec:google_maps_extra_variables}). Within Section \ref{subsec:traffic_google_bing}, we also present data on desktop and mobile traffic for \texttt{www.google.com} and \texttt{www.bing.com/maps} to provide a comparative perspective. Section \ref{sec:policy_impli} then discusses the implications of our findings for policy. Lastly, Section \ref{sec:conclusion} summarizes our key results and proposes potential directions for future research in this area.
+	
+	\section{Context, Data, and Empirical Strategy}\label{sec:ident_strat}
+	\subsection{Regulatory Context: the DMA and its Implementation}\label{subsec:DMA}
+	
+	
+	The European Union's Digital Markets Act  is a major regulatory initiative aimed at ensuring fair and open digital markets across the EU. The legislation, which ``entered into force'' on November 1, 2022, targets large online platforms designated as ``gatekeepers'' to curb anti-competitive practices such as self-preferencing (\citealp{cabral2021eu}). On September 6, 2023, the European Commission designated six large companies (Alphabet, Amazon, Apple, ByteDance, Meta, and Microsoft) as gatekeepers. These companies were given six months, until March 2024, to comply with the new obligations and prohibitions set forth in the DMA.\footnote{In the following figures, we refer to the period between September 2023 and March 2024 as the ``DMA Compliance Period''.} 
+	
+	The DMA calls for significant changes in the way these platforms operate. In particular, the six gatekeepers are asked to partially redesign the way information is presented to users in order to ``ensure contestability (i.e., the reduction of entry barriers) and to ensure fairness (i.e., a balance between the rights and obligations of the gatekeepers and their business users) of EU digital markets'' 
+	(\citealp{de2024implementing}). Alphabet has been designated as a gatekeeper for a group of online intermediation services, including Google Maps.\footnote{Apple and Meta were not designated as gatekeepers for search or mapping services and they did not have to adjust their related services (Apple Maps and Bing Maps) in accordance with the DMA. See: \href{https://ec.europa.eu/commission/presscorner/detail/en/ip_23_4328}{https://ec.europa.eu/commission/presscorner/detail/en}.} This service has traditionally been seamlessly integrated into Google's search results. Such integration has raised concerns about the contestability of the market for mapping services, as it could constitute a ``dark pattern'' used by the company to steer users to its own services. To comply with the DMA, Google could have displayed other geolocation applications alongside Google Maps. 
+	Another alternative would have been to allow users to select their preferred mapping service through a choice screen, similar to how Google implemented a selection prompt for search engines in Google Chrome.\footnote{See: \href{https://www.ghacks.net/2023/12/09/google-chrome-to-display-choose-your-search-engine-prompt/}{https://www.ghacks.net/2023/12/09/google-chrome-to-display-choose-your-search-engine-prompt/}.} For desktop searches, however, Google instead decided to remove any link, clickable map, or shortcut that would allow users to access Google Maps with a single click (see Figure \ref{fig:snapshot_LVmaps} for an example). By contrast, for mobile searches, the maps remained clickable during 2024 and typically redirected users to the Google Maps app (if installed).\footnote{In 2025 (outside our analysis period), some mobile queries were also subject to similar interface changes, with clickable maps removed and search results resembling the desktop version.} As a result, users in the EU must now manually navigate to Google Maps or other mapping services when searching for a location-based query on desktop.\footnote{For more information, see: \href{https://www.lemonde.fr/en/pixels/article/2024/03/06/digital-markets-act-how-the-way-you-use-google-maps-and-messenger-is-changing_6591969_13.html}{https://www.lemonde.fr/en/pixels/article/2024/03/06/digital-markets-act-how-the-way-you-use-google-maps-and-messenger-is-changing.html}, \href{https://www.francetvinfo.fr/internet/google/pourquoi-google-maps-n-est-plus-integre-aux-resultats-de-recherche-google-et-quelles-solutions_6405325.html}{https://www.francetvinfo.fr} and Google's official statement at \href{https://blog.google/around-the-globe/google-europe/new-competition-rules-come-with-trade-offs/}{https://blog.google/around-the-globe/google-europe/new-competition-rules-come-with-trade-offs/}.}\footnote{The ``directions'' button is still present and directs users to Google Maps, but only for transport advice. Users cannot directly zoom in on the area of interest or search for recommendations around that location. A series of browser extensions have been created to restore the previous design for EU users. However, judging by the number of reviews and users, these extensions do not seem to be widely installed by EU users. For an example, see: \href{https://chromewebstore.google.com/detail/google-search-maps-button/edllcgchknhokighleffpipdedmpgiln?hl=en}{https://chromewebstore.google.com/detail/google-search-maps-button/}.} 
+	
+	We date the introduction of the ``choice architecture'' change in Google Search to January 2024, based on user reports from online forums. Google's official statement regarding DMA compliance does not explicitly mention the removal of clickable Google Maps elements.\footnote{See: \href{https://blog.google/around-the-globe/google-europe/an-update-on-our-preparations-for-the-dma/}{https://blog.google/around-the-globe/google-europe/an-update-on-our-preparations-for-the-dma/}.} However, discussions on Reddit and the Google Search community forum indicate that this change was progressively implemented throughout January and February 2024.\footnote{The Reddit discussion about the absence of clickable maps began in early January 2024 (\href{https://www.reddit.com/r/GoogleMaps/comments/19ahfx2/why_doesnt_maps_show_up_under_google_searches/?rdt=48192}{https://www.reddit.com/r/GoogleMaps/comments/19ahfx2}). For instance, on January 19, 2024, one user noted: ``It used to be that under every Google search you had a button to search it in Maps (but it does not anymore). Anyone know how to fix this? It is really annoying.'' Other users responded by stating, ``it started a few weeks ago, between end 2023 and beginning 2024,'' and ``I had this issue for months now. I always fixed it by clearing the cache, but it does not work anymore.'' Similarly, posts on Google's official support forum confirm that users started noticing the removal of clickable maps as early as January and February 2024 (\href{https://support.google.com/websearch/thread/258720758}{https://support.google.com/websearch/thread/258720758}). These discussions strongly suggest that the update was gradually introduced across different regions before March 2024.} The noticeable increase in user reports after the first week of January 2024 supports identifying this period as the onset of the broader rollout of the policy change.
+	
+	This change to Google's search interface is consistent with the principles of the DMA and eliminates Google Maps' previous one-click advantage over other services. However, the DMA also requires gatekeepers to monitor the impact of their ``choice architecture'' on an ongoing basis. Gatekeepers must submit a compliance report within six months of designation and update it annually, with the steps taken to ensure compliance.
+	
+	
+	
+	\subsection{Data for Search Queries and Online Traffic} \label{subsec:data}
+	For this study, we analyze search query volume data over time, compiling weekly country-level panel data from two primary sources: Google Trends and Glimpse, spanning January 2023 to December 2024. Additionally, we collect monthly web traffic data from Semrush, covering January 2023 to December 2024.
+	
+	Our dataset includes 25 European Union countries affected by the DMA, excluding Malta and Cyprus due to data limitations. To construct a suitable control group, we incorporate 13 European non-EU countries and all OECD and BRICS countries where Google and Google Maps services are available, resulting in 27 control countries. This expanded control set allows for robust comparisons across different regulatory and market environments.\footnote{The control countries are: Albania, Armenia, Australia, Azerbaijan, Belarus, Bosnia, Brazil, Canada, Chile, Colombia, Costa Rica, Georgia, Iceland, India, Israel, Japan, Mexico, New Zealand, Norway, South Africa, South Korea, Serbia, Switzerland, Turkey, the United Kingdom, the United States, and Ukraine.}
+	
+	
+	Google Trends provides insights into search behavior by analyzing the relative frequency of specific queries over time. The data is normalized to a range from 0 to 100, where 100 represents the peak popularity of the query during the selected time frame, and 0 signifies insufficient data.\footnote{For additional details on the normalization methodology employed by Google Trends, see \href{https://support.google.com/trends/answer/4365533}{https://support.google.com/trends/answer/4365533}. Google Trends data does not incorporate any explicit time trends or smoothing. See also \cite{covid2021} and \cite{JBR2021} for econometric discussions and considerations.} To supplement Google Trends data, we utilize search volume estimates from Glimpse (\href{https://meetglimpse.com/}{https://meetglimpse.com/}). Glimpse computes search volumes by applying a proprietary scaling factor to the normalized data from
+	Google Trends, effectively converting relative interest scores into estimated query volumes.\footnote{The exact methodology Glimpse employs to determine this scaling factor is not publicly documented, which may introduce some uncertainty regarding the precision of these estimates. However, all results presented in the subsequent Sections remain robust when relying solely on Google Trends data without applying Glimpse's scaling factor. Furthermore, even when using Glimpse estimates, our empirical approach includes country fixed effects, ensuring that any fixed differences in scaling across countries do not affect our main findings.} 
+	
+	
+	To ensure consistency across countries, we use a uniform set of queries, regardless of regional variations in mapping service terminology. Our dataset includes six key search queries relative to online mapping services per country and per week: the general term \texttt{maps}, along with specific queries for Google Maps and a set of major competing mapping services: \texttt{apple maps}, \texttt{bing maps}, \texttt{google maps}, \texttt{mappy}, and \texttt{openstreetmap}. These competitors were selected based on their relevance in European and global markets, their visibility in online search environments, and their potential substitutability for Google Maps. Apple Maps and Bing Maps are prominent services provided by large tech firms with significant user bases. Mappy is a well-known European (particularly French) mapping service, and OpenStreetMap is a widely used open-source platform that powers many third-party navigation applications. Together, these services represent the most recognizable and accessible alternatives to Google Maps across EU countries.\footnote{Apple Maps is owned by Apple Inc.; Bing Maps by Microsoft Corporation; Google Maps by Alphabet Inc.; Mappy is a French mapping service owned by RATP; OpenStreetMap is an open-source platform maintained by the OpenStreetMap Foundation.}
+	
+	While the term \texttt{maps} is generic, Appendix Figure A1 shows that users searching for it on Google are highly likely to encounter results related to Google Maps. The figure presents snapshots of Google Search results for the term \texttt{maps}, with no personalization based on search history, for France, Germany, Italy, and Spain. In all cases, Google Maps always appears in the top two search results. We supplement these queries with search terms that prompt Google Search to display business listings near the user's location, specifically: \texttt{restaurant}, \texttt{shopping}, and \texttt{supermarket}. This enables us to evaluate whether queries typically performed within Google Maps are instead being conducted via Google Search.
+	
+	To further assess the impact of the DMA, we use a complementary dataset of estimated website traffic from Semrush (\href{https://www.semrush.com/}{https://www.semrush.com/}). Semrush employs a proprietary algorithm that integrates data from multiple sources to estimate monthly website traffic volumes. In particular, the algorithm combines keyword rankings, search volumes, and estimated click-through rates (CTR) to approximate organic search traffic.\footnote{For further details on how Semrush calculates organic traffic estimates, see \href{https://www.flyingvgroup.com/seotools/semrush-estimated-traffic/}{https://www.flyingvgroup.com/seotools/semrush-estimated-traffic/}.} Additionally, Semrush incorporates data from paid search campaigns, social media activity, and referral traffic to provide a comprehensive overview of a website's online visibility.\footnote{See \href{https://www.freshpies.co.uk/knowledge-base/how-does-semrush-calculate-traffic/}{https://www.freshpies.co.uk/knowledge-base/how-does-semrush-calculate-traffic/}.} These estimations represent monthly average volumes and do not include explicit time trends or smoothing.\footnote{Semrush traffic estimation methodology is discussed in detail here: \href{https://www.semrush.com/kb/162-monthly-numbers}{https://www.semrush.com/kb/162-monthly-numbers}.}
+	
+	In contrast to previous EU privacy-related policies such as the General Data Protection Regulation (GDPR), which had broad implications across numerous online entities, the DMA specifically targets a limited number of large digital platforms. Accordingly, we do not expect the DMA's implementation to significantly affect overall website traffic estimates by Semrush, as only a few actors are directly subject to the DMA.
+	
+	We use this data to analyze visits and other traffic metrics for Google Maps (both the main domain and the domain accessed when users click the ``directions'' button), as well as for \texttt{www.google.com} and \texttt{www.bing.com/maps}. This allows us to examine potential spillover effects to other Google-related domains, or to potential substitutes for Google Maps.\footnote{Bing Maps was selected for its extensive global search volumes compared to other competitors. Mappy’s search volumes are significant primarily in France. Apple Maps, despite having substantial search volumes, lacks a dedicated web-based mapping platform that would allow for comparable traffic analysis. Although a beta web version of Apple Maps became available in July 2024, its release postdates the DMA implementation. Moreover, Mac and iPhone users are directed to the pre-installed Apple Maps app for mapping services. OpenStreetMap is primarily used via API or integrated into other services and apps and it does not provide real-time traffic data.} 
+	
+	In our analysis, we aggregate traffic from each country by combining visits to the generic domains \texttt{www.google.com/maps} and \texttt{www.google.com} with visits to the corresponding country-specific domains (e.g., \texttt{www.google.fr/maps} and \texttt{www.google.fr} for France).\footnote{In the remainder of the paper, we refer to \texttt{www.google.com/maps} or \texttt{www.google.com} traffic, which should be understood as the sum of both country-specific and generic domains. The list of country-specific domains for both webpages can be found here: \href{https://www.w3era.com/blog/country-wise-google-domains-lists/}{https://www.w3era.com/blog/country-wise-google-domains-lists/}.}
+	
+	
+	For desktop visits, we further categorize traffic by source, including direct, organic search, referral, and other sources. Direct traffic refers to visits where users type the domain directly into the address bar or use a bookmark. Organic search traffic captures visits generated by unpaid clicks from search engines (for example, a user searching \texttt{maps} on Google and clicking on the search result for \texttt{www.google.com/maps}, but also clicking on the adjacent maps if available, or the ``directions'' button). Referral traffic includes visits originating from links on other websites outside of search engines and social media (for example, an embedded Google Map on a third-party site). Finally, other sources include traffic coming from social media or minor channels not classified elsewhere.\footnote{See the Semrush glossary and documentation for traffic sources: \href{https://www.semrush.com/blog/organic-traffic/}{https://www.semrush.com/blog/organic-traffic/}; and \href{https://www.semrush.com/kb/925-glossary}{https://www.semrush.com/kb/925-glossary}.} As the DMA changes applied to Google's own interfaces, only organic search traffic is directly affected, while direct, referral, and other sources remain unaffected. Additionally, for desktop traffic, we collect information on the number of monthly visitors, the average number of pages visited per session, the average visit duration, and the average bounce rate. In Semrush Traffic Analytics, sessions begin when a user arrives at the domain and continue until they leave or are inactive for up to 60 minutes (inactivity is defined by absence of clicks).\footnote{See Semrush documentation on bounce rates: \href{https://www.semrush.com/blog/bounce-rate/}{https://www.semrush.com/blog/bounce-rate/}.}
+	
+	In Table \ref{tab:sum_stat}, we present the average weekly search volumes for these queries in EU and non-EU countries 
+	
+	\clearpage
+	
+	\begin{table}
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:sum_stat} Google Search Volumes and Shares before and after January 2024 for EU and non-EU countries} 
+		\begin{threeparttable}
+			%\begin{adjustbox}{max width=\linewidth}
+			\begin{tabular}{lrrrr}
+				\toprule \noalign{\smallskip} 
+				& \multicolumn{2}{c}{EU} & \multicolumn{2}{c}{Non-EU}  \\ \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+				\textbf{Before DMA }\;(Jan 23 - Dec 23)		& Search Volumes & Share (\%) & Search Volumes & Share (\%)  \\ \cmidrule(lr){2-5}
+                \texttt{apple maps}&1,943&.16&9,223&.32 \tabularnewline
+                \texttt{bing maps}&10,780&.9&6,804&.23 \tabularnewline
+                \texttt{google maps}&311,485&26.24&923,512&32.25 \tabularnewline
+                \texttt{mappy}&92,609&7.8&742&.02 \tabularnewline
+                \texttt{maps}&768,390&64.74&1,921,755&67.11 \tabularnewline
+                \texttt{openstreetmap}&1,609&.13&1,148&.04 \tabularnewline \vspace{-10pt} \\ 
+				\toprule 
+				& \multicolumn{2}{c}{EU} & \multicolumn{2}{c}{Non-EU}  \\ \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+				\textbf{After DMA }\;(Jan 24 - Dec 24)		& Search Volume & Share (\%) & Search Volume & Share (\%)  \\ \cmidrule(lr){2-5}
+				\texttt{apple maps}&2,832&.17&10,526&.37 \tabularnewline
+				\texttt{bing maps}&12,526&.76&6,025&.21 \tabularnewline
+				\texttt{google maps}&398,166&24.3&819,681&29.39 \tabularnewline
+				\texttt{mappy}&82,458&5.03&699&.02 \tabularnewline
+				\texttt{maps}&1,140,828&69.62&1,950,741&69.94 \tabularnewline
+				\texttt{openstreetmap}&1,703&.1&1,256&.04 \tabularnewline \vspace{-10pt}\\
+				\bottomrule 
+			\end{tabular}
+			
+			%\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes weeks from January 2023 to December 2024 for 25 EU countries and 19 non-EU countries. Cyprus and Malta were excluded from the EU group, as they lack data on search volumes for all queries. Similarly, we excluded non-EU countries without complete data on search volumes. The non-EU countries included in the analysis are Australia, Brazil, Canada, Chile, Colombia, Costa Rica, India, Israel, Japan, Mexico, New Zealand, Norway, South Africa, South Korea, Serbia, Switzerland, Turkey, the United Kingdom, and the United States. Search volumes are averaged at the weekly level across the countries comprising the EU and non-EU groups. 
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	
+	\begin{table}[!ht]
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:sum_stat_traffic} Online Visits for \texttt{www.google.com/maps} before and after January 2024 for EU and non-EU countries} 
+		\begin{threeparttable}
+			%\begin{adjustbox}{max width=\linewidth}
+			\begin{tabular}{lrrrr}
+				\bottomrule \noalign{\smallskip} 
+				& \multicolumn{2}{c}{EU} & \multicolumn{2}{c}{Non-EU}  \\ \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+				\textbf{Before DMA }\;(Jan 23 - Dec 23)		& Visits ($\times \; 1000$) & Share (\%) & Visits ($\times \; 1000$) & Share (\%)  \\ \cmidrule(lr){2-5}
+				All Devices&6,790&100&11,997&100 \tabularnewline \vspace{-10pt} \\ 
+				\noalign{\smallskip} \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+				Desktop&4,657&68.58&7,705&64.22 \tabularnewline
+				Mobile&2,133&31.41&4,292&35.77 \tabularnewline \vspace{-10pt} \\ 
+				\noalign{\smallskip} \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+				Direct Desktop Traffic&3,264&70.08&5,630&73.06 \tabularnewline
+				Referral Desktop Traffic&367&7.88&929&12.06 \tabularnewline
+				Organic Desktop Search&963&20.68&1,067&13.85 \tabularnewline
+				Other Desktop Sources&62&1.33&77&1 \tabularnewline \vspace{-10pt} \\ 
+				\toprule  
+				& \multicolumn{2}{c}{EU} & \multicolumn{2}{c}{Non-EU}  \\ \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+				\textbf{After DMA }\;(Jan 24 - Dec 24)		& Visits ($\times \; 1000$) & Share (\%) & Visits ($\times \; 1000$) & Share (\%)  \\ \cmidrule(lr){2-5}
+				All Devices&10,324&100&18,435&100 \tabularnewline \vspace{-10pt} \\ 
+				\noalign{\smallskip} \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+				Desktop&8,167&79.11&13,532&73.4 \tabularnewline
+				Mobile&2,156&20.88&4,903&26.59 \tabularnewline \vspace{-10pt} \\ 
+				\noalign{\smallskip} \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+				Direct Desktop Traffic&5,230&64.04&9,767&72.17 \tabularnewline
+				Referral Desktop Traffic&664&8.13&1,698&12.55 \tabularnewline
+				Organic Desktop Search&2,131&26.09&1,816&13.42 \tabularnewline
+				Other Desktop Sources&141&1.72&249&1.84 \tabularnewline \vspace{-10pt} \\ 
+				\bottomrule 
+			\end{tabular}
+			
+			%\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes months from January 2023 to December 2024 for 25 EU countries and 19 non-EU countries. Cyprus and Malta were excluded from the EU group, as they lack data on search volumes for all queries. Similarly, we excluded non-EU countries without complete data on search volumes. Among the non-EU countries included in the analysis are Australia, Brazil, Canada, Chile, Colombia, Costa Rica, India, Israel, Japan, Mexico, New Zealand, Norway, South Africa, South Korea, Serbia, Switzerland, Turkey, the United Kingdom, and the United States. Traffic variables are averaged at the monthly level across the countries comprising the EU and non-EU groups. The shares of desktop and mobile traffic are calculated as a proportion of the total traffic from all devices. The shares of other desktop-related traffic are calculated as a proportion of total desktop traffic.  
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	\noindent before and after the DMA. Prior to the DMA, \texttt{google maps} and \texttt{maps} accounted for 91\% of average weekly searches in Europe and 99\% in non-EU countries. These high figures suggest that searching for \texttt{maps} or \texttt{google maps} was the predominant method for users to access mapping services via search engines. The main difference between EU and non-EU countries before the DMA is the prevalence of queries for \texttt{mappy}, a French mapping app that is especially popular in France. 
+	
+	Following the DMA, we observe some changes in the relative shares of the queries \texttt{maps} and \texttt{google maps} in both EU and non-EU regions. In particular, in the EU, the share of \texttt{maps} increased at the expense of \texttt{google maps}. While these shifts in relative shares are notable, the most substantial effect comes from the overall growth in search volumes for  \texttt{maps} and \texttt{google maps} within the EU: search volumes rose significantly (+27.56\%), compared to a slight decline in non-EU countries (-0.03\%).
+	
+	To further illustrate this shift, we plot the search volumes over time for the queries \texttt{maps} and \texttt{google maps} in EU and non-EU countries in Appendix Figures A2 and A3. In EU countries, we observe a sharp increase in search volumes beginning in January 2024, coinciding with the DMA-driven changes to Google Search. Before this, trends in both EU and non-EU countries followed a similar trajectory, marked by a gradual decline in search volumes during the latter half of 2023, with a more pronounced reduction in the final weeks of December. However, post-January 2024, non-EU countries returned to the levels observed before the winter months of 2023, reinforcing their role as a control group for the EU. Since non-EU countries are unaffected by the DMA and VPN usage for such searches is likely minimal, the risk of contamination of the control group remains low. 
+	
+	In Table \ref{tab:sum_stat_traffic}, we present a similar analysis focusing on the average monthly visits to \texttt{www.google.com/maps} in EU and non-EU countries before and after the DMA. The table includes total visits from all devices, disaggregated into desktop and mobile traffic. For desktop traffic, the data is structured by source: direct (users entering the URL directly or via a bookmark), referrals (users arriving from external third-party websites outside of search engines and social media), organic search (users arriving through unpaid search engine results, including all clickable elements within Google’s search interface), and other sources (social, paid search, email, and display advertising).
+	
+	Post-DMA, we observe a substantial increase in visits to \texttt{www.google.com/maps} in both EU and non-EU countries (+52\% in the EU and +54\% in non-EU countries), primarily driven by desktop traffic. A key difference emerges in the share of desktop visits originating from organic search: in EU countries, this proportion increases, whereas in non-EU countries, it remains stable. This trend supports the hypothesis that the DMA-induced Google Search design change prompted more EU desktop users to search for \texttt{maps} and \texttt{google maps}, thereby increasing the share of organic search-driven visits.
+	
+	To illustrate these trends, we plot the monthly time series of all desktop visits and organic search desktop visits for EU and non-EU countries in Appendix Figures A4a and A5a, as well as Figures A4b and A5b, respectively. The figures confirm a sharp increase in organic search and desktop visits in the EU beginning in January 2024, coinciding with DMA-related modifications. While a similar pattern emerges in non-EU countries, the magnitude of the change is considerably smaller.
+	
+	Based on this descriptive evidence, in the next Subsection, we present our empirical strategy to measure the impact of the DMA by comparing search volumes and visits in EU and non-EU countries over time.
+	
+	\subsection{Identification Strategy} \label{subsec:ident}
+	
+	Our objective is to measure the change in the propensity to search for Google queries related to mapping services and the likelihood of visiting mapping domains as a result of the DMA. To achieve this, we treat the DMA as an exogenous shock affecting only users based in EU countries. Non-EU countries serve as a control group to account for initial differences in query rates. We employ a two-way fixed effects model within a difference-in-differences framework. Specifically, we estimate the following specification:
+	\begin{align} \label{eq:did}
+		\ln \left( Y_{it} \right)
+		= \alpha_i + \omega_t + \gamma_{\mathrm{DMA}} EU_i\times post_t^{DMA} + \varepsilon_{it},
+	\end{align}
+	where $Y_{it}$ denotes Google search volumes for the query or online visits to the domain of interest for country $i$ at time $t$. Both the estimated search volumes and visit variables occasionally report values of zero for certain weeks or months. However, these zeros do not represent true absences of searches or visits; rather, they reflect values that are too small to be detected or estimated. When Google Trends and subsequently Glimpse report zero searches for a given query in a specific country and week, we assume a search volume equivalent to a Google Trends value of one for that country and query.\footnote{For online visits, zero values are rare. To ensure that all observations remain usable in the log transformation, we simply replace these cases with one. This minimal adjustment allows us to retain all data points without introducing significant bias.} $\alpha_i$ and $\omega_t$ represent country and time fixed effects, with time fixed effects defined at the week level for search volumes and at the month level for online visits. The variables $EU_i$ and $post_t^{DMA}$ are dummy variables equal to 1 if country $i$ is a member of the EU, and if time $t$ falls after January 2024, respectively. The coefficient $\gamma_{\mathrm{DMA}}$ is our parameter of interest, capturing the average treatment effect. It is identified as the difference in the average values of the dependent variable between EU and non-EU countries after the DMA changes are implemented, while accounting for initial cross-country differences. We assume that the change in the ability to click on the map to access Google Maps from Google Search took effect at the beginning of January 2024. Finally, $\varepsilon_{it}$ is an unobserved error term assumed to have a zero conditional mean.
+	
+	To test the absence of pre-trends between EU and non-EU countries, we complement the specification in Equation \ref{eq:did} with an event-study approach. In particular, we estimate a lead-lag model in which $\ln \left( Y_{it} \right)$ is regressed on the interaction between the $\textit{EU}_i$ dummy and a full set of time dummies. Formally, we estimate:
+	\begin{align}\label{eq:Event_Study}
+		\ln \left( Y_{it} \right) = \alpha_i+ \omega_t + \sum_{\tau=Jan23}^{Dec24} \gamma_\tau , \textit{EU}_i \times 1(t=\tau) + \epsilon_{it},
+	\end{align}
+	where $\alpha_i$ and $\omega_t$ denote country and time fixed effects, respectively. The coefficients $\gamma_\tau$ trace the dynamic evolution of the outcome variable in EU relative to non-EU countries at each point in time, allowing us to directly assess whether pre-DMA trends were parallel. In the next Sections, we will present figures displaying the coefficients $\gamma_\tau$, with January 1\textsuperscript{st}, 2024, as the reference point.
+	
+	Unlike the GDPR (\citealp{johnson2022economic}), the DMA is expected to have limited spillover effects beyond the countries it directly affects. It targets a small number of gatekeepers, such as Alphabet for online map services, and regulates only users accessing online services from treated countries. Thus far, Alphabet has not implemented similar adjustments in non-EU nations.
+	While EU users can revert to the previous version of Google Search through browser extensions or VPNs, adoption of these methods appears minimal, as indicated by low installation rates for such extensions. Even if a surge in the use of browser extensions or VPNs were to occur in 2024, the significant increase in searches for \texttt{maps} and \texttt{google maps} from the EU suggests that we may still be underestimating the short-term negative impact on EU users. These users now face either the inconvenience of additional browser extensions or the financial costs associated with VPN services.
+	
+	\section{The DMA's Impact on Search Volumes}\label{sec:results}
+	
+	We begin our analysis by examining changes in user search volumes. This is the most direct way to capture how the DMA-induced modifications to Google’s search result pages affected the way EU consumers formulate queries. By analyzing search volumes for \texttt{maps}, \texttt{google maps}, and competing services, we can document whether the new design altered the patterns of access that users initiate at the search stage.
+	
+	\subsection{Impact on \texttt{maps} and \texttt{google maps} Queries} \label{subsec: volumes}
+	
+	Table \ref{tab:did} reports three specifications of the DiD estimates from Equation \ref{eq:did} for the queries \texttt{maps} (Columns (1)–(3)) and \texttt{google maps} (Columns (4)–(6)). The two terms should not be interpreted in the same way: while \texttt{maps} may capture a broader interest in mapping services in general, \texttt{google maps} more directly reflects intent to use Google Maps specifically. Standard errors are clustered at the country level. The sample covers weekly data from January 2023 to December 2024. All specifications include country fixed effects, which control for time-invariant factors influencing search behavior at the national level, and time (week) fixed effects, which account for time-varying confounders affecting all countries similarly. The treated group consists of 25 EU countries. For each query, the three specifications differ in the composition of the control group. The specification in Columns (1) and (4) includes all countries in the control group. The specification in Columns (2) and (5) restricts the control group to countries in the Northern Hemisphere. The specification in Columns (3) and (6) further limits the control group to non-EU European countries.
+	
+	The estimates of the average treatment effect  $\hat{\gamma}_{\mathrm{DMA}}$ in Equation \ref{eq:did} are positive and statistically significant at the 1\% level across all specifications. The DMA is associated with an increase in search volume of at least 21\% for both queries in EU countries compared to non-EU countries. These estimates are economically significant, indicating that a substantial number of users in the EU have searched for general mapping services, and specifically for Google Maps, due to the inability to access them directly through Google Search. 
+	
+	Moreover, the robustness of our results across different control groups suggests that the observed effects are not driven by the specific choice of reference countries. We also note that the \( R^2 \) values in these regressions are extremely high (all above 0.99), indicating that much of the variation in search volumes is captured by country and month fixed effects, along with the DiD interaction accounting for the regulatory shock in EU countries.
+	
+	To validate the DiD design, we present event study plots examining the parallel trends assumption during the pre-treatment period. These event studies not only help assess whether EU and non-EU countries followed similar trends before the DMA but also provide insights into which control countries best approx- 
+	
+	\clearpage
+	
+	\begin{table}
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:did} Difference-in-Differences: log of Google Search Volumes for \texttt{maps} and \texttt{google maps} Queries}
+		\begin{threeparttable}
+			%\begin{adjustbox}{max width=\linewidth}
+			\begin{tabular}{lcccccc}
+				\hline \noalign{\smallskip} 
+				& \multicolumn{3}{c}{(\texttt{maps})} & \multicolumn{3}{c}{(\texttt{google maps})}  \\ \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+				 
+				&         (1)   &         (2)   &         (3)   &         (4)   &         (5)   &         (6)   \\
+				\midrule
+				$ EU \times post^{DMA} $ &       0.244***&       0.233***&       0.214***&       0.244***&       0.233***&       0.212***\\
+				&     (0.027)   &     (0.030)   &     (0.036)   &     (0.028)   &     (0.031)   &     (0.036)   \\
+				
+				Country FEs         &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Week FEs            &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Control Countries    &         All   &  North Hem.   &   Only Euro   &         All   &  North Hem.   &   Only Euro   \\
+				$ R ^2 $            &       0.997   &       0.997   &       0.997   &       0.995   &       0.995   &       0.995   \\
+				N                   &       5,304   &       4,794   &       3,876   &       5,304   &       4,794   &       3,876   \\
+				Mean Dep. Var.      &      12.795   &      12.731   &      12.511   &      12.150   &      12.116   &      11.923   \\
+				\midrule
+			\end{tabular}
+			
+			%\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes weekly data from January 2023 to December 2024. The first three columns correspond to the query \texttt{maps}, and the second three correspond to the query \texttt{google maps}. For each query, we present specifications that include country and week fixed effects. The specifications differ in the composition of the control group: the first specification includes all countries in the control group. The second specification limits the control group to countries in the Northern Hemisphere. The third specification restricts the control group to European, non-EU countries. In all specifications, the treated group comprises 25 EU countries. Standard errors clustered by country are in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\). 
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_2a.pdf}
+			\caption{\texttt{maps}}\label{fig:ES_lmaps}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_2b.pdf}
+			\caption{\texttt{google maps}}\label{fig:ES_lGmaps}
+		\end{subfigure}
+		\caption{Event study: log of Google Search Volumes for \texttt{maps} and \texttt{google maps}}
+		\label{fig:ES}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of Google search volumes for \texttt{maps} and \texttt{google maps} queries are regressed on country and time fixed effects and interactions between a dummy variable indicating if a country is in the European Union and a full set of dummy variables for each snapshot. The graphs plot the estimated coefficients of these interaction terms. The coefficient for January 2024 is normalized to zero. The treated group includes 25 EU countries. The control group comprises European non-EU countries. The sample includes weekly data from January 2023 to December 2024. Figures \ref{fig:ES_lmaps} and \ref{fig:ES_lGmaps} show the analysis for search volumes related to \texttt{maps} and \texttt{google maps}, respectively. Standard errors are clustered by country and reported in the form of 95\% confidence intervals.
+		\end{minipage}
+	\end{figure}
+	
+	\clearpage
+	
+	\noindent imate the counterfactual scenario of EU countries in the absence of the DMA. We begin by studying the evolution of search volumes over time, focusing on the queries \texttt{maps} and \texttt{google maps}.
+	
+	Figure \ref{fig:ES} displays coefficients tracking the differences between EU and non-EU countries over time for these two queries, with January 1\textsuperscript{st}, 2024, as the reference point. These event studies use European non-EU countries as the control group. In Appendix Figures B1 and B2, we replicate the same event studies using all non-EU countries in our sample, and only control countries in the Northern Hemisphere, respectively. When including all non-EU countries, pre-trends appear to be affected by differing seasonal patterns between EU and non-EU regions. This seasonality is largely driven by countries in the Southern Hemisphere, where seasons are reversed relative to the Northern Hemisphere. Given that mapping services may be used more frequently during the spring and summer months, when travel and outdoor activities peak, the seasonal misalignment between hemispheres likely explains these fluctuations. In contrast, when restricting the control group to countries in the Northern Hemisphere, seasonal fluctuations are noticeably reduced. The cleanest pre-trends, with no visible seasonality, emerge when focusing on European non-EU countries, our preferred specification. 
+	
+	
+	To ensure that our results are not driven by modeling choices, we conduct several robustness exercises:  alternative identification strategies using synthetic difference-in-differences (\citealp{synthetic_did}) and the synthetic control (\citealp{synthetic_control}); a placebo test using YouTube searches; verification of results when relying solely on Google Trends data; and an alternative identification strategy using EU countries as their own counterfactual. Across all exercises, the estimated effects remain stable in both magnitude and significance, reinforcing the validity of our findings. All results and discussion are provided in Appendix B.
+	
+	
+	\subsection{Impact on Queries of Competing Mapping Services}\label{subsec:competition}
+	
+	Using our previous identification strategy, we found that EU users reacted to the DMA-induced changes in Google Search by increasing their searches for \texttt{maps} and \texttt{google maps}. Since Google Maps links appear as top results when searching for \texttt{maps}, we can reasonably assume that most of these additional searches led EU users to Google Maps services. However, some users may also have been considering alternative mapping services.
+	
+	To investigate this possibility, we estimate Equation \ref{eq:did} using search query data for competing mapping services: \texttt{apple maps}, \texttt{bing maps}, \texttt{mappy}, and \texttt{openstreetmap}. These queries are far less common than \texttt{maps} and \texttt{google maps}, and for some smaller countries, search volume data is unavailable. To maximize sample size and increase statistical power, we report results using all available control groups. Appendix Table B5 suggests that among the competitors, Apple Maps is the only service showing evidence of a post-DMA increase in searches. While the point estimate implies a large relative increase (close to 28\%) for \texttt{apple maps}, this effect corresponds to only 0.175\% of \texttt{google maps}’ search volume. All other competitors do not exhibit statistically significant changes.
+	
+	To ensure robustness, Appendix Tables B6 and B7 explore alternative treatments of zero search volumes. In the main analysis, when the Google search volume in a week is zero, we replace the zero value with the search volume equivalent to a Google Trends value of 1. When zeros are replaced with the country search volume equivalent to a Google Trends value of 0.5 (Appendix Table B6), results remain similar to the main specification. However, when zeros are dropped with no replacement (Appendix Table B7), the positive effect for \texttt{apple maps} weakens and is no longer statistically significant, whereas the coefficients for other services remain small and imprecisely estimated. Additionally, we conduct a synthetic difference-in-differences analysis for all competitors, reported in Appendix Table B8 and Appendix Figure B8. These results are broadly consistent with the ones in Appendix Table B5 and suggest some upward movement only for \texttt{apple maps}, but again the evidence is not robust enough to conclude a clear positive effect.
+	
+	Accordingly, these findings indicate that, if any competitor experienced a post-DMA increase in searches, it is most likely Apple Maps. Still, given the sensitivity of results to model specification, and the very small share of searches involved, the magnitude and economic significance of this effect remain highly uncertain.
+	
+	Notably, Apple Maps was historically available only to Mac users. When these users searched for Apple Maps on Google, they could click on a website link that redirected them to the Mac application. For all non-Mac users, searching for\texttt{apple maps} on a desktop did not direct them to any website providing access to Apple’s mapping services. However, in July 2024, Apple launched a beta version of Apple Maps accessible via the web, making it available to all users.\footnote{See: \url{https://www.apple.com/newsroom/2024/07/apple-maps-on-the-web-launches-in-beta/}.} Despite this expansion, the beta version remains relatively unknown among non-Mac users. In December 2024, worldwide online visits to \texttt{www.beta.maps.apple.com} were 231,000, significantly lower than the 702 million visits to \texttt{www.google.com/maps} and the 13.2 million visits to \texttt{www.bing.com/maps} during the same period. This suggests that while some users may indeed switch to alternative mapping services when a competitive option such as Apple Maps is available, widespread adoption remains limited. 
+	
+	To explore this idea further, we focus on the case of France, the only country where one competing service, Mappy, had a higher search volume than Google Maps before the DMA. In Appendix Figure B9, we present the time series of search volumes in France for \texttt{maps}, \texttt{google maps}, and \texttt{mappy} in 2023 and 2024. The data suggest that French users were actively using an alternative service that had gained some traction. However, as the Figure illustrates, the DMA did not lead to an increase in searches for \texttt{mappy}; instead, search volumes for Mappy slightly declined after the DMA and were eventually surpassed by searches for Google Maps. This indicates that while the presence of a readily available alternative can play a role, it is not necessarily sufficient to drive a switch in user behavior.
+	
+	Finally, we also examined whether the DMA affected broader geo-localized queries on Google Search, such as \texttt{restaurant}, \texttt{shopping}, and \texttt{supermarket}. While the estimated effects were generally negative, ranging from a 1–4\% decline in search volumes, none were statistically significant. These results suggest only weak evidence of substitution away from Google Search toward Google Maps for geo-referenced information. A full discussion of this analysis is provided in Appendix B.
+	
+	
+	
+	\section{The DMA's Impact on Online Traffic}  \label{sec:traffic}
+	
+	To complement our previous findings based on search volumes, we extend the analysis to traffic volumes. This enables us to assess whether, and to what extent, the actual usage of mapping and related services has changed following the introduction of the DMA. While the previous Section documented clear shifts in search behavior, these changes may or may not translate into differences in overall traffic. Therefore, we analyze whether the additional searches observed, particularly for generic queries such as \texttt{maps}, resulted in changes in traffic to Google Maps and opened the door to increased usage of competing services. We continue to apply the DiD design specified in Equation \ref{eq:did} and validate the robustness of our estimates by considering alternative control groups and employing other identification designs.
+	
+	
+	
+	\subsection{Impact on the Extensive Margin of Google Maps Traffic} 
+	
+	We now examine the DMA's effect on the extensive margin of Google Maps' traffic. We first analyze variations in the total desktop and mobile traffic volumes to measure the overall effect of the DMA on the visits to \texttt{www.google.com/maps}. We then investigate changes in the sources of traffic, linking them to the previously observed shifts in search queries.  
+	
+	
+	
+	\subsubsection{Total Desktop and Mobile Visits}\label{subsec:google_maps_desktop_mobile} 
+	
+	Ex-ante assessment of the impact of the DMA on desktop traffic volumes for \texttt{www.google.com/maps} is not straightforward. On the one hand, the removal of the map signet and clickable maps may have discouraged some users from accessing Google Maps. On the other hand, some queries that previously triggered geo-localized results directly on Google Search (e.g., searches for shops and attractions) may now be substituted with more general \texttt{maps} or \texttt{google maps} queries, as users increasingly rely on Google Maps for all geo-based searches, potentially increasing traffic to the platform. Determining which effect dominates is crucial for assessing the extent to which the DMA's efforts to enhance digital market contestability are impacting Google's bottom line.  
+	
+	
+	To this end, Table \ref{tab:did_desktop_mobile} presents three specifications of the DiD estimates from Equation \ref{eq:did} for the overall volume of desktop visits (Columns (1)–(3)), and for mobile visits (Columns (4)–(6)). The specifications mirror those presented in Table \ref{tab:did}. 
+	
+	For overall desktop visits, we observe a positive effect that is statistically significant at the 10\% level only in one specification (when using non-EU countries in the Northern Hemisphere as the control group). In other specifications, the effect remains positive but not statistically significant. These findings suggest that the DMA did not have any sizable effect on traffic to Google Maps and, in particular, allow us to exclude a significant negative impact on desktop visits. Based on the results of the specification in Column (3) of Table \ref{tab:did_desktop_mobile}, the probability that the coefficient for desktop traffic is positive, meaning that desktop visits to Google Maps did not decrease due to the DMA, is 89\% and we can exclude a negative decline of more than 5\% for desktop visits with a probability equal to 95.9\%. This interpretation is further supported by the absence of pre-trends in the event study plots shown in Figure \ref{fig:ES_ldesktop}, and Appendix Figures C1a and C1b for different sets of non-EU control countries.
+	
+	To further assess the validity of our identification design and ensure that there are no other significant changes occurring in EU versus other non-EU countries right during the DMA implementation, we conduct a placebo test using mobile visits to \texttt{www.google.com/maps} as the dependent variable. Given the absence of any notable changes in mobile browser access to Google Maps during the period of interest, no effect should be detectable. The estimates are reported in Columns (4) to (6) of Table \ref{tab:did_desktop_mobile}. As expected, none of the point estimates are statistically significant, regardless of the geographic zone chosen to construct the control group. Considering the associated event study plot using non-EU European countries in  Figure \ref{fig:ES_lmobile}, we interpret these null results as evidence that our desktop findings are not driven by unrelated external shocks.
+	
+	
+	\subsubsection{Direct Traffic and Organic Search for Desktop Visits} \label{subsec:google_maps_direct_organic}
+	
+	Using clickstream data from Semrush, we now assess how the DMA altered the pathways through which users arrived at Google Maps.\footnote{As discussed in Section \ref{subsec:data}, Semrush categorizes traffic into visits from  direct access,  organic search (clicking a Google Search results, or the ``directions'' button on Google Search), referrals and other sources. We focus on desktop traffic, as Google's DMA-related changes affected only the desktop version of Google Search in 2024.} 
+	
+	
+	\clearpage 
+	
+	
+	\begin{table}
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:did_desktop_mobile} Difference-in-Differences: log of Visits for \texttt{www.google.com/maps} - Desktop and Mobile}
+		\begin{threeparttable}
+			%\begin{adjustbox}{max width=\linewidth}
+			\begin{tabular}{lcccccc}
+				\hline \noalign{\smallskip} 
+				& \multicolumn{3}{c}{(Visits Desktop)} & \multicolumn{3}{c}{(Visits Mobile)}  \\ \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+				 
+				&         (1)   &         (2)   &         (3)   &         (4)   &         (5)   &         (6)   \\
+				\midrule
+				$ EU \times post^{DMA} $ &       0.077   &       0.122*  &       0.122   &       0.031   &       0.022   &       0.094   \\
+				&     (0.066)   &     (0.072)   &     (0.099)   &     (0.082)   &     (0.096)   &     (0.144)   \\
+				
+				Country FEs         &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Month FEs           &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Control Countries    &         All   &  North Hem.   &   Only Euro   &         All   &  North Hem.   &   Only Euro   \\
+				$ R ^2 $            &       0.980   &       0.980   &       0.975   &       0.883   &       0.880   &       0.839   \\
+				N                   &       1,248   &       1,128   &         912   &       1,248   &       1,128   &         912   \\
+				Mean Dep. Var.      &      14.867   &      14.819   &      14.569   &      13.940   &      13.873   &      13.566   \\
+				\midrule
+			\end{tabular}
+			
+			%\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes monthly data from January 2023 to December 2024 about the online visits to the domain \texttt{www.google.com/maps}. The first three columns correspond to the visits from desktop, and the second three correspond to the visits from mobile. For each type of visit, we present specifications that include country and month fixed effects. The specifications differ in the composition of the control group: The first specification includes all countries in the control group. The second specification limits the control group to countries in the Northern Hemisphere. The third specification restricts the control group to European, non-EU countries. In all specifications, the treated group comprises 25 EU countries. Standard errors clustered by country are in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\). 
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_3a.pdf}
+			\caption{Desktop}\label{fig:ES_ldesktop}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_3b.pdf}
+			\caption{Mobile}\label{fig:ES_lmobile}
+		\end{subfigure}
+		\caption{Event study: log of Desktop and Mobile Visits}
+		\label{fig:ES_traffic}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of all online visits for \texttt{www.google.com/maps} from desktop and mobile devices are regressed on country and time fixed effects and interactions between a dummy variable indicating if a country is in the European Union and a full set of dummy variables for each snapshot. The graphs plot the estimated coefficients of these interaction terms. The coefficient for January 2024 is normalized to zero. The treated group includes 25 EU countries, excluding Cyprus and Malta due to data availability. The control group comprises European non-EU countries. The sample includes monthly data from January 2023 to December 2024. Figures \ref{fig:ES_ldesktop} and \ref{fig:ES_lmobile} show the analysis for all online visits for \texttt{www.google.com/maps} from desktop and mobile devices, respectively. Standard errors are clustered by country and reported in the form of 95\% confidence intervals.
+			
+		\end{minipage}
+	\end{figure}
+	
+	
+	
+	\clearpage
+	
+	Appendix Table C1 reports three specifications of the DiD estimates from Equation \ref{eq:did} for desktop visits originating from direct access (Columns (1)–(3)) and from organic search (Columns (4)–(6)), the two most relevant channels for accessing Google Maps, as shown in Table \ref{tab:sum_stat_traffic}. Again, all specifications mirror the ones presented in Table \ref{tab:did}. The estimates presented in Appendix Table C1 indicate a statistically and economically significant increase of more than 33\% in desktop visits originating from organic search after the DMA implementation. However, we do not find similar evidence of a statistically significant increase in the number of desktop visits accessing \texttt{www.google.com/maps} via direct access. Appendix Figure C2 confirms that the parallel trends assumption holds for both traffic channels. 
+	
+	As shown in Table \ref{tab:sum_stat_traffic}, prior to the DMA, only 21\% of EU desktop traffic originated from organic search, increasing to 26\% after its implementation. This suggests that, despite the significant estimated increase in organic search traffic, the overall impact on total desktop visits may be limited.  More than 64\% of traffic came from direct access, and we find no evidence of an increase in the number of visits accessing Google Maps through this channel. Appendix Table C2 and Appendix Figure C3 reports the impact of the DMA on desktop visits originating from referral links and other sources. The results indicate a small, weakly positive effect on referral traffic, but the evidence is neither robust nor consistently statistically significant.
+	
+	In summary, our findings suggest that the observed increase in organic search traffic is not only consistent with a rise in explicit queries for \texttt{maps} or \texttt{google maps}, but also reflects a shift in user search behavior. Specifically, some queries that previously triggered geo-localized results directly on Google Search (e.g., \texttt{Shakespeare and Co} or searches for specific shops and attractions) may now be substituted with general \texttt{maps} or \texttt{google maps} queries, as users increasingly rely on Google Maps itself to retrieve detailed local information.
+	
+	To validate our traffic-based results, we complement the baseline DiD with a range of robustness analyses. These include synthetic DiD and synthetic control, tests focusing on traffic shares rather than volumes, and a triple-differences design that leverages mobile traffic as an internal control. Across all methods, the conclusions remain consistent: the DMA had little to no effect on total desktop visits, but increased organic search traffic to Google Maps. Full results and supporting figures are presented in Appendix C.
+	
+	\subsection{Impact on the Intensive Margin of Google Maps Traffic} \label{subsec:google_maps_extra_variables}
+	
+	Having established that the DMA did not significantly alter the extensive margin of \texttt{www.google.com/maps} traffic, as measured by desktop traffic volumes, we now turn to the intensive margin to assess whether the DMA influenced how Google Maps is used. 
+	
+	We measure usage through four key metrics: the number of unique visitors, the average number of pages visited per session, the average duration of each visit, and the bounce rate (i.e., the share of users who leave the site within ten seconds).  These metrics provide insights into how the removal of clickable maps may have affected user behavior and, more broadly, the Google Maps ecosystem. We analyze each metric using the DiD strategy presented in Equation \ref{eq:did}, varying the set of countries in the control group to check the robustness of our results.
+	
+	
+	\subsubsection{Unique Visitors and Visited Pages} \label{subsec: visitors pages visited}
+	
+	Appendix Table C7 reports the estimates from Equation \ref{eq:did} for the number of unique visitors and the average number of pages visited per visit. The corresponding event study plots, using European non-EU countries as a control group, are presented in Appendix Figure C12.  
+	
+	For both variables, we do not observe any significant effect. This result remains robust to alternative definitions of the control group, and the pre-trends support the validity of our approach. We conclude that the DMA has not led to a significant decline in Google Maps usage, as nearly no users have abandoned the platform, and engagement, measured by the number of visited pages, has remained stable. This provides further evidence that the DMA did not fundamentally alter traffic patterns on Google Maps.  
+	
+	
+	\subsubsection{Visit Duration and Bounce Rate} \label{subsec:google_duration_bounce}
+	
+	Thus far, we have shown that overall traffic to \texttt{www.google.com/maps} does not appear to be significantly affected by the DMA. However, when analyzing the average time spent per visit and the share of visits lasting less than ten seconds (bounce rate), we find notable changes. Appendix Table C8 presents the estimates from Equation \ref{eq:did} for these two outcomes, using our usual three control groups. 
+	
+	We document a statistically significant decline in average visit duration of approximately 5\% and a 16\% increase in the bounce rate. The corresponding event study plots in Appendix Figures C13, C14, and C15 (using different non-EU countries as control groups) show that these effects appear immediately after January 2024, coinciding with the removal of clickable maps.
+	
+	Moreover, all plots provide no indication of a departure from the parallel trends assumption. Using SDiD or synthetic control methods does not alter our results for either variable, as shown in Appendix Table C9. The point estimates remain qualitatively similar to those in Appendix Table C8, though they exhibit slightly greater magnitudes and higher levels of statistical significance for the effect on bounce rates. Similarly, Appendix Figure C16 presents the event study plots for both variables using the SDiD design, once again showing that the timing of the changes aligns with the DMA intervention.  
+	
+	How should we interpret these shifts in on-site engagement? One possibility is that they reflect a deterioration in user experience: with the removal of clickable maps, some users are redirected through the ``directions'' button, which leads to a version of Google Maps (\texttt{www.google.com/maps/dir}) that automatically provides an itinerary from the current location to the destination. For many users, this information may be irrelevant, prompting them to leave quickly and resulting in shorter visits and higher bounce rates.  
+	
+	
+	At the same time, other mechanisms could also generate these patterns without necessarily implying lower quality. First, the composition of users reaching Google Maps may have shifted. If users with different intents accessed Google Maps before and after the DMA, this change in user mix could itself lead to differences in average session duration and bounce rates. Second, time constraints could play a role: since reaching Google Maps now requires an additional step, users may spend less time within the interface simply because they have already expended time in the navigation process.  
+	
+	To investigate the extent to which the use of the ``directions'' button contributes to these outcomes, we conducted a complementary analysis of traffic to \texttt{www.google.com/maps/dir}. Appendix Table C10 and Appendix Figures C17 and C18 present the results. The event study for visits shows a temporary and statistically significant increase in traffic to this domain in the months immediately following the DMA.
+	
+	This suggests that some users were initially experimenting with the ``directions'' interface. However, in the longer run (around one year after January 2024), the effects on traffic, visit duration, and bounce rate are no longer statistically significant. The point estimates nevertheless indicate that users diverted to this version of Google Maps tended to have shorter sessions and higher exit rates. Overall, these findings suggest a more nuanced interpretation: while the patterns in visit duration and bounce rates are consistent with some decline in the user experience, they may also be partly explained by short-run adjustment dynamics, changes in user composition, and modified navigation paths.
+	
+	
+	\subsection{Impact on Google Maps Alternatives and Related Services} \label{subsec:traffic_google_bing}  
+	
+	In the previous Subsections, we established that users have, at most, reduced their time spent per visit on \texttt{www.google.com/maps}. We now examine whether the DMA has facilitated access to alternative online mapping services. We focus on the traffic of Google Maps’ alternative, \texttt{www.bing.com/maps}. We then analyze how traffic for Google Search has evolved following the implementation of the DMA, given that Google Search and Google Maps were vertically integrated (the map shown after the search was clickable)  prior to the DMA’s implementation.
+	
+	\subsubsection{Online Traffic for \texttt{www.bing.com/maps}} \label{subsec: bing maps}
+	
+	As discussed in Section \ref{sec:results}, Bing Maps is one of the most significant competitors to Google Maps. In particular, Bing Maps is the only competitor with substantial search volumes in both EU and non-EU countries before the DMA, and it features a dedicated mapping website accessible to all users.
+	
+	In response to the removal of clickable maps due to the DMA and the rise of organic search for online mapping services, some users may have turned to Bing Maps as a substitute for Google Maps. To investigate this possibility, we use total desktop and mobile traffic as dependent variables within our DiD framework based on Equation \ref{eq:did}. The estimates are presented in Appendix Table C11 for different control groups, while Appendix Figure C19 presents the associated event study using European non-EU countries as a control group. We find no evidence that either mobile or desktop traffic volumes increased as a result of the DMA. In fact, there are indications that Bing Maps' desktop traffic may have decreased.
+	
+	
+	As a robustness check, Appendix Table C12 reports estimates based on SDiD and synthetic control methods, while Appendix Figure C20 displays the associated event study for the SDiD approach. The estimates are qualitatively similar to those in Appendix Table C11, and the event study plot closely mirrors the one in Appendix Figure C19.
+	
+	
+	All of these results are consistent with the null effect observed for desktop traffic on Google Maps, as well as the absence of Bing Maps in search results for \texttt{maps} within Google Search (see Appendix Figure A1). We conclude that, in the short run, the DMA has not led to a significant redirection of traffic from Google Maps to Bing Maps.
+	
+	
+	
+	\subsubsection{Online Traffic for \texttt{www.google.com}} \label{subsec: google}
+	
+	We conclude this Section by analyzing the impact of the DMA on traffic volumes to \texttt{www.google.com}, given Google’s vertical integration of aspects of Google Maps directly into Google Search. For example, when searching for a restaurant near a landmark, Google Search now shows restaurant recommendations (e.g., price range, ratings, number of reviews, type of restaurant, address). Additionally, two new badges, ``Places'' and ``Places Sites'', have been introduced. These badges display a list of businesses with direct links to Google Maps and a list of their reviews, respectively (see Appendix Figure C21). This integration complicates the detection of self-preferencing, as it becomes challenging to differentiate between Google Search and Google Maps. Furthermore, the DMA may have affected Google Search’s traffic by altering its appeal, such as through changes in search results that reduce the prominence of Google Shopping, Google Hotels, and Google Flights, while also potentially exposing consumers to alternative search engines.
+	
+	As in previous analyses, we apply the DiD methodology presented in Equation \ref{eq:did}, using desktop and mobile traffic as outcome variables for \texttt{www.google.com}.
+	
+	Appendix Table C13 presents the DiD estimates for three control group specifications, and Appendix Figure C22 shows the corresponding event study plots using European non-EU countries as the control group. For both desktop and mobile traffic, and across different model specifications, we observe a precise null result with no pre-existing trends. This suggests that the DMA has not had a significant effect on the traffic volume to \texttt{www.google.com}. Appendix Table C14 provides estimates based on SDiD and synthetic control methods, with Appendix Figure C23 presenting the corresponding event study for the SDiD approach. The estimates and event study results are qualitatively similar to those in Appendix Table C13, as well as to those shown in Appendix Figure C22. 
+	
+	This finding can be interpreted as evidence that the DMA has not harmed Google in the form of reduced traffic. It can also be said that the DMA has failed, in the short run, to direct traffic towards competitors.  With regards to the online mapping market, these results suggest that the removal of clickable maps has not led to a detectable increase in traffic for \texttt{www.google.com} at the expense of \texttt{www.google.com/maps}.
+	
+	
+	
+	\section{Policy Implications}\label{sec:policy_impli}
+	
+	The DMA aimed to enhance contestability in digital markets by reducing self-preferencing behaviors of gatekeeper platforms. However, our findings suggest that, at least so far, the removal of clickable maps in Google Search has not led to a substantial increase in market contestability for mapping services. The persistence of Google Maps as the dominant service indicates that alternative providers have yet to benefit meaningfully from these changes, and users continue to engage primarily within Google’s ecosystem. At the same time, the DMA has imposed small but noticeable frictions on users, which translate into additional time costs when searching for location-based information. While we refrain from providing a precise monetary estimate of these costs (since they arise not only from extra searches but also from time spent on less relevant Google Maps pages produced by the ``directions'' button), our results suggest that users have borne much of the adjustment burden. 
+	
+	Google’s modifications align with the formal requirements of the DMA, but they have not effectively provided users with new opportunities to discover and adopt alternative mapping services. Different design approaches could have been considered to stimulate competition. For instance, Google has previously introduced choice screens for Chrome users, allowing them to select their preferred search engine upon installation.\footnote{For more information about this change, see \href{https://www.google.com/chrome/choicescreen/}{https://www.google.com/chrome/choicescreen/}.} A similar mechanism applied to mapping services, explicitly presenting users with various mapping options, might have been more effective in raising awareness of alternative providers and facilitating competition. Another notable development is the introduction of ``Google Places'', which now integrates certain local search results that were previously displayed on Google Maps directly into Google Search (see Appendix Figure C21). This shift raises concerns about whether the intended unbundling of services has been fully achieved. Rather than reducing Google’s control over location-based search, this redesign may have simply redistributed the prominence of its own services within a different interface. 
+	
+	A separate but related issue is the availability and quality of alternatives. For market contestability to be effective, competing mapping services must provide comparable geo-localized information. As of now, very few alternatives match Google Maps in terms of data coverage and usability. However, one notable development is the expansion of Apple Maps to desktop users beyond the Mac ecosystem.\footnote{See again: \href{https://www.apple.com/newsroom/2024/07/apple-maps-on-the-web-launches-in-beta/}{https://www.apple.com/newsroom/2024/07/apple-maps-on-the-web-launches-in-beta/}.} Although its market share remains small, this move represents a step toward increased competition. That said, it remains unclear whether this expansion was directly influenced by the DMA or simply part of Apple’s broader strategy.
+	
+	\section{Conclusion}\label{sec:conclusion}
+	This paper investigates the impact of changes to Google's search results page, mandated by the Digital Markets Act in the EU, on user search behavior and online traffic, particularly concerning mapping services. Leveraging a difference-in-differences approach comparing EU and non-EU countries before and after the January 2024 implementation, we analyze how removing the direct clickability of map results and the Google Maps signet influenced user choices and market dynamics.
+	
+	Our findings reveal a significant behavioral response to the DMA-induced design change. We document a robust and statistically significant increase of over 21\% in Google search volumes for queries like \texttt{maps} and \texttt{google maps} within the EU. This indicates that users, unable to access Google Maps directly via the clickable maps, resorted to explicit searches to reach the service. While most of the additional searches for \texttt{maps} still redirect users to Google Maps, the query itself remains neutral. From the perspective of the DMA’s contestability objective, fostering more searches of this generic kind is not necessarily a negative outcome, since it at least creates opportunities for alternative services to be discovered. However, this increased search activity did not translate into a significant shift towards competing services. While searches for \texttt{apple maps} saw a minor, statistically significant rise, volumes remained orders of magnitude smaller than those for Google Maps, and no significant increase was observed for \texttt{bing maps} or other alternatives. Crucially, overall desktop traffic to Google Maps remained stable, suggesting the shift primarily involved users taking an extra search step to reach their preferred service, rather than switching away. Furthermore, traffic analysis using Semrush data shows a statistically significant increase in organic search traffic to \texttt{www.google.com/maps} from desktop users, with no significant change in direct traffic. Supporting this, we did not observe any increase in traffic for \texttt{www.bing.com/maps}, or no impact on overall usage of \texttt{www.google.com}.
+	
+	These results suggest that while the DMA's intervention successfully altered the immediate user pathway, removing Google's ``one-click advantage'' has been insufficient to significantly enhance the contestability of the online mapping market or substantially divert traffic away from Google Maps. The notion that ``competition is one click away'' appears challenged, as frictions like user habit, brand dominance, and potential inattention seem to lead users back to the incumbent service even when presented with an additional search step (\citealp{allcott2025sources}). We also note subtle changes in user engagement on Google Maps post-DMA, including a 5\% reduction in average visit duration and a 16\% increase in bounce rates, potentially indicating a slight deterioration in user experience due to the altered access method.
+	
+	Our study provides early empirical evidence on the real-world effects of the DMA on a major digital platform, contributing to the literature on self-preferencing, online search behavior, and digital regulation. The findings underscore the potential limitations of interventions focused solely on choice architecture modifications when confronting deeply entrenched market positions. While removing preferential placements like clickable maps addresses one aspect of self-preferencing, regulators might consider scrutinizing other integrated features, such as the persistent ``directions'' button linking to Google's navigation, and exploring mechanisms to enhance the visibility and salience of alternative services within search results.
+	
+	Future research could explore the longer-term evolution of these trends, including potential lagged effects on competitor adoption or market entry. Investigating the persistence of the observed user engagement changes and exploring the nuances behind the slight increase in \texttt{apple maps} searches could also yield valuable insights. Additionally, examining how platforms might adapt compliance strategies over time, and how users respond to these evolving digital environments, remains a critical area for ongoing study in the context of the DMA and digital market regulation.
+	
+	
+	
+	
+	\section*{Funding and Competing Interests}
+	
+	All authors certify that they have no affiliations with or involvement in any organization or entity with any financial interest or non-financial interest in the subject matter or materials discussed in this manuscript.
+	
+	
+	
+	\bibliography{bib_DMA}
+	
+	
+\end{document}
+
+

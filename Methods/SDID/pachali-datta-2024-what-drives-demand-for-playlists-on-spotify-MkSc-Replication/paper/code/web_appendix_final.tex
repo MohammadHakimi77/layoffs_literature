@@ -1,0 +1,193 @@
+\documentclass[12pt, a4paper, leqno]{article}
+\usepackage{lipsum} % math environments
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage{epstopdf}
+\usepackage{dsfont}
+\usepackage{color}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage{amsmath} % math environments
+\usepackage{amssymb} % more mathematical symbols
+\usepackage{mathcomp}
+\usepackage{amsfonts} 
+\usepackage{setspace}
+\usepackage{psfrag}
+\usepackage{tikz}
+\usepackage{enumerate} % \begin{enumerate}[(i)] OR [a)] OR [-- i --] OR ...
+\usepackage{multirow} % in \tabular environment: \multirow{number of rows}{c}{text}
+\usepackage[justification=centering, font=small,labelfont=bf,singlelinecheck=false]{caption}
+\usepackage{booktabs}
+\usepackage{subfig}
+\usepackage{appendix}
+\usepackage{cite}
+\usepackage{imakeidx}
+\usepackage{wrapfig}
+\usepackage{eurosym}
+\usepackage{rotating}
+\usepackage{fontspec}
+\usepackage[print-zero-integer = false]{siunitx}
+\usepackage{algorithm}
+\newcolumntype{C}{>{$}c<{$}}
+\usepackage[para,online,flushleft]{threeparttable}
+
+\setmainfont{Times New Roman}
+
+
+%%%Include � sign
+\DeclareRobustCommand{\officialeuro}{%
+  \ifmmode\expandafter\text\fi
+  {\fontencoding{U}\fontfamily{eurosym}\selectfont e}}
+
+\usepackage[]{natbib}
+%round,longnamesfirst
+
+\usepackage[unicode=true]{hyperref}
+\hypersetup{colorlinks=true, linkcolor=black, anchorcolor=black, citecolor=black, filecolor=black, menucolor=black, runcolor=black, urlcolor=black}
+\usepackage{etoolbox}
+\appto\UrlBreaks{\do\-}
+
+%\bibliographystyle{unsrt}
+
+
+\widowpenalty=10000
+\clubpenalty=10000
+
+\setlength{\parskip}{1ex}
+\setlength{\parindent}{0ex}
+
+\renewcommand{\dagger}{**}
+\renewcommand{\ddagger}{{**}*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%Trees%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usetikzlibrary{positioning,shapes.geometric}
+\usetikzlibrary{calc}
+\usetikzlibrary{trees}
+%\pagestyle{empty}
+\headheight 15pt
+\rhead{}
+\chead{}
+\lhead{}
+%\rfoot{Right bottom}
+\cfoot{\thepage}
+%\lfoot{Left bottom}
+
+% Set the overall layout of the tree
+\tikzstyle{level 1}=[level distance=1.5cm, sibling distance=3.5cm]
+\tikzstyle{level 2}=[level distance=2cm, sibling distance=1cm]
+
+% Define styles for bags and leafs
+\tikzstyle{bag} = [text width=4em, text centered]
+\tikzstyle{end} = [circle, minimum width=3pt,fill, inner sep=0pt]
+
+\setcounter{MaxMatrixCols}{20}
+
+%Seitenr�nder
+\usepackage[left=2cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%Zeilenabstand
+\doublespacing
+
+\allowdisplaybreaks
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+
+
+\renewcommand{\figurename}{Figure W}
+
+\renewcommand{\tablename}{Table W}
+
+\renewcommand{\theequation}{W\arabic{equation}}
+
+\setstretch{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\title{
+%\vspace{-3.0cm}
+WEB APPENDIX
+
+\\Omitted Budget Constraint Bias and Implications for
+Competitive Pricing
+}
+
+\author{
+Max J. Pachali
+\thanks{Max J. Pachali is Assistant Professor of Marketing, Tilburg University, the Netherlands (email: \texttt{m.j.pachali@tilburguniversity.edu}).}
+\and 
+Peter Kurz 
+\thanks{Peter Kurz is Managing Partner Innovation \& Methods, bms marketing research + strategy GmbH, Germany (email: \texttt{p.kurz@bms-net.de}).}
+\and
+Thomas Otter
+\thanks{Thomas Otter is Professor of Quantitative Marketing, Goethe University Frankfurt, Germany (email: \texttt{otter@marketing.uni-frankfurt.de}).}}
+
+\date{}
+
+\maketitle
+
+These materials have been supplied by the authors to aid in the understanding of their paper. \\ The AMA is sharing these materials at the request of the authors.
+%\vspace{-1.0cm}
+
+
+\thispagestyle{empty}
+\pagenumbering{arabic}
+
+\newpage
+\tableofcontents
+\thispagestyle{empty}
+
+%\newpage
+%\addcontentsline{toc}{section}{List of Figures}
+%\listoffigures
+
+%\newpage
+%\addcontentsline{toc}{section}{List of Tables}
+%\listoftables
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newpage
+\setcounter{page}{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setcounter{MaxMatrixCols}{20}
+
+\setstretch{2}
+
+\appendix
+\input{Appendix/Latex/Appendix_I}
+
+\clearpage
+\bibliography{bibliography/bibliography}
+
+% JMR style reference section -> adapted chicago style bibliography
+% 1)Include first and last names in all references, unless the initials were used in the original reference. 
+% 2) Write out all author names for in-text citations with 3 authors or less (use et al. only for 4 or more authors). 
+% 3) Have article title in quotes
+% 4) Have commas instead of periods to separate the blocks
+% Need JMR_style.bst file where main document is
+% We will have to submit this file also to the journal
+\bibliographystyle{jmr}
+%apa}%
+
+
+\end{document}

@@ -1,0 +1,8 @@
+<tab:superstarplaylist>
+Number of playlists	1.848800e+04	1.599500e+04
+Avg. followers	5.401758e+04	7.225596e+04
+Share of playlists curated by Spotify (in $\%$)	2.200887e+01	1.336043e+01
+Avg. share of major label content (in $\%$)	3.718089e+01	6.088417e+01
+Avg. number of tracks	1.273546e+02	1.995718e+02
+Avg. updating probability	6.034150e-02	8.471301e-02
+Avg. track length (in minutes)	3.898464e+00	3.720194e+00

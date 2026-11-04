@@ -1,0 +1,8 @@
+<tab:promoplaylist>
+Number of playlists	4.742000e+03	2.974100e+04
+Avg. followers	2.957623e+05	2.528180e+04
+Share of playlists curated by Spotify (in $\%$)	8.833825e+01	6.781884e+00
+Avg. share of major label content (in $\%$)	4.572236e+01	4.856686e+01
+Avg. number of tracks	8.228903e+01	1.733791e+02
+Avg. updating probability	8.766791e-02	6.909173e-02
+Avg. track length (in minutes)	3.812538e+00	3.816289e+00

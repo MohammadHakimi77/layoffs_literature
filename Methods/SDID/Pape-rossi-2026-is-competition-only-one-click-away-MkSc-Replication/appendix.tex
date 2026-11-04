@@ -1,0 +1,1888 @@
+\documentclass[11pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[labelfont=bf]{caption}
+\usepackage{array, xcolor, lipsum, bibentry, graphicx, subcaption, multirow, tabularx, setspace, amsmath,amsthm, mathtools, amsfonts, rotating,lscape, pdflscape, adjustbox, titling,pdfpages, enumitem, import,soul,comment, subcaption}
+\usepackage[round,longnamesfirst]{natbib}
+\usepackage[multiple]{footmisc}
+\bibliographystyle{cje}
+\usepackage{ragged2e, chronology, booktabs, dsfont, framed}
+%\usepackage[capposition=top]{floatrow}
+\usepackage[section]{placeins}
+\renewcommand{\thesection}{\arabic{section}.} %\hspace{-0.5cm}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}.}
+%\hspace{-0.5cm}
+
+
+\usepackage{textcomp}
+\usepackage{booktabs, threeparttable}
+%\numberwithin{equation}{section}
+\usepackage{tikz, pgfplots, pgfplotstable}
+\usepackage{xr, xr-hyper}
+\usepackage{bm}
+\usepackage{mathptmx}
+\usepackage[hyperfootnotes=false]{hyperref}
+\makeatletter
+\newcommand*{\addFileDependency}[1]{% argument=file name and extension
+	\typeout{(#1)}
+	\@addtofilelist{#1}
+	\IfFileExists{#1}{}{\typeout{No file #1.}}
+}
+\makeatother
+
+\newcommand*{\myexternaldocument}[1]{%
+	\externaldocument{#1}%
+	\addFileDependency{#1.tex}%
+	\addFileDependency{#1.aux}%
+}
+
+\myexternaldocument{main_body}
+
+\definecolor{myblue}{rgb}{0.0, 0.0, 0.5}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,citecolor=myblue,linkcolor=myblue,filecolor=myblue,urlcolor=myblue,
+}
+\DeclareMathOperator*{\E}{\mathbb{E}}
+\DeclareMathOperator*{\V}{\mathrm{Var}}
+\DeclareMathOperator*{\cov}{\mathrm{Cov}}
+\DeclareMathOperator*{\I}{\mathbb{I}}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\R}{\mathbb{R}}
+\DeclareMathOperator*{\N}{\mathbb{N}}
+
+\usepackage{helvet}
+\let\harvardurl\url
+\linespread{1.5}
+%\onehalfspacing
+\newcommand{\vect}[1]{\mathbfsymbol{#1}}
+
+\captionsetup[figure]{labelfont={bf},name={Figure},labelsep=period}
+\captionsetup[table]{labelfont={bf},name={Table},labelsep=period}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{assumption}{Assumption}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+%\newtheorem{proof}{Proof}
+\usepackage[T1]{fontenc}
+\usepackage[top=1.in, bottom=1.in, inner=1.in, right=1.in]{geometry}
+\pagestyle{plain}
+\hypersetup{linktoc=all}
+
+\usepackage{fancyhdr}
+\usepackage{Alegreya} %% Option 'black' gives heavier bold face 
+\renewcommand*\oldstylenums[1]{{\AlegreyaOsF #1}}
+\usepackage{bm}
+\usepackage{bbm}
+\usepackage{amsfonts,amsmath,amssymb,amsthm,mathtools,commath}
+
+\usepackage[italic]{mathastext}
+\usepackage{isomath}
+\renewcommand{\footnoterule}{\vfill\kern -3pt \hrule width 0.4\columnwidth \kern 2.6pt} 
+
+\begin{document}
+	
+	\newpage
+	
+	\appendix
+	\section*{APPENDIX - Is Competition Only One Click Away? The Digital Markets Act Impact on Google Maps.}
+	
+	
+	
+	\section{APPENDIX - Context, Data, and Empirical Strategy}\label{online appendix: A}
+	\setcounter{table}{0} \renewcommand{\thetable}{A\arabic{table}}
+	\setcounter{figure}{0} \renewcommand{\thefigure}{A\arabic{figure}}
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.49\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{figures/Figure_A1a.pdf}
+			\caption{France}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.49\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{figures/Figure_A1a.pdf}
+			\caption{Germany}
+		\end{subfigure} 
+		
+		\vspace{1cm} 
+		
+		\begin{subfigure}[h]{0.49\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{figures/Figure_A1a.pdf}
+			\caption{Italy}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.49\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{figures/Figure_A1a.pdf}
+			\caption{Spain}
+		\end{subfigure}
+		
+		\caption{Snapshot of Google results for the query \texttt{maps} (February 13, 2025) from different EU countries}
+		\label{fig:snapshot_maps}
+	\end{figure}
+	
+	
+	
+	
+	\clearpage 
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.77\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{figures/Figure_A2a.pdf}
+			\caption{EU countries}\label{fig:maps_overtime_EU}
+		\end{subfigure}\vspace{20pt}
+		\hfill 
+		\begin{subfigure}[h]{0.77\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{figures/Figure_A2b.pdf}
+			\caption{non-EU countries}\label{fig:maps_overtime_nonEU}
+		\end{subfigure}\vspace{15pt}
+		\caption{Google Search Volumes over Time for \texttt{maps} Query}
+		\label{fig:dynamics_maps}
+		{\footnotesize \begin{minipage}{16cm}
+				\vspace{3pt}
+				\emph{Notes}: The graph plots the Google search volumes using a log scale for the \texttt{maps} query for EU and non-EU countries. The sample includes weeks between January 2023 and December 2024. 
+		\end{minipage}}
+	\end{figure}
+	
+	\clearpage
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.77\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{figures/Figure_A3a.pdf}
+			\caption{EU countries}\label{fig:gmaps_overtime_EU}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.77\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{figures/Figure_A3b.pdf}
+			\caption{non-EU countries}\label{fig:gmaps_overtime_nonEU}
+		\end{subfigure}
+		\caption{Google Search Volumes over Time for \texttt{google maps} Query}
+		\label{fig:dynamics_gmaps}
+		{\footnotesize \begin{minipage}{16cm}
+				\vspace{3pt}
+				\emph{Notes}: The graph plots the Google search volumes for the \texttt{maps} query for EU and non-EU countries. The sample includes weeks between January 2023 and December 2024. 
+		\end{minipage}}
+	\end{figure}
+	
+	\clearpage
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.49\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{figures/Figure_A4a.pdf}
+			\caption{EU countries}\label{fig:desktop_overtime_EU}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.49\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{figures/Figure_A4b.pdf}
+			\caption{non-EU countries}\label{fig:desktop_overtime_nonEU}
+		\end{subfigure}
+		\caption{Online Visits for \texttt{www.google.com/maps} over Time (Desktop Visits)}
+		\label{fig:desktop_overtime}
+		{\footnotesize \begin{minipage}{16cm}
+				\vspace{3pt}
+				\emph{Notes}: The graph plots the online visits for \texttt{www.google.com/maps} using a log scale from desktop devices for EU and non-EU countries. The sample includes months between January 2023 and December 2024. 
+		\end{minipage}}
+	\end{figure}
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.49\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{figures/Figure_A5a.pdf}
+			\caption{EU countries}\label{fig:organic_overtime_EU}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.49\linewidth}
+			\centering
+			\includegraphics[width=\linewidth]{figures/Figure_A5b.pdf}
+			\caption{non-EU countries}\label{fig:organic_overtime_nonEU}
+		\end{subfigure}
+		\caption{Online Visits for \texttt{www.google.com/maps} over Time (Organic Search)}
+		\label{fig:organic_overtime}
+		{\footnotesize \begin{minipage}{16cm}
+				\vspace{3pt}
+				\emph{Notes}: The graph plots the online visits for \texttt{www.google.com/maps} from desktop devices for EU and non-EU countries. The sample includes months between January 2023 and December 2024.
+		\end{minipage}}
+	\end{figure}
+	
+	
+	\clearpage
+	
+	
+	
+	
+	\clearpage
+	
+	\section{APPENDIX - The DMA’s Impact on Search Volumes}\label{online appendix: B}
+	\setcounter{table}{0} \renewcommand{\thetable}{B\arabic{table}}
+	\setcounter{figure}{0} \renewcommand{\thefigure}{B\arabic{figure}}
+	\setcounter{subsection}{0} \renewcommand{\thesubsection}{B\arabic{subsection}}
+	
+	
+	\paragraph{Impact on \texttt{maps} and \texttt{google maps} Queries}
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_B1a.pdf}
+			\caption{\texttt{maps}}\label{fig:ES_lmaps1}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_B1b.pdf}
+			\caption{\texttt{google maps}}\label{fig:ES_lGmaps1}
+		\end{subfigure}
+		\caption{Event study: log of Google Search Volumes for \texttt{maps} and \texttt{google maps} (Control Countries: European Countries and Other Countries in the North Hemisphere)}
+		\label{fig:ES1}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of Google search volumes for \texttt{maps} and \texttt{google maps} queries are regressed on country and time fixed effects and interactions between a dummy variable indicating if a country is in the European Union and a full set of dummy variables for each snapshot. The graphs plot the estimated coefficients of these interaction terms. The coefficient for January 2024 is normalized to zero. The treated group includes 25 EU countries, excluding Cyprus and Malta due to data availability. The control group consists of 22 countries: 13 European non-EU countries and 9 other countries in the Northern Hemisphere.  
+			The sample includes weekly data from January 2023 to December 2024. Figures \ref{fig:ES_lmaps1} and \ref{fig:ES_lGmaps1} show the analysis for search volumes related to \texttt{maps} and \texttt{google maps}, respectively. Standard errors are clustered by country and reported in the form of 95\% confidence intervals.
+			
+			
+			
+			
+		\end{minipage}
+	\end{figure}
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_B2a.pdf}
+			\caption{\texttt{maps}}\label{fig:ES_lmaps2}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_B2b.pdf}
+			\caption{\texttt{google maps}}\label{fig:ES_lGmaps2}
+		\end{subfigure}
+		\caption{Event study: log of Google Search Volumes for \texttt{maps} and \texttt{google maps} (Control Countries: European Countries and Other Countries across the Globe)}
+		\label{fig:ES2}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of Google search volumes for \texttt{maps} and \texttt{google maps} queries are regressed on country and time fixed effects and interactions between a dummy variable indicating if a country is in the European Union and a full set of dummy variables for each snapshot. The graphs plot the estimated coefficients of these interaction terms. The coefficient for January 2024 is normalized to zero. The treated group includes 25 EU countries, excluding Cyprus and Malta due to data availability. The control group consists of 27 countries: 13 European non-EU countries and 14 other countries in both the Northern and Southern Hemispheres.
+			The sample includes weekly data from January 2023 to December 2024. Figures \ref{fig:ES_lmaps2} and \ref{fig:ES_lGmaps2} show the analysis for search volumes related to \texttt{maps} and \texttt{google maps}, respectively. Standard errors are clustered by country and reported in the form of 95\% confidence intervals.
+		\end{minipage}
+	\end{figure}
+	
+	\clearpage
+	
+	
+	\paragraph{Impact on \texttt{maps} and \texttt{google maps} Queries - Robustness Checks}
+	
+	\paragraph{Synthetic Difference-in-Differences} Given that our analysis compares outcomes across a limited number of countries over time, alternative identification strategies—such as synthetic difference-in-differences and synthetic control—could help assess whether our two-way fixed effects model is overly restrictive or influencing our point estimates. To test this, we estimate both the synthetic difference-in-differences model and the synthetic control model for the queries \texttt{maps} and \texttt{google maps}.
+	
+	Appendix Table \ref{tab:sdid} reports the results, and  Appendix Figure \ref{fig:ES3} present the associated event studies. Appendix Tables \ref{fig:SDID_maps} and \ref{fig:SDID_gmaps} display the weights assigned to each country and each week before the DMA in the synthetic difference-in-differences. Across all specifications, the treated group consists of 25 EU countries, while the control group includes all 27 non-EU countries. The point estimates from all three econometric methods are highly consistent, with confidence intervals overlapping at the 1\% level, further reinforcing the robustness of our findings.
+	
+	\clearpage
+	
+	\begin{table}[ht!]
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:sdid} Comparing Specifications: log of Google Search Volumes for \texttt{maps} and \texttt{google maps} Queries}
+		\begin{threeparttable}
+			\begin{adjustbox}{max width=\linewidth}
+				\begin{tabular}{lcccccc}
+					\hline \noalign{\smallskip} 
+					& \multicolumn{3}{c}{\texttt{maps}} & \multicolumn{3}{c}{\texttt{google maps}}  \\ \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+					
+					&(Synth. DiD)   &       (DiD)   &(Synth. Control)   &(Synth. DiD)   &       (DiD)   &(Synth. Control)   \\
+					\midrule
+					$ EU \times post^{DMA} $ &       0.241***&       0.244***&       0.240***&       0.242***&       0.244***&       0.258***\\
+					&     (0.035)   &     (0.028)   &     (0.031)   &     (0.032)   &     (0.028)   &     (0.031)   \\
+					
+					N                   &       5,304   &       5,304   &       5,304   &       5,304   &       5,304   &       5,304   \\
+					
+					\midrule
+					
+				\end{tabular}
+			\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes weekly data from January 2022 to December 2024. The first three columns correspond to the query \texttt{maps}, and the second three correspond to the query \texttt{google maps}. For each query, we present results from three specifications: synthetic difference-in-differences, classical difference-in-differences, and synthetic control. In all specifications, the treated group comprises 25 EU countries, excluding Cyprus and Malta due to data unavailability, while the control group includes all 27 countries. Standard errors are provided based on bootstrapping with 300 iterations clustered at the country level. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\). 
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_B3a.pdf}
+			\caption{\texttt{maps}}\label{fig:ES_lmaps3}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_B3b.pdf}
+			\caption{\texttt{google maps}}\label{fig:ES_lGmaps3}
+		\end{subfigure}
+		\caption{Synthetic Event study: log of Google Search Volumes for \texttt{maps} and \texttt{google maps}}
+		\label{fig:ES3}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of Google search volumes for \texttt{maps} and \texttt{google maps} queries are analyzed using a synthetic difference-in-differences approach. The graphs plot the estimated treatment effects over time, capturing the evolution of differences between the treated and synthetic control groups. The effect for January 2024 is normalized to zero. The treated group consists of 25 EU countries, excluding Cyprus and Malta due to data availability. The pool of countries for the synthetic control includes 27 countries: 13 European non-EU countries and 14 other countries in both the Northern and Southern Hemispheres. The sample includes weekly data from January 2023 to December 2024. Figures \ref{fig:ES_lmaps3} and \ref{fig:ES_lGmaps3} show the analysis for search volumes related to \texttt{maps} and \texttt{google maps}, respectively. 95\% confidence intervals are provided based on bootstrapping with 300 iterations clustered at the country level.
+		\end{minipage}
+	\end{figure}
+	
+	
+	\clearpage
+	
+	\begin{figure}[h]
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_B4a.pdf}
+			\caption{Week Weights}\label{fig:SDID_time_maps}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_B4b.pdf}
+			\caption{Country Weights}\label{fig:SDID_country_maps}
+		\end{subfigure}
+		\caption{Synthetic DiD: log of Google Search Volumes for the \texttt{maps} Query}\label{fig:SDID_maps}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The graphs plot the week and country weights for the synthetic difference-in-differences estimator for the \texttt{maps} query. The sample includes weeks between January 2022 and December 2024. 95\% confidence intervals are provided based on bootstrapping with 300 iterations clustered at the country level.
+		\end{minipage}
+	\end{figure}
+	
+	
+	\begin{figure}[h]
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_B5a.pdf}
+			\caption{Week Weights}\label{fig:SDID_time_gmaps}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_B5b.pdf}
+			\caption{Country Weights}\label{fig:SDID_country_gmaps}
+		\end{subfigure}
+		\caption{Synthetic DiD: log of Google Search Volumes for the \texttt{google maps} Query}\label{fig:SDID_gmaps}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The graphs plot the week and country weights for the synthetic difference-in-differences estimator for the \texttt{google maps} query. The sample includes weeks between January 2022 and December 2024. 95\% confidence intervals are provided based on bootstrapping with 300 iterations clustered at the country level.
+		\end{minipage}
+	\end{figure}
+	
+	
+	
+	\clearpage
+	
+	
+	\paragraph{Placebo Test using YouTube Search} \label{subsec:placebo}
+	
+	Could the observed increase in search volume reflect a broader surge in interest in mapping services across Europe in early 2024? We are not aware of any major event, other than the DMA, that could explain such a strong and unprecedented shift in search behavior among EU users. To investigate this possibility, we estimate Equation 1 using search volumes on Google's video-sharing platform, YouTube, as the dependent variable for the queries \texttt{maps} and \texttt{google maps}.
+	
+	Since YouTube is not a tool for finding Google Maps or alternative mapping providers, we do not expect the DMA to affect search volumes there. The results, presented in Appendix Table \ref{tab:did_placebo}, show no statistically significant effect. Furthermore, as illustrated by the event study plot in Appendix Figure \ref{fig:ES_YT}, there is no systematic difference between EU and non-EU countries before 2024. These findings support the conclusion that no external factors, aside from the DMA, are driving changes in Google search behavior related to mapping services among EU users.
+	
+	
+	
+	\begin{table}[!ht]
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:did_placebo} Difference-in-Differences: log of Google Search Volumes for \texttt{maps} and \texttt{google maps} Queries (YouTube)}
+		\begin{threeparttable}
+			%\begin{adjustbox}{max width=\linewidth}
+			\begin{tabular}{lcccccc}
+				\hline \noalign{\smallskip} 
+				& \multicolumn{3}{c}{(\texttt{maps})} & \multicolumn{3}{c}{(\texttt{google maps})}  \\ \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+				
+				&         (1)   &         (2)   &         (3)   &         (4)   &         (5)   &         (6)   \\
+				\midrule
+				$ EU \times post^{DMA} $ &      -0.039   &      -0.028   &      -0.023   &       0.071   &       0.074   &       0.065   \\
+				&     (0.038)   &     (0.041)   &     (0.057)   &     (0.056)   &     (0.060)   &     (0.075)   \\
+				
+				Country FEs         &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Week FEs            &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Control Countries   &         All   &  North Hem.   &   Only Euro   &         All   &  North Hem.   &   Only Euro   \\
+				$ R ^2 $            &       0.747   &       0.746   &       0.738   &       0.795   &       0.792   &       0.787   \\
+				N                   &       5,304   &       4,794   &       3,876   &       5,304   &       4,794   &       3,876   \\
+				Mean Dep. Var.      &       3.633   &       3.594   &       3.518   &       2.486   &       2.445   &       2.326   \\
+				\midrule
+				
+			\end{tabular}
+			
+			%\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes weekly data from January 2022 to December 2024. The first three columns correspond to the query \texttt{maps}, and the second three correspond to the query \texttt{google maps}. For each query, we present specifications that include country and week fixed effects. The specifications differ in the composition of the control group: The first specification includes all 27 countries in the control group. The second specification limits the control group to 22 countries in the Northern Hemisphere. The third specification restricts the control group to 13 European, non-EU countries. In all specifications, the treated group comprises 25 EU countries, excluding Cyprus and Malta due to data unavailability. Standard errors clustered by country are in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\). 
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table} 
+	
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_B6a.pdf}
+			\caption{\texttt{maps}}\label{fig:ES_lmaps_YT}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_B6b.pdf}
+			\caption{\texttt{google maps}}\label{fig:ES_lGmaps_YT}
+		\end{subfigure}
+		\caption{Event study: log of Google Trends for \texttt{maps} and \texttt{google maps} (YouTube search)}
+		\label{fig:ES_YT}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of Google Trends for \texttt{maps} and \texttt{google maps} queries are regressed on country and time fixed effects and interactions between a dummy variable indicating if a country is in the European Union and a full set of dummy variables for each snapshot. The graphs plot the estimated coefficients of these interaction terms. The coefficient for January 2024 is normalized to zero. The treated group includes 25 EU countries, excluding Cyprus and Malta due to data unavailability. The control group comprises 13 European non-EU countries, excluding North Macedonia and Montenegro for the same reason. The non-EU countries in the analysis are Albania, Armenia, Azerbaijan, Belarus, Bosnia, Georgia, Iceland, Norway, Serbia, Switzerland, Turkey, the United Kingdom, and Ukraine. The sample includes weekly data from January 2022 to December 2024. Figures \ref{fig:ES_lmaps_YT} and \ref{fig:ES_lGmaps_YT} show the analysis for search volumes related to \texttt{maps} and \texttt{google maps}, respectively. Standard errors are clustered by country and reported in the form of 95\% confidence intervals.
+		\end{minipage}
+	\end{figure}
+	
+	
+	
+	
+	\clearpage
+	
+	
+	
+	\paragraph{Verifying the Role of Google Trends Data} Our primary results rely on search volume data obtained from Google Trends and estimated through Glimpse. Our empirical design includes country fixed effects in all specifications. This means that any country- and query-specific adjustments made by Glimpse to measure volumes should not influence our estimated treatment effects. Nonetheless, to ensure that our findings are not an artifact of the estimation process used by Glimpse, we re-estimate our main specification using only raw Google Trends data. Google Trends reports search intensity as an index, where search volume for a keyword at time $t$ in country $i$ is normalized by the maximum observed search volume for that keyword over the data horizon, i.e., $I_{it} = Y_{it} / \mathrm{max}(Y_{it})$. Appendix Table \ref{tab:did_trend} presents the results of this alternative specification. As expected, the estimates are identical to those in Table 3, confirming that our findings are not driven by how Glimpse estimates search volumes, but rather reflect changes in search behavior.
+	
+	\begin{table}[!ht]
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:did_trend} Difference-in-Differences: log of Google Trends for \texttt{maps} and \texttt{google maps} Queries}
+		\begin{threeparttable}
+			%\begin{adjustbox}{max width=\linewidth}
+			\begin{tabular}{lcccccc}
+				\hline \noalign{\smallskip} 
+				& \multicolumn{3}{c}{(\texttt{maps})} & \multicolumn{3}{c}{(\texttt{google maps})}  \\ \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+				
+				&         (1)   &         (2)   &         (3)   &         (4)   &         (5)   &         (6)   \\
+				\midrule
+				$ EU \times post^{DMA} $ &       0.244***&       0.233***&       0.214***&       0.244***&       0.233***&       0.212***\\
+				&     (0.027)   &     (0.030)   &     (0.036)   &     (0.028)   &     (0.031)   &     (0.036)   \\
+				
+				Country FEs         &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Week FEs            &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Control Countries   &         All   &  North Hem.   &   Only Euro   &         All   &  North Hem.   &   Only Euro   \\
+				$ R ^2 $            &       0.849   &       0.865   &       0.892   &       0.836   &       0.854   &       0.893   \\
+				N                   &       5,304   &       4,794   &       3,876   &       5,304   &       4,794   &       3,876   \\
+				Mean Dep. Var.      &       4.233   &       4.224   &       4.198   &       4.215   &       4.210   &       4.201   \\
+				\midrule
+				
+			\end{tabular}
+			
+			%\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes weekly data from January 2022 to December 2024. The first three columns correspond to the query \texttt{maps}, and the second three correspond to the query \texttt{google maps}. For each query, we present specifications that include country and week fixed effects. The specifications differ in the composition of the control group: The first specification includes all 27 countries in the control group. The second specification limits the control group to 22 countries in the Northern Hemisphere. The third specification restricts the control group to 13 European, non-EU countries. In all specifications, the treated group comprises 25 EU countries, excluding Cyprus and Malta due to data unavailability. Standard errors clustered by country are in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\). 
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	
+	\clearpage
+	
+	
+	\paragraph{Alternative Identification Using EU Countries as Their Own Counterfactual} Our identification strategy relies on comparisons between EU countries (the treated group) and non-EU countries (the control group). If unobserved differences between these groups influence search behavior independently of the DMA, this could bias our estimates. To address this concern, we implement an alternative identification strategy that compares EU countries in 2024, the year of DMA implementation, to the same EU countries before 2024, using their past search behavior as a control. Appendix Table \ref{tab:did_new} presents the results of three specifications that include only EU countries, incorporating country fixed effects (Columns (1) and (4)), linear time trends (Columns (2) and (5)), and country-specific time trends (Columns (3) and (6)) for the queries \texttt{maps} and \texttt{google maps}. The estimation begins in June 2022, ensuring a full year of pre-treatment data. This alternative approach, which does not rely on an external set of control countries, produces qualitatively similar effects to those in Table 3, reinforcing the robustness of our findings.
+	
+	
+	\begin{table}[h]
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:did_new} Using the Previous Six Months as Control: log of Google Search Volumes for \texttt{maps} and \texttt{google maps} Queries}
+		\begin{threeparttable}
+			%\begin{adjustbox}{max width=\linewidth}
+			\begin{tabular}{lcccccc}
+				\hline \noalign{\smallskip} 
+				& \multicolumn{3}{c}{\texttt{maps}} & \multicolumn{3}{c}{\texttt{google maps}}  \\ \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+				
+				&         (1)   &         (2)   &         (3)   &         (4)   &         (5)   &         (6)   \\
+				\midrule
+				$ 2024 \times Jan-Jun $ &       0.227***&       0.325***&       0.325***&       0.134***&       0.276***&       0.276***\\
+				&     (0.021)   &     (0.017)   &     (0.017)   &     (0.016)   &     (0.017)   &     (0.017)   \\
+				
+				Country FEs         &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Linear Time Trend   &               &  \checkmark   &               &               &  \checkmark   &               \\
+				Country-Specific Time Trends&               &               &  \checkmark   &               &               &  \checkmark   \\
+				$ R ^2 $            &        0.98   &        0.99   &        0.99   &        0.97   &        0.98   &        0.98   \\
+				N                   &       2,625   &       2,625   &       2,625   &       2,625   &       2,625   &       2,625   \\
+				Mean Dep. Var.      &      12.939   &      12.939   &      12.939   &      12.272   &      12.272   &      12.272   \\
+				\midrule
+				
+			\end{tabular}
+			
+			%\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes weeks between June 2022 and June 2024 only for 25 EU countries. For each country, the period from January 2023 to June 2023 forms the ``control group''. The first three columns correspond to the query \texttt{maps}, and the second three correspond to the query \texttt{google maps}. For each query, we present specifications that include country fixed effects, linear time trend, and country-specific time trends. Standard errors clustered by country are in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\). 
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	\clearpage
+	
+	\paragraph{Impact on Queries of Competing Mapping Services}
+	
+	\clearpage
+	
+	
+	
+	\begin{table}
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:did_competitor} Difference-in-Differences: log of  Google Search Volumes for Queries about Alternative Mapping Services}
+		\begin{threeparttable}
+			%\begin{adjustbox}{max width=\linewidth}
+			\begin{tabular}{lccccc}
+				\hline \noalign{\smallskip} 
+				
+				&(\texttt{apple maps})   &(\texttt{bing maps})   &(\texttt{mappy})   &(\texttt{openstreetmap})   \\
+				\midrule
+				$ EU \times post^{DMA} $ &       0.279***&       0.027   &      -0.153   &       0.038   \\
+				&     (0.089)   &     (0.099)   &     (0.106)   &     (0.056)   \\
+				
+				Country FEs         &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Week FEs            &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Control Countries   &         All   &         All   &         All   &         All   \\
+				$ R ^2 $            &       0.791   &       0.820   &       0.925   &       0.828   \\
+				N                   &       4,998   &       4,590   &       3,366   &       4,896   \\
+				Mean Dep. Var.      &       6.278   &       5.455   &       5.102   &       5.172   \\
+				\midrule
+				
+			\end{tabular}
+			
+			%\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes weekly data from January 2023 to December 2024. The four columns use the same specification with country and week fixed effects for four queries associated with alternative mapping services: \texttt{apple maps}, \texttt{bing maps}, \texttt{mappy}, and \texttt{openstreetmap}. We restrict the control group to all non-EU countries that have information about Google search volumes for all four queries. The treated group comprises 25 EU countries. When the Google search volume in a week (and the associated Google Trends data) is zero, we replace the zero value with the search volume equivalent to a Google Trends value of 1. Standard errors clustered by country are in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\).   
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	
+	\begin{figure}[!ht]
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_B7a.pdf}
+			\caption{\texttt{apple maps}}\label{fig:ES_amaps}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_B7b.pdf}
+			\caption{\texttt{bing maps}}\label{fig:ES_bmaps}
+		\end{subfigure}
+		\caption{Event study: log of Google Search Volumes for \texttt{apple maps} and \texttt{bing maps}}
+		\label{fig:ES_competitors}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of Google search volumes for \texttt{apple maps} and \texttt{bing maps} queries are regressed on country and time fixed effects and interactions between a dummy variable indicating if a country is in the European Union and a full set of dummy variables for each snapshot. The graphs plot the estimated coefficients of these interaction terms. The coefficient for January 2024 is normalized to zero. The treated group includes 25 EU countries. The control group comprises all non-EU countries in our sample. The sample includes weekly data from January 2022 to December 2024. Figures \ref{fig:ES_amaps} and \ref{fig:ES_bmaps} show the analysis for search volumes related to \texttt{apple maps} and \texttt{bing maps}, respectively. Standard errors are clustered by country and reported in the form of 95\% confidence intervals.
+		\end{minipage}
+	\end{figure}
+	
+	\clearpage
+	
+	\clearpage
+	
+	\begin{table}
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:did_competitor1} Difference-in-Differences: log of Google Search Volumes for Queries about Alternative Mapping Services (Zero Search Volumes = Volumes associated with Google Trend of 0.5)}
+		\begin{threeparttable}
+			%\begin{adjustbox}{max width=\linewidth}
+			\begin{tabular}{lccccc}
+				\hline \noalign{\smallskip} 
+			
+			&(\texttt{apple maps})   &(\texttt{bing maps})   &(\texttt{mappy})   &(\texttt{openstreetmap})   \\
+			\midrule
+			$ EU \times post^{DMA} $ &       0.284***&      -0.024   &       0.047   &       0.076   \\
+			&     (0.088)   &     (0.088)   &     (0.135)   &     (0.067)   \\
+			
+			Country FEs         &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+			Week FEs            &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+			Control Countries   &         All   &         All   &         All   &         All   \\
+			$ R ^2 $            &       0.736   &       0.793   &       0.937   &       0.845   \\
+			N                   &       3,570   &       3,162   &       2,040   &       3,774   \\
+			Mean Dep. Var.      &       5.510   &       4.549   &       5.418   &       4.443   \\
+			\midrule
+			
+			\end{tabular}
+			
+			%\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes weekly data from January 2022 to December 2024. The four columns use the same specification with country and week fixed effects for four queries associated with alternative mapping services: \texttt{apple maps}, \texttt{bing maps}, \texttt{mappy}, and \texttt{openstreetmap}. We restrict the control group to all non-EU countries that have information about Google search volumes for all four queries. The treated group comprises 25 EU countries, excluding Cyprus and Malta due to data unavailability. When the Google search volume in a week (and the associated Google Trends data) is zero, we replace the zero value with the search volume equivalent to a Google Trends value of 0.5. Standard errors clustered by country are in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\).   
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	
+	\begin{table}
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:did_competitor2} Difference-in-Differences: log of Google Search Volumes for Queries about Alternative Mapping Services (Zero Search Volumes Not Replaced)}
+		\begin{threeparttable}
+			%\begin{adjustbox}{max width=\linewidth}
+			\begin{tabular}{lccccc}
+				\hline \noalign{\smallskip} 
+				
+				&(\texttt{apple maps})   &(\texttt{bing maps})   &(\texttt{mappy})   &(\texttt{openstreetmap})   \\
+				\midrule
+				$ EU \times post^{DMA} $ &       0.083   &       0.198*  &       0.038   &      -0.034   \\
+				&     (0.053)   &     (0.102)   &     (0.032)   &     (0.074)   \\
+				
+				Country FEs         &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Week FEs            &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Control Countries   &         All   &         All   &         All   &         All   \\
+				$ R ^2 $            &       0.878   &       0.989   &       0.988   &       0.896   \\
+				N                   &       1,609   &       1,612   &       1,206   &       1,428   \\
+				Mean Dep. Var.      &       8.279   &       7.293   &       8.214   &       7.879   \\
+				\midrule
+			\end{tabular}
+			
+			%\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes weekly data from January 2022 to December 2024. The four columns use the same specification with country and week fixed effects for four queries associated with alternative mapping services: \texttt{apple maps}, \texttt{bing maps}, \texttt{mappy}, and \texttt{openstreetmap}. We restrict the control group to all non-EU countries that have information about Google search volumes for all four queries. The treated group comprises 25 EU countries, excluding Cyprus and Malta due to data unavailability. We do not replace volumes when the Google search volume in a week (and the associated Google Trends data) is zero. Standard errors clustered by country are in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\).   
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	
+	
+	
+	\clearpage
+	
+	
+	\begin{table}[h]
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:sdid_competitor} Synthetic Difference-in-Differences: log of Google Search Volumes for Alternative Mapping Services}
+		\begin{threeparttable}
+			%\begin{adjustbox}{max width=\linewidth}
+			\begin{tabular}{lcccc}
+				\hline \noalign{\smallskip} 
+				
+				&(\texttt{apple maps})   &(\texttt{bing maps})   &(\texttt{mappy})   &(\texttt{openstreetmap})   \\
+				\midrule
+				$ EU \times post^{DMA} $ &       0.364***&       0.020   &      -0.020   &      -0.023   \\
+				&     (0.113)   &     (0.308)   &     (0.144)   &     (0.059)   \\
+				
+				N                   &       4,998   &       4,590   &       3,366   &       4,896   \\
+				\midrule
+				
+			\end{tabular}
+			%\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes weekly data from January 2022 to December 2024. The four columns use the same synthetic difference-in-differences specification for four queries associated with alternative mapping services: \texttt{apple maps}, \texttt{bing maps}, \texttt{mappy}, and \texttt{openstreetmap}. In all specifications, the treated group comprises 25 EU countries, excluding Cyprus and Malta due to data unavailability, while the control group includes all 27 countries. Standard errors are in parentheses based on 300 bootstrap iterations clustered at the country level. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\). 
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	\begin{figure}[ht!]
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_B8a.pdf}
+			\caption{\texttt{apple maps}}\label{fig:ES_synthetic_competitorsA}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_B8b.pdf}
+			\caption{\texttt{bing maps}}\label{fig:ES_synthetic_competitorsB}
+		\end{subfigure}
+		\caption{Synthetic Event study: log of Google Search Volumes for \texttt{apple maps} and \texttt{bing maps}}
+		\label{fig:ES_synthetic_competitors}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of Google search volumes for \texttt{apple maps} and \texttt{bing maps} queries are analyzed using a synthetic difference-in-differences approach. The graphs plot the estimated treatment effects over time, capturing the evolution of differences between the treated and synthetic control groups. The effect for January 2024 is normalized to zero. The treated group consists of 25 EU countries, excluding Cyprus and Malta due to data availability. The pool of countries for the synthetic control includes 27 countries. The sample includes weekly data from January 2023 to December 2024. Figures \ref{fig:ES_lmaps3} and \ref{fig:ES_lGmaps3} show the analysis for search volumes related to \texttt{apple maps} and \texttt{bing maps}, respectively. 95\% confidence intervals are provided based on standard errors estimated using 300 bootstrap iterations clustered at the country level.
+		\end{minipage}
+	\end{figure}
+	
+	\clearpage
+	
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\linewidth]{figures/Figure_B9.pdf}
+		\caption{Search Volumes over Time in France for \texttt{google maps}, \texttt{mappy}, and \texttt{maps} Queries}\label{fig:France_overtime}
+		{\footnotesize \begin{minipage}{16cm}
+				\vspace{3pt}
+				\emph{Notes}: The graph plots the Google search volumes in France  using a log scale for \texttt{google maps}, \texttt{mappy}, and \texttt{maps} queries. The sample includes weeks between January 2023 and December 2024. 
+		\end{minipage}}
+	\end{figure}
+	
+	
+	
+	\clearpage
+	
+	
+	
+	
+	\paragraph{The DMA's Impact on Other Search Queries}
+	
+	We conclude our analysis of the DMA’s impact on Google search volumes by examining its effect on other types of searches that could have been influenced by the policy change. As shown in Figure 1, following the DMA, when EU users perform searches that generate geo-referenced results, the embedded maps are no longer clickable. We have provided some empirical evidence suggesting that, as a result, users increased their searches for \texttt{maps} and \texttt{google maps}, while searches for alternative mapping services did not exhibit a significant rise.
+	
+	Here, we investigate whether the removal of clickable maps led users to reduce their reliance on Google for geo-localized searches more broadly. For example, as illustrated in Figure 1, a search for a location-specific term such as ``Shakespeare and Company'' now returns a non-clickable map. If users increasingly turn to Google Maps , they might reduce their use of Google Search for geo-localized information.
+	
+	To analyze this potential shift, we focus on queries that are commonly searched worldwide. This is necessary to ensure comparability, as search interest in landmarks such as the Eiffel Tower or the Colosseum varies significantly across countries. We thus apply the same DiD approach in Equation 1, comparing EU and non-EU countries, but now using three generic search queries: \texttt{restaurant}, \texttt{shopping}, and \texttt{supermarket}. These queries consistently trigger Google Search results displaying business listings near the user’s location, making them well-suited to capturing shifts in geo-localized search behavior.
+	
+	Appendix Table \ref{tab:did_geo_query} presents the results using the full set of control countries to maximize sample size and statistical power. We do not find significant effects for any of the three queries, although all estimated coefficients are negative. Additionally, the magnitude of the estimated effects is relatively modest, ranging from a 1\% to a 4\% reduction in search volume. These findings suggest that while we do not observe a strong decline in geo-localized searches on Google, the increase in searches for \texttt{maps} and \texttt{google maps} could be part of a broader shift in user behavior. However, due to the dispersed nature of geo-localized searches, detecting a significant aggregate effect remains challenging.
+	
+	\clearpage
+	
+	\begin{table}[!ht]
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:did_geo_query} Difference-in-Differences: log of Google Search Volumes for Queries Displayed with Nearby Business Maps}
+		\begin{threeparttable}
+			%\begin{adjustbox}{max width=\linewidth}
+			\begin{tabular}{lccccc}
+				\hline \noalign{\smallskip} 
+				
+				&(\texttt{restaurant})   &(\texttt{shopping})   &(\texttt{supermarket})   \\
+				\midrule
+				$ EU \times post^{DMA} $ &      -0.015   &      -0.018   &      -0.043   \\
+				&     (0.026)   &     (0.031)   &     (0.151)   \\
+				
+				Country FEs         &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Week FEs            &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Control Countries   &         All   &         All   &         All   \\
+				$ R ^2 $            &       0.988   &       0.982   &       0.809   \\
+				N                   &       5,304   &       5,304   &       5,304   \\
+				Mean Dep. Var.      &      12.517   &      11.108   &      10.122   \\
+				\midrule
+			\end{tabular}
+			
+			%\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes weekly data from January 2023 to December 2024. The three columns use the same specification with country and week fixed effects for three queries that are often displayed alongside a small map showing the location of nearby businesses: \texttt{restaurant}, \texttt{shopping}, and \texttt{supermarket}. We restrict the control group to European, non-EU countries with available Google search volume data for all three queries. The treated group comprises 25 EU countries. When the Google search volume in a given week (and the corresponding Google Trends data) is zero, we replace the zero value with the search volume equivalent to a Google Trends value of 1. Standard errors, clustered by country, are reported in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\).   
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	
+	
+	\clearpage
+	
+	\section{APPENDIX - The DMA’s Impact on Online Traffic}\label{online appendix: C}
+	\setcounter{table}{0} \renewcommand{\thetable}{C\arabic{table}}
+	\setcounter{figure}{0} \renewcommand{\thefigure}{C\arabic{figure}}
+	\setcounter{subsection}{0} \renewcommand{\thesubsection}{C\arabic{subsection}}
+	
+	\paragraph{Impact on the Extensive Margin of Google Maps Traffic} 
+	
+	
+	\paragraph{Total Desktop and Mobile Visits} 
+	
+	\clearpage
+	
+	
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C1a.pdf}
+			\caption{Europe and Countries in the North Hemisphere}\label{fig:ES_ldesktop1}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C1b.pdf}
+			\caption{Europe and Countries across the Globe}\label{fig:ES_ldesktop2}
+		\end{subfigure}
+		\caption{Event study: log of Desktop Visits (Different Control Countries)}
+		\label{fig:ES1_traffic}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of all online visits for \texttt{www.google.com/maps} from desktop devices are regressed on country and time fixed effects and interactions between a dummy variable indicating if a country is in the European Union and a full set of dummy variables for each snapshot. The graphs plot the estimated coefficients of these interaction terms. The coefficient for January 2024 is normalized to zero. The treated group includes 25 EU countries, excluding Cyprus and Malta due to data availability. The control group in Figure \ref{fig:ES_ldesktop1} comprises European non-EU countries: 13 European non-EU countries and 9 other countries in the Northern Hemisphere. The control group in Figure \ref{fig:ES_ldesktop2} comprises European non-EU countries: 13 European non-EU countries and 14 other countries in both the Northern and Southern Hemispheres. The sample includes monthly data from January 2023 to December 2024. Standard errors are clustered by country and reported in the form of 95\% confidence intervals.
+			
+		\end{minipage}
+	\end{figure}
+	
+	\clearpage
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\clearpage
+	
+	
+	
+	
+	
+	
+	
+	
+	\paragraph{Direct Traffic and Organic Search for Desktop Visits} 
+	
+	\clearpage
+	
+	
+	\begin{table}
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:did_direct_organic} Difference-in-Differences: log of Desktop Visits for \texttt{www.google.com/maps} - Direct and Organic Search}
+		\begin{threeparttable}
+			%\begin{adjustbox}{max width=\linewidth}
+			\begin{tabular}{lcccccc}
+				\hline \noalign{\smallskip} 
+				& \multicolumn{3}{c}{(Direct)} & \multicolumn{3}{c}{(Organic Search)}  \\ \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+				
+				&         (1)   &         (2)   &         (3)   &         (4)   &         (5)   &         (6)   \\
+				\midrule
+				$ EU \times post^{DMA} $ &       0.019   &       0.063   &       0.063   &       0.329***&       0.422***&       0.401***\\
+				&     (0.069)   &     (0.075)   &     (0.106)   &     (0.102)   &     (0.103)   &     (0.126)   \\
+				
+				Country FEs         &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Month FEs           &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Control Countries   &         All   &  North Hem.   &   Only Euro   &         All   &  North Hem.   &   Only Euro   \\
+				$ R ^2 $            &       0.978   &       0.978   &       0.971   &       0.963   &       0.966   &       0.960   \\
+				N                   &       1,248   &       1,128   &         912   &       1,248   &       1,128   &         912   \\
+				Mean Dep. Var.      &      14.565   &      14.517   &      14.270   &      12.603   &      12.532   &      12.283   \\
+				\midrule
+			\end{tabular}
+			
+			%\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes monthly data from January 2023 to December 2024 about the online visits to the domain \texttt{www.google.com/maps} from desktop devices. The first three columns correspond to the desktop visits from direct links, and the second three correspond to desktop visits from organic search. For each type of visit, we present specifications that include country and month fixed effects. The specifications differ in the composition of the control group: The first specification includes all countries in the control group. The second specification limits the control group to countries in the Northern Hemisphere. The third specification restricts the control group to European, non-EU countries. In all specifications, the treated group comprises 25 EU countries. Standard errors clustered by country are in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\). 
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C2a.pdf}
+			\caption{Direct}\label{fig:ES_ldirect}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C2b.pdf}
+			\caption{Organic}\label{fig:ES_lorganic}
+		\end{subfigure}
+		\caption{Event study: log of Desktop Visits from Direct Traffic and Organic Search}
+		\label{fig:ES_direct_organic}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}:  The log of all desktop visits for \texttt{www.google.com/maps} from direct traffic and organic search are regressed on country and time fixed effects and interactions between a dummy variable indicating if a country is in the European Union and a full set of dummy variables for each snapshot. The graphs plot the estimated coefficients of these interaction terms. The coefficient for January 2024 is normalized to zero. The treated group includes 25 EU countries, excluding Cyprus and Malta due to data availability. The control group comprises European non-EU countries. The sample includes monthly data from January 2023 to December 2024. Figures \ref{fig:ES_ldirect} and \ref{fig:ES_lorganic} show the analysis for desktop visits for \texttt{www.google.com/maps} from direct traffic and organic search, respectively. Standard errors are clustered by country and reported in the form of 95\% confidence intervals.
+			
+		\end{minipage}
+	\end{figure}
+	
+	
+	
+	
+	
+	
+	\clearpage
+	
+	
+	
+	\begin{table}
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:did_referral_other} Difference-in-Differences: log of Desktop Visits for \texttt{www.google.com/maps} - Referral and Other Sources}
+		\begin{threeparttable}
+			%\begin{adjustbox}{max width=\linewidth}
+			\begin{tabular}{lcccccc}
+				\hline \noalign{\smallskip} 
+				& \multicolumn{3}{c}{(Referral)} & \multicolumn{3}{c}{(Other Sources)}  \\ \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+				
+				&         (1)   &         (2)   &         (3)   &         (4)   &         (5)   &         (6)   \\
+				\midrule
+				$ EU \times post^{DMA} $ &       0.139*  &       0.162*  &       0.135   &       0.027   &       0.089   &       0.166   \\
+				&     (0.079)   &     (0.089)   &     (0.128)   &     (0.094)   &     (0.103)   &     (0.130)   \\
+				
+				Country FEs         &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Month FEs           &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Control Countries   &         All   &  North Hem.   &   Only Euro   &         All   &  North Hem.   &   Only Euro   \\
+				$ R ^2 $            &       0.966   &       0.965   &       0.954   &       0.946   &       0.947   &       0.930   \\
+				N                   &       1,248   &       1,128   &         912   &       1,248   &       1,128   &         912   \\
+				Mean Dep. Var.      &      12.440   &      12.402   &      12.131   &      10.409   &      10.355   &      10.035   \\
+				\midrule
+				
+			\end{tabular}
+			
+			%\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes monthly data from January 2023 to December 2024 about the online visits to the domain \texttt{www.google.com/maps} from desktop devices. The first three columns correspond to the desktop visits from referral links, and the second three correspond to desktop visits from other sources (desktop visits excluding direct and referral links and organic search). For each type of visit, we present specifications that include country and month fixed effects. The specifications differ in the composition of the control group: The first specification includes all countries in the control group. The second specification limits the control group to countries in the Northern Hemisphere. The third specification restricts the control group to European, non-EU countries. In all specifications, the treated group comprises 25 EU countries. Standard errors clustered by country are in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\). 
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C3a.pdf}
+			\caption{Referral}\label{fig:ES_lreferral}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C3b.pdf}
+			\caption{Other Sources}\label{fig:ES_lother}
+		\end{subfigure}
+		\caption{Event study: log of Desktop Visits from Referral and Other Sources}
+		\label{fig:ES_referral_other}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of desktop visits for \texttt{www.google.com/maps} originating from referral and other sources are regressed on country and time fixed effects and interactions between a dummy variable indicating if a country is in the European Union and a full set of dummy variables for each snapshot. The graphs plot the estimated coefficients of these interaction terms. The coefficient for January 2024 is normalized to zero. The treated group includes 25 EU countries, excluding Cyprus and Malta due to data availability. The control group comprises European non-EU countries. The sample includes monthly data from January 2023 to December 2024. Figures \ref{fig:ES_lreferral} and \ref{fig:ES_lother} show the analysis for desktop visits for \texttt{www.google.com/maps} originating from referral and other sources, respectively. Standard errors are clustered by country and reported in the form of 95\% confidence intervals.
+			
+		\end{minipage}
+	\end{figure}
+	
+	
+	\clearpage
+	
+	
+	\paragraph{Impact on the Extensive Margin of Google Maps Traffic - Robustness Checks} 
+	\paragraph{Synthetic Difference-in-Differences} 
+	Similar to the analysis performed for search volumes, we use synthetic difference-in-differences and synthetic control methods to assess the robustness of our results. 
+	
+	Appendix Table \ref{tab:sdid_traffic} shows the estimates for all desktop visits and all mobile visits originating using synthetic difference-in-differences and synthetic control methods. In all cases, we do not observe any statistically significant estimates with all methods reporting similar (positive) coefficients. Appendix Figures \ref{fig:ES3_traffic}, \ref{fig:SDID_desktop} and \ref{fig:SDID_mobile}  display the event study plots for all desktop and mobile visits, and the synthetic weights assigned to each country and each month, respectively. Again, all figures show that we can construct a well-matched control group on the pre-treatment period. 
+	
+	
+	Similarly, Appendix Table \ref{tab:sdid_traffic_organic} presents the estimates for desktop visits originating from direct access and organic search using both methods. For organic desktop search, the estimated effect of the DMA ranges from 33\% (SDiD) to 47\% (synthetic control) and remains qualitatively similar to the standard DiD estimates reported in Table \ref{tab:did_direct_organic}. The null effect for direct desktop traffic is also confirmed, as neither synthetic difference-in-differences nor synthetic control yields statistically significant results. Appendix Figures \ref{fig:ES3_direct_organic}, \ref{fig:SDID_organic}, and \ref{fig:SDID_direct},  display the event study plots for desktop direct traffic and organic search, and the synthetic weights assigned to each country and each month, respectively. All figures provide strong evidence that a well-matched control group can be constructed based on the pre-treatment period, supporting the credibility of the associated average treatment effect estimates.  
+	
+	
+	\clearpage
+	
+	
+	\begin{table}[ht!]
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:sdid_traffic} Comparing Specifications: log of Visits for \texttt{www.google.com/maps}, Desktop and Mobile}
+		\begin{threeparttable}
+			\begin{adjustbox}{max width=\linewidth}
+				\begin{tabular}{lcccccc}
+					\hline \noalign{\smallskip} 
+					& \multicolumn{3}{c}{Visits Desktop} & \multicolumn{3}{c}{Visits Mobile}  \\ \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+					
+					&(Synth. DiD)   &       (DiD)   &(Synth. Control)   &(Synth. DiD)   &       (DiD)   &(Synth. Control)   \\
+					\midrule
+					$ EU \times post^{DMA} $ &       0.102   &       0.077   &       0.026   &       0.195   &       0.031   &       0.140   \\
+					&     (0.071)   &     (0.067)   &     (0.112)   &     (0.148)   &     (0.083)   &     (0.109)   \\
+					
+					N                   &       1,248   &       1,248   &       1,248   &       1,248   &       1,248   &       1,248   \\
+					\midrule
+					
+				\end{tabular}
+			\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes monthly data from January 2023 to December 2024. The first three columns correspond to the visits from desktop, and the second three correspond to the visits from mobile. For each type of visit, we present results from three specifications: synthetic difference-in-differences, classical difference-in-differences, and synthetic control. In all specifications, the treated group comprises 25 EU countries, excluding Cyprus and Malta due to data unavailability, while the control group includes all 27 countries. Standard errors estimated using 300 bootstrap iterations clustered at the country level are provided between parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\). 
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C4a.pdf}
+			\caption{Desktop}\label{fig:ES_ldesktop3}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C4b.pdf}
+			\caption{Mobile}\label{fig:ES_lmobile3}
+		\end{subfigure}
+		\caption{Synthetic Event study: log of Desktop and Mobile Visits}
+		\label{fig:ES3_traffic}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of all online visits for \texttt{www.google.com/maps} from desktop and mobile devices are analyzed using a synthetic difference-in-differences approach. The graphs plot the estimated treatment effects over time, capturing the evolution of differences between the treated and synthetic control groups. The effect for January 2024 is normalized to zero. The treated group consists of 25 EU countries, excluding Cyprus and Malta due to data availability. The pool of countries for the synthetic control includes 27 countries: 13 European non-EU countries and 14 other countries in both the Northern and Southern Hemispheres. The sample includes monthly data from January 2023 to December 2024. Figures \ref{fig:ES_ldesktop3} and \ref{fig:ES_lmobile3} show the analysis for all online visits for \texttt{www.google.com/maps} from desktop  and mobile devices, respectively. 95\% confidence intervals are provided based on bootstrapping with 300 iterations clustered at the country level.
+		\end{minipage}
+	\end{figure}
+	
+	\clearpage
+	
+	\begin{figure}[h]
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C5a.pdf}
+			\caption{Month Weights}\label{fig:SDID_time_desktop}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C5b.pdf}
+			\caption{Country Weights}\label{fig:SDID_country_desktop}
+		\end{subfigure}
+		\caption{Synthetic DiD: log of Desktop Visits}\label{fig:SDID_desktop}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The graphs plot the month and country weights for the synthetic difference-in-differences estimator for all online visits for \texttt{www.google.com/maps} from desktop devices. The sample includes months between January 2023 and December 2024. 95\% confidence intervals are provided based on standard errors estimated using 300 bootstrap iterations clustered at the country level.
+		\end{minipage}
+	\end{figure}
+	
+	\begin{figure}[h]
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C6a.pdf}
+			\caption{Month Weights}\label{fig:SDID_time_mobile}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C6b.pdf}
+			\caption{Country Weights}\label{fig:SDID_country_mobile}
+		\end{subfigure}
+		\caption{Synthetic DiD: log of Mobile Visits}\label{fig:SDID_mobile}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The graphs plot the month and country weights for the synthetic difference-in-differences estimator for all online visits for \texttt{www.google.com/maps} from mobile devices. The sample includes months between January 2023 and December 2024. 95\% confidence intervals are provided based on standard errors estimated using 300 bootstrap iterations clustered at the country level.
+		\end{minipage}
+	\end{figure}
+	
+	
+	
+	
+	
+	\clearpage
+	
+	\begin{table}[ht!]
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:sdid_traffic_organic} Comparing Specifications: log of Desktop Visits for \texttt{www.google.com/maps} from Direct Traffic and Organic Search}
+		\begin{threeparttable}
+			\begin{adjustbox}{max width=\linewidth}
+				\begin{tabular}{lcccccc}
+					\hline \noalign{\smallskip} 
+					& \multicolumn{3}{c}{Direct} & \multicolumn{3}{c}{Organic Search}  \\ \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+				
+				&(Synth. DiD)   &       (DiD)   &(Synth. Control)   &(Synth. DiD)   &       (DiD)   &(Synth. Control)   \\
+				\midrule
+				$ EU \times post^{DMA} $ &       0.051   &       0.019   &      -0.032   &       0.337***&       0.329***&       0.471***\\
+				&     (0.075)   &     (0.069)   &     (0.110)   &     (0.102)   &     (0.105)   &     (0.136)   \\
+				
+				N                   &       1,248   &       1,248   &       1,248   &       1,248   &       1,248   &       1,248   \\
+				\midrule
+				\end{tabular}
+			\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes monthly data from January 2023 to December 2024. The first three columns correspond to desktop visits from direct traffic, and the second three correspond to desktop visits from organic search. For each type of visit, we present results from three specifications: synthetic difference-in-differences, classical difference-in-differences, and synthetic control. In all specifications, the treated group comprises 25 EU countries, excluding Cyprus and Malta due to data unavailability, while the control group includes all 27 countries. Bootstrap standard errors are in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\). 
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C7a.pdf}
+			\caption{Direct}\label{fig:ES_ldirect3}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C7b.pdf}
+			\caption{Organic Search}\label{fig:ES_lorganic3}
+		\end{subfigure}
+		\caption{Synthetic Event study: log of Desktop Visits from Direct Traffic and Organic Search}
+		\label{fig:ES3_direct_organic}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of all desktop visits for \texttt{www.google.com/maps} from direct traffic and organic search are analyzed using a synthetic difference-in-differences approach. The graphs plot the estimated treatment effects over time, capturing the evolution of differences between the treated and synthetic control groups. The effect for January 2024 is normalized to zero. The treated group consists of 25 EU countries, excluding Cyprus and Malta due to data availability. The pool of countries for the synthetic control includes 27 countries: 13 European non-EU countries and 14 other countries in both the Northern and Southern Hemispheres. The sample includes monthly data from January 2023 to December 2024. Figures \ref{fig:ES_ldirect3} and \ref{fig:ES_lorganic3} show the analysis for all desktop visits for \texttt{www.google.com/maps} from direct traffic and organic search, respectively. 95\% confidence intervals are provided based on bootstrapping with 300 iterations clustered at the country level.
+		\end{minipage}
+	\end{figure}
+	
+	\clearpage
+	
+	\begin{figure}[h]
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C8a.pdf}
+			\caption{Month Weights}\label{fig:SDID_time_organic}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C8b.pdf}
+			\caption{Country Weights}\label{fig:SDID_country_organic}
+		\end{subfigure}
+		\caption{Synthetic DiD: log of Desktop Visits from Organic Search}\label{fig:SDID_organic}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The graphs plot the month and country weights for the synthetic difference-in-differences estimator for desktop visits for \texttt{www.google.com/maps} from organic search. The sample includes weeks between January 2023 and December 2024. 95\% confidence intervals are provided based on standard errors estimated using 300 bootstrap iterations clustered at the country level.
+		\end{minipage}
+	\end{figure}
+	
+	\begin{figure}[h]
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C9a.pdf}
+			\caption{Month Weights}\label{fig:SDID_time_direct}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C9b.pdf}
+			\caption{Country Weights}\label{fig:SDID_country_direct}
+		\end{subfigure}
+		\caption{Synthetic DiD: log of Desktop Visits from Direct Traffic}\label{fig:SDID_direct}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The graphs plot the month and country weights for the synthetic difference-in-differences estimator for desktop visits for \texttt{www.google.com/maps} from direct traffic. The sample includes weeks between January 2023 and December 2024. 95\% confidence intervals are provided based on standard errors estimated using 300 bootstrap iterations clustered at the country level.
+		\end{minipage}
+	\end{figure}
+	
+	
+	
+	
+	
+	
+	\clearpage
+	
+	\paragraph{Direct and Organic Search Shares of Desktop Visits} Instead of examining the volumes of desktop visits from direct and organic search, we can show how the DMA affected the composition of desktop traffic reaching Google Maps through these channels. This approach allows us to focus specifically on changes in traffic shares while abstracting from fluctuations in overall volumes. To implement this, we use the proportions of desktop traffic originating from direct access and organic search as dependent variables in Equation 1.\footnote{Since this variable ranges between zero and one, the corresponding point estimates are interpretable as a probability.} The estimates are presented in Appendix Table \ref{tab:did_proportion}, along with the associated event study plots in Appendix Figure \ref{fig:ES_proportion}, where European non-EU countries serve as the control group. The share of traffic from organic search increases by approximately 4 points, while the share from direct access decreases by a similar amount. This suggests that the removal of clickable maps primarily led to a shift in user behavior, with more individuals relying on organic search to access Google Maps.
+	
+	
+	
+	
+	\begin{table}[!ht]
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:did_proportion} Difference-in-Differences: Proportion of Desktop Visits for \texttt{www.google.com/maps} from Direct Traffic and Organic Search}
+		\begin{threeparttable}
+			%\begin{adjustbox}{max width=\linewidth}
+			\begin{tabular}{lcccccc}
+				\hline \noalign{\smallskip} 
+				& \multicolumn{3}{c}{(Prop. Direct)} & \multicolumn{3}{c}{(Prop. Organic)}  \\ \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+				
+				&         (1)   &         (2)   &         (3)   &         (4)   &         (5)   &         (6)   \\
+				\midrule
+				$ EU \times post^{DMA} $ &      -0.039***&      -0.042***&      -0.041***&       0.036***&       0.040***&       0.038***\\
+				&     (0.012)   &     (0.012)   &     (0.015)   &     (0.011)   &     (0.010)   &     (0.011)   \\
+				
+				Country FEs         &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Month FEs           &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Control Countries   &         All   &  North Hem.   &   Only Euro   &         All   &  North Hem.   &   Only Euro   \\
+				$ R ^2 $            &       0.802   &       0.797   &       0.756   &       0.855   &       0.861   &       0.825   \\
+				N                   &       1,248   &       1,128   &         912   &       1,248   &       1,128   &         912   \\
+				Mean Dep. Var.      &       0.746   &       0.747   &       0.749   &       0.139   &       0.137   &       0.136   \\
+				\midrule
+				
+			\end{tabular}
+			
+			%\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes monthly data from January 2023 to December 2024 about the proportion of desktop visits to the domain \texttt{www.google.com/maps} from direct traffic and organic search. The first three columns correspond to the proportion of desktop visits from direct traffic, and the second three correspond to proportion of desktop visits from organic search. For each type of proportion, we present specifications that include country and month fixed effects. The specifications differ in the composition of the control group: The first specification includes all countries in the control group. The second specification limits the control group to countries in the Northern Hemisphere. The third specification restricts the control group to European, non-EU countries. In all specifications, the treated group comprises 25 EU countries. Standard errors clustered by country are in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\). 
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C10a.pdf}
+			\caption{Prop. Direct}\label{fig:ES_ratio_direct}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C10b.pdf}
+			\caption{Prop. Organic}\label{fig:ES_ratio_organic}
+		\end{subfigure}
+		\caption{Event study: Proportion of Desktop Visits from Direct Traffic and Organic Search}
+		\label{fig:ES_proportion}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The proportion of desktop visits to the domain \texttt{www.google.com/maps} from direct traffic and organic search. are regressed on country and time fixed effects and interactions between a dummy variable indicating if a country is in the European Union and a full set of dummy variables for each snapshot. The graphs plot the estimated coefficients of these interaction terms. The coefficient for January 2024 is normalized to zero. The treated group includes 25 EU countries, excluding Cyprus and Malta due to data availability. The control group comprises European non-EU countries. The sample includes monthly data from January 2023 to December 2024. Figures \ref{fig:ES_ratio_direct} and \ref{fig:ES_ratio_organic} show the analysis for proportion of desktop visits to the domain \texttt{www.google.com/maps} from direct traffic and organic search, respectively. Standard errors are clustered by country and reported in the form of 95\% confidence intervals.
+			
+		\end{minipage}
+	\end{figure}
+	
+	
+	\clearpage
+	
+	\paragraph{Triple Differences: Using Mobile Visits as Control}  An alternative approach to measuring the potential effect of the DMA on overall desktop traffic to Google Maps is to use mobile traffic as a control for shocks that affect both desktop and mobile traffic in the EU post-DMA. By controlling for changes in post-treatment mobile traffic, a triple differences approach isolates the treatment effect as the change in desktop traffic, relative to both mobile, before and after the DMA's implementation, for EU and non-EU countries. In practice, we estimate the following equation:
+	\begin{align} \label{eq:ddd}
+		\ln \left( Y_{itd} \right)
+		= & \; \alpha_i + \omega_t + \delta_d  + \gamma_{0} EU_i\times post^{DMA}_t + \gamma_{1} desktop_d \times post^{DMA}_t + \gamma_{\mathrm{DMA}} EU_i \times desktop_d \times post^{DMA}_t + \varepsilon_{itd},
+	\end{align}
+	Again, the variables $EU_i$ and $post_t^{DMA}$ are dummy variables equal to 1 if country $i$ is a member of the EU, and if time $t$ falls after January 2024, respectively. Moreover, the variable $desktop_d$ is a dummy equal to 1 if the measured traffic originates from desktop devices, and 0 if it originates from mobile devices. The coefficients have the following interpretations: $\gamma_0$ captures the difference over time between treated and control countries, $\gamma_1$ captures the difference by device type, and $\gamma_{\mathrm{DMA}}$ estimates the treatment effect of the DMA by comparing changes in desktop traffic relative to both mobile traffic and the control group. The error term, $ \varepsilon_{itd}$, is assumed to have a zero conditional mean.
+	
+	The results are presented in Appendix Table \ref{tab:3_diff_gmaps} using three different control groups (all non-EU countries, non-EU countries in the Northern Hemisphere, and European non-EU countries). In all cases, all coefficients $\hat{\gamma}_{\mathrm{DMA}}$ are not statistically different from zero. The point estimates remain positive, but are smaller in magnitude than those in Table 4, while the standard errors are of similar size, suggesting that the null results are not driven by a lack of statistical power. Appendix Figure \ref{fig:3_diff_gmaps} presents the corresponding event study, which shows no evidence of either pre-trends or post-trends.
+	
+	Overall, this triple differences analysis further supports the conclusion that the removal of clickable maps and the map signet had minimal impact on Google Maps' desktop traffic. If anything, the effect appears to be non-negative.
+	
+	
+	
+	\begin{table}[ht!]
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:3_diff_gmaps} Triple-Diff Analysis using Mobile Visits as Control: log of Online Visits to \texttt{www.google.com/maps}}
+		\begin{threeparttable}
+			%\begin{adjustbox}{max width=\linewidth}
+			\begin{tabular}{lccc}
+				\hline 
+				
+				&         (1)   &         (2)   &         (3)   \\
+				\midrule
+				$ desktop \times post^{DMA}  $ &       0.420***&       0.365***&       0.438***\\
+				&     (0.084)   &     (0.096)   &     (0.156)   \\
+				$ EU \times post^{DMA}$ &       0.031   &       0.022   &       0.094   \\
+				&     (0.082)   &     (0.095)   &     (0.143)   \\
+				$ EU \times post^{DMA} \times desktop $ &       0.046   &       0.101   &       0.028   \\
+				&     (0.093)   &     (0.104)   &     (0.161)   \\
+				
+				Country FEs         &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Device FEs          &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Month FEs           &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Control Countries   &         All   &  North Hem.   &   Only Euro   \\
+				$ R ^2 $            &       0.927   &       0.925   &       0.902   \\
+				N                   &       2,496   &       2,256   &       1,824   \\
+				Mean Dep. Var.      &      14.404   &      14.346   &      14.067   \\
+				\midrule
+				
+			\end{tabular}
+			
+			%\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes monthly data from January 2023 to December 2024 about the online visits to the domain \texttt{www.google.com/maps}. We present specifications that include country, device access (desktop or mobile), and month fixed effects. The specifications differ in the composition of the countries used for the control group: The first specification includes all countries in the control group. The second specification limits the control group to countries in the Northern Hemisphere. The third specification restricts the control group to European, non-EU countries. In all specifications, the treated group comprises 25 EU countries. Standard errors clustered by country are in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\).  
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.495\linewidth]{figures/Figure_C11.pdf}
+		\caption{Triple-Diff Event study: log of Desktop Visits}
+		\label{fig:3_diff_gmaps}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of online visits for \texttt{www.google.com/maps} is regressed on country and device fixed effects; the interactions between a dummy variable indicating if a country is in the European Union and a full set of dummy variables for each snapshot; the  interactions between a dummy variable indicating if the online visits are from desktop or mobile devices and a full set of dummy variables for each snapshot; and the  interactions between a dummy variable indicating if the online visits are from desktop or mobile devices, a dummy variable indicating if a country is in the European Union, and a full set of dummy variables for each snapshot. The graph plots the estimated coefficients of these latter interaction terms. The coefficient for January 2024 is normalized to zero. The treated group includes 25 EU countries, excluding Cyprus and Malta due to data availability. The control group comprises European non-EU countries. The sample includes monthly data from January 2023 to December 2024. Standard errors are clustered by country and reported in the form of 95\% confidence intervals.
+		\end{minipage}
+	\end{figure}
+	
+	
+	
+	
+	
+	\clearpage
+	
+	\paragraph{Impact on the Intensive Margin of Google Maps Traffic} 
+	
+	\paragraph{Unique Visitors and Visited Pages} 
+	
+	\clearpage
+	
+	\begin{table}
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:did_visitor_pages} Difference-in-Differences: log of Desktop Visitors and Desktop Average Visited Pages for \texttt{www.google.com/maps}}
+		\begin{threeparttable}
+			%\begin{adjustbox}{max width=\linewidth}
+			\begin{tabular}{lcccccc}
+				\hline \noalign{\smallskip} 
+				& \multicolumn{3}{c}{(Visitors)} & \multicolumn{3}{c}{(Visited Pages)}  \\ \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+				
+				&         (1)   &         (2)   &         (3)   &         (4)   &         (5)   &         (6)   \\
+				\midrule
+				$ EU \times post^{DMA} $ &      -0.025   &       0.004   &      -0.003   &       0.036   &       0.012   &       0.030   \\
+				&     (0.055)   &     (0.060)   &     (0.083)   &     (0.034)   &     (0.036)   &     (0.038)   \\
+				
+				Country FEs         &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Month FEs           &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Control Countries   &         All   &  North Hem.   &   Only Euro   &         All   &  North Hem.   &   Only Euro   \\
+				$ R ^2 $            &       0.982   &       0.981   &       0.974   &       0.891   &       0.889   &       0.874   \\
+				N                   &       1,248   &       1,128   &         912   &       1,248   &       1,128   &         912   \\
+				Mean Dep. Var.      &      14.496   &      14.428   &      14.143   &       3.272   &       3.305   &       3.350   \\
+				\midrule
+			\end{tabular}
+			
+			%\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes monthly data from January 2023 to December 2024 about the online visitors and the average visited pages to the domain \texttt{www.google.com/maps} from desktop devices. The first three columns correspond to the desktop visitors, and the second three correspond to desktop average visited pages. For each variable, we present specifications that include country and month fixed effects. The specifications differ in the composition of the control group: The first specification includes all countries in the control group. The second specification limits the control group to countries in the Northern Hemisphere. The third specification restricts the control group to European, non-EU countries. In all specifications, the treated group comprises 25 EU countries. Standard errors clustered by country are in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\). 
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C12a.pdf}
+			\caption{Visitors}\label{fig:ES_lvisitors}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C12b.pdf}
+			\caption{Visited Pages}\label{fig:ES_lpages}
+		\end{subfigure}
+		\caption{Event study: log of Desktop Visitors and Visited Pages}
+		\label{fig:ES_visitors_pages}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of the visitors and visited pages for the domain \texttt{www.google.com/maps} from desktop devices are regressed on country and time fixed effects and interactions between a dummy variable indicating if a country is in the European Union and a full set of dummy variables for each snapshot. The graphs plot the estimated coefficients of these interaction terms. The coefficient for January 2024 is normalized to zero. The treated group includes 25 EU countries, excluding Cyprus and Malta due to data availability. The control group comprises European non-EU countries. The sample includes monthly data from January 2023 to December 2024. Figures \ref{fig:ES_lvisitors} and \ref{fig:ES_lpages} show the desktop visitors and visited pages for \texttt{www.google.com/maps}, respectively. Standard errors are clustered by country and reported in the form of 95\% confidence intervals.
+			
+		\end{minipage}
+	\end{figure}
+	
+	\clearpage
+	
+	\paragraph{Visit Duration and Bounce Rate} 
+	
+	
+	\clearpage
+	
+	
+	
+	\begin{table}
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:did_duration_bounce} Difference-in-Differences: log of Desktop Visits' Duration and Bounce Rates for \texttt{www.google.com/maps}}
+		\begin{threeparttable}
+			%\begin{adjustbox}{max width=\linewidth}
+			\begin{tabular}{lcccccc}
+				\hline \noalign{\smallskip} 
+				& \multicolumn{3}{c}{(Duration)} & \multicolumn{3}{c}{(Bounce Rate)}  \\ \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+				
+				&         (1)   &         (2)   &         (3)   &         (4)   &         (5)   &         (6)   \\
+				\midrule
+				$ EU \times post^{DMA} $ &      -0.051***&      -0.052***&      -0.031*  &       0.169***&       0.173***&       0.121** \\
+				&     (0.012)   &     (0.013)   &     (0.016)   &     (0.045)   &     (0.048)   &     (0.052)   \\
+				
+				Country FEs         &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Month FEs           &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Control Countries   &         All   &  North Hem.   &   Only Euro   &         All   &  North Hem.   &   Only Euro   \\
+				$ R ^2 $            &       0.905   &       0.912   &       0.830   &       0.855   &       0.852   &       0.823   \\
+				N                   &       1,248   &       1,128   &         912   &       1,248   &       1,128   &         912   \\
+				Mean Dep. Var.      &       6.939   &       6.938   &       6.951   &       2.043   &       2.010   &       1.955   \\
+				\midrule
+			\end{tabular}
+			
+			%\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes monthly data from January 2023 to December 2024 about the visits' duration and bounce rates for the domain \texttt{www.google.com/maps} from desktop devices. The first three columns correspond to the the visits' duration, and the second three correspond to desktop bounce rates. For each variable, we present specifications that include country and month fixed effects. The specifications differ in the composition of the control group: The first specification includes all countries in the control group. The second specification limits the control group to countries in the Northern Hemisphere. The third specification restricts the control group to European, non-EU countries. In all specifications, the treated group comprises 25 EU countries. Standard errors clustered by country are in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\). 
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C13a.pdf}
+			\caption{Duration}\label{fig:ES_lduration}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C13b.pdf}
+			\caption{Bounce Rate}\label{fig:ES_lbounce}
+		\end{subfigure}
+		\caption{Event study: log of Desktop Visits' Duration and Bounce Rates}
+		\label{fig:ES_duration_bounce}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of the visits' duration and bounce rates for the domain \texttt{www.google.com/maps} from desktop devices are regressed on country fixed effects and interactions between a dummy variable indicating if a country is in the European Union and a full set of dummy variables for each snapshot. The graphs plot the estimated coefficients of these interaction terms. The coefficient for January 2024 is normalized to zero. The treated group includes 25 EU countries, excluding Cyprus and Malta due to data availability. The control group comprises European non-EU countries. The sample includes monthly data from January 2023 to December 2024. Figures \ref{fig:ES_lduration} and \ref{fig:ES_lbounce} show the desktop visits' duration and bounce rates for \texttt{www.google.com/maps}, respectively. Standard errors are clustered by country and reported in the form of 95\% confidence intervals.
+			
+		\end{minipage}
+	\end{figure}
+	
+	\clearpage
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C14a.pdf}
+			\caption{Duration}\label{fig:ES_lduration1}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C14b.pdf}
+			\caption{Bounce Rate}\label{fig:ES_lbounce1}
+		\end{subfigure}
+		\caption{Event study: log of Desktop Visits' Duration and Bounce Rates (Control Countries: European Countries and Other Countries in the North Hemisphere)}
+		\label{fig:ES1_duration_bounce}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of the visits' duration and bounce rates for the domain \texttt{www.google.com/maps} from desktop devices are regressed on country and time fixed effects and interactions between a dummy variable indicating if a country is in the European Union and a full set of dummy variables for each snapshot. The graphs plot the estimated coefficients of these interaction terms. The coefficient for January 2024 is normalized to zero. The treated group includes 25 EU countries, excluding Cyprus and Malta due to data availability. The control group comprises European non-EU countries: 13 European non-EU countries and 9 other countries in the Northern Hemisphere. The sample includes monthly data from January 2023 to December 2024. Figures \ref{fig:ES_ldesktop1} and \ref{fig:ES_lbounce1} show the analysis for all online visits for \texttt{www.google.com/maps} from desktop devices and those originating from organic search, respectively. Standard errors are clustered by country and reported in the form of 95\% confidence intervals.
+			
+		\end{minipage}
+	\end{figure}
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C15a.pdf}
+			\caption{Duration}\label{fig:ES_lduration2}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C15b.pdf}
+			\caption{Bounce Rate}\label{fig:ES_lbounce2}
+		\end{subfigure}
+		\caption{Event study: log of Desktop Visits' Duration and Bounce Rates (Control Countries: European Countries and Other Countries across the Globe)}
+		\label{fig:ES2_duration_bounce}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of the visits' duration and bounce rates for the domain \texttt{www.google.com/maps} from desktop devices are regressed on country and time fixed effects and interactions between a dummy variable indicating if a country is in the European Union and a full set of dummy variables for each snapshot. The graphs plot the estimated coefficients of these interaction terms. The coefficient for January 2024 is normalized to zero. The treated group includes 25 EU countries, excluding Cyprus and Malta due to data availability. The control group consists of 27 countries: 13 European non-EU countries and 14 other countries in both the Northern and Southern Hemispheres. The sample includes monthly data from January 2023 to December 2024. Figures \ref{fig:ES_ldesktop2} and \ref{fig:ES_lbounce2} show the analysis for all online visits for \texttt{www.google.com/maps} from desktop devices and those originating from organic search, respectively. Standard errors are clustered by country and reported in the form of 95\% confidence intervals.
+			
+		\end{minipage}
+	\end{figure}
+	
+	\clearpage
+	
+	
+	\begin{table}[ht!]
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:sdid_duration_bounce} Comparing Specifications: log of Desktop Visits' Duration and Bounce Rates for \texttt{www.google.com/maps}}
+		\begin{threeparttable}
+			\begin{adjustbox}{max width=\linewidth}
+				\begin{tabular}{lcccccc}
+					\hline \noalign{\smallskip} 
+					& \multicolumn{3}{c}{Duration} & \multicolumn{3}{c}{Bounce}  \\ \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+					
+					&(Synth. DiD)   &       (DiD)   &(Synth. Control)   &(Synth. DiD)   &       (DiD)   &(Synth. Control)   \\
+					\midrule
+					$ EU \times post^{DMA} $ &      -0.047***&      -0.051***&      -0.045***&       0.171***&       0.169***&       0.233***\\
+					&     (0.012)   &     (0.012)   &     (0.016)   &     (0.041)   &     (0.044)   &     (0.060)   \\
+					
+					N                   &       1,248   &       1,248   &       1,248   &       1,248   &       1,248   &       1,248   \\
+					\midrule
+				\end{tabular}
+			\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes monthly data from January 2023 to December 2024.  The first three columns correspond to the the visits' duration, and the second three correspond to desktop bounce rates. For each variable, we present results from three specifications: synthetic difference-in-differences, classical difference-in-differences, and synthetic control. In all specifications, the treated group comprises 25 EU countries, excluding Cyprus and Malta due to data unavailability, while the control group includes all 27 countries. Standard errors estimated using 300 bootstrap iterations clustered at the country level are provided in between parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\). 
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C16a.pdf}
+			\caption{Duration}\label{fig:ES_lduration3}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C16b.pdf}
+			\caption{Bounce Rate}\label{fig:ES_lbounce3}
+		\end{subfigure}
+		\caption{Synthetic Event study: log of Desktop Visits' Duration and Bounce Rates}
+		\label{fig:ES3_duration_bounce}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of the visits' duration and bounce rates for the domain \texttt{www.google.com/maps} from desktop devices are analyzed using a synthetic difference-in-differences approach. The graphs plot the estimated treatment effects over time, capturing the evolution of differences between the treated and synthetic control groups. The effect for January 2024 is normalized to zero. The treated group consists of 25 EU countries, excluding Cyprus and Malta due to data availability. The pool of countries for the synthetic control includes 27 countries: 13 European non-EU countries and 14 other countries in both the Northern and Southern Hemispheres. The sample includes monthly data from January 2023 to December 2024. Figures \ref{fig:ES_lduration3} and \ref{fig:ES_lbounce3} show the analysis for all online visits for \texttt{www.google.com/maps} from desktop devices and those originating from organic search, respectively. 95\% confidence intervals are provided based on standard errors estimated using 300 bootstrap iterations clustered at the country level.
+		\end{minipage}
+	\end{figure}
+	
+	
+	\clearpage
+	
+	
+	\clearpage
+	
+	
+	\begin{table}
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:did_dir} Difference-in-Differences: log of Desktop Visits, Duration and Bounce Rate for \texttt{www.google.com/maps/dir}}
+		\begin{threeparttable}
+			\begin{adjustbox}{max width=\linewidth}
+				\begin{tabular}{lccccccccc}
+					\hline \noalign{\smallskip} 
+					& \multicolumn{3}{c}{(Visits Desktop)} & \multicolumn{3}{c}{(Duration)} & \multicolumn{3}{c}{(Bounce Rate)} \\ \cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+					
+					&         (1)   &         (2)   &         (3)   &         (4)   &         (5)   &         (6)   &         (7)   &         (8)   &         (9)   \\
+					\midrule
+					$ EU \times post^{DMA} $ &       0.042   &       0.104*  &       0.097   &      -0.033   &      -0.031   &      -0.065*  &       0.006   &       0.043   &       0.082   \\
+					&     (0.059)   &     (0.058)   &     (0.082)   &     (0.025)   &     (0.028)   &     (0.038)   &     (0.051)   &     (0.055)   &     (0.070)   \\
+					
+					Country FEs         &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+					Month FEs           &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+					Control Countries   &         All   &  North Hem.   &   Only Euro   &         All   &  North Hem.   &   Only Euro   &         All   &  North Hem.   &   Only Euro   \\
+					$ R ^2 $            &       0.987   &       0.988   &       0.986   &       0.844   &       0.848   &       0.855   &       0.766   &       0.762   &       0.752   \\
+					N                   &       1,248   &       1,128   &         912   &       1,248   &       1,128   &         912   &       1,248   &       1,128   &         912   \\
+					Mean Dep. Var.      &      12.460   &      12.414   &      12.218   &       6.705   &       6.707   &       6.719   &       1.171   &       1.134   &       1.115   \\
+					\midrule
+				\end{tabular}
+			\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes monthly data from January 2023 to December 2024 about the desktop visits, duration, and bounce ra-\\
+				tes to the domain \texttt{www.google.com/maps/dir}. The first three columns correspond to the desktop visits, the second three correspo-\\
+				nd to the average duration of these visits, the last three to the bounce rates. For each variable, we present specifications that include \\ country and month fixed effects. The specifications differ in the composition of the control group: The first specification includes \\ all countries in the control group. The second specification limits the control group to countries in the Northern Hemisphere. The thi- \\rd  specification restricts the control group to European, non-EU countries. In all specifications, the treated group comprises \\ 25 EU countries. Standard errors clustered by country are in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\). 
+			\end{tablenotes}
+		\end{threeparttable}\vspace{10pt}
+	\end{table}
+	
+	
+	
+	
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.495\linewidth]{figures/Figure_C17.pdf}
+		\caption{\label{fig:ES_ldir} Event study: log of Desktop Visits for the domain \texttt{www.google.com/maps/dir}}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of all desktop visits for the domain \texttt{www.google.com/maps/dir} are regressed on country and time fixed effects and interactions between a dummy variable indicating if a country is in the European Union and a full set of dummy variables for each snapshot. The graphs plot the estimated coefficients of these interaction terms. The coefficient for January 2024 is normalized to zero. The treated group includes 25 EU countries, excluding Cyprus and Malta due to data availability. The control group comprises European non-EU countries. The sample includes monthly data from January 2023 to December 2024. Standard errors are clustered by country and reported in the form of 95\% confidence intervals.
+			
+		\end{minipage}
+	\end{figure}
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C18a.pdf}
+			\caption{Duration}\label{fig:ES_ldurationdir}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C18b.pdf}
+			\caption{Bounce Rate}\label{fig:ES_lbouncedir}
+		\end{subfigure}
+		\caption{Event study: log of Desktop Visits' Duration and Bounce Rates for the domain \texttt{www.google.com/maps/dir}}
+		\label{fig:ES_duration_bounce_dir}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of the visits' duration and bounce rates for the domain \texttt{www.google.com/maps/dir} from desktop devices are regressed on country fixed effects and interactions between a dummy variable indicating if a country is in the European Union and a full set of dummy variables for each snapshot. The graphs plot the estimated coefficients of these interaction terms. The coefficient for January 2024 is normalized to zero. The treated group includes 25 EU countries, excluding Cyprus and Malta due to data availability. The control group comprises European non-EU countries. The sample includes monthly data from January 2023 to December 2024. Figures \ref{fig:ES_ldurationdir} and \ref{fig:ES_lbouncedir} show the desktop visits' duration and bounce rates for \texttt{www.google.com/maps/dir}, respectively. Standard errors are clustered by country and reported in the form of 95\% confidence intervals.
+			
+		\end{minipage}
+	\end{figure}
+	
+	\clearpage
+	
+	\paragraph{Impact on Google Maps Alternative and Related Services} 
+	
+	
+	\paragraph{Online Traffic for \texttt{www.bing.com/maps}}
+	
+	\clearpage
+	
+	\begin{table}
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:did_desktop_mobile_bing} Difference-in-Differences: log of Visits for \texttt{www.bing.com/maps} - Desktop and Mobile}
+		\begin{threeparttable}
+			%\begin{adjustbox}{max width=\linewidth}
+			\begin{tabular}{lcccccc}
+				\hline \noalign{\smallskip} 
+				& \multicolumn{3}{c}{(Visits Desktop)} & \multicolumn{3}{c}{(Visits Mobile)}  \\ \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+				
+				&         (1)   &         (2)   &         (3)   &         (4)   &         (5)   &         (6)   \\
+				\midrule
+				$ EU \times post^{DMA} $ &      -0.263** &      -0.274*  &      -0.404*  &       0.258   &       0.175   &       0.464   \\
+				&     (0.126)   &     (0.149)   &     (0.227)   &     (0.428)   &     (0.467)   &     (0.568)   \\
+				
+				Country FEs         &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Month FEs           &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+				Control Countries   &         All   &  North Hem.   &   Only Euro   &         All   &  North Hem.   &   Only Euro   \\
+				$ R ^2 $            &       0.893   &       0.891   &       0.846   &       0.669   &       0.687   &       0.685   \\
+				N                   &       1,248   &       1,128   &         912   &       1,248   &       1,128   &         912   \\
+				Mean Dep. Var.      &       9.737   &       9.683   &       9.383   &       8.230   &       8.093   &       7.672   \\
+				\midrule
+			\end{tabular}
+			
+			%\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes monthly data from January 2023 to December 2024 about the online visits to the domain \texttt{www.bing.com/maps}. The first three columns correspond to the visits from desktop, and the second three correspond to the visits from mobile. For each type of visit, we present specifications that include country and month fixed effects. The specifications differ in the composition of the control group: The first specification includes all countries in the control group. The second specification limits the control group to countries in the Northern Hemisphere. The third specification restricts the control group to European, non-EU countries. In all specifications, the treated group comprises 25 EU countries. Standard errors clustered by country are in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\). 
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C19a.pdf}
+			\caption{Desktop}\label{fig:ES_lvisit_desk_bing}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C19b.pdf}
+			\caption{Mobile}\label{fig:ES_lvisit_mobile_bing}
+		\end{subfigure}
+		\caption{Event study: log of Desktop and Mobile Visits for \texttt{www.bing.com/maps}}
+		\label{fig:ES_visit_desk_mobile_bing}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of the desktop and mobile visits for the domain \texttt{www.bing.com/maps} are regressed on country and time fixed effects and interactions between a dummy variable indicating if a country is in the European Union and a full set of dummy variables for each snapshot. The graphs plot the estimated coefficients of these interaction terms. The coefficient for January 2024 is normalized to zero. The treated group includes 25 EU countries, excluding Cyprus and Malta due to data availability. The control group comprises European non-EU countries. The sample includes monthly data from January 2023 to December 2024. Figures \ref{fig:ES_lvisit_desk_bing} and \ref{fig:ES_lvisit_mobile_bing} show the desktop and mobile visits for \texttt{www.bing.com/maps}, respectively. Standard errors are clustered by country and reported in the form of 95\% confidence intervals.
+			
+		\end{minipage}
+	\end{figure}
+	
+	\clearpage
+	
+	
+	\begin{table}[ht!]
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:sdid_traffic_bing} Comparing Specifications: log of Visits for \texttt{www.bing.com/maps}, Desktop and Mobile}
+		\begin{threeparttable}
+			\begin{adjustbox}{max width=\linewidth}
+				\begin{tabular}{lcccccc}
+					\hline \noalign{\smallskip} 
+					& \multicolumn{3}{c}{Visits Desktop} & \multicolumn{3}{c}{Visits Mobile}  \\ \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+				
+				&(Synth. DiD)   &       (DiD)   &(Synth. Control)   &(Synth. DiD)   &       (DiD)   &(Synth. Control)   \\
+				\midrule
+				$ EU \times post^{DMA} $ &      -0.134   &      -0.263** &      -0.198*  &       0.516   &       0.258   &       0.598   \\
+				&     (0.088)   &     (0.121)   &     (0.110)   &     (0.498)   &     (0.430)   &     (0.405)   \\
+				
+				N                   &       1,248   &       1,248   &       1,248   &       1,248   &       1,248   &       1,248   \\
+				\midrule
+				
+				\end{tabular}
+			\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes monthly data from January 2023 to December 2024. The first three columns correspond to the visits from desktop, and the second three correspond to the visits from mobile for the domain \texttt{www.bing.com/maps}. For each type of visit, we present results from three specifications: synthetic difference-in-differences, classical difference-in-differences, and synthetic control. In all specifications, the treated group comprises 25 EU countries, excluding Cyprus and Malta due to data unavailability, while the control group includes all 27 countries. Standard errors estimated using 300 bootstrap iterations clustered at the country level are provided in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\). 
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C20a.pdf}
+			\caption{Desktop}\label{fig:ES_synthldesktop_bing}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C20b.pdf}
+			\caption{Mobile}\label{fig:ES_synthlmobile_bing}
+		\end{subfigure}
+		\caption{Synthetic Event study: log of Desktop and Mobile Visits for \texttt{www.bing.com/maps}}
+		\label{fig:ES_synth_bing}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of all desktop and mobile visits for \texttt{www.bing.com/maps} are analyzed using a synthetic difference-in-differences approach. The graphs plot the estimated treatment effects over time, capturing the evolution of differences between the treated and synthetic control groups. The effect for January 2024 is normalized to zero. The treated group consists of 25 EU countries, excluding Cyprus and Malta due to data availability. The pool of countries for the synthetic control includes 27 countries: 13 European non-EU countries and 14 other countries in both the Northern and Southern Hemispheres. The sample includes monthly data from January 2023 to December 2024. Figures \ref{fig:ES_synthldesktop_bing} and \ref{fig:ES_synthlmobile_bing} show the analysis for desktop and mobile visits for \texttt{www.bing.com/maps}, respectively. 95\% confidence intervals are provided based on standard errors estimated using 300 bootstrap iterations clustered at the country level.
+		\end{minipage}
+	\end{figure}
+	
+	\clearpage
+	
+	\paragraph{Online Traffic for \texttt{www.google.com}} 
+	\clearpage
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.85\linewidth]{figures/Figure_C21.pdf}
+		\caption{Example of Vertical Integration of Google Maps into Google Search through Google Places (Snapshot from July 3rd 2024)}
+		\label{fig:snapshot_restaurant_maps}
+	\end{figure}
+	
+	\begin{table}
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:did_desktop_mobile_google} Difference-in-Differences: log of Visits for \texttt{www.google.com} - Desktop and Mobile}
+		\begin{threeparttable}
+			%\begin{adjustbox}{max width=\linewidth}
+			\begin{tabular}{lcccccc}
+				\hline \noalign{\smallskip} 
+				& \multicolumn{3}{c}{(Visits Desktop)} & \multicolumn{3}{c}{(Visits Mobile)}  \\ \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+			
+			&         (1)   &         (2)   &         (3)   &         (4)   &         (5)   &         (6)   \\
+			\midrule
+			$ EU \times post^{DMA} $ &       0.016   &       0.030   &      -0.010   &      -0.014   &      -0.014   &       0.021   \\
+			&     (0.043)   &     (0.046)   &     (0.059)   &     (0.062)   &     (0.071)   &     (0.093)   \\
+			
+			Country FEs         &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+			Month FEs           &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   &  \checkmark   \\
+			Control Countries   &         All   &  North Hem.   &   Only Euro   &         All   &  North Hem.   &   Only Euro   \\
+			$ R ^2 $            &       0.986   &       0.986   &       0.979   &       0.994   &       0.994   &       0.994   \\
+			N                   &       1,248   &       1,128   &         912   &       1,248   &       1,128   &         912   \\
+			Mean Dep. Var.      &      19.025   &      18.953   &      18.633   &      19.798   &      19.701   &      19.297   \\
+			\midrule
+			
+			\end{tabular}
+			
+			%\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes monthly data from January 2023 to December 2024 about the online visits to the domain \texttt{www.google.com}. The first three columns correspond to the visits from desktop, and the second three correspond to the visits from mobile. For each type of visit, we present specifications that include country and month fixed effects. The specifications differ in the composition of the control group: The first specification includes all countries in the control group. The second specification limits the control group to countries in the Northern Hemisphere. The third specification restricts the control group to European, non-EU countries. In all specifications, the treated group comprises 25 EU countries. Standard errors clustered by country are in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\). 
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C22a.pdf}
+			\caption{Desktop}\label{fig:ES_lvisit_desk_google}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C22b.pdf}
+			\caption{Mobile}\label{fig:ES_lvisit_mobile_google}
+		\end{subfigure}
+		\caption{Event study: log of Desktop and Mobile Visits for \texttt{www.google.com}}
+		\label{fig:ES_visit_desk_mobile_google}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of the desktop and mobile visits for the domain \texttt{www.google.com} are regressed on country and time fixed effects and interactions between a dummy variable indicating if a country is in the European Union and a full set of dummy variables for each snapshot. The graphs plot the estimated coefficients of these interaction terms. The coefficient for January 2024 is normalized to zero. The treated group includes 25 EU countries, excluding Cyprus and Malta due to data availability. The control group comprises European non-EU countries. The sample includes monthly data from January 2023 to December 2024. Figures \ref{fig:ES_lvisit_desk_google} and \ref{fig:ES_lvisit_mobile_google} show the desktop and mobile visits for \texttt{www.google.com}, respectively. Standard errors are clustered by country and reported in the form of 95\% confidence intervals.
+			
+		\end{minipage}
+	\end{figure}
+	
+	
+	
+	\begin{table}[ht!]
+		\centering
+		\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+		\caption{\label{tab:sdid_traffic_google} Comparing Specifications: log of Visits for \texttt{www.google.com}, Desktop and Mobile}
+		\begin{threeparttable}
+			\begin{adjustbox}{max width=\linewidth}
+				\begin{tabular}{lcccccc}
+					\hline \noalign{\smallskip} 
+					& \multicolumn{3}{c}{Visits Desktop} & \multicolumn{3}{c}{Visits Mobile}  \\ \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+				
+				&(Synth. DiD)   &       (DiD)   &(Synth. Control)   &(Synth. DiD)   &       (DiD)   &(Synth. Control)   \\
+				\midrule
+				$ EU \times post^{DMA} $ &       0.017   &       0.016   &       0.007   &       0.004   &      -0.014   &      -0.012   \\
+				&     (0.056)   &     (0.045)   &     (0.054)   &     (0.047)   &     (0.061)   &     (0.059)   \\
+				
+				N                   &       1,248   &       1,248   &       1,248   &       1,248   &       1,248   &       1,248   \\
+				\midrule
+				
+				\end{tabular}
+			\end{adjustbox}
+			\begin{tablenotes}
+				\item \footnotesize \emph{Notes}: The sample includes monthly data from January 2023 to December 2024. The first three columns correspond to the visits from desktop, and the second three correspond to the visits from mobile for the domain \texttt{www.google.com}. For each type of visit, we present results from three specifications: synthetic difference-in-differences, classical difference-in-differences, and synthetic control. In all specifications, the treated group comprises 25 EU countries, excluding Cyprus and Malta due to data unavailability, while the control group includes all 27 countries. Standard errors estimated using 300 bootstrap iterations clustered at the country level are provided in parentheses. \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***}  \(p<0.01\). 
+			\end{tablenotes}
+		\end{threeparttable}
+	\end{table}
+	
+	
+	
+	
+	
+	\begin{figure}[!ht]
+		\centering
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C23a.pdf}
+			\caption{Desktop}\label{fig:ES_synthldesktop_google}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[h]{0.495\linewidth}
+			\centering
+			\includegraphics[width=1\linewidth]{figures/Figure_C23b.pdf}
+			\caption{Mobile}\label{fig:ES_synthlmobile_google}
+		\end{subfigure}
+		\caption{Synthetic Event study: log of Desktop and Mobile Visits for \texttt{www.google.com}}
+		\label{fig:ES_synth_google}
+		\footnotesize
+		\begin{minipage}{\linewidth}
+			\vspace{6pt}
+			\emph{Notes}: The log of all desktop and mobile visits for \texttt{www.google.com} are analyzed using a synthetic difference-in-differences approach. The graphs plot the estimated treatment effects over time, capturing the evolution of differences between the treated and synthetic control groups. The effect for January 2024 is normalized to zero. The treated group consists of 25 EU countries, excluding Cyprus and Malta due to data availability. The pool of countries for the synthetic control includes 27 countries: 13 European non-EU countries and 14 other countries in both the Northern and Southern Hemispheres. The sample includes monthly data from January 2023 to December 2024. Figures \ref{fig:ES_synthldesktop_google} and \ref{fig:ES_synthlmobile_google} show the analysis for desktop and mobile visits for \texttt{www.google.com/maps}, respectively. 95\% confidence intervals are provided based on standard errors estimated using 300 bootstrap iterations clustered at the country level.
+		\end{minipage}
+	\end{figure}
+	
+	\clearpage
+	
+	
+	\bibliography{bib_DMA}
+	
+	
+\end{document}

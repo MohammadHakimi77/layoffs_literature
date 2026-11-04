@@ -1,0 +1,389 @@
+\documentclass[8pt]{beamer}
+\beamertemplatetransparentcovereddynamic	
+\usepackage{ucs}
+\usepackage{color,soul}
+\usetheme{Singapore}
+\usecolortheme{default}
+\usepackage{amsmath,amsfonts,amssymb,booktabs}
+\usepackage{graphics}
+\usepackage{hyperref}
+\usepackage{sansmathaccent}
+\usepackage[position=top]{subfig}
+\usepackage{arydshln}
+\usepackage{graphicx}
+\usepackage{dsfont}
+\usepackage{tikz}
+\usepackage{comment}
+\usepackage{pgfplots}
+\usepackage{algorithm2e,algorithmic,adjustbox,bbm}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{pgfplots.groupplots}
+\usetikzlibrary{positioning}
+
+
+
+\usetikzlibrary{arrows,positioning,calc}
+\tikzset{cause/.style = {->,> = stealth', very thick, shorten >= 2, shorten <= 2},
+  error/.style = {->,> = stealth', , shorten >= 2}, var/.style = {rectangle,rounded
+  corners,thick,draw=black!75,fill=black!5,align=center,inner sep=5} }
+
+\pdfmapfile{+sansmathaccent.map}
+\setbeamertemplate{footline}[frame number]
+\beamertemplatenavigationsymbolsempty
+\renewcommand{\insertnavigation}[1]{}
+
+%\setbeamercolor{block body}{bg=normal}
+\setbeamercolor{block title}{bg=blue!60,fg=white}
+
+%-------------------Titlepage content--------------------------------
+
+\title{What drives playlist consumption on Spotify?}
+\vspace{5 mm}
+\author[shortname]{Max J. Pachali\inst{1}, Hannes Datta\inst{1}}
+\institute[shortinst]{\inst{1} Tilburg University}
+
+\date{
+TAISIG Talks\\
+December 16, 2021
+%October 18, 2021 
+}
+%-------------------Document-------------------------------
+
+\begin{document}
+\frame{\titlepage}
+
+%-------------------TOC----------------------------------------
+%\section[Outline]{}
+%\frame{\tableofcontents}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------Introduction------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+\frame{
+\frametitle{Concerns about market power of digital platforms}
+
+\begin{itemize}
+
+	\item Today, online platforms play an important role in society and economy 
+
+	\item Platforms have started to dominate many industries, partly owing to AI technology 
+		\begin{itemize}
+		\item recommendation algorithms (e.g., online retailing, movies, music)
+		\item personalized ads (e.g., search, social)
+
+	\end{itemize}
+	
+	\item Policy-makers around the world call for heightened transparency (e.g., US, EU, The Netherlands) %and antitrust enforcement
+	
+	
+	
+\end{itemize}
+	
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\frame{
+\frametitle{Platform power in the music streaming market}
+
+\begin{itemize}
+
+	\item Platforms have overtaken traditional revenue streams of content producers\footnote{In 2019, 80\% of content producer's revenues generated through online streaming.}
+	\item  Nowadays, users mostly consume music through listening to playlists, underscoring the importance of understanding the drivers of playlist demand
+	\vspace{.5cm}
+	\item If users mainly listen to a playlist because \dots	
+	\begin{itemize}
+ 	\item[$\rightarrow$]  it contains songs of popular artists, not Spotify would be powerful, but major record labels that have signed popular artists
+	
+	\item[$\rightarrow$]  of the theme, mood, music topic, or the overall acoustic styles it is representing ("playlist brand equity"), curators would be powerful through the (algorithmic) decisions of which artists to include and "support"
+	\end{itemize} 
+	
+	\item Spotify also features a selected set of playlists on its app%, including the web player
+	\begin{itemize}
+ 	\item[$\rightarrow$] If consumers would be very responsive to these "promotions" of playlists, it would equip Spotify with additional power
+	\end{itemize} 
+
+\end{itemize}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\frame{
+\frametitle{Goal and data}
+
+\begin{itemize}
+
+\item We empirically quantify the main drivers of playlist choice on Spotify in a structural demand model
+\item Our analysis relies on a unique daily data set of initially 1.2 million playlists in the period of October 2019 until March 2020 collected from \textit{Chartmetric.com}
+\item The playlist data includes (amongst others):
+\begin{itemize}
+\item[$\rightarrow$] daily aggregate playlist \textbf{listeners}   
+\item[$\rightarrow$] share of content owned by the three \textbf{major labels} (Universal, Sony and Warner) on playlists, 
+\item[$\rightarrow$] proxy for the \textbf{content popularity} of songs on playlists, 
+\item[$\rightarrow$] \textbf{curator type}: editorial playlists by Spotify, algorithmically curated playlists by Spotify (e.g., "Discover Weekly"), professionally curated playlists (e.g., by major music labels), user playlists 
+\item[$\rightarrow$] indicator whether playlist was \textbf{featured in the app}
+\end{itemize}
+
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------MODEL FREE EVIDENCE--------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Labels push their own content}
+
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.25]{../output/figures_and_tables/figure_mlshares.pdf}
+%\caption{Summary of the average share of major label content per curator type across the 12,055 playlists included in the estimation sample.}
+\label{ml_by_curators}
+\end{figure}
+
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Major labels own most popular content}
+	
+\begin{figure}[t!]
+\centering
+\includegraphics[scale=0.25]{../output/figures_and_tables/figure_popularity_mlshare.pdf}
+%\caption{Empirical relation between the share of major label content and our measure for playlist popularity ("the number of tracks of a playlist added to other playlists at any point in time").}
+\label{ml_content_pop}
+\end{figure}
+
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Spotify removed major labels from their feature promotions}
+
+\begin{figure}[t!]
+\centering
+\includegraphics[scale=0.2]{../output/figures_and_tables/feature_share_curators.pdf}
+%\caption{Share of featured playlists in at least one of the "Genres \& Moods" sections in at least one country by different curator types. Note: the share of featured playlists curated by Spotify is implied as the residual share.}
+\label{feature_share_curators}
+\end{figure}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------Empirical Framework--------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Results}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Modeling playlist "consumption"}
+
+\begin{itemize}
+%\item Moment of consumption is discrete-choice decision: Users can't listen to multiple playlists simultaneously
+\item Users can choose among thousands of differentiated playlists 
+\item We model this decision as a discrete-choice, using data on 12k+ playlists, 50 categories, accounting for about 80\% of total playlist consumption
+\end{itemize}
+
+\begin{columns}
+\begin{column}{0.23\textwidth}  %%<--- here
+\begin{center}
+\centering
+\includegraphics[height=1.8cm]{../img/listA}
+\end{center}
+\end{column}
+
+\begin{column}{0.2\textwidth}  %%<--- here
+\begin{center}
+\centering
+\includegraphics[height=1.8cm]{../img/listB}
+\end{center}
+\end{column}
+
+\begin{column}{0.3\textwidth}  %%<--- here
+\begin{center}
+\centering
+\includegraphics[height=1.8cm]{../img/listC}
+\end{center}
+\end{column}
+
+\end{columns}
+   
+
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Estimates of playlist "brand" preferences}
+
+\begin{figure}
+\centering 
+\includegraphics[scale=0.18]{../output/figures_and_tables/fes_follower_by_type.pdf}
+%\caption{Relation between estimates of time-invariant playlist preferences (y-axis) and the logarithm of playlist followers (in April 2020).}
+\label{fes_per_group}
+\end{figure}
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{How powerful is Spotify (I)? Role of brand equity}
+
+\begin{itemize}
+\item Changes in playlist market share if users have substantially lower time-invariant preferences for Spotify playlists 
+\item Set equal to average user preferences for non-Spotify playlists
+\end{itemize}
+
+\input{../output/figures_and_tables/ms_counter_fe.tex}
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{How powerful is Spotify (II): Role of featured playlists}
+
+\begin{itemize}
+\item Changes in playlist market share if Spotify playlists don't get featured in the browse sections 
+\end{itemize}
+
+\input{../output/figures_and_tables/ms_counter_promo.tex}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Assessing label power (I): Content removal}
+
+\begin{itemize}
+\item Changes in playlist market share if Spotify playlists removed all tracks released by Universal  
+\end{itemize}
+
+
+
+\input{../output/figures_and_tables/ms_counter_no_uni.tex}
+
+\begin{itemize}
+\item Corresponding changes of market share of Spotify playlists if Sony and Warner content would be removed: -.65, -.51
+\end{itemize}
+
+		
+}
+
+
+
+\frame{
+\frametitle{Assessing label power (II): Revenues depending on editorial decisions}
+
+\begin{itemize}
+\item{\%-change of producers' revenues on Spotify in the three scenarios of no major label tracks on featured playlists}
+\end{itemize}
+
+	
+\input{../output/figures_and_tables/rev_labels_new_zero_spotlists.tex}
+	
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------Conclusions---------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{
+\frametitle{Conclusions and Implications}
+\begin{itemize}
+		
+\item[(1)] Revenues of major labels (and music producers more broadly) largely depend on Spotify's decisions about playlist compositions and featuring playlists in the app
+\item[(2)] In relative terms, Spotify is much less dependent on the availability of popular major label tracks on its playlists
+\item[(3)] To reduce Spotify's "playlist monopoly" and increase competition, music producers and other curators should further invest in growing both the quantity and brand equity of their own playlist channels on Spotify
+\item[(4)] Data access crucial: important role of data aggregators (e.g., Chartmetric), and retrieval technologies (e.g., web scraping, APIs) to allow researchers to study these issues
+
+\end{itemize}
+
+}
+	
+
+
+
+\frame{
+
+\vspace{5 mm}
+\huge{
+\begin{center}
+\textbf{Thanks for your attention!}
+\end{center}
+}
+\vspace{5 mm}
+\small
+\begin{itemize}
+    \item More about me \& my research: \url{https://hannesdatta.com}
+    \item Join us in studying digital platforms
+    \begin{itemize}
+        \item \url{https://github.com/hannesdatta/data-spotify-promotions-releases}
+        \url{https://github.com/hannesdatta/data-spotify-playlist-ecosystem}
+        \url{https://github.com/hannesdatta/musicMetadata}
+        \url{https://github.com/hannesdatta/spotify-playlist-categories}
+        \url{https://github.com/hannesdatta/data-spotify-releases-2015-2018}
+    \end{itemize}
+    \item Open science skills to boost research productivity: \url{https://tilburgsciencehub.com}, \url{https://dprep.hannesdatta.com}, \url{https://odcm.hannesdatta.com}
+\end{itemize}
+}
+
+
+
+\end{document}
+
+
+

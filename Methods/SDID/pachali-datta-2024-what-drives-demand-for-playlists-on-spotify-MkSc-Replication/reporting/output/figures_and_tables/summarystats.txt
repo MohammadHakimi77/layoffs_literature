@@ -1,0 +1,17 @@
+<tab:summarystats>
+Followers	65634.83	331878.56	  0.00	26040122.00
+Featured on Search Page	    0.11	     0.31	  0.00	       1.00
+Addition of Major Label Superstars	    0.13	     0.33	  0.00	       1.00
+Share of major label tracks (in \%)	    0.48	     0.31	  0.00	       1.00
+Recommendation intensity	    0.07	     0.11	  0.00	       2.64
+Play duration (in h)	    9.73	    18.04	  0.03	     609.11
+Track age (in years)	    9.27	     9.65	  0.00	      78.89
+Danceability	    0.62	     0.11	  0.00	       0.93
+Energy	    0.65	     0.17	  0.01	       1.00
+Speechiness	    0.10	     0.07	  0.00	       0.95
+Acousticness	    0.28	     0.21	  0.00	       0.99
+Instrumentalness	    0.12	     0.20	  0.00	       0.97
+Liveness	    0.21	     0.07	  0.02	       0.94
+Valence	    0.50	     0.15	  0.00	       0.97
+Tempo	  119.34	     9.09	  0.00	     200.06
+Loudness	   -7.93	     3.59	-47.35	       0.00

@@ -1,0 +1,46 @@
+---
+title: "Data description: `r meta$filename`"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r s1, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(data.table)
+library(kableExtra)
+library(ggplot2)
+library(rmarkdown)
+library(kableExtra)
+options(width=150)
+```
+
+
+## Description
+
+`r meta$description`
+
+## Variable operationalization
+
+
+```{r var_descript,echo = FALSE}
+vars = meta$variables  
+
+vars = vars[unlist(lapply(names(vars), function(x) x%in%colnames(dt)))]
+
+tmp=data.table('Variable'=names(vars))
+tmp[, 'Operationalization':=unlist(vars)]
+
+kable(tmp, caption = 'Variable operationalization') #%>%kable_styling()
+```
+
+## Descriptive statistics
+
+```{r descr, echo = F}
+for (.var in colnames(dt)) {
+  print(summary(dt[, .var,with=F]))
+  cat('\n\n')
+}
+
+```
+

@@ -1,0 +1,1 @@
+aws s3 sync ../output/. s3://uvt-spotify-covid19/raw/chartmetric/2021_03_29 --region eu-central-1 --exclude "*.*"  --include "playlists.*" --include "followers-listeners.csv"

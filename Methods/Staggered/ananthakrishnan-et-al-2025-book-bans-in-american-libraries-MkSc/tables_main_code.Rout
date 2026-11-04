@@ -1,0 +1,716 @@
+
+R version 4.2.1 (2022-06-23 ucrt) -- "Funny-Looking Kid"
+Copyright (C) 2022 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library(data.table)
+> library(ggplot2)
+Warning message:
+package 'ggplot2' was built under R version 4.2.3 
+> library(lubridate)
+
+Attaching package: 'lubridate'
+
+The following objects are masked from 'package:data.table':
+
+    hour, isoweek, mday, minute, month, quarter, second, wday, week,
+    yday, year
+
+The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union
+
+Warning message:
+package 'lubridate' was built under R version 4.2.3 
+> library(fixest)
+> library(dplyr)
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:data.table':
+
+    between, first, last
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package 'dplyr' was built under R version 4.2.3 
+> library(did)
+Warning message:
+package 'did' was built under R version 4.2.2 
+> library(RColorBrewer)
+> library(ggthemes)
+Warning message:
+package 'ggthemes' was built under R version 4.2.3 
+> library(directlabels)
+Warning message:
+package 'directlabels' was built under R version 4.2.3 
+> library(DIDmultiplegt)
+> library(didimputation)
+Warning message:
+package 'didimputation' was built under R version 4.2.3 
+> library(stringr)
+Warning message:
+package 'stringr' was built under R version 4.2.3 
+> library(MatchIt)
+Warning message:
+package 'MatchIt' was built under R version 4.2.3 
+> 
+> # Set the root directory here #
+> setwd("D:/nthotada/BookBans")
+> 
+> # Table 1
+> # Col 1 - News articles
+> # Col 2 - News articles in mega-ban months
+> # Col 3 - Tweets
+> # Col 4 - Tweets in mega-ban months
+> 
+> news_sal_dt <- fread("./data/replication_data/news_salience_data.csv")
+> 
+> m_news <- feols(ln_num_articles ~ is_top_25_title | month, cluster = "title", 
++                 news_sal_dt[month >= ymd(20211001)])
+> m_news_mb <- feols(ln_num_articles ~ is_top_25_title | month, cluster = "title", 
++                    news_sal_dt[is_mega_ban_month == 1 & month >= ymd(20211001)])
+> 
+> tweet_sal_dt <- fread("./data/replication_data/tweet_salience_data.csv")
+> 
+> m_twt <- feols(ln_count ~ is_top_25_title | month, cluster = "title", 
++                tweet_sal_dt[month >= ymd(20211001)])
+NOTE: 13,671 observations removed because of NA values (RHS: 13,671).
+> m_twt_mb <- feols(ln_count ~ is_top_25_title | month, cluster = "title", 
++                   tweet_sal_dt[is_mega_ban_month == 1 & month >= ymd(20211001)])
+NOTE: 10,633 observations removed because of NA values (RHS: 10,633).
+> 
+> 
+> setFixest_dict(c(ln_num_articles = "Log(News Article Count)", ln_count = "Log(Tweet Count)", 
++                  is_top_25_title = "Top-25", 
++                  high_visibility = "High Visibility", unpop_author = "Less-experienced Author",
++                  is_banned_ever = "Banned", state = "State", month = "Year Month", title = "Title"))
+> etable(m_news, m_news_mb, m_twt, m_twt_mb,
++        style.tex = style.tex(fixef.title = "", fixef.suffix = " Fixed Effect", yesNo = "Yes", 
++                              model.title = "", main = "base", stats.title = "\\midrule"),
++        tex = T, digits = 3, title = "Impact of Ban Events on Coverage",
++        fitstat = ~ r2 + n, placement = "h", se.row = F, 
++        se.below = T, headers = list(c("All Months", "Mega Ban Months", "All Months", "Mega Ban Months")))
+\begin{table}[h]
+   \caption{Impact of Ban Events on Coverage}
+   \centering
+   \begin{tabular}{lcccc}
+      \tabularnewline \midrule \midrule
+      Dependent Variables: & \multicolumn{2}{c}{Log(News Article Count)} & \multicolumn{2}{c}{Log(Tweet Count)}\\
+                              & All Months    & Mega Ban Months & All Months    & Mega Ban Months \\   
+                              & (1)           & (2)             & (3)           & (4)\\  
+      \midrule
+      \emph{Variables}\\
+      Top-25                  & 0.406$^{***}$ & 0.484$^{***}$   & 0.856$^{***}$ & 0.961$^{***}$\\   
+                              & (0.136)       & (0.162)         & (0.202)       & (0.225)\\   
+      Year Month Fixed Effect & Yes           & Yes             & Yes           & Yes\\  
+      \midrule 
+      R$^2$                   & 0.07423       & 0.08157         & 0.08415       & 0.05637\\  
+      Observations            & 4,680         & 3,276           & 4,680         & 3,276\\  
+      \midrule \midrule
+      \multicolumn{5}{l}{\emph{Clustered (Title) standard-errors in parentheses}}\\
+      \multicolumn{5}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+   \end{tabular}
+\end{table}
+> 
+> # Table 2
+> # Col 1 - Ban related shelves
+> # Col 2 - LGBTQ related shelves
+> # Col 3 - School related shelves
+> shelf_dt <- fread("./data/replication_data/shelf_data.csv")
+> m1 <- feols(ban_shelved ~ is_top_25_title, shelf_dt[is_ban == 1 & is_lgbt == 0 & is_school == 0])
+> m2 <- feols(lgbt_shelved ~ is_top_25_title, shelf_dt[is_ban == 0 & is_lgbt == 1 & is_school == 0])
+> m3 <- feols(school_shelved ~ is_top_25_title, shelf_dt[is_ban == 0 & is_lgbt == 0 & is_school == 1])
+> 
+> setFixest_dict(c(ln_num_articles = "Log(News Article Count)", ln_count = "Log(Tweet Count)", 
++                  is_top_25_title = "Top-25", 
++                  high_visibility = "High Visibility", unpop_author = "Less-experienced Author",
++                  is_banned_ever = "Banned", state = "State", month = "Year Month", title = "Title"))
+> etable(m1, m2, m3,
++        style.tex = style.tex(fixef.title = "", fixef.suffix = " Fixed Effect", yesNo = "Yes", 
++                              model.title = "", main = "base", stats.title = "\\midrule"),
++        tex = T, digits = 3, title = "Shelving on Goodreads", order = "!Intercept",
++        fitstat = ~ r2 + n, placement = "h", se.row = F, depvar = F,
++        se.below = T, headers = list(c("Ban-Related", "LGBTQ-Related", "School-Related")))
+\begin{table}[h]
+   \caption{Shelving on Goodreads}
+   \centering
+   \begin{tabular}{lccc}
+      \tabularnewline \midrule \midrule
+                   & Ban-Related   & LGBTQ-Related & School-Related \\   
+                   & (1)           & (2)           & (3)\\  
+      \midrule
+      \emph{Variables}\\
+      Top-25       & 184.5$^{***}$ & 741.6$^{***}$ & 871.8$^{**}$\\   
+                   & (7.93)        & (283.8)       & (366.8)\\   
+      (Intercept)  & 4.54$^{**}$   & 512.3$^{***}$ & 813.0$^{***}$\\   
+                   & (1.87)        & (67.1)        & (86.8)\\   
+      \midrule 
+      R$^2$        & 0.54901       & 0.01511       & 0.01253\\  
+      Observations & 447           & 447           & 447\\  
+      \midrule \midrule
+      \multicolumn{4}{l}{\emph{IID standard-errors in parentheses}}\\
+      \multicolumn{4}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+   \end{tabular}
+\end{table}
+> 
+> # Table 3
+> # Col 1 - Average TWFE with all titles
+> # Col 2 - Average TWFE with top-25 titles
+> # Col 3 - Average TWFE with all but top-25 titles
+> # Col 4 - Average TWFE with intensity of ban as interaction
+> lib_circ_dt <- fread("./data/replication_data/lib_circ_data.csv")
+> 
+> m1 <- feols(ln_circ ~ post_ban:is_banned_ever | state + title + running_month, 
++                    cluster = c('state'), 
++                    data = lib_circ_dt[(is_banned_title == 1 | is_control_title == 1) &
++                                       months_since_first_ban >= -4 & months_since_first_ban <= 6])
+> 
+> m2 <- feols(ln_circ ~ post_ban*is_banned_ever | state + title + running_month, 
++                   cluster = c('state'), 
++                   data = lib_circ_dt[(is_top_25_title == 1 | is_control_title == 1) &
++                                      months_since_first_ban >= -4 & months_since_first_ban <= 6])
+Variables 'is_banned_ever' and 'post_ban:is_banned_ever' have been removed because of collinearity (see $collin.var).
+> 
+> m3 <- feols(ln_circ ~ post_ban:is_banned_ever | state + title + running_month, 
++                    cluster = c('state'), 
++                    data = lib_circ_dt[((is_banned_title == 1 & is_top_25_title == 0) | is_control_title == 1) &
++                                       months_since_first_ban >= -4 & months_since_first_ban <= 6])
+> 
+> m4 <- feols(ln_circ ~ post_ban + post_ban:is_banned_ever:cum_num_bans | state + title + running_month,
++                        cluster = c('state'),
++                        data = lib_circ_dt[(is_banned_title == 1 | is_control_title == 1) &
++                                          months_since_first_ban >= -4 & months_since_first_ban <= 6])
+> 
+> setFixest_dict(c(ln_circ = "Log(Circulation)", post_ban = "PostBan $\\times$ Banned", 
++                  "post_ban:is_banned_ever" = "PostBan $\\times$ Banned",
++                  "post_ban:is_banned_ever:cum_num_bans" = "PostBan $\\times$ Banned $\\times$ Intensity of Ban",
++                  "post_ban:is_banned_ever:more_bans" = "PostBan $\\times$ Banned $\\times$ $>=$ Five Bans",
++                  unpop_author = "Less-experienced Author", cum_num_bans = "Intensity of Ban",
++                  is_banned_ever = "Banned", state = "State", running_month = "Year Month", title = "Title",
++                  more_bans = "$>=$ Five Bans", is_banned = "Banned"))
+> etable(m1, m2, m3, m4,
++        style.tex = style.tex(fixef.title = "", fixef.suffix = " Fixed Effect", yesNo = "Yes", 
++                              model.title = "", main = "base", stats.title = "\\midrule"),
++        tex = T, digits = 3, title = "All Titles: Impact of Ban Events on Circulation",
++        fitstat = ~ r2 + n, placement = "h", se.below = T, se.row = F, 
++        headers = list(list("All", "Top-25 ", "Non-Top-25", "Impact"),
++                       c("Titles", "Titles ", "Titles", "Per Ban")))
+\begin{table}[h]
+   \caption{All Titles: Impact of Ban Events on Circulation}
+   \centering
+   \begin{tabular}{lcccc}
+      \tabularnewline \midrule \midrule
+      Dependent Variable: & \multicolumn{4}{c}{Log(Circulation)}\\
+                                                          & All         & Top-25        & Non-Top-25 & Impact \\   
+                                                          & Titles      & Titles        & Titles     & Per Ban \\   
+                                                          & (1)         & (2)           & (3)        & (4)\\  
+      \midrule
+      \emph{Variables}\\
+      PostBan $\times$ Banned                             & 0.016$^{*}$ & 0.113$^{***}$ & 0.011      & -0.009\\   
+                                                          & (0.009)     & (0.017)       & (0.009)    & (0.009)\\   
+      PostBan $\times$ Banned $\times$ Intensity of Ban   &             &               &            & 0.018$^{***}$\\   
+                                                          &             &               &            & (0.002)\\   
+      State Fixed Effect                                  & Yes         & Yes           & Yes        & Yes\\  
+      Title Fixed Effect                                  & Yes         & Yes           & Yes        & Yes\\  
+      Year Month Fixed Effect                             & Yes         & Yes           & Yes        & Yes\\  
+      \midrule 
+      R$^2$                                               & 0.62819     & 0.57637       & 0.62452    & 0.62831\\  
+      Observations                                        & 421,382     & 249,660       & 411,122    & 421,382\\  
+      \midrule \midrule
+      \multicolumn{5}{l}{\emph{Clustered (State) standard-errors in parentheses}}\\
+      \multicolumn{5}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+   \end{tabular}
+\end{table}
+> 
+> # Table 4
+> # Col 1 - Average TWFE
+> # Col 2 - Average TWFE in banned states only
+> # Col 3 - Average TWFE in non-banned states only
+> # Col 4 - Heterogeneity with author experience
+> # Col 5 - Heterogeneity with twitter visibility
+> # Col 6 - Average TWFE in blue states only
+> # Col 7 - Average TWFE in red states only
+> 
+> m_avg <- feols(ln_circ ~ post_ban*is_banned_ever | state + title + running_month, 
++                cluster = c('state'), 
++                data = lib_circ_dt[(is_top_25_title == 1 | is_control_title == 1) &
++                                  months_since_first_ban >= -4 & months_since_first_ban <= 6])
+Variables 'is_banned_ever' and 'post_ban:is_banned_ever' have been removed because of collinearity (see $collin.var).
+> 
+> m_avg_ban <- feols(ln_circ ~ post_ban*is_banned_ever | state + title + running_month, 
++                    cluster = c('state'),
++                    data = lib_circ_dt[(is_top_25_title == 1 | is_control_title == 1) &
++                                      months_since_first_ban >= -4 & months_since_first_ban <= 6 &
++                                      is_ban_state == 1])
+Variables 'is_banned_ever' and 'post_ban:is_banned_ever' have been removed because of collinearity (see $collin.var).
+> 
+> m_avg_non_ban <- feols(ln_circ ~ post_ban*is_banned_ever | state + title + running_month, 
++                        cluster = c('state'),
++                        data = lib_circ_dt[(is_top_25_title == 1 | is_control_title == 1) &
++                                          months_since_first_ban >= -4 & months_since_first_ban <= 6 & 
++                                          is_ban_state == 0])
+Variables 'is_banned_ever' and 'post_ban:is_banned_ever' have been removed because of collinearity (see $collin.var).
+> 
+> m_avg_gr_pop <- feols(ln_circ ~ post_ban*is_banned_ever*unpop_author | state + title + running_month, 
++                       cluster = c('state'),
++                       data = lib_circ_dt[(is_top_25_title == 1 | is_control_title == 1) &
++                                         months_since_first_ban >= -4 & months_since_first_ban <= 6])
+Variables 'is_banned_ever', 'unpop_author' and 3 others have been removed because of collinearity (see $collin.var).
+> 
+> m_avg_vis <- feols(ln_circ ~ post_ban*is_banned_ever*high_visibility | state + title + running_month, 
++                    cluster = c('state'),
++                    data = lib_circ_dt[(is_top_25_title == 1 | is_control_title == 1) & 
++                                      months_since_first_ban >= -4 & months_since_first_ban <= 6])
+Variables 'is_banned_ever', 'high_visibility' and 3 others have been removed because of collinearity (see $collin.var).
+> 
+> m_avg_blue <- feols(ln_circ ~ post_ban*is_banned_ever | state + title + running_month, 
++                     cluster = c('state'),
++                     data = lib_circ_dt[(is_top_25_title == 1 | is_control_title == 1) &
++                                       months_since_first_ban >= -4 & months_since_first_ban <= 6 &
++                                       is_blue_state == 1])
+Variables 'is_banned_ever' and 'post_ban:is_banned_ever' have been removed because of collinearity (see $collin.var).
+> 
+> m_avg_red <- feols(ln_circ ~ post_ban*is_banned_ever | state + title + running_month, 
++                    cluster = c('state'),
++                    data = lib_circ_dt[(is_top_25_title == 1 | is_control_title == 1) &
++                                      months_since_first_ban >= -4 & months_since_first_ban <= 6 & running_month >= 12 &
++                                      is_red_state == 1])
+Variables 'is_banned_ever' and 'post_ban:is_banned_ever' have been removed because of collinearity (see $collin.var).
+> 
+> setFixest_dict(c(ln_circ = "Log(Circulation)", post_ban = "PostBan $\\times$ Banned", is_banned = "Banned", 
++                  high_visibility = "High Visibility", unpop_author = "Less-experienced Author",
++                  is_banned_ever = "Banned", state = "State", running_month = "Year Month", title = "Title"))
+> etable(m_avg, m_avg_ban, m_avg_non_ban, m_avg_gr_pop, m_avg_vis, m_avg_blue, m_avg_red,
++        style.tex = style.tex(fixef.title = "", fixef.suffix = " Fixed Effect", yesNo = "Yes", 
++                              model.title = "", main = "base", stats.title = "\\midrule"),
++        tex = T, digits = 3, title = "Impact of Ban Events on Circulation",
++        fitstat = ~ r2 + n, placement = "h", adjustbox = 0.95, se.row = F, 
++        se.below = T, headers = list(list("All", "Banned", "Non-banned", "Author", "Twitter", "Blue", "Red"),
++                                     c("States", "States ", "States", "Experience", "Visibility", "States", "States ")))
+\begin{table}[h]
+   \caption{Impact of Ban Events on Circulation}
+   \centering
+   \begin{adjustbox}{width = 0.95\textwidth, center}
+      \begin{tabular}{lccccccc}
+         \tabularnewline \midrule \midrule
+         Dependent Variable: & \multicolumn{7}{c}{Log(Circulation)}\\
+                                                                    & All           & Banned        & Non-banned    & Author        & Twitter       & Blue          & Red \\   
+                                                                    & States        & States        & States        & Experience    & Visibility    & States        & States  \\   
+                                                                    & (1)           & (2)           & (3)           & (4)           & (5)           & (6)           & (7)\\  
+         \midrule
+         \emph{Variables}\\
+         PostBan $\times$ Banned                                    & 0.113$^{***}$ & 0.118$^{***}$ & 0.106$^{***}$ & -0.005        & 0.015         & 0.119$^{***}$ & 0.107$^{***}$\\   
+                                                                    & (0.017)       & (0.022)       & (0.029)       & (0.020)       & (0.021)       & (0.023)       & (0.026)\\   
+         PostBan $\times$ Banned $\times$ Less-experienced Author   &               &               &               & 0.229$^{***}$ &               &               &   \\   
+                                                                    &               &               &               & (0.031)       &               &               &   \\   
+         PostBan $\times$ Banned $\times$ High Visibility           &               &               &               &               & 0.206$^{***}$ &               &   \\   
+                                                                    &               &               &               &               & (0.036)       &               &   \\   
+         State Fixed Effect                                         & Yes           & Yes           & Yes           & Yes           & Yes           & Yes           & Yes\\  
+         Title Fixed Effect                                         & Yes           & Yes           & Yes           & Yes           & Yes           & Yes           & Yes\\  
+         Year Month Fixed Effect                                    & Yes           & Yes           & Yes           & Yes           & Yes           & Yes           & Yes\\  
+         \midrule 
+         R$^2$                                                      & 0.57637       & 0.55644       & 0.61870       & 0.57647       & 0.57645       & 0.52521       & 0.64069\\  
+         Observations                                               & 249,660       & 151,110       & 98,550        & 249,660       & 249,660       & 131,400       & 118,260\\  
+         \midrule \midrule
+         \multicolumn{8}{l}{\emph{Clustered (State) standard-errors in parentheses}}\\
+         \multicolumn{8}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+      \end{tabular}
+   \end{adjustbox}
+\end{table}
+> 
+> 
+> # Table 5
+> # Col 1 - Callaway Sant'Anna ATE
+> # Col 2 - Sun & Abraham ATE
+> # Col 3 - Borusyak et al. ATE
+> # Col 4 - TWFE ATE with state population weights
+> # Col 5 - Complete Spillover ATE
+> # Col 6 - No Spillover ATE
+> 
+> did_data <- lib_circ_dt[(is_top_25_title == 1 | is_control_title == 1) &
++                        months_since_first_ban >= -4 & months_since_first_ban <= 6]
+> did_data[, time_to_treatment := months_since_first_ban]
+> did_data[is_banned_ever == 0, time_to_treatment := -1000]
+> 
+> did_data[, month_treated := min(running_month[months_since_first_ban == 0]), by = "title"]
+There were 50 or more warnings (use warnings() to see the first 50)
+> did_data[is.infinite(month_treated), month_treated := 1000]
+> did_data[is.na(month_treated), month_treated := 1000]
+> 
+> m_sa_avg <- feols(ln_circ ~ sunab(month_treated, running_month, ref.p = -1) | state + title + running_month, 
++                   cluster = c('state'),
++                   data = did_data[(is_top_25_title == 1 | is_control_title == 1) &
++                                     months_since_first_ban >= -4 & months_since_first_ban <= 6])
+> m_sa_avg <- summary(m_sa_avg, agg = "ATT")
+> 
+> 
+> did_data <- lib_circ_dt[(is_top_25_title == 1 | is_control_title == 1) &
++                        months_since_first_ban >= -4 & months_since_first_ban <= 6]
+> setorder(did_data, state, title, running_month)
+> did_data[is_control_title == 1, months_since_ban := 0]
+> did_data <- did_data[, c("title", "state", "circ", "ln_circ", "months_since_ban", "is_banned", "event_id",
++                          "running_month", "clean_ban_date", "date", "months_since_first_ban")]
+> did_data[, state_title := paste0(state, title)]
+> did_data[, ban_group := min(running_month[months_since_first_ban == 0]), by = "title"]
+There were 50 or more warnings (use warnings() to see the first 50)
+> did_data[is.infinite(ban_group), ban_group := 0]
+> did_data[is.na(ban_group), ban_group := 0]
+> setorder(did_data, clean_ban_date)
+> state_title <- unique(did_data$state_title)
+> temp_dt <- data.table("state_title" = state_title, "id" = seq(1, length(state_title)))
+> did_data <- merge.data.table(did_data, temp_dt, by = "state_title")
+> did_data[is.na(id), id := 0]
+> did_data <- fread("./data/replication_data/cs_did_data.csv")
+> m_cs <- att_gt(yname = "ln_circ",
++                tname = "running_month",
++                idname = "id",
++                gname = "ban_group",
++                xformla = ~1,
++                control_group = "notyettreated",
++                allow_unbalanced_panel = T,
++                data = did_data)
+There were 50 or more warnings (use warnings() to see the first 50)
+> 
+> agg.simple <- aggte(m_cs, type = "simple", na.rm = T)
+> m_cs_avg <- copy(m_sa_avg)
+> m_cs_avg$coeftable[1] <- agg.simple$overall.att
+> m_cs_avg$coeftable[2] <- agg.simple$overall.se
+> m_cs_avg$nobs <- m_cs$nobs
+> m_cs_avg$sq.cor <- NA
+> m_cs_avg$ssr <- NA
+> 
+> did_data <- lib_circ_dt[(is_top_25_title == 1 | is_control_title == 1) &
++                        months_since_first_ban >= -4 & months_since_first_ban <= 6]
+> did_data[is_control == 1, months_since_ban := 0]
+> did_data <- did_data[, c("title", "state", "circ", "ln_circ", "months_since_ban", "is_banned", "event_id",
++                          "running_month", "clean_ban_date", "date", "months_since_first_ban")]
+> did_data[, state_title := paste0(state, title)]
+> did_data[, ban_group := min(running_month[months_since_first_ban == 0]), by = "title"]
+There were 50 or more warnings (use warnings() to see the first 50)
+> did_data[is.infinite(ban_group), ban_group := 0]
+> did_data[is.na(ban_group), ban_group := 0]
+> setorder(did_data, clean_ban_date)
+> state_title <- unique(did_data$state_title)
+> temp_dt <- data.table("state_title" = state_title, "id" = seq(1, length(state_title)))
+> did_data <- merge.data.table(did_data, temp_dt, by = "state_title")
+> did_data[is.na(id), id := 0]
+> 
+> m_bea <- did_imputation(data = did_data, yname = "ln_circ", gname = "ban_group",
++                         tname = "running_month", idname = "id")
+> m_bea_avg <- copy(m_sa_avg)
+> m_bea_avg$coeftable[1] <- m_bea$estimate
+> m_bea_avg$coeftable[2] <- m_bea$std.error
+> m_bea_avg$nobs <- nrow(did_data)
+> m_bea_avg$sq.cor <- NA
+> m_bea_avg$ssr <- NA
+> 
+> lib_circ_dt[, post_ban := as.integer(months_since_first_ban >= 0)]
+> m_pop_wt_avg <- feols(ln_circ ~ post_ban*is_banned_ever | state + title + running_month, 
++                       cluster = c('state'), weights = ~pop_wt,
++                       data = lib_circ_dt[(is_top_25_title == 1 | is_control_title == 1) &
++                                         months_since_first_ban >= -4 & months_since_first_ban <= 6])
+Variables 'is_banned_ever' and 'post_ban:is_banned_ever' have been removed because of collinearity (see $collin.var).
+> 
+> lib_circ_dt[, post_ban := as.integer(months_since_single_ban >= 0)]
+> m_se_avg <- feols(ln_circ ~ post_ban*is_banned_ever | state + title + running_month, 
++                   cluster = c('state'),
++                   data = lib_circ_dt[(is_top_25_title == 1 | is_control_title == 1) &
++                                     months_since_single_ban >= -4 & months_since_single_ban <= 6])
+Variables 'post_ban' and 'is_banned_ever' have been removed because of collinearity (see $collin.var).
+> 
+> lib_circ_dt[, post_ban := as.integer(months_since_ban >= 0)]
+> m_tse_avg <- feols(ln_circ ~ post_ban*is_banned | state + title + running_month, 
++                    cluster = c('state'),
++                    data = lib_circ_dt[((is_top_25_title == 1 & is_banned == 1) | is_control_title == 1) &
++                                      months_since_ban >= -4 & months_since_ban <= 6 & is_ban_state == 1])
+Variables 'is_banned' and 'post_ban:is_banned' have been removed because of collinearity (see $collin.var).
+> 
+> setFixest_dict(c(ln_circ = "Log(Circulation)", "asinh(circ)" = "Circulation", post_ban = "PostBan $\\times$ Banned", 
++                  circ = "Circulation", is_banned = "Banned", ATT = "PostBan $\\times$ Banned", 
++                  "post_ban:is_banned_ever" = "PostBan $\\times$ Banned",
++                  is_banned_ever = "Banned", state = "State", running_month = "Year Month", title = "Title",
++                  quarter = "Quarter"))
+> etable(m_cs_avg, m_sa_avg, m_bea_avg, m_pop_wt_avg, m_se_avg, m_tse_avg,
++        style.tex = style.tex(fixef.title = "", fixef.suffix = " Fixed Effect", yesNo = "Yes", 
++                              model.title = "", main = "base", stats.title = "\\midrule"),
++        tex = T, digits = 3, title = "Additional Estimators: Impact of Ban Events on Circulation",
++        fitstat = ~ r2 + n, placement = "h", se.below = T, se.row = F,
++        headers = list(list(" " = 3, "Population", "Complete", "No"),
++                       list("Callaway", "Sun &", "Borusyak", "Weighted", "Spillover  ", "Spillover"),
++                       list("Sant'Anna", "Abraham", "et al.", "TWFE",  "TWFE ", "TWFE")))
+\begin{table}[h]
+   \caption{Additional Estimators: Impact of Ban Events on Circulation}
+   \centering
+   \begin{tabular}{lcccccc}
+      \tabularnewline \midrule \midrule
+      Dependent Variable: & \multicolumn{6}{c}{Log(Circulation)}\\
+       & \multicolumn{3}{c}{ } & Population & Complete & No \\ 
+       & Callaway & Sun \& & Borusyak & Weighted & Spillover   & Spillover \\ 
+                               & Sant'Anna     & Abraham       & et al.        & TWFE          & TWFE          & TWFE \\   
+                               & (1)           & (2)           & (3)           & (4)           & (5)           & (6)\\  
+      \midrule
+      \emph{Variables}\\
+      PostBan $\times$ Banned  & 0.114$^{***}$ & 0.115$^{***}$ & 0.115$^{***}$ & 0.149$^{***}$ & 0.084$^{***}$ & 0.300$^{***}$\\   
+                               & (0.023)       & (0.020)       & (0.017)       & (0.022)       & (0.020)       & (0.069)\\   
+      State Fixed Effect       & Yes           & Yes           & Yes           & Yes           & Yes           & Yes\\  
+      Title Fixed Effect       & Yes           & Yes           & Yes           & Yes           & Yes           & Yes\\  
+      Year Month Fixed Effect  & Yes           & Yes           & Yes           & Yes           & Yes           & Yes\\  
+      \midrule 
+      R$^2$                    &               & 0.57673       &               & 0.65015       & 0.59632       & 0.54692\\  
+      Observations             & 249,660       & 249,660       & 249,660       & 249,660       & 156,750       & 146,133\\  
+      \midrule \midrule
+      \multicolumn{7}{l}{\emph{Clustered (State) standard-errors in parentheses}}\\
+      \multicolumn{7}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+   \end{tabular}
+\end{table}
+> 
+> # Table 6 - Additional Robustness 
+> # Col 1 - Alternate first ban month event
+> # Col 2 - Alternate Author experience
+> # Col 3 - Banned Red states only
+> # Col 4 - Non-banned Res states only
+> # Col 5 - Controls with same genre as banned
+> # Col 6 - Controls with different genre as banned
+> # Col 7 - Banned BISAC controls
+> # Col 8 - Banned BISAC controls using PSM
+> 
+> lib_circ_dt[, post_ban := as.integer(months_since_first_ban >= 0)]
+> m_avg_red_ban <- feols(ln_circ ~ post_ban*is_banned_ever | state + title + running_month, 
++                        cluster = c('state'),
++                        data = lib_circ_dt[(is_top_25_title == 1 | is_control_title == 1) &
++                                          months_since_first_ban >= -4 & months_since_first_ban <= 6 &
++                                          is_red_state == 1 & is_ban_state == 1])
+Variables 'is_banned_ever' and 'post_ban:is_banned_ever' have been removed because of collinearity (see $collin.var).
+> 
+> m_avg_red_non_ban <- feols(ln_circ ~ post_ban*is_banned_ever | state + title + running_month, 
++                            cluster = c('state'),
++                            data = lib_circ_dt[(is_top_25_title == 1 | is_control_title == 1) &
++                                              months_since_first_ban >= -4 & months_since_first_ban <= 6 & 
++                                              is_red_state == 1 & is_ban_state == 0])
+Variables 'is_banned_ever' and 'post_ban:is_banned_ever' have been removed because of collinearity (see $collin.var).
+> did_data <- copy(lib_circ_dt)
+> did_data[is_banned_ever == 1, months_since_first_ban := months_since_first_ban + 1]
+> did_data[, post_ban := as.integer(months_since_first_ban >= 0)]
+> m_avg_cur <- feols(ln_circ ~ post_ban*is_banned_ever | state + title + running_month, 
++                    cluster = c('state'),
++                    data = did_data[(is_top_25_title == 1 | is_control_title == 1) &
++                                      months_since_first_ban >= -4 & months_since_first_ban <= 6])
+Variables 'is_banned_ever' and 'post_ban:is_banned_ever' have been removed because of collinearity (see $collin.var).
+> 
+> m_avg_tw_pop <- feols(ln_circ ~ post_ban*is_banned_ever*alt_unpop_author | state + title + running_month, 
++                       cluster = c('state'),
++                       data = lib_circ_dt[(is_top_25_title == 1 | is_control_title == 1) &
++                                         months_since_first_ban >= -4 & months_since_first_ban <= 6])
+Variables 'is_banned_ever', 'alt_unpop_author' and 3 others have been removed because of collinearity (see $collin.var).
+> 
+> m_close_ctrl_avg <- feols(ln_circ ~ post_ban*is_banned_ever | state + title + running_month, 
++                           cluster = c('state'),
++                           data = lib_circ_dt[(is_top_25_title == 1 | (is_control_title == 1 & grepl("FICTION", genre, ignore.case = T))) &
++                                                months_since_first_ban >= -4 & months_since_first_ban <= 6])
+Variables 'is_banned_ever' and 'post_ban:is_banned_ever' have been removed because of collinearity (see $collin.var).
+> 
+> m_far_ctrl_avg <- feols(ln_circ ~ post_ban*is_banned_ever | state + title + running_month, 
++                         cluster = c('state'),
++                         data = lib_circ_dt[(is_top_25_title == 1 | (is_control_title == 1 & grepl("BUSINESS & ECONOMICS", genre, ignore.case = T))) &
++                                              months_since_first_ban >= -4 & months_since_first_ban <= 6])
+Variables 'is_banned_ever' and 'post_ban:is_banned_ever' have been removed because of collinearity (see $collin.var).
+> 
+> m_bb_avg <- feols(ln_circ ~ post_ban*is_banned_ever | state + title + running_month, 
++                   cluster = c('state'),
++                   data = lib_circ_dt[(is_top_25_title == 1 | is_ban_bisac_control_title == 1) &
++                                     months_since_first_ban >= -4 & months_since_first_ban <= 6])
+Variables 'is_banned_ever' and 'post_ban:is_banned_ever' have been removed because of collinearity (see $collin.var).
+> 
+> m_smc_sb_avg <- feols(ln_circ ~ post_ban*is_banned_ever | state + title + running_month, 
++                       cluster = c('state'),
++                       data = lib_circ_dt[(is_top_25_title == 1 | (is_ban_bisac == 1 & is_ban_bisac_matched_control_title == 1)) &
++                                         months_since_first_ban >= -4 & months_since_first_ban <= 6])
+Variables 'is_banned_ever' and 'post_ban:is_banned_ever' have been removed because of collinearity (see $collin.var).
+> 
+> setFixest_dict(c(ln_circ = "Log(Circulation)", post_ban = "PostBan $\\times$ Banned", is_banned = "Banned", 
++                  alt_unpop_author = "\\\\ Less-experienced Author", cum_num_bans = "Intensity of Ban",
++                  is_banned_ever = "Banned", state = "State", running_month = "Year Month", title = "Title"))
+> etable(m_avg_cur, m_avg_tw_pop, m_avg_red_ban, m_avg_red_non_ban, m_close_ctrl_avg, m_far_ctrl_avg, m_bb_avg, m_smc_sb_avg,
++        style.tex = style.tex(fixef.title = "", fixef.suffix = " Fixed Effect", yesNo = "Yes", 
++                              model.title = "", main = "base", stats.title = "\\midrule"),
++        tex = T, digits = 3, title = "Additional Robustness: Impact of Ban Events on Circulation",
++        fitstat = ~ r2 + n, placement = "h", se.below = T, se.row = F, 
++        headers = list(list("Alternate", "Alternate ", "Banned", "Non-banned", "Same", "Different", "Banned", "Matched"),
++                       c("First", "Author", "Red", "Red ", "Genre", "Genre ", "BISAC", "Banned BISAC "),
++                       c("Ban Month", "Experience", "States", "States ", "Controls", "Controls ", "Controls", "Controls ")))
+\begin{table}[h]
+   \caption{Additional Robustness: Impact of Ban Events on Circulation}
+   \centering
+   \begin{tabular}{lcccccccc}
+      \tabularnewline \midrule \midrule
+      Dependent Variable: & \multicolumn{8}{c}{Log(Circulation)}\\
+                                                                      & Alternate     & Alternate     & Banned        & Non-banned & Same          & Different     & Banned        & Matched \\   
+                                                                      & First         & Author        & Red           & Red        & Genre         & Genre         & BISAC         & Banned BISAC  \\   
+                                                                      & Ban Month     & Experience    & States        & States     & Controls      & Controls      & Controls      & Controls  \\   
+                                                                      & (1)           & (2)           & (3)           & (4)        & (5)           & (6)           & (7)           & (8)\\  
+      \midrule
+      \emph{Variables}\\
+      PostBan $\times$ Banned                                         & 0.088$^{***}$ & 0.030         & 0.121$^{***}$ & 0.071      & 0.128$^{***}$ & 0.082$^{***}$ & 0.120$^{***}$ & 0.095$^{***}$\\   
+                                                                      & (0.018)       & (0.025)       & (0.029)       & (0.060)    & (0.018)       & (0.014)       & (0.019)       & (0.017)\\   
+      PostBan $\times$ Banned $\times$ \\ Less-experienced Author     &               & 0.161$^{***}$ &               &            &               &               &               &   \\   
+                                                                      &               & (0.031)       &               &            &               &               &               &   \\   
+      State Fixed Effect                                              & Yes           & Yes           & Yes           & Yes        & Yes           & Yes           & Yes           & Yes\\  
+      Title Fixed Effect                                              & Yes           & Yes           & Yes           & Yes        & Yes           & Yes           & Yes           & Yes\\  
+      Year Month Fixed Effect                                         & Yes           & Yes           & Yes           & Yes        & Yes           & Yes           & Yes           & Yes\\  
+      \midrule 
+      R$^2$                                                           & 0.57618       & 0.57642       & 0.64999       & 0.43352    & 0.61063       & 0.64579       & 0.58258       & 0.73088\\  
+      Observations                                                    & 249,812       & 249,660       & 85,410        & 32,850     & 101,232       & 41,724        & 434,340       & 34,884\\  
+      \midrule \midrule
+      \multicolumn{9}{l}{\emph{Clustered (State) standard-errors in parentheses}}\\
+      \multicolumn{9}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+   \end{tabular}
+\end{table}
+> 
+> # Table 7
+> # Col 1 - Average TWFE with checkouts from all readers as DV
+> # Col 2 - Average TWFE with checkouts from inclusive readers as DV
+> # Col 3 - Average TWFE with checkouts from inclusive non-readers as DV
+> # Col 4 - Average TWFE with checkouts from all readers as DV, complete spillover DiD
+> 
+> spl_circ_dt <- fread("data/replication_data/spl_circ_data.csv")
+> 
+> m_te_avg <- feols(ln_circ ~ post_ban*is_banned_ever | Title + month, se = "hetero",
++                   spl_circ_dt[rel_month >= -4 & rel_month <= 6])
+Variables 'is_banned_ever' and 'post_ban:is_banned_ever' have been removed because of collinearity (see $collin.var).
+> 
+> did_dt <- copy(spl_circ_dt)
+> did_dt[, rel_month := interval(ymd(20211001), month) %/% months(1)]
+> did_dt[, post_ban := as.integer(rel_month >= 0)]
+> m_se_avg <- feols(ln_circ ~ post_ban*is_banned_ever | Title + month, se = "hetero",
++                   did_dt[rel_month >= -4 & rel_month <= 6])
+Variables 'post_ban' and 'is_banned_ever' have been removed because of collinearity (see $collin.var).
+> 
+> spl_circ_dt <- fread("data/replication_data/spl_inc_circ_data.csv")
+> m_ir_avg <- feols(ln_circ ~ post_ban*is_banned_ever | Title + month, se = "hetero",
++                   spl_circ_dt[rel_month >= -4 & rel_month <= 6 & inclusive_reader == 1])
+Variables 'is_banned_ever' and 'post_ban:is_banned_ever' have been removed because of collinearity (see $collin.var).
+> 
+> m_inr_avg <- feols(ln_circ ~ post_ban*is_banned_ever | Title + month, se = "hetero",
++                    spl_circ_dt[rel_month >= -4 & rel_month <= 6 & inclusive_reader == 0 ])
+Variables 'is_banned_ever' and 'post_ban:is_banned_ever' have been removed because of collinearity (see $collin.var).
+> 
+> setFixest_dict(c(ln_circ = "Log(Circulation)", "asinh(circ)" = "Circulation", post_ban = "PostBan $\\times$ Banned", 
++                  circ = "Circulation", is_banned_ever = "Banned", 
++                  "post_ban:is_banned_ever" = "PostBan $\\times$ Banned", month = "Year Month",
++                  state = "State", running_month = "Year Month", title = "Title", quarter = "Quarter"))
+> etable(m_te_avg, m_ir_avg, m_inr_avg, m_se_avg, 
++        style.tex = style.tex(fixef.title = "", fixef.suffix = " Fixed Effect", yesNo = "Yes", 
++                              model.title = "", main = "base", stats.title = "\\midrule"),
++        tex = T, digits = 3, title = "Impact of Ban Events on Circulation",
++        fitstat = ~ r2 + n, placement = "h", 
++        se.below = T, se.row = F, headers = list(list("All", "Inclusive ", "Inclusive", "Alternate"),
++                                                 list("Readers", "Readers ", "Non-Readers", "Identification")))
+\begin{table}[h]
+   \caption{Impact of Ban Events on Circulation}
+   \centering
+   \begin{tabular}{lcccc}
+      \tabularnewline \midrule \midrule
+      Dependent Variable: & \multicolumn{4}{c}{Log(Circulation)}\\
+                               & All           & Inclusive  & Inclusive     & Alternate \\   
+                               & Readers       & Readers    & Non-Readers   & Identification \\   
+                               & (1)           & (2)        & (3)           & (4)\\  
+      \midrule
+      \emph{Variables}\\
+      PostBan $\times$ Banned  & 0.189$^{***}$ & 0.061      & 0.166$^{***}$ & 0.279$^{***}$\\   
+                               & (0.059)       & (0.055)    & (0.054)       & (0.066)\\   
+      Title Fixed Effect       & Yes           & Yes        & Yes           & Yes\\  
+      Year Month Fixed Effect  & Yes           & Yes        & Yes           & Yes\\  
+      \midrule 
+      R$^2$                    & 0.46983       & 0.40276    & 0.34480       & 0.51134\\  
+      Observations             & 2,088         & 2,088      & 2,088         & 1,100\\  
+      \midrule \midrule
+      \multicolumn{5}{l}{\emph{Heteroskedasticity-robust standard-errors in parentheses}}\\
+      \multicolumn{5}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+   \end{tabular}
+\end{table}
+> 
+> # Table 8
+> # Col 1 - Average TWFE with donations in banned states as DV with Reps vs Dems as interaction
+> # Col 2 - Average TWFE with donations in banned Blue states as DV with Reps vs Dems as interaction
+> # Col 3 - Average TWFE with donations in banned Red states as DV with Reps vs Dems as interaction
+> 
+> pol_don_dt <- fread("data/replication_data/pol_don_data.csv")
+> 
+> m1 <- feols(ln_amount ~ post_ban*is_rep_cmt | cand_state + CAND_ID + month + cand_state^month, 
++             cluster = c("cand_state"),
++             data = pol_don_dt[months_since_first_ban >= -4 & months_since_first_ban <= 6])
+Variables 'post_ban' and 'is_rep_cmt' have been removed because of collinearity (see $collin.var).
+> 
+> m2 <- feols(ln_amount ~ post_ban*is_rep_cmt | cand_state + CAND_ID + month + cand_state^month, 
++             cluster = c("cand_state"),
++             data = pol_don_dt[months_since_first_ban >= -4 & months_since_first_ban <= 6 & 
++                               is_red_state == 0])
+Variables 'post_ban' and 'is_rep_cmt' have been removed because of collinearity (see $collin.var).
+> 
+> m3 <- feols(ln_amount ~ post_ban*is_rep_cmt | cand_state + CAND_ID + month + cand_state^month, 
++             cluster = c("cand_state"),
++             data = pol_don_dt[months_since_first_ban >= -4 & months_since_first_ban <= 6 & 
++                               is_red_state == 1])
+Variables 'post_ban' and 'is_rep_cmt' have been removed because of collinearity (see $collin.var).
+> 
+> setFixest_dict(c(ln_amount = "Log(Donations)", post_ban = "PostBan", is_dem_cmt = "Democrat", 
++                  is_rep_cmt = "Republican", cand_state = "State", CAND_ID = "Candidate",
++                  month = "Year Month"))
+> etable(m1, m2, m3, 
++        style.tex = style.tex(fixef.title = "", fixef.suffix = " Fixed Effect", yesNo = "Yes", 
++                              model.title = "", main = "base", stats.title = "\\midrule"),
++        tex = T, digits = 3, title = "Impact of Ban Events on Political Donations",
++        fitstat = ~ r2 + n, placement = "h", 
++        se.below = T, headers = list(list("All", "Blue", "Red"),
++                                     c("States", "States ", "States")), se.row = F)
+\begin{table}[h]
+   \caption{Impact of Ban Events on Political Donations}
+   \centering
+   \begin{tabular}{lccc}
+      \tabularnewline \midrule \midrule
+      Dependent Variable: & \multicolumn{3}{c}{Log(Donations)}\\
+                                    & All     & Blue    & Red \\   
+                                    & States  & States  & States \\   
+                                    & (1)     & (2)     & (3)\\  
+      \midrule
+      \emph{Variables}\\
+      PostBan $\times$ Republican   & 0.084   & -0.155  & 0.305$^{**}$\\   
+                                    & (0.201) & (0.360) & (0.132)\\   
+      State Fixed Effect            & Yes     & Yes     & Yes\\  
+      Candidate Fixed Effect        & Yes     & Yes     & Yes\\  
+      Year Month Fixed Effect       & Yes     & Yes     & Yes\\  
+      State-Year Month Fixed Effect & Yes     & Yes     & Yes\\  
+      \midrule 
+      R$^2$                         & 0.68125 & 0.67531 & 0.68087\\  
+      Observations                  & 16,405  & 8,012   & 8,393\\  
+      \midrule \midrule
+      \multicolumn{4}{l}{\emph{Clustered (State) standard-errors in parentheses}}\\
+      \multicolumn{4}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+   \end{tabular}
+\end{table}
+> 
+> proc.time()
+   user  system elapsed 
+1076.56   34.98 1085.59 

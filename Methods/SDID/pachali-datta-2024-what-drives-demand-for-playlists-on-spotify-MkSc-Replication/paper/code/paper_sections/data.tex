@@ -1,0 +1,112 @@
+\section{Data} 
+\label{sec:data}
+
+\subsection{Data set construction}
+
+Our data set covers 34,483 playlists on Spotify from various professional curators, including the platform, and major and independent music labels. We created this data set using the API of \textit{Chartmetric.com}, a platform that tracks the composition (i.e., which songs are available on a list at any point in time) and performance (e.g., daily followers) of playlists available on Spotify. 
+
+We initially obtained a list of all 1.2 million playlists tracked by \textit{Chartmetric} in April 2020. This cross-sectional dataset includes playlist IDs and names (e.g., ``Happy Tunes"), curator names (e.g., ``Spotify"), tag words describing a playlist's content, and followers at the time of data retrieval. We group playlist curators as per the classification in Web Appendix \hyperref[curators]{A}.
+In addition to the cross-sectional characteristics, we obtained daily data on a playlist's number of followers from October 2019 to March 2020, along with information on which song was available on a list and when.\footnote{We rely on \textit{followers} as our metric for measuring playlist  demand, in line with the notion that playlist editors aim to increase follower reach. Playlist \textit{listeners} are unavailable for many unpopular and some popular playlists. Playlist followers and listeners correlate strongly ($\rho$ = .70).} %implying that on any given day, the more \textit{followers} a playlist has, the more \textit{listeners} it gets.}
+
+To understand which type of songs are included on playlists, we parse comprehensive track-level meta-information of about $2$ million tracks.
+For each track, we observe its duration (in minutes), release date, and record label.
+We further classify whether each track is (1) distributed by one of the major record labels (Universal, Sony, or Warner)\footnote{%We classify artists as major label artists when they have at least one release distributed by a major music label. 
+To identify these major labels from thousands of unique labels and their subsidiaries, we use a regular-expression-based matching algorithm derived from a list of major label names and associated subsidiaries \citep[as in, e.g.,][]{boughanmiacoustics}.%\textit{Chartmetric.com} also shared with us a list of labels and associated parent labels, which we used to validate and extend our classification.
+} 
+and (2) released by popular ``superstar" artists, based on historical top 10 placements in the Billboard Charts (Top 100; 1999-2019) and Spotify Charts (Top 200; 2016-2019).\footnote{We extract this data from \url{https://www.kaggle.com/datasets/danield2255/data-on-songs-from-billboard-19992019}.} We report summary statistics on these measures in Table \ref{tab:content} in Web Appendix \hyperref[summary_final_sample]{B}. Collectively, the major music labels account for most of
+the superstar content on the platform (6,000+ tracks). Tracks by these popular artists
+are also added to more playlists compared to the remaining artists on the platform. Our data contains numeric measures characterizing the tracks' acoustic attributes \citep[as in][i.e., danceability, energy, speechiness, acousticness, instrumentalness, liveness, valence, tempo, loudness]{boughanmiacoustics}.
+%, we show the number of tracks in our data that are affiliated with one of the three major labels (or with none of them, which we labeled ``independent"). While major music labels distribute fewer tracks, these tracks are listed, on average, on more playlists and stay longer on these playlists.
+%To understand which labels distribute the most music by popular ``superstar" artists, we obtained additional data on the historical Billboard Top 100 (1999-2019) and Spotify Charts (Top 200; 2016-2019) placements.\footnote{We extract this data from \url{https://www.kaggle.com/datasets/danield2255/data-on-songs-from-billboard-19992019}.} We subsequently flag each artist in our data that has made it to the Top 10 on these charts. We report the same metrics as before, but now only for superstar content (see the right columns in Table \ref{tab:content}). Collectively, the major music labels account for most of the superstar content on the platform (6,000+ tracks). Tracks by these popular artists are also added to more playlists compared to the remaining artists on the platform. The major label superstar artists thus distribute the most exceptionally popular content. Compared to the large number of tracks distributed by independent music labels (about $1.8$ million), the share of superstar tracks is very small. 
+We aggregate this information to the playlist level by computing a weighted average of the attributes at every date.\footnote{We use as weights the track's overall popularity in our sample, proxied as the logarithm of each track's median number of weekly playlist listings in our sample. %Likewise, we construct the average attributes of semi-personalized playlists (described in Web Appendix \hyperref[summary_final_sample]{A}) by computing a weighted average, reflecting that more popular tracks may be more frequently featured in users' ``own" version of the list. In our estimation sample, the aggregate attributes of semi-personalized playlists thus reflect the average playlist to which the representative user is exposed.
+} 
+%The major label superstar artists thus distribute the most exceptionally popular content. 
+
+
+\begin{figure}[t!]
+\begin{center}
+\caption{Screenshot of the Search Page in the Spotify app.}\label{fig:categories_app}
+\includegraphics[scale=0.25]{../img/search_page_focus_2023.png}
+\end{center}
+\begin{flushleft}
+\vspace{-0.1cm}
+\footnotesize{Note: Spotify features selected playlists prominently in the Search Page of the app.}
+\end{flushleft}
+\end{figure}
+
+
+We next augment the data with daily information about which playlists are featured on the Search Page of the Spotify app. Figure \ref{fig:categories_app} illustrates featured playlists in the ``Focus" category. %\footnote{Spotify also offers a directory for new music releases and podcasts, both of which are unobserved in our data.} 
+% HD: Correct though...
+\textit{Everynoise.com} makes the playlists featured on Spotify's Search Page available in real-time across up to 50 categories and 49 countries. To capture daily fluctuations in featured playlists, especially considering our data's global coverage, we 
+scraped this website at three-hour intervals between October 2019 and March 2020 \citep[]{scraping}.  
+%Figure \ref{fig:everynoise_screen} in Web Appendix \hyperref[app_featured_lists]{C} shows a screenshot of \textit{everynoise.com/worldbrowser.cgi} during the data collection. 
+Our raw data records a timestamp, the name of the category, the country name, and a list of playlist IDs featured in a category and country at the time of data retrieval. 
+Most categories on the Search Page pertain to established genres (e.g., ``pop", ``rock", ``jazz", ``EDM"). Other categories are relatively new, such as activity categories (e.g., ``sleep", ``workout") or mood categories (e.g., ``inspirational"). 
+Categories are largely the same across countries, but featured playlists may differ based on users' location. Playlists can therefore be featured in multiple categories and countries simultaneously.
+%In our sample, 396 playlists were added to the Search Page for the first time.\footnote{We also observe $4,028$ playlists with left-censored observations that have already been on the Search Page when starting our data collection.}
+
+%\footnote{The data collection is documented at  \url{https://github.com/hannesdatta/data-spotify-promotions-releases}; the raw data is archived at \url{dataverse.nl}.} 
+
+
+%data sources and preparation steps in more detail next.
+%Understanding the effects of featuring playlists or the inclusion of tracks by popular major label artists requires insight into the substitutability among playlists.
+
+As Spotify does not provide a categorization for all of its playlists, we developed our own categorization based on association rule mining \citep{hastie_09}, which aligns with the categories observed on Spotify’s Search Page. Tracks are added to or removed from playlists, and the character of a playlist---and consequently, its competitors---can change. To account for the dynamic nature of a playlist's content, we allow for weekly category changes. %We will explain these 
+The largest category is ``pop" ($3,979$ playlists with combined followers of $336$ million), followed by ``hiphop+pop", a hybrid category consisting of both ``hiphop" and ``pop" tracks ($281$ million followers). %Table \ref{tab:categories} summarizes the top 20 categories derived from the algorithm. 
+We provide an overview of the top 20 categories and details on the categorization algorithm in Web Appendix \hyperref[details_mining]{C}.
+%The table shows category names, the number of playlists, the sum of followers of playlists, and the top three playlists per category. %find stats that this aligns well - it does, but this source seems AI-generated and not credible to cite: https://zipdo.co/statistics/spotify-genre/.
+
+
+%To ensure our categorization is in line with how Spotify categorizes content, we used association rule mining \citep[e.g.,][]{hastie_09} to map the track-level keywords observed in our raw data to categories on Spotify's Search Page. We subsequently applied the algorithm's learned associations, re-evaluating the categorization of playlists at the weekly level. The dynamic categorization accounts for weekly playlist updates (i.e., tracks entering or exiting) and resulting changes in available tag words. This responsiveness ensures that our model offers an accurate representation of the current state of competition among playlists. F
+
+%We focus our analysis on $34,483$ popular playlists that collectively account for $90\%$ of platform followers at the time of data retrieval. 
+
+%\textit{\textbf{Sample selection.}}
+
+The follower distribution of playlists is highly skewed: $1,105$ playlists account for $50\%$ of total followers across the $1.2$ million playlists (see Table \ref{tab:distribution} in Web Appendix \hyperref[details_mining]{B}). %$54\%$ of all playlists have less than or equal to 1 follower (i.e., they are not shared with other users). 
+To avoid including extremely unpopular playlists, we select the $95\%$ most-followed playlists for subsequent analyses. Some playlists are less frequently tracked than others, and we require playlist followers to be consecutively observed for at least four weeks. In addition, we impose that at most two intermediate (daily) follower observations can be linearly interpolated, and require playlist characteristics to be consecutively available for at least 100 days. 
+Our final selection encompasses $34,483$ playlists that fulfill the aforementioned conditions, accounting for $90\%$ of platform followers at the time of data retrieval. We summarize the final data set in Table \ref{tab:summarystats} in Web Appendix \hyperref[details_mining]{B}.
+
+\subsection{Descriptive statistics}
+
+Table \ref{tab:curatorswide} shows how playlist followers differ across curators, shown for the estimation sample of $34,483$ playlists (left panel), as well as the entire sample of $1.2$ million playlists (right panel). 
+Spotify’s editorial playlists are the most popular playlists, attracting $70\%$ of the audience. The platform's non-personalized editorial playlists ($3,042$) account for $33\%$ of followers. Semi-personalized editorial playlists ($1,525$), on which different users see a different subset of a predetermined set of master tracks, account for $26\%$ of followers. Spotify's ``This is"-playlists ($1,639$) focus on a single artist's content and account for $11\%$ of followers. On the other hand, the three major labels account for $2,522$ playlists and a combined follower share of only 5\%. The differences in the aggregate follower share across playlist curator groups are negligible between selected playlists in the estimation sample and all of the $1.2$ million playlists.%\footnote{For comparison, the right panel in Table \ref{tab:curatorswide} illustrates the same statistics computed based on the full sample of $1.2$ million playlists observed in the raw data. The selected playlists have more followers within curator groups due to excluding the long tail of small playlists. However, the differences in the aggregate follower share across playlist curator groups are negligible between selected playlists in the estimation sample and all of the $1.2$ million playlists. }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{../output/figures_and_tables/curatorswide.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%
+
+In Table \ref{tab:superstarplaylist}, we compare playlists that add at least one major label superstar track during our observation period to those that do not. On average, major label superstars appear on playlists that have more followers and are updated more frequently. These playlists, typically not curated by Spotify, feature a higher proportion of major label content and shorter tracks. This evidence is in line with the idea that the pool of exceptionally popular artists is a valuable asset of the major labels. Going forward, we thus focus on the event of adding a superstar artist's track to playlists in order to measure the impact of major label content on playlist demand on Spotify.%\footnote{We controlled for the overall share of major label tracks in the two-way fixed effects model specification and found playlist demand to be inelastic to the overall share of major label tracks on playlists.} 
+
+\input{../output/figures_and_tables/superstarplaylist.tex}
+
+%\subsubsection{Data on featured playlists on Spotify's Search Page}
+
+%Next, we describe the data set on featured playlists. 
+
+
+
+Figure \ref{fig:section_updates} illustrates the featuring activity across categories on the Search Page between October 2019 and March 2020. We observed most categories for the entire duration of our study (e.g., ``latin," ``roots," ``soul," and ``workout"). Some categories are observed for a shorter period of time (e.g., the category ``2019``, featuring playlists celebrating the past year, such as ``Your Best 2019 Hits``).\footnote{As demand might be naturally high for such playlists, independent of inclusion on the Search Page, we removed playlists from the ``2019`` category from the estimation sample. In a robustness check, we also removed other potentially seasonal categories such as ``Holidays`` or ``Exercise``.} %In addition, Figure \ref{fig:section_updates} indicates whether a category was updated at a given point in time (i.e., whether new playlists were added or existing playlists were removed). 
+The figure underscores that there is substantial featuring activity on Spotify, but categories are rarely updated all at the same time. 
+
+\begin{figure}[t!]
+\begin{center}
+\caption{Availability and updates of different categories on the Search Page.}\label{fig:section_updates}
+\includegraphics[width=\textwidth]{../output/figures_and_tables/browsesection_changes.png}
+\end{center}
+\begin{flushleft}
+\vspace{-0.1cm}
+\footnotesize{Notes: We illustrate the availability of different categories on the Search Page during our observation period in gray. Updates (i.e., additions or removals of playlists) within categories on the Search Page are reported in black. The figure underscores that there is substantial featuring activity on Spotify.}
+\end{flushleft}
+\end{figure}
+
+%Many users are likely overwhelmed by the massive amount of playlists on the platform. Spotify could thus exert power by devoting user attention to a smaller number of selected playlists. 
+Table \ref{tab:promoplaylist} shows that playlists featured in at least one category on Spotify's Search Page have substantially more followers than the corresponding group of non-featured playlists. Featured playlists also contain slightly less major label content, fewer tracks, and are updated more frequently. Finally, the vast majority of featured playlists are owned and operated by Spotify, which raises concerns that Spotify tends to feature its own content on the platform \citep[e.g.,][]{self_preferencing_skiera}. To quantify Spotify's ability to guide consumer attention through the Search Page, we estimate the effect of featuring playlists on playlist followers.
+
+\input{../output/figures_and_tables/promoplaylist.tex}
+
